@@ -1,0 +1,26 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/research.html",
+    "items": [
+      "/publications/NIPS2022.html"
+    ]
+  },
+  {
+    "listing": "/create_series.html",
+    "items": [
+      "/posts/welcome/index.html"
+    ]
+  }
+]

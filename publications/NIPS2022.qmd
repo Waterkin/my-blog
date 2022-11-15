@@ -1,0 +1,29 @@
+---
+title: "Title here"
+type: "proceeding"
+author: "Linghao Wang"
+year: "2022"
+publication: "NIPS"
+preprint: ""
+doi: "https://doi.org/10.1109/ICCVW.2011.6130519"
+materials: ""
+toc: false
+categories:
+  - stock price prediction
+  - machine learning
+  - proceeding
+---
+
+## Citation (APA 7)
+
+> Linghao, W. (2022). Stock prediction master. *Proceedings of the 10th IEEE International Conference on Automated Face & Gesture Recognition (FG)*, 1–7.
+
+## Abstract
+
+The main content of this paper.
+
+## Author Note
+
+> When I wrote this paper back in 2011, I was just learning about performance evaluation. This was a first, and rather naive attempt at understanding the connection between agreement, prevalence, and threshold selection. Readers interested in more sophisticated approaches to these issues are encouraged to look up Guangchao Charles Feng, who has done nice work in this area.
+> 
+> `r tufte::quote_footer('--- Jeffrey Girard, 2018-06-14')`

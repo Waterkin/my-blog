@@ -1,0 +1,53 @@
+project:
+  type: website
+  output-dir: docs
+  # pre-render: # prepare.py
+  # post-render: 
+    # - compress.ts
+    # - fix-links.py
+
+website:
+  title: "Linghao Wang"
+  navbar:
+    right:
+      - href: about.qmd
+        text: About
+      - href: blog.qmd
+        text: Blog
+      - href: portfolio.qmd
+        text: Portfolio
+      - href: kaggle.qmd
+        text: Kaggle
+      - href: research.qmd
+        text: Research
+      - href: talks.qmd
+        text: Talks
+      #- icon: github
+      #  href: https://github.com/Waterkin
+      #- icon: twitter
+      #  href: https://twitter.com
+  page-footer: 
+    left: "Copyright 2022 &copy; Linghao Wang"
+    right: 
+      - icon: linkedin
+        href: https://www.linkedin.com/in/linghao-wang/
+      - icon: github
+        href: https://github.com/Waterkin
+      #- icon: kaggle
+      #- href: https://www.kaggle.com/waterking886"
+  #google-analytics: "G-K5TXS64QLN"
+  site-url: https://waterking.cc
+  repo-url: https://github.com/Waterkin/my-blog
+format:
+  html:
+    theme: 
+      light: [cosmo, theme-dark.scss]
+      dark: cosmo
+    css: styles.css
+    toc: true
+    mainfont: Segoe UI
+    #fontsize: 1.1em
+    #linestretch: 1.7ss
+
+
+

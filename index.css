@@ -1,0 +1,28 @@
+/* css styles */
+.one_row {
+    width: 100%;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ava_column {
+    float: left;
+    width: 15%;
+}
+
+.text_column {
+    float: right;
+    width: 80%;
+    height: "200"
+}
+
+/* Clear floats after the columns */
+.one_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

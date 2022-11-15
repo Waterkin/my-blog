@@ -1,0 +1,36 @@
+---
+about:
+  template: marquee
+format:
+  html:
+    css: blog.css
+---
+```{=html}
+<div class="container">
+  <div style="width:100%;height:0; padding-top:50%;position:relative;">
+    <img src="../images/menu/photo_publications.jpg" style="width:100%; opacity:0.8; position:absolute; top:0; left:0">
+  </div>  
+  <div class="content">
+    <h1>Research</h1>
+    <p><span class="cover-desc" style="color:var(--page-desc-color)">This page summarizes my research activities including publications in academic journals and conference proceedings. Check out my <a href="http://kozodoi.me/talks">public talks</a> or follow me on <a href="https://scholar.google.com/citations?hl=en&amp;authuser=1&amp;user=58tMuD0AAAAJ">Google Scholar</a> to see all of my work.</span></p>
+  </div>
+</div>
+```
+<!--
+listing:
+  - id: articles
+    contents: "publications/*.qmd"
+    template: ./ejs/article.ejs
+    categories: true
+    sort:
+      - "year desc"
+      - "title"
+    sort-ui: [title,author,publication,year]
+    filter-ui: [title,author,publication,year]
+    page-size: 10
+    field-display-names: 
+      publication: "Publication"
+      year: "Year"
+:::{#articles}
+:::
+-->

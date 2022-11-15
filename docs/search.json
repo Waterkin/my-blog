@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Hi, I am Linghao!\n      \n    \n\n    \n    I am a master in CS working on the frontier of research and business. This website hosts my blog with ML tutorials, competition solutions and project findings. All opinions published here are my own.\n    \n\n    Check out my CV and other pages to see more of my work:\n    \n       📁 my portfolio with ML projects on different topics\n       📚 my publications with abstracts and full-text PDFs\n       🥇 my Kaggle solutions with links to code and writeups"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About me",
+    "section": "",
+    "text": "Hi! I am an applied ML graduate working on the frontier of research and business. With M.S. in ML and certified AWS knowledge, practical experience in diverse ML/DL areas and strong communication skills, I am passionate about using AI to solve challenging business problems and create value. Currently, I study at SCUT, where I develop cutting-edge ML solutions to stock price prediction.\nThis website hosts my blog, where I share ML tutorials, competition solutions and interesting project findings. All opinions published here are my own. It also includes other sections featuring my work:\nIf you like my blog, you can buy me a cup of tea to support my work. Thanks!"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About me",
+    "section": "Contact",
+    "text": "Contact\nWould like to have a chat? Click here to send me an e-mail.\nI am also happy to connect on different social and professional platforms. Click the badges right below to see my profile."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Blog\n    In my blog, I write about machine learning and deep learning. My posts include ML tutorials, package overviews, competition solutions and interesting project findings. All opinions are my own."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Research\n    This page summarizes my research activities including publications in academic journals and conference proceedings. Check out my public talks or follow me on Google Scholar to see all of my work."
+  },
+  {
+    "objectID": "publications/NIPS2022.html",
+    "href": "publications/NIPS2022.html",
+    "title": "Title here",
+    "section": "",
+    "text": "Linghao, W. (2022). Stock prediction master. Proceedings of the 10th IEEE International Conference on Automated Face & Gesture Recognition (FG), 1–7."
+  },
+  {
+    "objectID": "publications/NIPS2022.html#author-note",
+    "href": "publications/NIPS2022.html#author-note",
+    "title": "Title here",
+    "section": "Author Note",
+    "text": "Author Note\n\nWhen I wrote this paper back in 2011, I was just learning about performance evaluation. This was a first, and rather naive attempt at understanding the connection between agreement, prevalence, and threshold selection. Readers interested in more sophisticated approaches to these issues are encouraged to look up Guangchao Charles Feng, who has done nice work in this area.\n\n— Jeffrey Girard, 2018-06-14"
+  },
+  {
+    "objectID": "publications/NIPS2022.html#abstract",
+    "href": "publications/NIPS2022.html#abstract",
+    "title": "Title here",
+    "section": "Abstract",
+    "text": "Abstract\nThe main content of this paper."
+  },
+  {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Portfolio\n    My portfolio includes three ML projects on different topics focusing on computer vision, NLP and tabular data. To see more of my work, visit my GitHub profile, download my CV or check out the about page."
+  },
+  {
+    "objectID": "kaggle.html",
+    "href": "kaggle.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Kaggle\n    I enjoy taking part at ML competitions on Kaggle. This page summarizes my achievements and provides links to blog posts, writeups and GitHub repos with my solutions. Check out my Kaggle profile to see more."
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Talks\n    I regularly give talks on CS and ML topics at academic conferences, Data Science meetups and Bilibili. Below, you can find links to videos and slides of selected talks."
+  },
+  {
+    "objectID": "create_series.html",
+    "href": "create_series.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nNov 10, 2022\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+  }
+]

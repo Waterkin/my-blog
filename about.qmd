@@ -1,0 +1,62 @@
+---
+title: "About me"
+image: profile.jpg
+about:
+  template: marquee
+---
+
+Hi! I am an applied ML graduate working on the frontier of research and business. With M.S. in ML and certified AWS knowledge, practical experience in diverse ML/DL areas and strong communication skills, I am passionate about using AI to solve challenging business problems and create value. Currently, I study at SCUT, where I develop cutting-edge ML solutions to stock price prediction.
+
+<button class="btn" onclick="window.open(&#39;https://waterking.cc/cv.pdf&#39;)">
+
+<i class="fas fa-download"></i> Curriculum Vitae
+
+</button>
+
+This website hosts [my blog](https://waterking.cc/blog/), where I share ML tutorials, competition solutions and interesting project findings. All opinions published here are my own. It also includes other sections featuring my work:
+
+-   📁 [my portfolio](https://waterking.cc/portfolio/) with ML projects on different topics
+-   🥇 [my Kaggle solutions](https://waterking.cc/kaggle/) with links to code and write-ups
+-   📚 [my ML publications](https://waterking.cc/research/) with paper abstracts and full-text PDFs
+-   🗣 [my public talks](https://waterking.cc/talks/) with links to presentation slides and talk videos
+-   🖥 [my certifications](https://waterking.cc/certifications/) with links to certificates and completed courses
+-   🎓 [my teaching experience](https://waterking.cc/teaching/) at the South China University of Technology
+
+If you like my blog, you can buy me a cup of tea to support my work. Thanks!
+
+::: tea
+<a href="https://www.buymeacoffee.com/linghao"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me tea &amp;emoji=&amp;slug=linghao&amp;button_colour=FFDD00&amp;font_colour=000000&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=ffffff" align="left"/></a>
+:::
+
+<br>
+
+<hr style="height:1px; visibility:hidden;" />
+
+<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+
+<!----------------------------------------------------------------------------->
+
+## Contact
+
+Would like to have a chat? <a href="mailto:wlhsama@gmail.com">Click here</a> to send me an e-mail.
+
+I am also happy to connect on different social and professional platforms. Click the badges right below to see my profile.
+
+
+::: {.social-links align="left"}
+<ul class="badge-list">
+
+<!--<li><a href="https://www.linkedin.com/in/linghao-wang/"><img src="https://img.shields.io/badge/-LinkedIn-306EA8?style=flat&amp;logo=Linkedin&amp;logoColor=white&amp;link=https://www.linkedin.com/in/linghao-wang/"/></a></li>-->
+
+<!--<li><a href="https://www.twitter.com/n_kozodoi"><img src="https://img.shields.io/badge/-Twitter-4B9AE5?style=flat&logo=Twitter&logoColor=white&link=https://www.twitter.com/n_kozodoi"/></a></li>-->
+
+<!--<li><a href="https://www.kaggle.com/waterking886"><img src="https://img.shields.io/badge/-Kaggle-5DB0DB?style=flat&amp;logo=Kaggle&amp;logoColor=white&amp;link=https://www.kaggle.com/waterking886"/></a></li>-->
+
+<!--<li><a href="https://www.github.com/Waterkin"><img src="https://img.shields.io/badge/-GitHub-2F2F2F?style=flat&amp;logo=github&amp;logoColor=white&amp;link=https://www.github.com/Waterkin"/></a></li>-->
+
+<!--<li><a href="https://scholar.google.com/citations?user=58tMuD0AAAAJ&amp;hl=en"><img src="https://img.shields.io/badge/-Google_Scholar-676767?style=flat&logo=google-scholar&logoColor=white&link=https://scholar.google.com/citations?user=58tMuD0AAAAJ&amp;hl=en"/></a>  </li>-->
+
+<!--<li><a href="https://www.researchgate.net/profile/Nikita_Kozodoi"><img src="https://img.shields.io/badge/-ResearchGate-59C3B5?style=flat&logo=researchgate&logoColor=white&link=https://www.researchgate.net/profile/Nikita_Kozodoi"/></a></li>-->
+
+</ul>
+:::
