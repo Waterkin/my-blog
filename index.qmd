@@ -11,7 +11,7 @@ format:
 ```{=html}
 <div class="one_row" style='margin-bottom: -20px;'>
   <div class="ava_column">
-    <img src="img/me.jpeg" style="border-radius: 5%;" height="220">
+    <img src="img/bluesky.jpeg" style="border-radius: 5%;" height="220">
   </div>
   <div class="text_column" style='font-size: 100%'>
     <div>
