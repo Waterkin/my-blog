@@ -1,0 +1,14 @@
+{
+  "hash": "05fc70d6b4629fde3e20421deb1aecda",
+  "result": {
+    "markdown": "---\ntitle: \"Title here\"\ntype: \"proceeding\"\nauthor: \"Linghao Wang\"\nyear: \"2022\"\npublication: \"NIPS\"\npreprint: \"\"\ndoi: \"https://doi.org/10.1109/ICCVW.2011.6130519\"\nmaterials: \"\"\ntoc: false\ncategories:\n  - stock price prediction\n  - machine learning\n  - proceeding\n---\n\n\n## Citation (APA 7)\n\n> Linghao, W. (2022). Stock prediction master. *Proceedings of the 10th IEEE International Conference on Automated Face & Gesture Recognition (FG)*, 1–7.\n\n## Abstract\n\nThe main content of this paper.\n\n## Author Note\n\n> When I wrote this paper back in 2011, I was just learning about performance evaluation. This was a first, and rather naive attempt at understanding the connection between agreement, prevalence, and threshold selection. Readers interested in more sophisticated approaches to these issues are encouraged to look up Guangchao Charles Feng, who has done nice work in this area.\n> \n> <footer>--- Jeffrey Girard, 2018-06-14</footer>",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

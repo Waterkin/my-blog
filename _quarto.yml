@@ -18,14 +18,10 @@ website:
         text: Portfolio
       - href: kaggle.qmd
         text: Kaggle
-      - href: research.qmd
-        text: Research
+      #- href: research.qmd
+      #  text: Research
       - href: talks.qmd
         text: Talks
-      #- icon: github
-      #  href: https://github.com/Waterkin
-      #- icon: twitter
-      #  href: https://twitter.com
   page-footer: 
     left: "Copyright 2022 &copy; Linghao Wang"
     right: 
@@ -41,8 +37,8 @@ website:
 format:
   html:
     theme: 
-      light: [cosmo, theme-dark.scss]
-      dark: cosmo
+      dark: [cosmo, theme-dark.scss]
+      #dark: cosmo
     css: styles.css
     toc: true
     mainfont: Segoe UI

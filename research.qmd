@@ -15,6 +15,8 @@ format:
     <p><span class="cover-desc" style="color:var(--page-desc-color)">This page summarizes my research activities including publications in academic journals and conference proceedings. Check out my <a href="http://kozodoi.me/talks">public talks</a> or follow me on <a href="https://scholar.google.com/citations?hl=en&amp;authuser=1&amp;user=58tMuD0AAAAJ">Google Scholar</a> to see all of my work.</span></p>
   </div>
 </div>
+
+<p><span class="page-desc">This page summarizes my research activities including publications in academic journals and conference proceedings. Check out my <a href="http://kozodoi.me/talks">public talks</a> or follow me on <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=58tMuD0AAAAJ">Google Scholar</a> to see all of my work.</span></p>
 ```
 <!--
 listing:

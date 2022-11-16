@@ -39,8 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -99,10 +99,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Kaggle</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html">
- <span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./talks.html">
  <span class="menu-text">Talks</span></a>
   </li>  
@@ -142,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
     <p>Check out <a href="https://waterking.cc/cv.pdf">my CV</a> and other pages to see more of my work:
     </p><ul style="margin-top: -10px;">
       <li> 📁 <a href="https://waterking.cc/portfolio/">my portfolio</a> with ML projects on different topics</li>
-      <li> 📚 <a href="https://waterking.cc/research/">my publications</a> with abstracts and full-text PDFs</li>
+      <!--li> &#128218; <a href="https://waterking.cc/research/">my publications</a> with abstracts and full-text PDFs</li-->
       <li> 🥇 <a href="https://waterking.cc/kaggle/">my Kaggle solutions</a> with links to code and writeups</li>
     </ul>
     <p></p>
@@ -275,7 +271,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  let localAlternateSentinel = 'alternate';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 

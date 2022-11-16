@@ -6,31 +6,31 @@
       version="2.0">
 <channel>
 <title>Linghao Wang</title>
-<link>https://snazzy-platypus-29ac6c.netlify.app/create_series.html</link>
-<atom:link href="https://snazzy-platypus-29ac6c.netlify.app/create_series.xml" rel="self" type="application/rss+xml"/>
+<link>https://sunny-kelpie-13ff04.netlify.app/create_series.html</link>
+<atom:link href="https://sunny-kelpie-13ff04.netlify.app/create_series.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.2.269</generator>
 <lastBuildDate>Wed, 09 Nov 2022 16:00:00 GMT</lastBuildDate>
 <item>
   <title>Welcome To My Blog</title>
   <dc:creator>Tristan O&#39;Malley</dc:creator>
-  <link>https://snazzy-platypus-29ac6c.netlify.app/posts/welcome/index.html</link>
+  <link>https://sunny-kelpie-13ff04.netlify.app/posts/welcome/index.html</link>
   <description><![CDATA[ 
 
 
 
 
 <p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="https://snazzy-platypus-29ac6c.netlify.app/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
+<p><img src="https://sunny-kelpie-13ff04.netlify.app/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
 <p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
 
 
 
  ]]></description>
   <category>news</category>
-  <guid>https://snazzy-platypus-29ac6c.netlify.app/posts/welcome/index.html</guid>
+  <guid>https://sunny-kelpie-13ff04.netlify.app/posts/welcome/index.html</guid>
   <pubDate>Wed, 09 Nov 2022 16:00:00 GMT</pubDate>
-  <media:content url="https://snazzy-platypus-29ac6c.netlify.app/posts/welcome/thumbnail.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://sunny-kelpie-13ff04.netlify.app/posts/welcome/thumbnail.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

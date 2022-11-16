@@ -4,14 +4,14 @@
     "href": "research.html",
     "title": "Linghao Wang",
     "section": "",
-    "text": "Research\n    This page summarizes my research activities including publications in academic journals and conference proceedings. Check out my public talks or follow me on Google Scholar to see all of my work."
+    "text": "Research\n    This page summarizes my research activities including publications in academic journals and conference proceedings. Check out my public talks or follow me on Google Scholar to see all of my work.\n  \n\nThis page summarizes my research activities including publications in academic journals and conference proceedings. Check out my public talks or follow me on Google Scholar to see all of my work."
   },
   {
     "objectID": "kaggle.html",
     "href": "kaggle.html",
     "title": "Linghao Wang",
     "section": "",
-    "text": "Kaggle\n    I enjoy taking part at ML competitions on Kaggle. This page summarizes my achievements and provides links to blog posts, writeups and GitHub repos with my solutions. Check out my Kaggle profile to see more."
+    "text": "I enjoy taking part at ML competitions on Kaggle. This page summarizes my achievements and provides links to blog posts, writeups and GitHub repos with my solutions. Check out my Kaggle profile to see more."
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -25,7 +25,7 @@
     "href": "talks.html",
     "title": "Linghao Wang",
     "section": "",
-    "text": "Talks\n    I regularly give talks on CS and ML topics at academic conferences, Data Science meetups and Bilibili. Below, you can find links to videos and slides of selected talks."
+    "text": "I regularly give talks on CS and ML topics at academic conferences, Data Science meetups and Bilibili. Below, you can find links to videos and slides of selected talks."
   },
   {
     "objectID": "publications/NIPS2022.html",
@@ -60,7 +60,7 @@
     "href": "index.html",
     "title": "Linghao Wang",
     "section": "",
-    "text": "Hi, I am Linghao!\n      \n    \n\n    \n    I am a master in CS working on the frontier of research and business. This website hosts my blog with ML tutorials, competition solutions and project findings. All opinions published here are my own.\n    \n\n    Check out my CV and other pages to see more of my work:\n    \n       📁 my portfolio with ML projects on different topics\n       📚 my publications with abstracts and full-text PDFs\n       🥇 my Kaggle solutions with links to code and writeups"
+    "text": "Hi, I am Linghao!\n      \n    \n\n    \n    I am a master in CS working on the frontier of research and business. This website hosts my blog with ML tutorials, competition solutions and project findings. All opinions published here are my own.\n    \n\n    Check out my CV and other pages to see more of my work:\n    \n       📁 my portfolio with ML projects on different topics\n      \n       🥇 my Kaggle solutions with links to code and writeups"
   },
   {
     "objectID": "about.html",
@@ -88,6 +88,34 @@
     "href": "blog.html",
     "title": "Linghao Wang",
     "section": "",
-    "text": "Blog\n    In my blog, I write about machine learning and deep learning. My posts include ML tutorials, package overviews, competition solutions and interesting project findings. All opinions are my own."
+    "text": "Blog\n    In my blog, I write about machine learning and deep learning. My posts include ML tutorials, package overviews, competition solutions and interesting project findings. All opinions are my own.\n  \n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nNov 10, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "kaggle.html#overall-rank",
+    "href": "kaggle.html#overall-rank",
+    "title": "Linghao Wang",
+    "section": "Overall rank",
+    "text": "Overall rank\nI am in the top-100% Kaggle users in Competitions, Notebooks, Datasets and Discussion. My current ranks and medals are displayed in the badges below. Scroll down for more details on the competitions and notebooks."
+  },
+  {
+    "objectID": "kaggle.html#competitionsbelow-are-from-kozodoi-not-mine",
+    "href": "kaggle.html#competitionsbelow-are-from-kozodoi-not-mine",
+    "title": "Linghao Wang",
+    "section": "Competitions(below are from Kozodoi, not mine)",
+    "text": "Competitions(below are from Kozodoi, not mine)\nMy medals are grouped by application areas. Follow the links for summaries, code and documentation.\n\nComputer vision\n\n🥇 Cassava Leaf Disease Classification, top-1%. Identified sick plants with deep learning 📖 Summary 💻 GitHub\n🥇 SIIM-ISIC Melanoma Classification, top-1%. Trained CNNs for skin lesion classification 📖 Summary 📋 Blog post\n🥈 PetFinder Pawpularity Contest, top-4%. Predicted pet adoption from image and tabular data 💻 GitHub 📊 App\n🥈 RANZCR Catheter and Line Position Challenge, top-5%. Detected catheters on x-rays  📖 Summary 💻 GitHub\n🥉 Prostate Cancer Grade Assessment Challenge, top-6%. Diagnosed cancer on prostate tissue biopsies\n🥉 SETI Breakthrough Listen - E.T. Signal Search, top-8%. Detected anomalies in radio signals 💻 GitHub\n🥉 APTOS 2019 Blindness Detection, top-9%. Identified retinopathy on retina photos 💻 GitHub 📋 Blog post\n🥉 RSNA STR Pulmonary Embolism Detection, top-13%, Classified embolism in chest CT scans 📋 Blog post\n\n\n\nNatural language processing\n\n🥈 BMS Molecular Translation, top-5%. Built CNN-LSTM for image-to-text translation 📖 Summary 💻 GitHub\n🥉 CommonLit Readability Prize, top-9%. Predicted readability with transformers 💻 GitHub 📊 App 📋 Blog post\n\n\n\nTabular data\n\n🥈 Google Analytics Customer Revenue Prediction, top-2%. Predicted customer spendings 💻 GitHub\n🥈 IEEE-CIS Fraud Detection, top-3%. Detected fraudulent consumer transactions 💻 GitHub\n🥈 Home Credit Default Risk, top-4%. Classified risky applicants with gradient boosting 💻 GitHub\n🥉 COVID-19 Vaccine Degradation Prediction, top-6%. Built RNNs for predicting mRNA degradation\n🥉 Instant Gratification, top-6%. Trained classical ML models for synthetic data classification\n🥉 Mechanisms of Action Prediction, top-10%. Classified drugs with deep learning algorithms\n\n\n\nTime series\n\n🥈 PLAsTiCC Astronomical Classification, top-5%. Identified astronomical objects by their signals 💻 GitHub\n🥉 Riiid! Answer Correctness Prediction, top-7%. Predicted test answer correctness with gradient boosting"
+  },
+  {
+    "objectID": "kaggle.html#top-rated-notebooks",
+    "href": "kaggle.html#top-rated-notebooks",
+    "title": "Linghao Wang",
+    "section": "Top-rated notebooks",
+    "text": "Top-rated notebooks\nMy Kaggle notebooks that received the most upvotes from the community.\n\n🔥 LightGBM on Meta-Features: classified pulmonary embolism with features extracted from X-rays\n🔥 EfficientNet + Multi-Layer LSTM: translated molecule images to chemical formulas with deep learning\n🔥 Stack Them All!: stacking ensemble pipeline for leaf disease classification with CNN models"
+  },
+  {
+    "objectID": "talks.html#teaching",
+    "href": "talks.html#teaching",
+    "title": "Linghao Wang",
+    "section": "Teaching",
+    "text": "Teaching\n\n\nUsing Conda for Package and Environment Management\n\nSeminar on Applied Predictive Analytics at HU Berlin, 2021\n\n\n\n\n\n\n\n\n\nAbstract: The talk provides a brief practical-driven introduction into using Conda for package and environment management in Python-based data science projects. The talks covers the basics of package and environment management and provides a tutorial on the basic Conda functionality.\n\n\n\n📊 Slides\n\n\n📹 Video"
   }
 ]

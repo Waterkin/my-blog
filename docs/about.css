@@ -20,3 +20,16 @@
     text-decoration: none;
 }
 
+div.tea {
+    transform: scale(0.67);
+    transform-origin: left;
+    margin-top: 1px;
+    text-align: left;
+}
+
+div.cv {
+    transform: scale(0.67);
+    transform-origin: left;
+    margin-top: 1px;
+    text-align: left;
+}
