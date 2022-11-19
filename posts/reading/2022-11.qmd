@@ -1,0 +1,122 @@
+---
+title: "English Reading"
+#author: "Tristan O'Malley"
+date: "2022-11-31"
+categories: [reading]
+---
+
+This is my first blog in Quarto. Welcome!
+
+<hr style="height:1px; visibility:hidden;" />
+<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+
+### 11.16
+Meta laid off（裁员） 11,000 employees, or 13% of its workforce, amid（在...情况下） falling revenues from advertising and e-commerce.
+
+Meta was not the only big tech company to announce job cuts（裁员）.
+
+Stripe, an online payments firm, is letting go of （裁员）14% of its workforce, and Lyft, a ride-hailing（打车服务） company, of 13%.
+
+Operating losses at Disney+ have soared（飙升）, however, causing Disney’s share price to drop by 13%
+
+In Britain speculation mounted（有猜测出现） that the government will impose（征收） a road tax on electric vehicles for the first time when it unveils（公布） a budget on November 17th.
+<hr style="height:1px; visibility:hidden;" />
+<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+
+### 11.14
+
+But it’s not just the happy yapping（小狗汪汪叫） and wriggling tail（扭动的尾巴） wagging that tug at our heartstrings（牵动着我们的心弦）
+
+That potential connection between unbearable cuteness and unshed tears（在眼里打转的眼泪） sent Kikusui scurrying away from his poodle（匆匆离开了他的贵宾犬） and back to the lab.
+
+Then the owner would high-tail it off（匆匆离开它） for five or six hours.
+
+And voila（瞧）…the dogs grew weepy（变得眼泪汪汪，teary）. But to what end?（为什么呢） In other words, is there some benefit to this lachrymose（催产素） behavior?
+
+So dogs turn on the waterworks（哭起来） and their owners roll over（转而听命，加倍（爱护））. Now, that’s quite a clever trick!
+<hr style="height:1px; visibility:hidden;" />
+<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+
+### 11.13
+
+After months of prevarication（搪塞） and legal limbo（法律上的模棱两可）, Elon Musk completed his takeover of Twitter and promptly ousted（迅速驱逐） the chief executive, the chief financial officer, the head of policy and the entire board of directors.
+
+Mr Musk had taken issue with（与...发生争论） senior management
+
+Marking a sharp deviation from（明显偏离） the company’s platitude（陈词滥调） of enabling “healthy conversation”, Mr Musk tweeted: “Twitter speaks to the inner masochist（受虐狂） in all of us.”
+
+Meta’s share price was battered（遭受重创） for several days after the company revealed another big loss at the division（在某个部门） developing the “metaverse” and warned of（警告某人某事） further losses to come.
+
+Another casualty（受害者） of the rout（暴跌） in tech stocks, Amazon, saw its market capitalisation fall below $1trn for the first time since 2020 after it issued a disappointing sales forecast（发布令人失望的销量预测）.
+
+Stockmarkets swooned（股价暴跌）.
+<hr style="height:1px; visibility:hidden;" />
+<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+
+### 11.12
+
+But the viruses are known to swap chunks of RNA with each other, a process called recombination（基因重组）, so each section has its own evolutionary history.
+
+“That ship has sailed.”（为时已晚）
+
+But scientists have struggled to find a progenitor（祖先=ancestor） virus for SARS-CoV-2, which has led to speculation that（引发了人们的猜测） the pandemic was sparked by a virus that accidentally escaped from the Wuhan Institute of Virology, situated in the city where the pandemic started. 
+
+To determine their relationship to SARS-CoV-2, researchers often compare their entire genomes（基因）, which are about 30,000 nucleotides（核苷酸） long.
+<hr style="height:1px; visibility:hidden;" />
+<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+
+### 11.11
+
+The researchers then tested the birds’ ability to spontaneously（自发地） generate such recursive sequences on a new set of symbols.
+
+The crows also performed on par with（与...同等水平） children.
+
+ According to Rey, researchers currently fall largely into two camps（大体上分为两大阵营）
+<hr style="height:1px; visibility:hidden;" />
+<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+
+### 11.10
+
+Ndahinda has trained in international law and works in Tilburg, the Netherlands, as a consultant on issues pertaining to（与...有关） conflict and peace in the African Great Lakes region.
+
+It will embolden（使..有勇气） actors and increase the virulence（毒性） in their hate speech.
+
+Musk has repeatedly stated that he wants to loosen Twitter’s reins（放松对...的控制） on speech.
+
+How the company will proceed（继续进行） is still uncertain.
+
+Users who had been banned before Musk’s takeover（接管） of the company would not be reinstated（重新复职） until a process had been set up for allowing them to do so
+
+Some of the users who have been banned from Twitter will have retreated to（退回到） lesser-known platforms with fewer regulations on（更少的监管） what can be said
+
+When you have people that have some sort of public stature on social media（很网红） using inflammatory speech — particularly speech that dehumanizes people — that’s where I get really scared
+
+To Ndahinda, however, it is clear that the normalization of hate speech and conspiracy theories（仇恨言论和阴谋论的普遍化） on social media could have contributed to violence in the Democratic Republic of Congo, even if academics have not yet been able to delineate（描述） its contribution clearly. “It is a very difficult thing to work out the casual link from a tweet to violence（找出x和y之间的因果关系）,” says Ndahinda.
+<hr style="height:1px; visibility:hidden;" />
+<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+
+### 11.9
+
+Such changes have already been seen across the globe（全世界） this year, with heat waves, floods and droughts all exacerbated（加重，恶化） by rising global temperatures.
+
+Under the Paris Agreement, countries are asked to ramp up the aggressiveness of their emissions reduction goals（深化谢谢目标） every five years.
+
+But until the passage of the Inflation Reduction Act (IRA)（抑制通胀法的通过） over the summer, the U.S. was lacking the policies to back that up. 
+
+Countries need to keep ramping up their ambitions in the next few years, she adds, both through their Paris Agreement（巴黎协定） pledges and in domestic policies that will bring those to fruition（实现这些目标）.
+
+### 11.8
+
+About 50 scientific papers have compared women who received an abortion（堕胎） when they wanted one with women who were turned away（被拒之门外）.
+
+The U.S. pandemic response has been filled with missteps on all sides（在各个方面都有失误）
+
+In the U.S., we are dying from a plague of gunfire: 45,000 people are killed by firearms every year; the most recent numbers show more children and young adults were killed by guns than by cars.
+
+And deaths do not capture the entire grim story.（不仅仅是全部）
+
+More to the point（说得更直白些）
+
+Take a hard look（认真审视） at these office seekers（谋求官职的人） and their attitudes about policies based on scientific evidence.
+<hr style="height:1px; visibility:hidden;" />
+<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">

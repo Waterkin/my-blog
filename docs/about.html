@@ -90,14 +90,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./portfolio.html">
- <span class="menu-text">Portfolio</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./kaggle.html">
- <span class="menu-text">Kaggle</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./talks.html">
  <span class="menu-text">Talks</span></a>
   </li>  
@@ -137,11 +129,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>This website hosts <a href="https://waterking.cc/blog/">my blog</a>, where I share ML tutorials, competition solutions and interesting project findings. All opinions published here are my own. It also includes other sections featuring my work:</p>
 <ul>
-<li>📁 <a href="https://waterking.cc/portfolio/">my portfolio</a> with ML projects on different topics</li>
-<li>🥇 <a href="https://waterking.cc/kaggle/">my Kaggle solutions</a> with links to code and write-ups</li>
-<li>📚 <a href="https://waterking.cc/research/">my ML publications</a> with paper abstracts and full-text PDFs</li>
-<li>🗣 <a href="https://waterking.cc/talks/">my public talks</a> with links to presentation slides and talk videos</li>
-<li>🖥 <a href="https://waterking.cc/certifications/">my certifications</a> with links to certificates and completed courses <!--   🎓 [my teaching experience](https://waterking.cc/teaching/) at the South China University of Technology --></li>
+<li>📁 <a href="https://waterking.cc/portfolio/">my blogs</a> with links to different topics</li>
+<li>🗣 <a href="https://waterking.cc/talks/">my public talks</a> with links to presentation slides and talk videos <!--
+-   📁 [my portfolio](https://waterking.cc/portfolio/) with ML projects on different topics
+-   🥇 [my Kaggle solutions](https://waterking.cc/kaggle/) with links to code and write-ups
+-   📚 [my ML publications](https://waterking.cc/research/) with paper abstracts and full-text PDFs
+-   🗣 [my public talks](https://waterking.cc/talks/) with links to presentation slides and talk videos
+-   🖥 [my certifications](https://waterking.cc/certifications/) with links to certificates and completed courses
+    🎓 [my teaching experience](https://waterking.cc/teaching/) at the South China University of Technology --></li>
 </ul>
 <p>If you like my blog, you can buy me a cup of tea to support my work. Thanks!</p>
 <div class="tea">
@@ -152,8 +147,8 @@ ul.task-list li input[type="checkbox"] {
 <hr style="height:1px; visibility:hidden;">
 <hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
 <!----------------------------------------------------------------------------->
-<section id="contact" class="level2">
-<h2 data-anchor-id="contact">Contact</h2>
+<section id="contact" class="level3" data-number="0.1">
+<h3 data-number="0.1" data-anchor-id="contact"><span class="header-section-number">0.1</span> Contact</h3>
 <p>Would like to have a chat? <a href="mailto:wlhsama@gmail.com">Click here</a> to send me an e-mail.</p>
 <p>I am also happy to connect on different social and professional platforms. Click the badges right below to see my profile.</p>
 <!--
@@ -413,6 +408,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/waterking\.cc/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

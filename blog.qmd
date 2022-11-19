@@ -6,12 +6,17 @@ about:
 format:
   html:
     css: blog.css
+    number-sections: false
 toc: false
 listing:
   contents: posts
   sort: "date desc"
-  type: default
+  type: table #default
   categories: true
+  max-items: 8
+  max-description-length: 0
+  field-display-names:
+    author: " "
 ---
 
 ```{=html}

@@ -40,8 +40,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -97,10 +97,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../kaggle.html">
  <span class="menu-text">Kaggle</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../research.html">
- <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../talks.html">
@@ -159,18 +155,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="citation-apa-7" class="level2">
-<h2 class="anchored" data-anchor-id="citation-apa-7">Citation (APA 7)</h2>
+<section id="citation-apa-7" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="citation-apa-7"><span class="header-section-number">0.1</span> Citation (APA 7)</h3>
 <blockquote class="blockquote">
 <p>Linghao, W. (2022). Stock prediction master. <em>Proceedings of the 10th IEEE International Conference on Automated Face &amp; Gesture Recognition (FG)</em>, 1–7.</p>
 </blockquote>
 </section>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<section id="abstract" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="abstract"><span class="header-section-number">0.2</span> Abstract</h3>
 <p>The main content of this paper.</p>
 </section>
-<section id="author-note" class="level2">
-<h2 class="anchored" data-anchor-id="author-note">Author Note</h2>
+<section id="author-note" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="author-note"><span class="header-section-number">0.3</span> Author Note</h3>
 <blockquote class="blockquote">
 <p>When I wrote this paper back in 2011, I was just learning about performance evaluation. This was a first, and rather naive attempt at understanding the connection between agreement, prevalence, and threshold selection. Readers interested in more sophisticated approaches to these issues are encouraged to look up Guangchao Charles Feng, who has done nice work in this area.</p>
 <footer>
@@ -291,7 +287,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  let localAlternateSentinel = 'alternate';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
@@ -428,6 +424,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/waterking\.cc/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

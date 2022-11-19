@@ -1,75 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sunny-kelpie-13ff04.netlify.app/research.html</loc>
-    <lastmod>2022-11-16T03:51:25.290Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sunny-kelpie-13ff04.netlify.app/kaggle.html</loc>
-    <lastmod>2022-11-16T03:51:25.559Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sunny-kelpie-13ff04.netlify.app/posts/welcome/index.html</loc>
-    <lastmod>2022-11-16T03:51:25.865Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sunny-kelpie-13ff04.netlify.app/talks.html</loc>
-    <lastmod>2022-11-16T03:51:26.131Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sunny-kelpie-13ff04.netlify.app/publications/NIPS2022.html</loc>
-    <lastmod>2022-11-16T03:51:27.837Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sunny-kelpie-13ff04.netlify.app/create_series.html</loc>
-    <lastmod>2022-11-16T03:51:28.130Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sunny-kelpie-13ff04.netlify.app/index.html</loc>
-    <lastmod>2022-11-16T03:51:28.390Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sunny-kelpie-13ff04.netlify.app/about.html</loc>
-    <lastmod>2022-11-16T03:51:28.658Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sunny-kelpie-13ff04.netlify.app/portfolio.html</loc>
-    <lastmod>2022-11-16T03:51:28.908Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sunny-kelpie-13ff04.netlify.app/blog.html</loc>
-    <lastmod>2022-11-16T03:51:29.170Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/index.html</loc>
-    <lastmod>2022-11-16T07:06:44.032Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/blog.html</loc>
-    <lastmod>2022-11-16T07:28:34.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/portfolio.html</loc>
-    <lastmod>2022-11-16T06:40:55.938Z</lastmod>
+    <loc>https://waterking.cc/research.html</loc>
+    <lastmod>2022-11-19T16:14:42.284Z</lastmod>
   </url>
   <url>
     <loc>https://waterking.cc/kaggle.html</loc>
-    <lastmod>2022-11-16T07:29:45.967Z</lastmod>
+    <lastmod>2022-11-19T16:14:48.961Z</lastmod>
   </url>
   <url>
-    <loc>https://waterking.cc/about.html</loc>
-    <lastmod>2022-11-16T07:28:56.480Z</lastmod>
+    <loc>https://waterking.cc/posts/reading/2022-10.html</loc>
+    <lastmod>2022-11-19T15:42:46.857Z</lastmod>
   </url>
   <url>
-    <loc>https://waterking.cc/research.html</loc>
-    <lastmod>2022-11-16T07:03:59.356Z</lastmod>
+    <loc>https://waterking.cc/posts/reading/2022-11.html</loc>
+    <lastmod>2022-11-19T15:42:47.162Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/posts/tutorials/2022-11-19-ai-project/ai-course-project.html</loc>
+    <lastmod>2022-11-19T17:27:05.811Z</lastmod>
   </url>
   <url>
     <loc>https://waterking.cc/talks.html</loc>
-    <lastmod>2022-11-16T07:29:44.023Z</lastmod>
+    <lastmod>2022-11-19T16:10:56.366Z</lastmod>
   </url>
   <url>
-    <loc>https://waterking.cc/posts/welcome/index.html</loc>
-    <lastmod>2022-11-16T07:28:02.827Z</lastmod>
+    <loc>https://waterking.cc/publications/NIPS2022.html</loc>
+    <lastmod>2022-11-19T15:42:48.350Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/create_series.html</loc>
+    <lastmod>2022-11-19T17:27:06.178Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/index.html</loc>
+    <lastmod>2022-11-19T16:14:35.832Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/about.html</loc>
+    <lastmod>2022-11-19T16:14:06.796Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/portfolio.html</loc>
+    <lastmod>2022-11-19T16:16:30.728Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/blog.html</loc>
+    <lastmod>2022-11-19T17:27:06.492Z</lastmod>
   </url>
 </urlset>

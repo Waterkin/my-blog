@@ -1,4 +1,32 @@
 /* css styles */
+
+/* make non-headings slightly lighter */
+a{
+    text-decoration: none;
+}
+
+code {
+    font-size: 0.875em;
+    color: #b3b1ad;
+    background-color: #212121;
+    padding: 0.125rem 0.25rem;
+    word-wrap: break-word;
+}
+
+.content p, .content li {
+   font-size: 20px;
+   color: #adadad;
+}
+
+h1, .h1 {
+    font-size: calc(1.2rem + 1vw);
+}
+
+.quarto-title-meta-heading {
+    visibility: hidden;
+    opacity: 0.0;
+}
+
 .hero {
     width: 67%;
     max-height: 400px;

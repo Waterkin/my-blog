@@ -1,3 +1,6 @@
+# How to update the website?
+`quarto publish netlify`
+
 # custom theme
 
 [Simple tutorial](https://quarto.org/docs/presentations/revealjs/themes.html#customizing-themes)

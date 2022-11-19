@@ -6,6 +6,7 @@ about:
 format:
   html:
     css: blog.css
+    number-sections: false
 ---
 
 ```{=html}
@@ -26,9 +27,16 @@ format:
 <a id="PART_3"></a>
 ```
 
-## Teaching
+# Teaching
 
-<ul>
+- **How to prepare for CS courses exam** <br/>
+*Bilibili*, 2020 
+
+- Abstract: The talk provides a brief practical-driven introduction into CS courses. The talks covers the basics of CS courses and provides a tutorial on how to pass CS courses exams. <br/><br/>
+<button class="btn" onclick="window.open('https://space.bilibili.com/2678434?spm_id_from=333.1007.0.0')" type="button">&#128249; Video</button>
+
+
+<!--ul>
     <li>
     <b>Using Conda for Package and Environment Management</b>
     <dd><bb>Seminar on Applied Predictive Analytics at HU Berlin, 2021</bb></dd>
@@ -42,6 +50,6 @@ format:
     <button class="btn" onclick="window.open('https://bilibili.com')" type="button">&#128249; Video</button>
   </li>
 </ul>
-<p></p>
+<p></p-->
 
 

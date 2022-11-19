@@ -4,6 +4,7 @@ about:
 format:
   html:
     css: blog.css
+    number-sections: false
 ---
 ```{=html}
 <div class="container">

@@ -90,14 +90,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./portfolio.html">
- <span class="menu-text">Portfolio</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./kaggle.html">
- <span class="menu-text">Kaggle</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./talks.html" aria-current="page">
  <span class="menu-text">Talks</span></a>
   </li>  
@@ -136,32 +128,24 @@ ul.task-list li input[type="checkbox"] {
 <section id="teaching" class="level2">
 <h2 data-anchor-id="teaching">Teaching</h2>
 <ul>
-<li>
-<b>Using Conda for Package and Environment Management</b>
-<dd>
-<bb>Seminar on Applied Predictive Analytics at HU Berlin, 2021</bb>
-</dd>
-</li>
+<li><p><strong>How to prepare for CS courses exam</strong> <br> <em>Bilibili</em>, 2020</p></li>
+<li><p>Abstract: The talk provides a brief practical-driven introduction into CS courses. The talks covers the basics of CS courses and provides a tutorial on how to pass CS courses exams. <br><br> <button class="btn" onclick="window.open('https://space.bilibili.com/2678434?spm_id_from=333.1007.0.0')" type="button">📹 Video</button></p></li>
+</ul>
+<!--ul>
+    <li>
+    <b>Using Conda for Package and Environment Management</b>
+    <dd><bb>Seminar on Applied Predictive Analytics at HU Berlin, 2021</bb></dd>
+    </li>
 </ul>
 <ul class="no-bullets">
-<span id="dots6"></span>
-<li>
-<span id="abs6">
-<p>
-</p>
-<b>Abstract:</b> The talk provides a brief practical-driven introduction into using Conda for package and environment management in Python-based data science projects. The talks covers the basics of package and environment management and provides a tutorial on the basic Conda functionality.</span>
-</li>
-<li>
-<button class="btn" onclick="window.open('https://kozodoi.me/talks/APA_2021.pdf')" type="button">
-📊 Slides
-</button>
-<button class="btn" onclick="window.open('https://bilibili.com')" type="button">
-📹 Video
-</button>
-</li>
+  <span id="dots6"></span>
+  <li><span id="abs6"><p></p><b>Abstract:</b> The talk provides a brief practical-driven introduction into using Conda for package and environment management in Python-based data science projects. The talks covers the basics of package and environment management and provides a tutorial on the basic Conda functionality.</span></li>
+  <li>
+    <button class="btn" onclick="window.open('https://kozodoi.me/talks/APA_2021.pdf')" type="button">&#128202; Slides</button>
+    <button class="btn" onclick="window.open('https://bilibili.com')" type="button">&#128249; Video</button>
+  </li>
 </ul>
-<p>
-</p>
+<p></p-->
 
 
 </section>
@@ -408,6 +392,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/waterking\.cc/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

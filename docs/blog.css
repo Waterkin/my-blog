@@ -3,3 +3,74 @@
     margin: 0 auto;
     color: var(--page-desc-color);
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgb(255 255 255 / 15%);
+    padding: 15px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    background-color: var(--card-back-color);
+    border-radius: 10px;
+}
+
+.project_accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    padding-left: 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 220%;
+    transition: 0.4s;
+}
+
+.project_accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+#more1 {
+    display: none;
+}
+button {
+    color: var(--high-emph) !important;
+    background-color: var(--back-color) !important;
+}
+
+.btn {
+    color: var(--color-btn-text);
+    background-color: var(--color-btn-bg);
+    border-color: var(--color-btn-border);
+    box-shadow: var(--color-btn-shadow),var(--color-btn-inset-shadow);
+    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+    transition-property: color,background-color,box-shadow,border-color;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    border-radius: 6px;
+    appearance: none;
+}
+
+.btn {
+    background-color: var(--overlay) !important;
+    color: var(--high-emph) !important;
+    border-color: var(--overlay-light) !important;
+}

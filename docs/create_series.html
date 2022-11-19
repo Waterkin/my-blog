@@ -41,8 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -122,18 +122,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./portfolio.html">
- <span class="menu-text">Portfolio</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./kaggle.html">
- <span class="menu-text">Kaggle</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./research.html">
- <span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./talks.html">
  <span class="menu-text">Talks</span></a>
   </li>  
@@ -152,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="cv">cv <span class="quarto-category-count">(1)</span></div><div class="category" data-category="reading">reading <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -186,34 +174,98 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news" data-listing-date-sort="1668009600000" data-listing-file-modified-sort="1668350065094" data-listing-reading-time-sort="0.16">
+<div class="quarto-post image-right" data-index="0" data-categories="reading" data-listing-date-sort="1672416000000" data-listing-file-modified-sort="1668652578444" data-listing-reading-time-sort="3.995">
 <div class="body">
-<a href="./posts/welcome/index.html">
+<a href="./posts/reading/2022-11.html">
 <h3 class="no-anchor listing-title">
-Welcome To My Blog
+English Reading
 </h3>
 <div class="listing-subtitle">
 
 </div>
 </a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
+<div class="listing-category" onclick="window.quartoListingCategory('reading'); return false;">
+reading
 </div>
 </div>
-<a href="./posts/welcome/index.html">
+<a href="./posts/reading/2022-11.html">
 <div class="listing-description">
-This is the first post in a Quarto blog. Welcome!
+This is my first blog in Quarto. Welcome!
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/welcome/index.html">
+<a href="./posts/reading/2022-11.html">
 <div class="listing-date">
-Nov 10, 2022
+Dec 31, 2022
 </div>
 <div class="listing-reading-time">
-0 min
+3 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="cv" data-listing-date-sort="1668787200000" data-listing-file-modified-sort="1668878824929" data-listing-reading-time-sort="3.695">
+<div class="body">
+<a href="./posts/tutorials/2022-11-19-ai-project/ai-course-project.html">
+<h3 class="no-anchor listing-title">
+Visualize Model with GradCAM and Super-Resolution
+</h3>
+<div class="listing-subtitle">
+Check how to visualize an Image Classification model with GradCAM, and make it clearer by Super-Resolution.
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('cv'); return false;">
+cv
+</div>
+</div>
+<a href="./posts/tutorials/2022-11-19-ai-project/ai-course-project.html">
+<div class="listing-description">
+Firstly, I find model PES from github: Understanding and Improving Early Stopping for Learning with Noisy Labels (NeurIPS 2021)
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/tutorials/2022-11-19-ai-project/ai-course-project.html">
+<div class="listing-date">
+Nov 19, 2022
+</div>
+<div class="listing-reading-time">
+3 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="reading" data-listing-date-sort="1667145600000" data-listing-file-modified-sort="1668836656572" data-listing-reading-time-sort="3.645">
+<div class="body">
+<a href="./posts/reading/2022-10.html">
+<h3 class="no-anchor listing-title">
+English Reading
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('reading'); return false;">
+reading
+</div>
+</div>
+<a href="./posts/reading/2022-10.html">
+<div class="listing-description">
+This is a post recording my English reading on Scientific American and the Economist.
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/reading/2022-10.html">
+<div class="listing-date">
+Oct 31, 2022
+</div>
+<div class="listing-reading-time">
+3 min
 </div>
 </a>
 </div>
@@ -332,7 +384,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  let localAlternateSentinel = 'alternate';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
@@ -469,6 +521,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/waterking\.cc/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

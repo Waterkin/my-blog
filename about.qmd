@@ -29,12 +29,15 @@ Hi! I am an applied ML graduate working on the frontier of research and business
 
 This website hosts [my blog](https://waterking.cc/blog/), where I share ML tutorials, competition solutions and interesting project findings. All opinions published here are my own. It also includes other sections featuring my work:
 
+-   📁 [my blogs](https://waterking.cc/portfolio/) with links to different topics
+-   🗣 [my public talks](https://waterking.cc/talks/) with links to presentation slides and talk videos
+<!--
 -   📁 [my portfolio](https://waterking.cc/portfolio/) with ML projects on different topics
 -   🥇 [my Kaggle solutions](https://waterking.cc/kaggle/) with links to code and write-ups
 -   📚 [my ML publications](https://waterking.cc/research/) with paper abstracts and full-text PDFs
 -   🗣 [my public talks](https://waterking.cc/talks/) with links to presentation slides and talk videos
 -   🖥 [my certifications](https://waterking.cc/certifications/) with links to certificates and completed courses
-<!--   🎓 [my teaching experience](https://waterking.cc/teaching/) at the South China University of Technology -->
+    🎓 [my teaching experience](https://waterking.cc/teaching/) at the South China University of Technology -->
 
 If you like my blog, you can buy me a cup of tea to support my work. Thanks!
 

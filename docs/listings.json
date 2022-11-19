@@ -2,13 +2,17 @@
   {
     "listing": "/create_series.html",
     "items": [
-      "/posts/welcome/index.html"
+      "/posts/reading/2022-11.html",
+      "/posts/tutorials/2022-11-19-ai-project/ai-course-project.html",
+      "/posts/reading/2022-10.html"
     ]
   },
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/welcome/index.html"
+      "/posts/reading/2022-11.html",
+      "/posts/tutorials/2022-11-19-ai-project/ai-course-project.html",
+      "/posts/reading/2022-10.html"
     ]
   }
 ]

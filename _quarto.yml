@@ -14,10 +14,10 @@ website:
         text: About
       - href: blog.qmd
         text: Blog
-      - href: portfolio.qmd
-        text: Portfolio
-      - href: kaggle.qmd
-        text: Kaggle
+      #- href: portfolio.qmd
+      #  text: Portfolio
+      #- href: kaggle.qmd
+      #  text: Kaggle
       #- href: research.qmd
       #  text: Research
       - href: talks.qmd
@@ -41,9 +41,25 @@ format:
       #dark: cosmo
     css: styles.css
     toc: true
+    toc-title: Contents
+    toc-depth: 3
     mainfont: Segoe UI
-    #fontsize: 1.1em
-    #linestretch: 1.7ss
+    #fontcolor: #515151
+    # code-line-numbers: true
+    code-copy: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-block-bg: "#212121" #black #true
+    code-block-border-left: "#3772ff" #"#31BAE9"
+    highlight-style:  ayu-dark #gruvbox  #ayu-dark
+    number-sections: true
+    number-depth: 3
+    fig-cap-location: bottom
+    tbl-cap-location: bottom
+    link-external-icon: true
+    link-external-newwindow: true
+    shift-heading-level-by: 1
+    #title-block-banner: true
 
 
 
