@@ -1,0 +1,40 @@
+---
+title: "Google Docs - Efficient for Collaborations"
+subtitle: "Fast & Comprehensive Online document. Alternative to WPS & Microsoft Docs, Excel and PPT"
+date: "2022-12-13"
+categories: [tools, collaboration]
+css: ../../styles.css
+---
+
+::: {fig-vis}
+![](test.jpeg){width=100%}
+
+:::
+
+# Google Docs
+::: {doc}
+![My First Use of Google Docs and Surprise at these Purple functions](doc.jpg){width=100%}
+
+:::
+
+Remember to supercharge your Google Docs with add-ons!
+
+# Google Sheets
+::: {sheet}
+![My First Use of Google Sheets and Surprise at these Purple functions](sheet.jpeg){width=100%}
+
+:::
+
+# Google Slides
+::: {sheet}
+![Easy to share and collaborate with other person](slides.png){width=100%}
+
+:::
+
+# Google Forms
+::: {sheet}
+![My First Use of Google Forms and Surprise at these Purple functions](form.jpeg){width=100%}
+
+![Lots of Functions designed for quiz](form2.jpeg){width=100%}
+
+:::

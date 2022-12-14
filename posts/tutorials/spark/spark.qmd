@@ -1,0 +1,147 @@
+---
+title: "PySpark Tutorial"
+subtitle: "PySpark: Big Data Processing and ML algorithms."
+date: "2022-12-12"
+categories: [python, spark, tutorial]
+css: ../../styles.css
+---
+
+::: {fig-vis}
+![](test.png){width=100%}
+
+:::
+
+# Import Packages
+```python
+import numpy as np, pandas as pd, sklearn, random, os
+from pyspark.sql import SparkSession, SQLContext
+from pyspark.sql.functions import mean, col, split, regexp_extract, when, lit, isnan, count
+from pyspark.ml import Pipeline
+from pyspark.ml.feature import StringIndexer, IndexToString, VectorAssembler, QuantileDiscretizer
+from pyspark.ml.evaluation import RegressionEvaluator, MulticlassClassificationEvaluator
+from pyspark.ml.recommendation import ALS
+from pyspark.ml.classification import LogisticRegression, RandomForestClassfier, GBTClassifier
+from pyspark.ml.tuning import ParamGridBuilder, TrainValidationSplit
+```
+
+# Data Loading
+```python
+# 1. Create SparkSession
+spark = SparkSession.builder.appName('name').getOrCreate()
+
+# 2. Load Dataset
+df = spark.read.csv('data.csv', inferSchema=True, header=True)
+```
+
+# EDA
+```python
+# 1. Display Dataset Schema
+df.limit(3).toPandas() # show 3 rows
+df.select('col_1', 'col_2', 'col_3').toPandas() # show 3 cols
+
+# 2. Display feature types
+df.printSchema()
+
+```
+
+# Data Preprocessing
+```python
+# 1. Convert string column to numeric values
+# 1.1 single column
+stringIndexer = StringIndexer(inputCol='title', outputCol='title_new')
+indexer = stringIndexer.fit(df) # save for final int to string
+new_df = indexer.transform(df)
+# 1.2 multiple columns
+indexers = [StringIndexer(inputCol=column, outputCol=column+"_index").fit(df) for column in ['sex', 'Embarked', 'Initial']]
+pipeline = Pipeline(stages=indexers)
+new_df = pipeline.fit(df).transform(df)
+
+# 2. Check null values
+new_df.select([count(when(isnan(c) | col(c).isNull(), c)).alias(c) for c in new_df.columns]).show()
+
+# 3. Fill missing values
+# 3.1 Drop column with many many missing values
+new_df.drop('Cabin')
+
+# 3.2. Complete missing values with average value grouped by a column: Woman age 22 , Man age 33
+new_df.groupby('Initial').avg('Age').collect()
+new_df = new_df.withColumn('Age', when((df['Initial']=='Miss') & (df['Age'].isNull()), 22).otherwise(df['Age']))
+new_df = new_df.withColumn('Age', when((df['Initial']=='Mr') & (df['Age'].isNull()), 33).otherwise(df['Age']))
+
+# 3.3 Assign a major value to a column 
+new_df = new_df.na.fill({'Embark': 'S'})
+
+# 4. Drop columns that not needed
+
+# 5. Vectorize features
+feature = VectorAssembler(inputCols = new_df.columns[1:], outputCol='features')
+feature_vector = feature.transform(new_df)
+
+# 6. Select Features and Labels
+new_df = feature_vector.select(['features', 'Survived'])
+
+# 7. Split dataset into train and test
+train, test = new_df.randomSplit([0.75, 0.25], seed=11)
+```
+
+# Train ML Model
+## Regression
+```python
+# 1. train and test
+prediction = model.fit(train).transform(test)
+
+# 2. evaluate
+evaluator = RegressionEvaluator(metricName='rmse', predictionCol='prediction',labelCol='rating')
+rmse = evaluator.evaluate(prediction)
+```
+## Classification
+### Logistic Regression
+```python
+lr = LogisticRegression(labelCol='Survived')
+paramGrid = ParamGridBuilder().addGrid(lr.regParam, (0.01, 0.1))
+                                .addGrid(lr.maxIter, (5, 10))\
+                                .addGrid(lr.tol, (1e-4, 1e-5))\
+                                .addGrid(lr.elasticNetParam, (0.25,0.75))\
+                                .build()
+model = TrainValidationSplit(estimator=lr, estimatorParamMaps=paramGrid,
+                            evaluator=MulticlassClassificationEvaluator(labelCol='Survived'),
+                            trainRatio=0.8)
+predictions = model.fit(train).transform(test)
+acc = MulticlassClassificationEvaluator(labelCol='Survived',metricName='accuracy').evaluate(predictions)
+pre = MulticlassClassificationEvaluator(labelCol='Survived',metricName='weightedPrecision').evaluate(predictions)
+```
+### Random Forest
+### Gradient Boosted Tree
+
+# Final Prediction: SparkSQL Practice
+```python
+# 1. create dataframe of distince movies
+unique_movies = new_df.select('title_new').distinct()
+
+# 2. create function to recommend top n movies to given user
+def top_movies(user_id, n):
+    # 1. simplify table `unique_movies` as `a` for SQL
+    a = unique_movies.alias('a')
+
+    # 2. SQL: select movies already watched by user
+    watched_movies = new_df.filter(new_df['userId']=='user_id').select('title_new')
+    b - watched_movies.alias('b')
+
+    # 3. SQL: join table
+    total_movies = a.join(b, a.title_new=b.title_new, how=left)
+
+    # 4. SQL: select movies not watched - (filter = where)
+    remain_movies = total_movies.where(col('b.title_new').isNull()).select(a.title_new).distinct()
+
+    # 5. SQL: add column `userId` with default value user_id
+    remain_movies = remain_movies.withColumn('userId', lit(int(user_id)))
+
+    # 6. SQL: top n
+    recommendations = model.transform(remain_movies).orderBy('prediction', ascending=False).limit(n)
+
+    # 7. int back to string
+    recommendations = IndexToString(inputCol='title_new', outputCol='title', labels=indexer.labels).transform(recommendations)
+
+    return recommendations.show(n, False)
+
+```

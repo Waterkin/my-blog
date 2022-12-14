@@ -24,11 +24,11 @@ format:
     I am a master in CS working on the frontier of research and business. This website hosts my blog with ML tutorials, competition solutions and project findings. All opinions published here are my own.
     </p>
 
-    <p>Check out <a href="https://waterking.cc/cv.pdf">my CV</a> and other pages to see more of my work:
+    <p>Check out <a href="https://waterking.cc/about/">my CV</a> and other pages to see more of my work:
     <ul style="margin-top: -10px;">
-      <li> &#128193; <a href="https://waterking.cc/portfolio/">my portfolio</a> with ML projects on different topics</li>
-      <!--li> &#128218; <a href="https://waterking.cc/research/">my publications</a> with abstracts and full-text PDFs</li-->
-      <li> &#129351; <a href="https://waterking.cc/kaggle/">my Kaggle solutions</a> with links to code and writeups</li>
+      <li> &#128193; <a href="https://waterking.cc/about/">my portfolio</a> with ML projects on different topics</li>
+      <li> &#128218; <a href="https://waterking.cc/about/">my publications</a> with abstracts and full-text PDFs</li>
+      <li> &#129351; <a href="https://waterking.cc/about/">my Kaggle solutions</a> with links to code and writeups</li>
     </ul>
     </p>
   </div>

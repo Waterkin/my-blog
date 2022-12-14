@@ -10,103 +10,1057 @@
 <atom:link href="https://waterking.cc/create_series.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.2.269</generator>
-<lastBuildDate>Fri, 30 Dec 2022 16:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 13 Dec 2022 16:00:00 GMT</lastBuildDate>
 <item>
-  <title>English Reading</title>
-  <link>https://waterking.cc/posts/reading/2022-11.html</link>
+  <title>How to Choose a Database to Start with?</title>
+  <link>https://waterking.cc/posts/tools/database/database.html</link>
   <description><![CDATA[ 
 
 
 
-<p>This is my first blog in Quarto. Welcome!</p>
-<hr style="height:1px; visibility:hidden;">
-<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section">11.16</h4>
-<p>Meta laid off（裁员）&nbsp;11,000 employees, or 13% of its&nbsp;workforce,&nbsp;amid（在…情况下）&nbsp;falling revenues from advertising and e-commerce.</p>
-<p>Meta was not the only big tech company to announce job cuts（裁员）.</p>
-<p>Stripe, an online payments firm, is letting go of （裁员）14% of its workforce, and Lyft, a ride-hailing（打车服务） company, of 13%.</p>
-<p>Operating losses at Disney+ have soared（飙升）, however, causing Disney’s share price to drop by 13%</p>
-In Britain speculation&nbsp;mounted（有猜测出现）&nbsp;that the government will&nbsp;impose（征收）&nbsp;a road tax on electric vehicles for the first time when it unveils（公布） a budget on November 17th.
-<hr style="height:1px; visibility:hidden;">
-<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+<p>Take away: Start with PostgreSQL and then MongoDB, which cover almost everything. Try snowflake too.</p>
+<section id="redis-key-value" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="redis-key-value"><span class="header-section-number">1</span> Redis: Key-Value</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tools/database/key-value.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<ul>
+<li>Fast: store in memory instead of disk</li>
+<li>Usage: Cache</li>
+</ul>
 </section>
-<section id="section-1" class="level4">
-<h4 class="anchored" data-anchor-id="section-1">11.14</h4>
-<p>But it’s not just the happy yapping（小狗汪汪叫） and wriggling tail（扭动的尾巴） wagging that tug at our heartstrings（牵动着我们的心弦）</p>
-<p>That potential connection between unbearable cuteness and unshed tears（在眼里打转的眼泪） sent Kikusui scurrying away from his poodle（匆匆离开了他的贵宾犬） and back to the lab.</p>
-<p>Then the owner would high-tail it off（匆匆离开它） for five or six hours.</p>
-<p>And voila（瞧）…the dogs grew weepy（变得眼泪汪汪，teary）. But to what end?（为什么呢） In other words, is there some benefit to this lachrymose（催产素） behavior?</p>
-So dogs turn on the waterworks（哭起来） and their owners roll over（转而听命，加倍（爱护））. Now, that’s quite a clever trick!
-<hr style="height:1px; visibility:hidden;">
-<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+<section id="hbase-wide-column" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="hbase-wide-column"><span class="header-section-number">2</span> HBase: Wide Column</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tools/database/wide-column.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<ul>
+<li>High-write, Low-read</li>
+<li>Usage: Time Series Data like Historical Records</li>
+</ul>
 </section>
-<section id="section-2" class="level4">
-<h4 class="anchored" data-anchor-id="section-2">11.13</h4>
-<p>After months of&nbsp;prevarication（搪塞）&nbsp;and legal&nbsp;limbo（法律上的模棱两可）, Elon Musk completed his takeover of Twitter and promptly&nbsp;ousted（迅速驱逐）&nbsp;the chief executive, the chief financial officer, the head of policy and the entire board of directors.</p>
-<p>Mr Musk had taken issue with（与…发生争论） senior&nbsp;management</p>
-<p>Marking a sharp deviation from（明显偏离） the company’s&nbsp;platitude（陈词滥调）&nbsp;of enabling “healthy conversation”, Mr Musk tweeted: “Twitter speaks to the inner&nbsp;masochist（受虐狂）&nbsp;in all of us.”</p>
-<p>Meta’s share price was&nbsp;battered（遭受重创）&nbsp;for several days after the company revealed another big loss at the division（在某个部门） developing the “metaverse” and warned of（警告某人某事） further losses to come.</p>
-<p>Another&nbsp;casualty（受害者）&nbsp;of the&nbsp;rout（暴跌）&nbsp;in tech stocks, Amazon, saw its market capitalisation fall below $1trn for the first time since 2020 after it issued a disappointing sales forecast（发布令人失望的销量预测）.</p>
-Stockmarkets swooned（股价暴跌）.
-<hr style="height:1px; visibility:hidden;">
-<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+<section id="mongodb-document" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="mongodb-document"><span class="header-section-number">3</span> MongoDB: Document</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tools/database/document.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<ul>
+<li>Usage: Most apps, Games, IoT</li>
+<li>Not suitable for Graph where <code>join</code> is frequent</li>
+</ul>
 </section>
-<section id="section-3" class="level4">
-<h4 class="anchored" data-anchor-id="section-3">11.12</h4>
-<p>But the viruses are known to swap chunks of RNA with each other, a process called recombination（基因重组）, so each section has its own evolutionary history.</p>
-<p>“That ship has sailed.”（为时已晚）</p>
-<p>But scientists have struggled to find a progenitor（祖先=ancestor）&nbsp;virus for SARS-CoV-2, which has led to speculation that（引发了人们的猜测） the pandemic was sparked by a virus that accidentally escaped from the Wuhan Institute of Virology, situated in the city where the pandemic started.&nbsp;</p>
-To determine their relationship to SARS-CoV-2, researchers often compare their entire genomes（基因）, which are about 30,000 nucleotides（核苷酸） long.
-<hr style="height:1px; visibility:hidden;">
-<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+<section id="postgresql-relational" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="postgresql-relational"><span class="header-section-number">4</span> PostgreSQL: Relational</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tools/database/relational.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<ul>
+<li>Usage: Most apps</li>
+<li>Not suitable for Unstructured data</li>
+</ul>
 </section>
-<section id="section-4" class="level4">
-<h4 class="anchored" data-anchor-id="section-4">11.11</h4>
-<p>The researchers then tested the birds’ ability to spontaneously（自发地） generate such recursive sequences on a new set of symbols.</p>
-<p>The crows also performed on par with（与…同等水平）&nbsp;children.</p>
-&nbsp;According to Rey, researchers currently fall largely into two camps（大体上分为两大阵营）
-<hr style="height:1px; visibility:hidden;">
-<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+<section id="neo4j-graph" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="neo4j-graph"><span class="header-section-number">5</span> Neo4j: Graph</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tools/database/graph.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<ul>
+<li>Usage: Connections
+<ul>
+<li>Graphs</li>
+<li>Knowledge Graphs</li>
+<li>Recommendation Engines</li>
+</ul></li>
+</ul>
 </section>
-<section id="section-5" class="level4">
-<h4 class="anchored" data-anchor-id="section-5">11.10</h4>
-<p>Ndahinda has trained in international law and works in Tilburg, the Netherlands, as a consultant on issues pertaining to（与…有关） conflict and peace in the African Great Lakes region.</p>
-<p>It will embolden（使..有勇气） actors and increase the virulence（毒性） in their hate speech.</p>
-<p>Musk has repeatedly stated that he wants to loosen Twitter’s reins（放松对…的控制） on speech.</p>
-<p>How the company will proceed（继续进行） is still uncertain.</p>
-<p>Users who had been banned before Musk’s takeover（接管） of the company would not be reinstated（重新复职） until a process had been set up for allowing them to do so</p>
-<p>Some of the users who have been banned from Twitter will have retreated to（退回到） lesser-known platforms with fewer regulations on（更少的监管） what can be said</p>
-<p>When you have people that have some sort of public stature&nbsp;on social media（很网红） using inflammatory speech — particularly speech that dehumanizes people — that’s where I get really scared</p>
-To Ndahinda, however, it is clear that the normalization of hate speech and conspiracy theories（仇恨言论和阴谋论的普遍化） on social media could have contributed to violence in the Democratic Republic of Congo, even if academics have not yet been able to delineate（描述） its contribution clearly. “It is a very difficult thing to work out the casual link from a tweet to violence（找出x和y之间的因果关系）,” says Ndahinda.
-<hr style="height:1px; visibility:hidden;">
-<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+<section id="elasticsearch-search" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="elasticsearch-search"><span class="header-section-number">6</span> ElasticSearch: Search</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tools/database/search.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<ul>
+<li>Usage: Search Engines</li>
+</ul>
 </section>
-<section id="section-6" class="level4">
-<h4 class="anchored" data-anchor-id="section-6">11.9</h4>
-<p>Such changes have already been seen across the globe（全世界） this year, with&nbsp;heat waves,&nbsp;floods&nbsp;and&nbsp;droughts&nbsp;all exacerbated（加重，恶化） by rising global temperatures.</p>
-<p>Under the Paris Agreement, countries are asked to ramp up the aggressiveness of their emissions reduction goals（深化谢谢目标） every five years.</p>
-<p>But until the passage of the Inflation Reduction Act (IRA)（抑制通胀法的通过） over the summer, the U.S. was lacking the policies to back that up.&nbsp;</p>
-<p>Countries need to keep ramping up their ambitions in the next few years, she adds, both through their Paris Agreement（巴黎协定） pledges and in domestic policies that will bring those to fruition（实现这些目标）.</p>
-</section>
-<section id="section-7" class="level4">
-<h4 class="anchored" data-anchor-id="section-7">11.8</h4>
-<p>About 50 scientific papers have compared women who received an abortion（堕胎） when they wanted one with women who were turned away（被拒之门外）.</p>
-<p>The U.S. pandemic response has been&nbsp;filled with missteps on all sides（在各个方面都有失误）</p>
-<p>In the U.S., we are dying from a plague of gunfire: 45,000 people are killed by firearms every year; the most recent numbers show more children and young adults&nbsp;were killed by guns than by cars.</p>
-<p>And deaths do not capture the entire grim story.（不仅仅是全部）</p>
-<p>More to the point（说得更直白些）</p>
-Take a hard look（认真审视） at these office seekers（谋求官职的人）&nbsp;and their attitudes about policies based on scientific evidence.
-<hr style="height:1px; visibility:hidden;">
-<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+<section id="fauna-multi-model" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="fauna-multi-model"><span class="header-section-number">7</span> Fauna: Multi-Model</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tools/database/fauna.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<ul>
+<li>Usage: Everything!</li>
+</ul>
 
 
 </section>
 
  ]]></description>
-  <category>reading</category>
-  <guid>https://waterking.cc/posts/reading/2022-11.html</guid>
-  <pubDate>Fri, 30 Dec 2022 16:00:00 GMT</pubDate>
+  <category>tools</category>
+  <guid>https://waterking.cc/posts/tools/database/database.html</guid>
+  <pubDate>Tue, 13 Dec 2022 16:00:00 GMT</pubDate>
+  <media:content url="https://waterking.cc/posts/tools/database/key-value.png" medium="image" type="image/png" height="78" width="144"/>
+</item>
+<item>
+  <title>Google Docs - Efficient for Collaborations</title>
+  <link>https://waterking.cc/posts/tools/googledocs/googledocs.html</link>
+  <description><![CDATA[ 
+
+
+
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tools/googledocs/test.jpeg" class="img-fluid" style="width:100.0%"></p>
+</div>
+<section id="google-docs" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="google-docs"><span class="header-section-number">1</span> Google Docs</h2>
+<div class="{doc}">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://waterking.cc/posts/tools/googledocs/doc.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">My First Use of Google Docs and Surprise at these Purple functions</figcaption><p></p>
+</figure>
+</div>
+</div>
+<p>Remember to supercharge your Google Docs with add-ons!</p>
+</section>
+<section id="google-sheets" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="google-sheets"><span class="header-section-number">2</span> Google Sheets</h2>
+<div class="{sheet}">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://waterking.cc/posts/tools/googledocs/sheet.jpeg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">My First Use of Google Sheets and Surprise at these Purple functions</figcaption><p></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="google-slides" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="google-slides"><span class="header-section-number">3</span> Google Slides</h2>
+<div class="{sheet}">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://waterking.cc/posts/tools/googledocs/slides.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Easy to share and collaborate with other person</figcaption><p></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="google-forms" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="google-forms"><span class="header-section-number">4</span> Google Forms</h2>
+<div class="{sheet}">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://waterking.cc/posts/tools/googledocs/form.jpeg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">My First Use of Google Forms and Surprise at these Purple functions</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://waterking.cc/posts/tools/googledocs/form2.jpeg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Lots of Functions designed for quiz</figcaption><p></p>
+</figure>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>tools</category>
+  <category>collaboration</category>
+  <guid>https://waterking.cc/posts/tools/googledocs/googledocs.html</guid>
+  <pubDate>Mon, 12 Dec 2022 16:00:00 GMT</pubDate>
+  <media:content url="https://waterking.cc/posts/tools/googledocs/test.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Regex Tutorial</title>
+  <link>https://waterking.cc/posts/tutorials/regex/regex.html</link>
+  <description><![CDATA[ 
+
+
+
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tutorials/regex/test.jpeg" class="img-fluid" style="width:100.0%"></p>
+</div>
+<section id="learn-from-some-exercise" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="learn-from-some-exercise"><span class="header-section-number">1</span> Learn from some exercise</h2>
+<ul>
+<li>(|[1-9]{1}|12[0-4]|25[0-5]).(|[1-9]{1}|12[0-4]|25[0-5]).(|[1-9]{1}|12[0-4]|25[0-5]).(|[1-9]{1}|12[0-4]|25[0-5])
+<ul>
+<li>222.201.144.244</li>
+</ul></li>
+<li>[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+<ul>
+<li>YYYY-mm-dd HH:MM:SS</li>
+</ul></li>
+<li>[A-Za-z]{2}[0-9]{3}
+<ul>
+<li>CS229</li>
+</ul></li>
+<li>([a-zA-Z0-9_.-+]+)@[a-zA-Z0-9_.-+]+.[a-zA-Z0-9_.-+]
+<ul>
+<li>example@gmail.com</li>
+</ul></li>
+</ul>
+</section>
+<section id="explanation" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="explanation"><span class="header-section-number">2</span> Explanation</h2>
+<ul>
+<li> digits 0-9</li>
+<li>{1}: match 1 time</li>
+<li>.: match .</li>
+<li>[0-4]: match 0-4</li>
+<li>+: match 1 or more times</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>python</category>
+  <category>regex</category>
+  <category>tutorial</category>
+  <guid>https://waterking.cc/posts/tutorials/regex/regex.html</guid>
+  <pubDate>Mon, 12 Dec 2022 16:00:00 GMT</pubDate>
+  <media:content url="https://waterking.cc/posts/tutorials/regex/test.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>PyFlink Tutorial</title>
+  <link>https://waterking.cc/posts/tutorials/flink/flink.html</link>
+  <description><![CDATA[ 
+
+
+
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tutorials/flink/test.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<p>This tutorial is a copy form <a href="https://github.com/uncleguanghui/pyflink_learn">pyflink_learn</a></p>
+<section id="import-packages" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="import-packages">Import Packages</h2>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;">import</span> os, shutil</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;">from</span> pyflink.table <span class="im" style="color: #00769E;">import</span> BatchTableEnvironment, StreamTableEnvironment, EnvironmentSettings</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;">from</span> pyflink.table.udf <span class="im" style="color: #00769E;">import</span> udf, ScalarFunction</span>
+<span id="cb1-4"><span class="im" style="color: #00769E;">from</span> pyflink.table.descriptors <span class="im" style="color: #00769E;">import</span> OldCsv, Schema, FileSystem</span>
+<span id="cb1-5"><span class="im" style="color: #00769E;">from</span> pyflink.table.window <span class="im" style="color: #00769E;">import</span> Slide</span>
+<span id="cb1-6"><span class="im" style="color: #00769E;">import</span> random, numpy <span class="im" style="color: #00769E;">as</span> np</span>
+<span id="cb1-7"><span class="im" style="color: #00769E;">from</span> json <span class="im" style="color: #00769E;">import</span> dumps</span>
+<span id="cb1-8"><span class="im" style="color: #00769E;">from</span> time <span class="im" style="color: #00769E;">import</span> sleep</span>
+<span id="cb1-9"><span class="im" style="color: #00769E;">from</span> faker <span class="im" style="color: #00769E;">import</span> Faker</span>
+<span id="cb1-10"><span class="im" style="color: #00769E;">from</span> datatime <span class="im" style="color: #00769E;">import</span> datatime</span>
+<span id="cb1-11"><span class="im" style="color: #00769E;">from</span> reprint <span class="im" style="color: #00769E;">import</span> out</span>
+<span id="cb1-12"><span class="im" style="color: #00769E;">import</span> json</span>
+<span id="cb1-13"><span class="im" style="color: #00769E;">from</span> kafka <span class="im" style="color: #00769E;">import</span> KafkaProducer, KafkaConsumer</span>
+<span id="cb1-14"><span class="im" style="color: #00769E;">from</span> sklearn <span class="im" style="color: #00769E;">import</span> datasets</span>
+<span id="cb1-15"><span class="im" style="color: #00769E;">import</span> redis, pickle, logging</span>
+<span id="cb1-16"><span class="im" style="color: #00769E;">from</span> sklearn.linear_model <span class="im" style="color: #00769E;">import</span> SGDClassifier</span>
+<span id="cb1-17"><span class="im" style="color: #00769E;">import</span> base64</span>
+<span id="cb1-18"><span class="im" style="color: #00769E;">from</span> flask_cors <span class="im" style="color: #00769E;">import</span> CORS</span>
+<span id="cb1-19"><span class="im" style="color: #00769E;">from</span> flask <span class="im" style="color: #00769E;">import</span> request, Flask, jsonify, render_template</span>
+<span id="cb1-20"><span class="im" style="color: #00769E;">from</span> PIL <span class="im" style="color: #00769E;">import</span> Image</span>
+<span id="cb1-21"><span class="im" style="color: #00769E;">from</span> svglib.svglib <span class="im" style="color: #00769E;">import</span> svg2rlg</span>
+<span id="cb1-22"><span class="im" style="color: #00769E;">from</span> reportlib.graphics <span class="im" style="color: #00769E;">import</span> renderPM</span></code></pre></div>
+</section>
+<section id="blink-batch-processing-in-flink" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="blink-batch-processing-in-flink"><span class="header-section-number">1</span> Blink: Batch Processing in Flink</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tutorials/flink/image1.jpeg" class="img-fluid" style="width:100.0%"></p>
+</div>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;"># 1. create a batch processing environment</span></span>
+<span id="cb2-2">env_settings <span class="op" style="color: #5E5E5E;">=</span> EnvironmentSettings.new_instance().in_batch_mode().use_old_planner().build()</span>
+<span id="cb2-3">t_env <span class="op" style="color: #5E5E5E;">=</span> BatchTableEnvironment.create(environment_settings<span class="op" style="color: #5E5E5E;">=</span>env_settings)</span>
+<span id="cb2-4"></span>
+<span id="cb2-5"><span class="co" style="color: #5E5E5E;"># 2. create source table from csv (or MySQL, Kafka, Hive, etc)</span></span>
+<span id="cb2-6">dir_word <span class="op" style="color: #5E5E5E;">=</span> os.path.join(os.path.abspath(<span class="va" style="color: #111111;">__file__</span>), <span class="st" style="color: #20794D;">'word_csv'</span>)</span>
+<span id="cb2-7">t_env.execute_sql(<span class="ss" style="color: #20794D;">f"""</span></span>
+<span id="cb2-8"><span class="ss" style="color: #20794D;">    CREATE TABLE source (</span></span>
+<span id="cb2-9"><span class="ss" style="color: #20794D;">        id BIGINT, -- ID</span></span>
+<span id="cb2-10"><span class="ss" style="color: #20794D;">        word STRING, -- 单词</span></span>
+<span id="cb2-11"><span class="ss" style="color: #20794D;">    ) WITH (</span></span>
+<span id="cb2-12"><span class="ss" style="color: #20794D;">        'connector' = 'filesystem',</span></span>
+<span id="cb2-13"><span class="ss" style="color: #20794D;">        'path' = 'file://</span><span class="sc" style="color: #5E5E5E;">{</span>dir_word<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb2-14"><span class="ss" style="color: #20794D;">        'format' = 'csv',</span></span>
+<span id="cb2-15"><span class="ss" style="color: #20794D;">    )</span></span>
+<span id="cb2-16"><span class="ss" style="color: #20794D;">"""</span></span>
+<span id="cb2-17">)</span>
+<span id="cb2-18"></span>
+<span id="cb2-19"><span class="co" style="color: #5E5E5E;"># 3. create sink table as result</span></span>
+<span id="cb2-20">dir_result <span class="op" style="color: #5E5E5E;">=</span> os.path.join(os.path.abspath(<span class="va" style="color: #111111;">__file__</span>), <span class="st" style="color: #20794D;">'result'</span>)</span>
+<span id="cb2-21"></span>
+<span id="cb2-22"><span class="cf" style="color: #003B4F;">if</span> os.path.exists(dir_result): <span class="co" style="color: #5E5E5E;"># remove file</span></span>
+<span id="cb2-23">    <span class="cf" style="color: #003B4F;">if</span> os.path.isfile(dir_result):</span>
+<span id="cb2-24">        os.remove(dir_result)</span>
+<span id="cb2-25">    <span class="cf" style="color: #003B4F;">else</span>:</span>
+<span id="cb2-26">        shutil.rmtree(dir_result, <span class="va" style="color: #111111;">True</span>)</span>
+<span id="cb2-27"></span>
+<span id="cb2-28">t_env.execute_sql(<span class="ss" style="color: #20794D;">f"""</span></span>
+<span id="cb2-29"><span class="ss" style="color: #20794D;">    CREATE TABLE sink (</span></span>
+<span id="cb2-30"><span class="ss" style="color: #20794D;">        word STRING, -- 单词</span></span>
+<span id="cb2-31"><span class="ss" style="color: #20794D;">        cnt BIGINT, -- 出现次数</span></span>
+<span id="cb2-32"><span class="ss" style="color: #20794D;">    ) WITH (</span></span>
+<span id="cb2-33"><span class="ss" style="color: #20794D;">        'connector' = 'filesystem',</span></span>
+<span id="cb2-34"><span class="ss" style="color: #20794D;">        'path' = 'file://</span><span class="sc" style="color: #5E5E5E;">{</span>dir_result<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb2-35"><span class="ss" style="color: #20794D;">        'format' = 'csv',</span></span>
+<span id="cb2-36"><span class="ss" style="color: #20794D;">    )</span></span>
+<span id="cb2-37"><span class="ss" style="color: #20794D;">"""</span></span>
+<span id="cb2-38">)</span>
+<span id="cb2-39"></span>
+<span id="cb2-40"><span class="co" style="color: #5E5E5E;"># 4. Batch Process</span></span>
+<span id="cb2-41">t_env.sql_query(<span class="st" style="color: #20794D;">"""</span></span>
+<span id="cb2-42"><span class="st" style="color: #20794D;">    SELECT word, count(1) AS cnt</span></span>
+<span id="cb2-43"><span class="st" style="color: #20794D;">    FROM source</span></span>
+<span id="cb2-44"><span class="st" style="color: #20794D;">    GROUP BY word</span></span>
+<span id="cb2-45"><span class="st" style="color: #20794D;">"""</span>).insert_into(<span class="st" style="color: #20794D;">'sink'</span>)</span>
+<span id="cb2-46">t_env.execute(<span class="st" style="color: #20794D;">'t'</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;">flink</span> run <span class="at" style="color: #657422;">-m</span> localhost:8081 <span class="at" style="color: #657422;">-py</span> batch.py</span></code></pre></div>
+</section>
+<section id="customize-udf-functions-for-real-time-logging-system" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="customize-udf-functions-for-real-time-logging-system"><span class="header-section-number">2</span> Customize UDF Functions for Real-time Logging System</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tutorials/flink/image2.jpeg" class="img-fluid" style="width:100.0%"></p>
+</div>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="co" style="color: #5E5E5E;"># download dependencies</span></span>
+<span id="cb4-2"><span class="ex" style="color: null;">pip</span> download <span class="at" style="color: #657422;">-d</span> cached_dir <span class="at" style="color: #657422;">-r</span> requirements.txt <span class="at" style="color: #657422;">--no-binary</span> :all:</span></code></pre></div>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;"># 1. create batch process environment</span></span>
+<span id="cb5-2">env_settings <span class="op" style="color: #5E5E5E;">=</span> EnvironmentSettings.new_instance().in_batch_mode().use_blink_planner().build()</span>
+<span id="cb5-3">t_env <span class="op" style="color: #5E5E5E;">=</span> BatchTableEnvironment.create(environment_settings)</span>
+<span id="cb5-4">t_env.get_config().get_configuration().set_boolean(<span class="st" style="color: #20794D;">"python.fn-execution.memory.managed"</span>, <span class="va" style="color: #111111;">True</span>)</span>
+<span id="cb5-5"></span>
+<span id="cb5-6"><span class="co" style="color: #5E5E5E;"># 2. install third-party libraries from downloaded files</span></span>
+<span id="cb5-7">t_env.set_python_requirements(<span class="st" style="color: #20794D;">"requirements.txt"</span>, <span class="st" style="color: #20794D;">"cached_dir"</span>)</span>
+<span id="cb5-8"></span>
+<span id="cb5-9"><span class="co" style="color: #5E5E5E;"># 3. create source table from data sources</span></span>
+<span id="cb5-10">dir_log <span class="op" style="color: #5E5E5E;">=</span> os.path.join(os.path.abspath(<span class="va" style="color: #111111;">__file__</span>), <span class="st" style="color: #20794D;">'syslog.txt'</span>)</span>
+<span id="cb5-11">t_env.<span class="ex" style="color: null;">connect</span>(FileSystem().path.(dir_log)) <span class="op" style="color: #5E5E5E;">\</span></span>
+<span id="cb5-12">    .with_format(OldCsv()</span>
+<span id="cb5-13">                .line_delimiter(<span class="st" style="color: #20794D;">'</span><span class="ch" style="color: #20794D;">\n</span><span class="st" style="color: #20794D;">'</span>)</span>
+<span id="cb5-14">                .field(<span class="st" style="color: #20794D;">'line'</span>, DataTypes.STRING()))<span class="op" style="color: #5E5E5E;">\</span></span>
+<span id="cb5-15">    .with_schema(Schema()</span>
+<span id="cb5-16">                .field(<span class="st" style="color: #20794D;">'line'</span>, DataTypes.STRING()))<span class="op" style="color: #5E5E5E;">\</span></span>
+<span id="cb5-17">    .create_temporary_table(<span class="st" style="color: #20794D;">'source'</span>)</span>
+<span id="cb5-18"></span>
+<span id="cb5-19"><span class="co" style="color: #5E5E5E;"># 4. create sink table</span></span>
+<span id="cb5-20">dir_result <span class="op" style="color: #5E5E5E;">=</span> os.path.join(os.path.abspath(<span class="va" style="color: #111111;">__file__</span>), <span class="st" style="color: #20794D;">'result'</span>)</span>
+<span id="cb5-21"><span class="cf" style="color: #003B4F;">if</span> os.path.exists(dir_result):</span>
+<span id="cb5-22">    <span class="cf" style="color: #003B4F;">if</span> os.path.isfile(dir_result):</span>
+<span id="cb5-23">        os.remove(dir_result)</span>
+<span id="cb5-24">    <span class="cf" style="color: #003B4F;">else</span>:</span>
+<span id="cb5-25">        shutil.rmtree(dir_result)</span>
+<span id="cb5-26">t_env.<span class="ex" style="color: null;">connect</span>(FileSystem().path(dir_result))\ </span>
+<span id="cb5-27">    .with_format(OldCsv() <span class="co" style="color: #5E5E5E;"># define data format</span></span>
+<span id="cb5-28">                .field(<span class="st" style="color: #20794D;">'topic'</span>, DataTypes.STRING()))</span>
+<span id="cb5-29">    .with_schema(Schema() <span class="co" style="color: #5E5E5E;"># define table structures</span></span>
+<span id="cb5-30">                .field(<span class="st" style="color: #20794D;">'topic'</span>, DataTypes.STRING()))</span>
+<span id="cb5-31">    .create_temporary_table(<span class="st" style="color: #20794D;">'sink'</span>)</span>
+<span id="cb5-32"></span>
+<span id="cb5-33"><span class="co" style="color: #5E5E5E;"># 5. register UDF</span></span>
+<span id="cb5-34"><span class="at" style="color: #657422;">@udf</span>(input_types<span class="op" style="color: #5E5E5E;">=</span>[DataTypes.STRING()], result_type<span class="op" style="color: #5E5E5E;">=</span>DataTypes.STRING())</span>
+<span id="cb5-35"><span class="kw" style="color: #003B4F;">def</span> get_topic(line):</span>
+<span id="cb5-36">    <span class="im" style="color: #00769E;">import</span> re</span>
+<span id="cb5-37">    <span class="cf" style="color: #003B4F;">if</span> <span class="st" style="color: #20794D;">'IN='</span> <span class="kw" style="color: #003B4F;">in</span> line <span class="kw" style="color: #003B4F;">and</span> <span class="st" style="color: #20794D;">'OUT='</span> <span class="kw" style="color: #003B4F;">in</span> line <span class="kw" style="color: #003B4F;">and</span> <span class="st" style="color: #20794D;">'MAC='</span> <span class="kw" style="color: #003B4F;">in</span> line:</span>
+<span id="cb5-38">        <span class="cf" style="color: #003B4F;">return</span> <span class="st" style="color: #20794D;">'syslog-iptables'</span></span>
+<span id="cb5-39">    <span class="cf" style="color: #003B4F;">elif</span> <span class="st" style="color: #20794D;">'======================================='</span> <span class="kw" style="color: #003B4F;">in</span> line <span class="kw" style="color: #003B4F;">or</span> re.search(<span class="vs" style="color: #20794D;">r'localhost (.+?): \['</span>, line, re.M <span class="op" style="color: #5E5E5E;">|</span> re.I):</span>
+<span id="cb5-40">        <span class="cf" style="color: #003B4F;">return</span> <span class="st" style="color: #20794D;">'syslog-user'</span></span>
+<span id="cb5-41">    <span class="cf" style="color: #003B4F;">else</span> <span class="cf" style="color: #003B4F;">return</span> <span class="st" style="color: #20794D;">'syslog-system'</span></span>
+<span id="cb5-42"></span>
+<span id="cb5-43"><span class="co" style="color: #5E5E5E;"># so many regex ... </span></span>
+<span id="cb5-44"></span>
+<span id="cb5-45">t_env.register_function(<span class="st" style="color: #20794D;">'get_topic'</span>, get_topic)</span>
+<span id="cb5-46"></span>
+<span id="cb5-47"><span class="co" style="color: #5E5E5E;"># 6. Batch Processing</span></span>
+<span id="cb5-48">t_env.from_path(<span class="st" style="color: #20794D;">'source'</span>)<span class="op" style="color: #5E5E5E;">\</span></span>
+<span id="cb5-49">    .select(<span class="st" style="color: #20794D;">'line, get_topic(line) AS topic'</span>) <span class="op" style="color: #5E5E5E;">\</span></span>
+<span id="cb5-50">    .select(<span class="st" style="color: #20794D;">'topic, '</span>)</span>
+<span id="cb5-51">    .execute_insert(<span class="st" style="color: #20794D;">'sink'</span>)</span></code></pre></div>
+</section>
+<section id="real-time-sync-with-mysql" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="real-time-sync-with-mysql"><span class="header-section-number">3</span> Real-time Sync with MySQL</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tutorials/flink/image3.jpeg" class="img-fluid" style="width:100.0%"></p>
+</div>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="co" style="color: #5E5E5E;"># 1. create Blink stream environment</span></span>
+<span id="cb6-2">env_settings <span class="op" style="color: #5E5E5E;">=</span> EnvironmentSettings.new_instance().in_streaming_mode().use_blink_planner().build()</span>
+<span id="cb6-3">t_env <span class="op" style="color: #5E5E5E;">=</span> StreamTableEnvironment.create(environment_settings<span class="op" style="color: #5E5E5E;">=</span>env_settings)</span>
+<span id="cb6-4"></span>
+<span id="cb6-5"><span class="co" style="color: #5E5E5E;"># 2. create jar dependencies</span></span>
+<span id="cb6-6">jars<span class="op" style="color: #5E5E5E;">=</span>[]</span>
+<span id="cb6-7"><span class="cf" style="color: #003B4F;">for</span> <span class="bu" style="color: null;">file</span> <span class="kw" style="color: #003B4F;">in</span> os.listdir(os.path.abspath(os.path.dirname(<span class="va" style="color: #111111;">__file__</span>))):</span>
+<span id="cb6-8">    <span class="cf" style="color: #003B4F;">if</span> <span class="bu" style="color: null;">file</span>.endswith(<span class="st" style="color: #20794D;">'.jar'</span>):</span>
+<span id="cb6-9">        jars.append(os.path.abspath(<span class="bu" style="color: null;">file</span>))</span>
+<span id="cb6-10">str_jars<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">';'</span>.join([<span class="st" style="color: #20794D;">'file://'</span><span class="op" style="color: #5E5E5E;">+</span>jar <span class="cf" style="color: #003B4F;">for</span> jar <span class="kw" style="color: #003B4F;">in</span> jars])</span>
+<span id="cb6-11">t_env.config().get_configuration().set_string(<span class="st" style="color: #20794D;">"pipeline_jars"</span>, str_jars)</span>
+<span id="cb6-12"></span>
+<span id="cb6-13"><span class="co" style="color: #5E5E5E;"># 3. create source table from MySQL</span></span>
+<span id="cb6-14">t_env.execute_sql(<span class="ss" style="color: #20794D;">f"""</span></span>
+<span id="cb6-15"><span class="ss" style="color: #20794D;">    CREATE TABLE source (</span></span>
+<span id="cb6-16"><span class="ss" style="color: #20794D;">        id INT, -- ID</span></span>
+<span id="cb6-17"><span class="ss" style="color: #20794D;">        name STRING, -- Name</span></span>
+<span id="cb6-18"><span class="ss" style="color: #20794D;">    ) WITH (</span></span>
+<span id="cb6-19"><span class="ss" style="color: #20794D;">        'connector' = 'mysql-cdc',</span></span>
+<span id="cb6-20"><span class="ss" style="color: #20794D;">        'hostname' = '127.0.0.1',</span></span>
+<span id="cb6-21"><span class="ss" style="color: #20794D;">        'port' = '3306',</span></span>
+<span id="cb6-22"><span class="ss" style="color: #20794D;">        'database-name' = 'flink',</span></span>
+<span id="cb6-23"><span class="ss" style="color: #20794D;">        'table-name' = 'case3',</span></span>
+<span id="cb6-24"><span class="ss" style="color: #20794D;">        'username' = 'root',</span></span>
+<span id="cb6-25"><span class="ss" style="color: #20794D;">        'password' = 'root',</span></span>
+<span id="cb6-26"><span class="ss" style="color: #20794D;">    )</span></span>
+<span id="cb6-27"><span class="ss" style="color: #20794D;">"""</span></span>
+<span id="cb6-28">)</span>
+<span id="cb6-29"><span class="co" style="color: #5E5E5E;"># check table</span></span>
+<span id="cb6-30">t_env.from_path(<span class="st" style="color: #20794D;">'source'</span>).print_schema()</span>
+<span id="cb6-31">t_env.from_path(<span class="st" style="color: #20794D;">'source'</span>).to_pandas()</span>
+<span id="cb6-32"></span>
+<span id="cb6-33"><span class="co" style="color: #5E5E5E;"># 4. create sink table</span></span>
+<span id="cb6-34">t_env.execute_sql(<span class="ss" style="color: #20794D;">f"""</span></span>
+<span id="cb6-35"><span class="ss" style="color: #20794D;">    CREATE TABLE sink (</span></span>
+<span id="cb6-36"><span class="ss" style="color: #20794D;">        id INT, -- ID</span></span>
+<span id="cb6-37"><span class="ss" style="color: #20794D;">        name STRING, -- Name</span></span>
+<span id="cb6-38"><span class="ss" style="color: #20794D;">        PRIMARY KEY (id) NOT ENFORCED -- define primary key</span></span>
+<span id="cb6-39"><span class="ss" style="color: #20794D;">    ) WITH (</span></span>
+<span id="cb6-40"><span class="ss" style="color: #20794D;">        'connector' = 'jdbc',</span></span>
+<span id="cb6-41"><span class="ss" style="color: #20794D;">        'url' = 'jdbc:mysql://127.0.0.1:3307/flink',</span></span>
+<span id="cb6-42"><span class="ss" style="color: #20794D;">        'driver' = 'com.mysql.cj.jdbc.Driver',</span></span>
+<span id="cb6-43"><span class="ss" style="color: #20794D;">        'table-name' = 'case3',</span></span>
+<span id="cb6-44"><span class="ss" style="color: #20794D;">        'username' = 'root',</span></span>
+<span id="cb6-45"><span class="ss" style="color: #20794D;">        'password' = 'root',</span></span>
+<span id="cb6-46"><span class="ss" style="color: #20794D;">    )</span></span>
+<span id="cb6-47"><span class="ss" style="color: #20794D;">"""</span>)</span>
+<span id="cb6-48"></span>
+<span id="cb6-49"><span class="co" style="color: #5E5E5E;"># 5. batch processing</span></span>
+<span id="cb6-50">t_env.from_path(<span class="st" style="color: #20794D;">'source'</span>).insert_into(<span class="st" style="color: #20794D;">'sink'</span>)</span></code></pre></div>
+</section>
+<section id="real-time-ranking" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="real-time-ranking"><span class="header-section-number">4</span> Real-time Ranking</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tutorials/flink/image4.jpeg" class="img-fluid" style="width:100.0%"></p>
+</div>
+<section id="kafka-data-producer" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="kafka-data-producer"><span class="header-section-number">4.1</span> Kafka Data Producer</h3>
+<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="co" style="color: #5E5E5E;"># setting</span></span>
+<span id="cb7-2">seed<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">2020</span></span>
+<span id="cb7-3">num_users<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">50</span></span>
+<span id="cb7-4">max_msg_per_second<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">20</span></span>
+<span id="cb7-5">run_seconds<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">3600</span></span>
+<span id="cb7-6">topic<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'user_action'</span></span>
+<span id="cb7-7">bootstrap_servers <span class="op" style="color: #5E5E5E;">=</span> [<span class="st" style="color: #20794D;">'localhost:9092'</span>]</span>
+<span id="cb7-8">fake <span class="op" style="color: #5E5E5E;">=</span> Faker(locale<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'zh_CN'</span>)</span>
+<span id="cb7-9">Faker.seed(seed)</span>
+<span id="cb7-10">random.seed(seed)</span>
+<span id="cb7-11"><span class="co" style="color: #5E5E5E;">#</span></span>
+<span id="cb7-12"><span class="kw" style="color: #003B4F;">class</span> UserGroup:</span>
+<span id="cb7-13">    <span class="kw" style="color: #003B4F;">def</span> <span class="fu" style="color: #4758AB;">__init__</span>(<span class="va" style="color: #111111;">self</span>):</span>
+<span id="cb7-14">        <span class="co" style="color: #5E5E5E;"># different user, different probability</span></span>
+<span id="cb7-15">        <span class="va" style="color: #111111;">self</span>.users <span class="op" style="color: #5E5E5E;">=</span> [<span class="va" style="color: #111111;">self</span>.gen_male() <span class="cf" style="color: #003B4F;">if</span> random.random() <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="fl" style="color: #AD0000;">0.6</span> <span class="cf" style="color: #003B4F;">else</span> <span class="va" style="color: #111111;">self</span>.gen_female() <span class="cf" style="color: #003B4F;">for</span> _ <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(num_users)]</span>
+<span id="cb7-16">        prob <span class="op" style="color: #5E5E5E;">=</span> np.cumsum(np.random.uniform(<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">100</span>, num_users)) <span class="co" style="color: #5E5E5E;"># sum of probabilities</span></span>
+<span id="cb7-17">        <span class="va" style="color: #111111;">self</span>.prob <span class="op" style="color: #5E5E5E;">=</span> prob<span class="op" style="color: #5E5E5E;">/</span>prob.<span class="bu" style="color: null;">max</span>() <span class="co" style="color: #5E5E5E;"># to 0 - 1</span></span>
+<span id="cb7-18">    </span>
+<span id="cb7-19">    <span class="at" style="color: #657422;">@staticmethod</span></span>
+<span id="cb7-20">    <span class="kw" style="color: #003B4F;">def</span> gen_male():</span>
+<span id="cb7-21">        <span class="cf" style="color: #003B4F;">return</span> {<span class="st" style="color: #20794D;">'name'</span>: fake.name_male(), <span class="st" style="color: #20794D;">'sex'</span>:<span class="st" style="color: #20794D;">'男'</span>}</span>
+<span id="cb7-22"></span>
+<span id="cb7-23">    <span class="at" style="color: #657422;">@staticmethod</span></span>
+<span id="cb7-24">    <span class="kw" style="color: #003B4F;">def</span> gen_female():</span>
+<span id="cb7-25">        <span class="cf" style="color: #003B4F;">return</span> {<span class="st" style="color: #20794D;">'name'</span>: fake.name_female(), <span class="st" style="color: #20794D;">'sex'</span>:<span class="st" style="color: #20794D;">'女'</span>}</span>
+<span id="cb7-26"></span>
+<span id="cb7-27">    <span class="kw" style="color: #003B4F;">def</span> get_user(<span class="va" style="color: #111111;">self</span>):</span>
+<span id="cb7-28">        r <span class="op" style="color: #5E5E5E;">=</span> random.random()</span>
+<span id="cb7-29">        index <span class="op" style="color: #5E5E5E;">=</span> np.searchsorted(<span class="va" style="color: #111111;">self</span>.prob, r) <span class="co" style="color: #5E5E5E;"># insert into sorted array, return index where self.prob[index-1]&lt;r&lt;self.prob[index]</span></span>
+<span id="cb7-30">        <span class="cf" style="color: #003B4F;">return</span> <span class="va" style="color: #111111;">self</span>.users[index]</span>
+<span id="cb7-31"></span>
+<span id="cb7-32"><span class="kw" style="color: #003B4F;">def</span> write_data():</span>
+<span id="cb7-33">    group <span class="op" style="color: #5E5E5E;">=</span> UserGroup()</span>
+<span id="cb7-34">    start_time <span class="op" style="color: #5E5E5E;">=</span> datatime.now()</span>
+<span id="cb7-35">    <span class="co" style="color: #5E5E5E;"># init producer</span></span>
+<span id="cb7-36">    producer <span class="op" style="color: #5E5E5E;">=</span> KafkaProducer(</span>
+<span id="cb7-37">        bootstrap_servers <span class="op" style="color: #5E5E5E;">=</span> bootstrap_servers,</span>
+<span id="cb7-38">        value_serializer<span class="op" style="color: #5E5E5E;">=</span><span class="kw" style="color: #003B4F;">lambda</span> x: dumps(x).encode(<span class="st" style="color: #20794D;">'utf-8'</span>),</span>
+<span id="cb7-39">    )</span>
+<span id="cb7-40"></span>
+<span id="cb7-41">    <span class="cf" style="color: #003B4F;">while</span> <span class="va" style="color: #111111;">True</span>:</span>
+<span id="cb7-42">        now <span class="op" style="color: #5E5E5E;">=</span> datatime.now()</span>
+<span id="cb7-43">        <span class="co" style="color: #5E5E5E;"># produce data to kafka</span></span>
+<span id="cb7-44">        user <span class="op" style="color: #5E5E5E;">=</span> group.get_user()</span>
+<span id="cb7-45">        cur_data <span class="op" style="color: #5E5E5E;">=</span> {</span>
+<span id="cb7-46">            <span class="st" style="color: #20794D;">'ts'</span>: now.strftime(<span class="st" style="color: #20794D;">'%Y-%m-</span><span class="sc" style="color: #5E5E5E;">%d</span><span class="st" style="color: #20794D;"> %H:%M:%S'</span>),</span>
+<span id="cb7-47">            <span class="st" style="color: #20794D;">'name'</span>: user[<span class="st" style="color: #20794D;">'name'</span>],</span>
+<span id="cb7-48">            <span class="st" style="color: #20794D;">'sex'</span>: user[<span class="st" style="color: #20794D;">'sex'</span>],</span>
+<span id="cb7-49">            <span class="st" style="color: #20794D;">'action'</span>: <span class="st" style="color: #20794D;">'click'</span> <span class="cf" style="color: #003B4F;">if</span> random.random() <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="fl" style="color: #AD0000;">0.9</span> <span class="cf" style="color: #003B4F;">else</span> <span class="st" style="color: #20794D;">'scroll'</span>,</span>
+<span id="cb7-50">            <span class="st" style="color: #20794D;">'is_delete'</span>: <span class="dv" style="color: #AD0000;">0</span> <span class="cf" style="color: #003B4F;">if</span> random.random() <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="fl" style="color: #AD0000;">0.9</span> <span class="cf" style="color: #003B4F;">else</span> <span class="dv" style="color: #AD0000;">1</span>,</span>
+<span id="cb7-51">        }</span>
+<span id="cb7-52">        producer.send(topic, value<span class="op" style="color: #5E5E5E;">=</span>cur_data)</span>
+<span id="cb7-53"></span>
+<span id="cb7-54">        <span class="co" style="color: #5E5E5E;"># terminate when running time &gt; run_seconds</span></span>
+<span id="cb7-55">        <span class="cf" style="color: #003B4F;">if</span> (now <span class="op" style="color: #5E5E5E;">-</span> start_time).seconds <span class="op" style="color: #5E5E5E;">&gt;</span> run_seconds:</span>
+<span id="cb7-56">            <span class="cf" style="color: #003B4F;">break</span></span>
+<span id="cb7-57"></span>
+<span id="cb7-58">        sleep(<span class="dv" style="color: #AD0000;">1</span> <span class="op" style="color: #5E5E5E;">/</span> max_msg_per_second)</span></code></pre></div>
+</section>
+<section id="kafka-monitor" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="kafka-monitor"><span class="header-section-number">4.2</span> Kafka Monitor</h3>
+<section id="source-table-monitor" class="level4">
+<h4 class="anchored" data-anchor-id="source-table-monitor">Source Table Monitor</h4>
+<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1">topic <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'user_action'</span></span>
+<span id="cb8-2">bootstrap_servers <span class="op" style="color: #5E5E5E;">=</span> [<span class="st" style="color: #20794D;">'localhost:9092'</span>]</span>
+<span id="cb8-3">group_id <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'group7'</span></span>
+<span id="cb8-4"></span>
+<span id="cb8-5">consumer <span class="op" style="color: #5E5E5E;">=</span> KafkaConsumer(</span>
+<span id="cb8-6">    topic,</span>
+<span id="cb8-7">    group_id<span class="op" style="color: #5E5E5E;">=</span>group_id,</span>
+<span id="cb8-8">    bootstrap_servers<span class="op" style="color: #5E5E5E;">=</span>bootstrap_servers,</span>
+<span id="cb8-9">    auto_offset_reset<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'latest'</span></span>
+<span id="cb8-10">)</span>
+<span id="cb8-11"></span>
+<span id="cb8-12"><span class="cf" style="color: #003B4F;">for</span> msg <span class="kw" style="color: #003B4F;">in</span> consumer:</span>
+<span id="cb8-13">    <span class="bu" style="color: null;">print</span>(msg.value.decode(<span class="st" style="color: #20794D;">'utf-8'</span>).encode(<span class="st" style="color: #20794D;">'utf-8'</span>).decode(<span class="st" style="color: #20794D;">'unicode_escape'</span>))</span></code></pre></div>
+</section>
+<section id="sink-table-monitor" class="level4">
+<h4 class="anchored" data-anchor-id="sink-table-monitor">Sink Table Monitor</h4>
+<div class="sourceCode" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1">topic <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'click_rank'</span></span>
+<span id="cb9-2">bootstrap_servers<span class="op" style="color: #5E5E5E;">=</span>[<span class="st" style="color: #20794D;">'localhost:9092'</span>]</span>
+<span id="cb9-3">group_id <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'group7'</span></span>
+<span id="cb9-4"></span>
+<span id="cb9-5">consumer <span class="op" style="color: #5E5E5E;">=</span> KafkaConsumer(</span>
+<span id="cb9-6">    topic,</span>
+<span id="cb9-7">    group_id <span class="op" style="color: #5E5E5E;">=</span> group_id,</span>
+<span id="cb9-8">    bootstrap_servers <span class="op" style="color: #5E5E5E;">=</span> bootstrap_servers,</span>
+<span id="cb9-9">    auto_offset_reset<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'latest'</span>,</span>
+<span id="cb9-10">)</span>
+<span id="cb9-11"></span>
+<span id="cb9-12"><span class="cf" style="color: #003B4F;">with</span> output(output_type<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'list'</span>, initial_len<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">22</span>, interval<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">0</span>) <span class="im" style="color: #00769E;">as</span> output_lines:</span>
+<span id="cb9-13">    <span class="co" style="color: #5E5E5E;"># 5 men 5 women</span></span>
+<span id="cb9-14">    output_lines[<span class="dv" style="color: #AD0000;">0</span>] <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'=== 男 ==='</span></span>
+<span id="cb9-15">    output_lines[<span class="dv" style="color: #AD0000;">6</span>] <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'=== 女 ==='</span></span>
+<span id="cb9-16">    <span class="cf" style="color: #003B4F;">for</span> msg <span class="kw" style="color: #003B4F;">in</span> consumer:</span>
+<span id="cb9-17">        data <span class="op" style="color: #5E5E5E;">=</span> json.loads(msg.value)</span>
+<span id="cb9-18">        start_index <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span> <span class="cf" style="color: #003B4F;">if</span> data[<span class="st" style="color: #20794D;">'sex'</span>] <span class="op" style="color: #5E5E5E;">==</span> <span class="st" style="color: #20794D;">'男'</span> <span class="cf" style="color: #003B4F;">else</span> <span class="dv" style="color: #AD0000;">7</span></span>
+<span id="cb9-19">        rank <span class="op" style="color: #5E5E5E;">=</span> json.loads(<span class="st" style="color: #20794D;">'['</span> <span class="op" style="color: #5E5E5E;">+</span> data[<span class="st" style="color: #20794D;">'top10'</span>] <span class="op" style="color: #5E5E5E;">+</span> <span class="st" style="color: #20794D;">']'</span>)</span>
+<span id="cb9-20"></span>
+<span id="cb9-21">        <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="dv" style="color: #AD0000;">5</span>):</span>
+<span id="cb9-22">            index <span class="op" style="color: #5E5E5E;">=</span> start_index <span class="op" style="color: #5E5E5E;">+</span> i</span>
+<span id="cb9-23">            <span class="cf" style="color: #003B4F;">if</span> i <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="bu" style="color: null;">len</span>(rank):</span>
+<span id="cb9-24">                name <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">list</span>(rank[i].keys())[<span class="dv" style="color: #AD0000;">0</span>]</span>
+<span id="cb9-25">                value <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">list</span>(rank[i].values())[<span class="dv" style="color: #AD0000;">0</span>]</span>
+<span id="cb9-26">                output_lines[index] <span class="op" style="color: #5E5E5E;">=</span> <span class="ss" style="color: #20794D;">f'</span><span class="sc" style="color: #5E5E5E;">{</span>name<span class="sc" style="color: #5E5E5E;">:6s}</span><span class="ss" style="color: #20794D;"> </span><span class="sc" style="color: #5E5E5E;">{</span>value<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">'</span></span>
+<span id="cb9-27">            <span class="cf" style="color: #003B4F;">else</span>:</span>
+<span id="cb9-28">                output_lines[index] <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">''</span></span></code></pre></div>
+</section>
+</section>
+<section id="stream-processing" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="stream-processing"><span class="header-section-number">4.3</span> Stream Processing</h3>
+<div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><span class="co" style="color: #5E5E5E;"># settings</span></span>
+<span id="cb10-2">kafka_servers <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'localhost:9092'</span></span>
+<span id="cb10-3">kafka_consumer_group_id <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'group8'</span></span>
+<span id="cb10-4">source_topic <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'user_action'</span></span>
+<span id="cb10-5">sink_topic <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'click_rank'</span></span>
+<span id="cb10-6"></span>
+<span id="cb10-7"><span class="co" style="color: #5E5E5E;"># 1. create Blink stream process environment</span></span>
+<span id="cb10-8">env<span class="op" style="color: #5E5E5E;">=</span>StreamExecutionEnvironment.get_execution_environment()</span>
+<span id="cb10-9">env_settings <span class="op" style="color: #5E5E5E;">=</span> EnvironmentSettings.new_instance().in_streaming_mode().use_blink_planner().build()</span>
+<span id="cb10-10">t_env <span class="op" style="color: #5E5E5E;">=</span> StreamTableEnvironment.create(env, environment_settings<span class="op" style="color: #5E5E5E;">=</span>env_settings)</span>
+<span id="cb10-11">t_env.get_config().get_configuration().set_boolean(<span class="st" style="color: #20794D;">'python.fn-execution.memory.managed'</span>, <span class="va" style="color: #111111;">True</span>)</span>
+<span id="cb10-12"></span>
+<span id="cb10-13"><span class="co" style="color: #5E5E5E;"># 2. add dependencies and register UDF</span></span>
+<span id="cb10-14">dir_kafka_sql_connect <span class="op" style="color: #5E5E5E;">=</span> os.path.join(os.path.abspath(os.path.dirname(<span class="va" style="color: #111111;">__file__</span>)), <span class="st" style="color: #20794D;">'flink-sql-connector-kafka_2.11-1.11.2.jar'</span>)</span>
+<span id="cb10-15">t_env.get_config().get_configuration().set_string(<span class="st" style="color: #20794D;">'pipeline.jars'</span>, <span class="st" style="color: #20794D;">'file://'</span> <span class="op" style="color: #5E5E5E;">+</span> dir_kafka_sql_connect)</span>
+<span id="cb10-16"></span>
+<span id="cb10-17">dir_java_udf <span class="op" style="color: #5E5E5E;">=</span> os.path.join(os.path.abspath(os.path.dirname(<span class="va" style="color: #111111;">__file__</span>)), <span class="st" style="color: #20794D;">'flink-udf-1.0-SNAPSHOT.jar'</span>)</span>
+<span id="cb10-18">t_env.get_config().get_configuration().set_string(<span class="st" style="color: #20794D;">'pipeline.classpaths'</span>, <span class="st" style="color: #20794D;">'file://'</span> <span class="op" style="color: #5E5E5E;">+</span> dir_java_udf)</span>
+<span id="cb10-19"></span>
+<span id="cb10-20">t_env.register_java_function(<span class="st" style="color: #20794D;">'getTopN'</span>, <span class="st" style="color: #20794D;">'com.flink.udf.TopN'</span>)</span>
+<span id="cb10-21"></span>
+<span id="cb10-22"><span class="co" style="color: #5E5E5E;"># 3. create source table</span></span>
+<span id="cb10-23">t_env.execute_sql(<span class="ss" style="color: #20794D;">f"""</span></span>
+<span id="cb10-24"><span class="ss" style="color: #20794D;">    CREATE TABLE source (</span></span>
+<span id="cb10-25"><span class="ss" style="color: #20794D;">        name VARCHAR,</span></span>
+<span id="cb10-26"><span class="ss" style="color: #20794D;">        sex VARCHAR,</span></span>
+<span id="cb10-27"><span class="ss" style="color: #20794D;">        action VARCHAR,</span></span>
+<span id="cb10-28"><span class="ss" style="color: #20794D;">        is_delete BIGINT,</span></span>
+<span id="cb10-29"><span class="ss" style="color: #20794D;">        ts TIMESTAMP(3),</span></span>
+<span id="cb10-30"><span class="ss" style="color: #20794D;">        WATERMARK FOR ts AS ts - INTERVAL '5' SECOND</span></span>
+<span id="cb10-31"><span class="ss" style="color: #20794D;">    ) with(</span></span>
+<span id="cb10-32"><span class="ss" style="color: #20794D;">        'connector' = 'kafka',</span></span>
+<span id="cb10-33"><span class="ss" style="color: #20794D;">        'topic' = '</span><span class="sc" style="color: #5E5E5E;">{</span>source_topic<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb10-34"><span class="ss" style="color: #20794D;">        'properties.bootstrap.servers' = '</span><span class="sc" style="color: #5E5E5E;">{</span>kafka_servers<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb10-35"><span class="ss" style="color: #20794D;">        'properties.group.id' = '</span><span class="sc" style="color: #5E5E5E;">{</span>kafka_consumer_group_id<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb10-36"><span class="ss" style="color: #20794D;">        'scan.startup.mode' = 'latest-offset',</span></span>
+<span id="cb10-37"><span class="ss" style="color: #20794D;">        'json.fail-on-missing-field' = 'false',</span></span>
+<span id="cb10-38"><span class="ss" style="color: #20794D;">        'json.ignore-parse-errors' = 'true',</span></span>
+<span id="cb10-39"><span class="ss" style="color: #20794D;">        'format' = 'json',</span></span>
+<span id="cb10-40"><span class="ss" style="color: #20794D;">    )</span></span>
+<span id="cb10-41"></span>
+<span id="cb10-42"><span class="ss" style="color: #20794D;">"""</span>)</span>
+<span id="cb10-43"></span>
+<span id="cb10-44"><span class="co" style="color: #5E5E5E;"># 4. create sink table</span></span>
+<span id="cb10-45">t_env.execute_sql(<span class="ss" style="color: #20794D;">f"""</span></span>
+<span id="cb10-46"><span class="ss" style="color: #20794D;">    CREATE TABLE sink (</span></span>
+<span id="cb10-47"><span class="ss" style="color: #20794D;">        sex STRING,</span></span>
+<span id="cb10-48"><span class="ss" style="color: #20794D;">        top10 STRING,</span></span>
+<span id="cb10-49"><span class="ss" style="color: #20794D;">        start_time TIMESTAMP(3),</span></span>
+<span id="cb10-50"><span class="ss" style="color: #20794D;">        end_time TIMESTAMP(3),</span></span>
+<span id="cb10-51"><span class="ss" style="color: #20794D;">    ) with(</span></span>
+<span id="cb10-52"><span class="ss" style="color: #20794D;">        'connector' = 'kafka',</span></span>
+<span id="cb10-53"><span class="ss" style="color: #20794D;">        'topic' = '</span><span class="sc" style="color: #5E5E5E;">{</span>sink_topic<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb10-54"><span class="ss" style="color: #20794D;">        'properties.bootstrap.servers' = '</span><span class="sc" style="color: #5E5E5E;">{</span>kafka_servers<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb10-55"><span class="ss" style="color: #20794D;">        'properties.group.id' = '</span><span class="sc" style="color: #5E5E5E;">{</span>kafka_consumer_group_id<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb10-56"><span class="ss" style="color: #20794D;">        'scan.startup.mode' = 'latest-offset',</span></span>
+<span id="cb10-57"><span class="ss" style="color: #20794D;">        'json.fail-on-missing-field' = 'false',</span></span>
+<span id="cb10-58"><span class="ss" style="color: #20794D;">        'json.ignore-parse-errors' = 'true',</span></span>
+<span id="cb10-59"><span class="ss" style="color: #20794D;">        'format' = 'json',</span></span>
+<span id="cb10-60"><span class="ss" style="color: #20794D;">    )</span></span>
+<span id="cb10-61"><span class="ss" style="color: #20794D;">"""</span>)</span>
+<span id="cb10-62"></span>
+<span id="cb10-63"><span class="co" style="color: #5E5E5E;"># 5. stream processing</span></span>
+<span id="cb10-64"><span class="co" style="color: #5E5E5E;"># HOP is like rolling window(timestamp, step, window_length)</span></span>
+<span id="cb10-65">t_env.sql_query(<span class="st" style="color: #20794D;">"""</span></span>
+<span id="cb10-66"><span class="st" style="color: #20794D;">    SELECT </span></span>
+<span id="cb10-67"><span class="st" style="color: #20794D;">        sex,</span></span>
+<span id="cb10-68"><span class="st" style="color: #20794D;">        getTopN(name, 10, 1) AS top10,</span></span>
+<span id="cb10-69"><span class="st" style="color: #20794D;">        HOP_START(ts, INTERVAL '1' SECOND, INTERVAL '60' SECOND) AS start_time,</span></span>
+<span id="cb10-70"><span class="st" style="color: #20794D;">        HOP_END(ts, INTERVAL '1' SECOND, INTERVAL '60' SECOND) AS end_time</span></span>
+<span id="cb10-71"><span class="st" style="color: #20794D;">    FROM</span></span>
+<span id="cb10-72"><span class="st" style="color: #20794D;">        source</span></span>
+<span id="cb10-73"><span class="st" style="color: #20794D;">    WHERE</span></span>
+<span id="cb10-74"><span class="st" style="color: #20794D;">        action='click'</span></span>
+<span id="cb10-75"><span class="st" style="color: #20794D;">        AND is_delete=0</span></span>
+<span id="cb10-76"><span class="st" style="color: #20794D;">    GROUP BY </span></span>
+<span id="cb10-77"><span class="st" style="color: #20794D;">        sex,</span></span>
+<span id="cb10-78"><span class="st" style="color: #20794D;">        HOP(ts, INTERVAL '1' SECOND, INTERVAL '60' SECOND)</span></span>
+<span id="cb10-79"><span class="st" style="color: #20794D;">"""</span>).insert_into(<span class="st" style="color: #20794D;">"sink"</span>)</span>
+<span id="cb10-80">t_env.execute(<span class="st" style="color: #20794D;">'Top10 User Click'</span>)</span>
+<span id="cb10-81"></span>
+<span id="cb10-82"><span class="co" style="color: #5E5E5E;"># </span></span></code></pre></div>
+</section>
+</section>
+<section id="online-machine-learning" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="online-machine-learning"><span class="header-section-number">5</span> Online Machine Learning</h2>
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tutorials/flink/image5.jpeg" class="img-fluid" style="width:100.0%"></p>
+</div>
+<section id="kafka-data-producer-1" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="kafka-data-producer-1"><span class="header-section-number">5.1</span> Kafka Data Producer</h3>
+<div class="sourceCode" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><span class="co" style="color: #5E5E5E;"># settings</span></span>
+<span id="cb11-2">max_msg_per_second <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">10</span></span>
+<span id="cb11-3">topic <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'handwritten_digit'</span></span>
+<span id="cb11-4">bootstrap_servers <span class="op" style="color: #5E5E5E;">=</span> [<span class="st" style="color: #20794D;">'localhost:9092'</span>]</span>
+<span id="cb11-5"></span>
+<span id="cb11-6"><span class="kw" style="color: #003B4F;">def</span> write_data():</span>
+<span id="cb11-7">    digits <span class="op" style="color: #5E5E5E;">=</span> datasets.load_digits()</span>
+<span id="cb11-8">    all_x <span class="op" style="color: #5E5E5E;">=</span> digits.data.astype(<span class="bu" style="color: null;">int</span>)</span>
+<span id="cb11-9">    all_y <span class="op" style="color: #5E5E5E;">=</span> digits.target.astype(<span class="bu" style="color: null;">int</span>)</span>
+<span id="cb11-10"></span>
+<span id="cb11-11">    producer <span class="op" style="color: #5E5E5E;">=</span> KafkaProducer(</span>
+<span id="cb11-12">        bootstrap_servers <span class="op" style="color: #5E5E5E;">=</span> bootstrap_servers,</span>
+<span id="cb11-13">        value_serializer <span class="op" style="color: #5E5E5E;">=</span> <span class="kw" style="color: #003B4F;">lambda</span> x: dumps(x).encode(<span class="st" style="color: #20794D;">'utf-8'</span>)</span>
+<span id="cb11-14">    )</span>
+<span id="cb11-15"></span>
+<span id="cb11-16">    <span class="cf" style="color: #003B4F;">while</span> <span class="va" style="color: #111111;">True</span>:</span>
+<span id="cb11-17">        idx <span class="op" style="color: #5E5E5E;">=</span> np.arange(digits.data.shape[<span class="dv" style="color: #AD0000;">0</span>])</span>
+<span id="cb11-18">        np.random.shuffle(idx)</span>
+<span id="cb11-19">        all_x <span class="op" style="color: #5E5E5E;">=</span> all_x[idx]</span>
+<span id="cb11-20">        all_y <span class="op" style="color: #5E5E5E;">=</span> all_y[idx]</span>
+<span id="cb11-21"></span>
+<span id="cb11-22">        <span class="cf" style="color: #003B4F;">for</span> x, y <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">zip</span>(all_x, all_y):</span>
+<span id="cb11-23">            cur_data <span class="op" style="color: #5E5E5E;">=</span> {</span>
+<span id="cb11-24">                <span class="st" style="color: #20794D;">'ts'</span>: datetime.now().strftime(<span class="st" style="color: #20794D;">'%Y-%m-</span><span class="sc" style="color: #5E5E5E;">%d</span><span class="st" style="color: #20794D;"> %H:%M:%S'</span>),</span>
+<span id="cb11-25">                <span class="st" style="color: #20794D;">'x'</span>: x.tolist(),</span>
+<span id="cb11-26">                <span class="st" style="color: #20794D;">'actual_y'</span>: <span class="bu" style="color: null;">int</span>(y)</span>
+<span id="cb11-27">            }</span>
+<span id="cb11-28">            producer.send(topic, value<span class="op" style="color: #5E5E5E;">=</span>cur_data)</span>
+<span id="cb11-29"></span>
+<span id="cb11-30">            sleep(<span class="dv" style="color: #AD0000;">1</span><span class="op" style="color: #5E5E5E;">/</span> max_msg_per_second)</span>
+<span id="cb11-31"></span>
+<span id="cb11-32">write_data()</span></code></pre></div>
+</section>
+<section id="kafka-data-consumer" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="kafka-data-consumer"><span class="header-section-number">5.2</span> Kafka Data Consumer</h3>
+<div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><span class="co" style="color: #5E5E5E;"># 1. create Blink Stream Processing Environment</span></span>
+<span id="cb12-2">env <span class="op" style="color: #5E5E5E;">=</span> StreamExecutionEnvironment.get_execution_environment()</span>
+<span id="cb12-3">env_settings <span class="op" style="color: #5E5E5E;">=</span> EnvironmentSettings.new_instance().in_streaming_mode().use_blink_planner().build()</span>
+<span id="cb12-4">t_env <span class="op" style="color: #5E5E5E;">=</span> StreamTableEnvironment.create(env, environment_settings<span class="op" style="color: #5E5E5E;">=</span>env_settings)</span>
+<span id="cb12-5">t_env.get_config().get_configuration().set_boolean(<span class="st" style="color: #20794D;">'python.fn-execution.memory.managed'</span>, <span class="va" style="color: #111111;">True</span>)</span>
+<span id="cb12-6"></span>
+<span id="cb12-7"><span class="co" style="color: #5E5E5E;"># 2. Load Dependencies</span></span>
+<span id="cb12-8">dir_kafka_sql_connect <span class="op" style="color: #5E5E5E;">=</span> os.path.join(os.path.abspath(os.path.dirname(<span class="va" style="color: #111111;">__file__</span>)), <span class="st" style="color: #20794D;">'flink-sql-connector-kafka_2.11-1.11.2.jar'</span>)</span>
+<span id="cb12-9">t_env.get_config().get_configuration().set_string(<span class="st" style="color: #20794D;">'pipeline.jars'</span>, <span class="st" style="color: #20794D;">'file://'</span><span class="op" style="color: #5E5E5E;">+</span> dir_kafka_sql_connect)</span>
+<span id="cb12-10"></span>
+<span id="cb12-11">dir_requirements <span class="op" style="color: #5E5E5E;">=</span> os.path.join(os.path.abspath(os.path.dirname(<span class="va" style="color: #111111;">__file__</span>)), <span class="st" style="color: #20794D;">'requirements.txt'</span>)</span>
+<span id="cb12-12">dir_cache <span class="op" style="color: #5E5E5E;">=</span> os.path.join(os.path.abspath(os.path.dirname(<span class="va" style="color: #111111;">__file__</span>)), <span class="st" style="color: #20794D;">'cached_dir'</span>)</span>
+<span id="cb12-13"><span class="cf" style="color: #003B4F;">if</span> os.path.exists(dir_requirements):</span>
+<span id="cb12-14">    <span class="cf" style="color: #003B4F;">if</span> os.path.exists(dir_cache):</span>
+<span id="cb12-15">        t_env.set_python_requirements(dir_requirements, cached_dir)</span>
+<span id="cb12-16"></span>
+<span id="cb12-17"><span class="co" style="color: #5E5E5E;"># 3. register UDF</span></span>
+<span id="cb12-18"><span class="kw" style="color: #003B4F;">class</span> Model(ScalarFunction):</span>
+<span id="cb12-19">    <span class="kw" style="color: #003B4F;">def</span> <span class="fu" style="color: #4758AB;">__init__</span>(<span class="va" style="color: #111111;">self</span>):</span>
+<span id="cb12-20">        <span class="co" style="color: #5E5E5E;"># load model</span></span>
+<span id="cb12-21">        <span class="va" style="color: #111111;">self</span>.model_name <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'online_ml_model'</span></span>
+<span id="cb12-22">        <span class="va" style="color: #111111;">self</span>.redis_params <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(host<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'localhost'</span>, password<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'redis_password'</span>, port<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'6379'</span>, db<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">0</span>)</span>
+<span id="cb12-23">        <span class="va" style="color: #111111;">self</span>.clf <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">self</span>.load_model()</span>
+<span id="cb12-24"></span>
+<span id="cb12-25">        <span class="va" style="color: #111111;">self</span>.interval_dump_seconds <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">30</span></span>
+<span id="cb12-26">        <span class="va" style="color: #111111;">self</span>.last_dump_time <span class="op" style="color: #5E5E5E;">=</span> datetime.now()</span>
+<span id="cb12-27"></span>
+<span id="cb12-28">        <span class="va" style="color: #111111;">self</span>.classes <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">list</span>(<span class="bu" style="color: null;">range</span>(<span class="dv" style="color: #AD0000;">10</span>))</span>
+<span id="cb12-29"></span>
+<span id="cb12-30">        <span class="va" style="color: #111111;">self</span>.metric_counter<span class="op" style="color: #5E5E5E;">=</span><span class="va" style="color: #111111;">None</span></span>
+<span id="cb12-31">        <span class="va" style="color: #111111;">self</span>.metric_predict_acc <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">0</span></span>
+<span id="cb12-32">        <span class="va" style="color: #111111;">self</span>.metric_distribution_y <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">None</span></span>
+<span id="cb12-33">        <span class="va" style="color: #111111;">self</span>.metric_total_10_sec <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">None</span></span>
+<span id="cb12-34">        <span class="va" style="color: #111111;">self</span>.metric_right_10_sec <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">None</span></span>
+<span id="cb12-35">    </span>
+<span id="cb12-36">    <span class="kw" style="color: #003B4F;">def</span> <span class="bu" style="color: null;">open</span>(<span class="va" style="color: #111111;">self</span>, function_context):</span>
+<span id="cb12-37">        <span class="co" style="color: #5E5E5E;"># register metrics</span></span>
+<span id="cb12-38">        metric_group <span class="op" style="color: #5E5E5E;">=</span> function_context.get_metric_group().add_group(<span class="st" style="color: #20794D;">'online_ml'</span>)</span>
+<span id="cb12-39">        <span class="va" style="color: #111111;">self</span>.metric_counter <span class="op" style="color: #5E5E5E;">=</span> metric_group.counter(<span class="st" style="color: #20794D;">'sample_count'</span>)</span>
+<span id="cb12-40">        metric_group.gauge(<span class="st" style="color: #20794D;">'prediction_acc'</span>, <span class="kw" style="color: #003B4F;">lambda</span>: <span class="bu" style="color: null;">int</span>(<span class="va" style="color: #111111;">self</span>.metric_predict_acc<span class="op" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">100</span>))</span>
+<span id="cb12-41">        <span class="va" style="color: #111111;">self</span>.metric_distribution_y <span class="op" style="color: #5E5E5E;">=</span> metric_group.distribution(<span class="st" style="color: #20794D;">'metric_distribution_y'</span>)</span>
+<span id="cb12-42">        <span class="va" style="color: #111111;">self</span>.metric_total_10_sec <span class="op" style="color: #5E5E5E;">=</span> metric_group.meter(<span class="st" style="color: #20794D;">'total_10_sec'</span>, time_span_in_seconds<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">10</span>)</span>
+<span id="cb12-43">        <span class="va" style="color: #111111;">self</span>.metric_right_10_sec <span class="op" style="color: #5E5E5E;">=</span> metric_group.meter(<span class="st" style="color: #20794D;">'right_10_sec'</span>, time_span_in_seconds<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">10</span>)</span>
+<span id="cb12-44"></span>
+<span id="cb12-45">    <span class="kw" style="color: #003B4F;">def</span> <span class="bu" style="color: null;">eval</span>(<span class="va" style="color: #111111;">self</span>, x, y):</span>
+<span id="cb12-46">        <span class="co" style="color: #5E5E5E;"># x: 1-dim gray value</span></span>
+<span id="cb12-47">        <span class="co" style="color: #5E5E5E;"># y: 0-9</span></span>
+<span id="cb12-48">        <span class="va" style="color: #111111;">self</span>.clf.partial_fit([x], [y], classes<span class="op" style="color: #5E5E5E;">=</span><span class="va" style="color: #111111;">self</span>.classes) <span class="co" style="color: #5E5E5E;"># 1dim to 2dim</span></span>
+<span id="cb12-49">        <span class="va" style="color: #111111;">self</span>.dump_model() <span class="co" style="color: #5E5E5E;"># save to redis</span></span>
+<span id="cb12-50">        y_pred <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">self</span>.clf.predict([x])[<span class="dv" style="color: #AD0000;">0</span>]</span>
+<span id="cb12-51">        <span class="va" style="color: #111111;">self</span>.metric_counter.inc(<span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb12-52">        <span class="va" style="color: #111111;">self</span>.metric_total_10_sec.mark_event(<span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb12-53">        <span class="cf" style="color: #003B4F;">if</span> y_pred <span class="op" style="color: #5E5E5E;">==</span> y:</span>
+<span id="cb12-54">            <span class="va" style="color: #111111;">self</span>.metric_right_10_sec.mark_event(<span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb12-55">        <span class="va" style="color: #111111;">self</span>.metric_predict_acc <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">self</span>.metric_right_10_sec.get_count() <span class="op" style="color: #5E5E5E;">/</span> <span class="va" style="color: #111111;">self</span>.metric_total_10_sec.get_count()</span>
+<span id="cb12-56">        <span class="va" style="color: #111111;">self</span>.metric_distribution_y.update(y)</span>
+<span id="cb12-57"></span>
+<span id="cb12-58">        <span class="cf" style="color: #003B4F;">return</span> y_pred</span>
+<span id="cb12-59">    </span>
+<span id="cb12-60">    <span class="kw" style="color: #003B4F;">def</span> load_model(<span class="va" style="color: #111111;">self</span>)</span>
+<span id="cb12-61">        r <span class="op" style="color: #5E5E5E;">=</span> redis.StrictRedis(<span class="op" style="color: #5E5E5E;">**</span><span class="va" style="color: #111111;">self</span>.redis_params)</span>
+<span id="cb12-62">        clf <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">None</span></span>
+<span id="cb12-63"></span>
+<span id="cb12-64">        <span class="cf" style="color: #003B4F;">try</span>:</span>
+<span id="cb12-65">            clf<span class="op" style="color: #5E5E5E;">=</span>pickle.loads(r.get(<span class="va" style="color: #111111;">self</span>.model_name))</span>
+<span id="cb12-66">        <span class="cf" style="color: #003B4F;">except</span> <span class="pp" style="color: #AD0000;">TypeError</span>:</span>
+<span id="cb12-67">            logging.info(<span class="st" style="color: #20794D;">'no model in redis, init new model...'</span>)</span>
+<span id="cb12-68">        <span class="cf" style="color: #003B4F;">except</span> (redis.exceptions.RedisError, <span class="pp" style="color: #AD0000;">TypeError</span>, <span class="pp" style="color: #AD0000;">Exception</span>):</span>
+<span id="cb12-69">            logging.warning(<span class="st" style="color: #20794D;">'redis error, init new model...'</span>)</span>
+<span id="cb12-70">        <span class="cf" style="color: #003B4F;">finally</span>:</span>
+<span id="cb12-71">            clf <span class="op" style="color: #5E5E5E;">=</span> clf <span class="kw" style="color: #003B4F;">or</span> SGDClassifier(alpha<span class="op" style="color: #5E5E5E;">=</span><span class="fl" style="color: #AD0000;">0.01</span>, loss<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'log'</span>, penalty<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'l1'</span>)</span>
+<span id="cb12-72">        <span class="cf" style="color: #003B4F;">return</span> clf</span>
+<span id="cb12-73">    </span>
+<span id="cb12-74">    <span class="kw" style="color: #003B4F;">def</span> dump_model(<span class="va" style="color: #111111;">self</span>):</span>
+<span id="cb12-75">        <span class="cf" style="color: #003B4F;">if</span> (datetime.now() <span class="op" style="color: #5E5E5E;">-</span> <span class="va" style="color: #111111;">self</span>.last_dump_time).seconds <span class="op" style="color: #5E5E5E;">&gt;=</span> <span class="va" style="color: #111111;">self</span>.interval_dump_seconds:</span>
+<span id="cb12-76">            r <span class="op" style="color: #5E5E5E;">=</span> redis.StrictRedis(<span class="op" style="color: #5E5E5E;">**</span><span class="va" style="color: #111111;">self</span>.redis_params)</span>
+<span id="cb12-77">            <span class="cf" style="color: #003B4F;">try</span>:</span>
+<span id="cb12-78">                r.<span class="bu" style="color: null;">set</span>(<span class="va" style="color: #111111;">self</span>.model_name, pickle.dumps(<span class="va" style="color: #111111;">self</span>.clf, protocol <span class="op" style="color: #5E5E5E;">=</span> pickle.HIGHEST_PROTOCOL))</span>
+<span id="cb12-79">            <span class="cf" style="color: #003B4F;">except</span> (redis.exceptions.RedisError, <span class="pp" style="color: #AD0000;">TypeError</span>, <span class="pp" style="color: #AD0000;">Exception</span>):</span>
+<span id="cb12-80">                logging.warning(<span class="st" style="color: #20794D;">'redis error, failed to store model...'</span>)</span>
+<span id="cb12-81">            <span class="va" style="color: #111111;">self</span>.last_dump_time <span class="op" style="color: #5E5E5E;">=</span> datetime.now()</span>
+<span id="cb12-82"></span>
+<span id="cb12-83">model <span class="op" style="color: #5E5E5E;">=</span> udf(Model(), input_types<span class="op" style="color: #5E5E5E;">=</span>[DataTypes.ARRAY(DataTypes.INT()), DataTypes.TINYINT()], result_type<span class="op" style="color: #5E5E5E;">=</span>DataTypes.TINYINT())</span>
+<span id="cb12-84">t_env.register_function(<span class="st" style="color: #20794D;">'train_and_predict'</span>, model)</span>
+<span id="cb12-85"></span>
+<span id="cb12-86"><span class="co" style="color: #5E5E5E;"># 4. create source table</span></span>
+<span id="cb12-87">t_env.execute_sql(<span class="ss" style="color: #20794D;">f"""</span></span>
+<span id="cb12-88"><span class="ss" style="color: #20794D;">    CREATE TABLE source (</span></span>
+<span id="cb12-89"><span class="ss" style="color: #20794D;">        x ARRAY&lt;INT&gt;,</span></span>
+<span id="cb12-90"><span class="ss" style="color: #20794D;">        actual_y TINYINT,</span></span>
+<span id="cb12-91"><span class="ss" style="color: #20794D;">        ts TIMESTAMP(3),</span></span>
+<span id="cb12-92"><span class="ss" style="color: #20794D;">    ) with (</span></span>
+<span id="cb12-93"><span class="ss" style="color: #20794D;">        'connector' = 'kafka',</span></span>
+<span id="cb12-94"><span class="ss" style="color: #20794D;">        'topic' = '</span><span class="sc" style="color: #5E5E5E;">{</span>source_topic<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb12-95"><span class="ss" style="color: #20794D;">        'properties.bootstrap.servers' = '</span><span class="sc" style="color: #5E5E5E;">{</span>kafka_servers<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb12-96"><span class="ss" style="color: #20794D;">        'properties.group.id' = '</span><span class="sc" style="color: #5E5E5E;">{</span>kafka_consumer_group_id<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb12-97"><span class="ss" style="color: #20794D;">        'scan.startup.mode' = 'latest-offset',</span></span>
+<span id="cb12-98"><span class="ss" style="color: #20794D;">        'json.fail-on-missing-field' = 'false',</span></span>
+<span id="cb12-99"><span class="ss" style="color: #20794D;">        'json.ignore-parse-errors' = 'true',</span></span>
+<span id="cb12-100"><span class="ss" style="color: #20794D;">        'format' = 'json'</span></span>
+<span id="cb12-101"><span class="ss" style="color: #20794D;">    )</span></span>
+<span id="cb12-102"><span class="ss" style="color: #20794D;">"""</span></span>
+<span id="cb12-103">)</span>
+<span id="cb12-104"></span>
+<span id="cb12-105"><span class="co" style="color: #5E5E5E;"># 5. create sink table</span></span>
+<span id="cb12-106">t_env.execute_sql(<span class="ss" style="color: #20794D;">f"""</span></span>
+<span id="cb12-107"><span class="ss" style="color: #20794D;">    CREATE TABLE sink (</span></span>
+<span id="cb12-108"><span class="ss" style="color: #20794D;">        x ARRAY&lt;INT&gt;</span></span>
+<span id="cb12-109"><span class="ss" style="color: #20794D;">        actual_y TINYINT,</span></span>
+<span id="cb12-110"><span class="ss" style="color: #20794D;">        predict_y TINYINT,</span></span>
+<span id="cb12-111"><span class="ss" style="color: #20794D;">) with (</span></span>
+<span id="cb12-112"><span class="ss" style="color: #20794D;">    'connector' = 'kafka',</span></span>
+<span id="cb12-113"><span class="ss" style="color: #20794D;">        'topic' = '</span><span class="sc" style="color: #5E5E5E;">{</span>sink_topic<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb12-114"><span class="ss" style="color: #20794D;">        'properties.bootstrap.servers' = '</span><span class="sc" style="color: #5E5E5E;">{</span>kafka_servers<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb12-115"><span class="ss" style="color: #20794D;">        'properties.group.id' = '</span><span class="sc" style="color: #5E5E5E;">{</span>kafka_consumer_group_id<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">',</span></span>
+<span id="cb12-116"><span class="ss" style="color: #20794D;">        'scan.startup.mode' = 'latest-offset',</span></span>
+<span id="cb12-117"><span class="ss" style="color: #20794D;">        'json.fail-on-missing-field' = 'false',</span></span>
+<span id="cb12-118"><span class="ss" style="color: #20794D;">        'json.ignore-parse-errors' = 'true',</span></span>
+<span id="cb12-119"><span class="ss" style="color: #20794D;">        'format' = 'json'</span></span>
+<span id="cb12-120"><span class="ss" style="color: #20794D;">    )</span></span>
+<span id="cb12-121"><span class="ss" style="color: #20794D;">"""</span></span>
+<span id="cb12-122">)</span>
+<span id="cb12-123"></span>
+<span id="cb12-124"><span class="co" style="color: #5E5E5E;"># 6. stream processing</span></span>
+<span id="cb12-125">t_env.sql_query(<span class="st" style="color: #20794D;">"""</span></span>
+<span id="cb12-126"><span class="st" style="color: #20794D;">    SELECT</span></span>
+<span id="cb12-127"><span class="st" style="color: #20794D;">        x,</span></span>
+<span id="cb12-128"><span class="st" style="color: #20794D;">        actual_y,</span></span>
+<span id="cb12-129"><span class="st" style="color: #20794D;">        train_and_predict(x, actual_y) AS predict_y</span></span>
+<span id="cb12-130"><span class="st" style="color: #20794D;">    FROM</span></span>
+<span id="cb12-131"><span class="st" style="color: #20794D;">        source</span></span>
+<span id="cb12-132"><span class="st" style="color: #20794D;">"""</span>).insert_into(<span class="st" style="color: #20794D;">"sink"</span>)</span>
+<span id="cb12-133">t_env.execute(<span class="st" style="color: #20794D;">'Classifier Model Train'</span>)</span></code></pre></div>
+</section>
+<section id="model-serving-via-flask" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="model-serving-via-flask"><span class="header-section-number">5.3</span> Model Serving via Flask</h3>
+<div class="sourceCode" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><span class="co" style="color: #5E5E5E;"># settings</span></span>
+<span id="cb13-2">redis_params <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
+<span id="cb13-3">    host<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'localhost'</span>,</span>
+<span id="cb13-4">    password<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'redis_password'</span>,</span>
+<span id="cb13-5">    port<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">6379</span>,</span>
+<span id="cb13-6">    db<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">0</span></span>
+<span id="cb13-7">)</span>
+<span id="cb13-8">model_key <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'online_ml_model'</span></span>
+<span id="cb13-9"><span class="co" style="color: #5E5E5E;"># create app</span></span>
+<span id="cb13-10">app <span class="op" style="color: #5E5E5E;">=</span> Flask(<span class="va" style="color: #111111;">__name__</span>)</span>
+<span id="cb13-11">CORS(app)</span>
+<span id="cb13-12"></span>
+<span id="cb13-13"><span class="co" style="color: #5E5E5E;"># model</span></span>
+<span id="cb13-14">clf <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">None</span></span>
+<span id="cb13-15"><span class="kw" style="color: #003B4F;">def</span> load_latest_clf_model():</span>
+<span id="cb13-16">    r <span class="op" style="color: #5E5E5E;">=</span> redis.StrictRedis(<span class="op" style="color: #5E5E5E;">**</span>redis_params)</span>
+<span id="cb13-17">    model<span class="op" style="color: #5E5E5E;">=</span><span class="va" style="color: #111111;">None</span></span>
+<span id="cb13-18">    <span class="cf" style="color: #003B4F;">try</span>:</span>
+<span id="cb13-19">        model<span class="op" style="color: #5E5E5E;">=</span>pickle.loads(r.get(model_key))</span>
+<span id="cb13-20">    <span class="cf" style="color: #003B4F;">except</span> <span class="pp" style="color: #AD0000;">TypeError</span>:</span>
+<span id="cb13-21">        logging.exception(<span class="st" style="color: #20794D;">'No model in redis, maybe key error'</span>)</span>
+<span id="cb13-22">    <span class="cf" style="color: #003B4F;">except</span> (redis.exceptions.RedisError, <span class="pp" style="color: #AD0000;">TypeError</span>, <span class="pp" style="color: #AD0000;">Exception</span>) <span class="im" style="color: #00769E;">as</span> err:</span>
+<span id="cb13-23">        logging.exception(<span class="ss" style="color: #20794D;">f'RedisError: </span><span class="sc" style="color: #5E5E5E;">{</span>err<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">'</span>)</span>
+<span id="cb13-24">    <span class="cf" style="color: #003B4F;">return</span> model</span>
+<span id="cb13-25"></span>
+<span id="cb13-26"><span class="co" style="color: #5E5E5E;"># raw data to input</span></span>
+<span id="cb13-27"><span class="kw" style="color: #003B4F;">def</span> format_svg_base64(s: <span class="bu" style="color: null;">str</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> np.array:</span>
+<span id="cb13-28">    <span class="co" style="color: #5E5E5E;"># base64 string to svg to 8*8 array to 1-dim array</span></span>
+<span id="cb13-29"></span>
+<span id="cb13-30">    <span class="co" style="color: #5E5E5E;"># base64 to svg</span></span>
+<span id="cb13-31">    <span class="cf" style="color: #003B4F;">with</span> <span class="bu" style="color: null;">open</span>(<span class="st" style="color: #20794D;">'digit.svg'</span>, <span class="st" style="color: #20794D;">'wb'</span>) <span class="im" style="color: #00769E;">as</span> f:</span>
+<span id="cb13-32">        f.write(base64.b64decode(s))</span>
+<span id="cb13-33">    <span class="co" style="color: #5E5E5E;"># svg to png</span></span>
+<span id="cb13-34">    drawing <span class="op" style="color: #5E5E5E;">=</span> svg2rlg(<span class="st" style="color: #20794D;">'digit.svg'</span>)</span>
+<span id="cb13-35">    renderPM.drawToFile(drawing, <span class="st" style="color: #20794D;">'digit.svg'</span>, fmt<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'png'</span>)</span>
+<span id="cb13-36">    <span class="co" style="color: #5E5E5E;"># png to 8 * 8</span></span>
+<span id="cb13-37">    target_w, target_h <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">8</span></span>
+<span id="cb13-38">    png <span class="op" style="color: #5E5E5E;">=</span> Image.<span class="bu" style="color: null;">open</span>(<span class="st" style="color: #20794D;">'digit.png'</span>)</span>
+<span id="cb13-39">    w, h <span class="op" style="color: #5E5E5E;">=</span> png.size</span>
+<span id="cb13-40">    scale <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">min</span>(target_w<span class="op" style="color: #5E5E5E;">/</span> w, target_h<span class="op" style="color: #5E5E5E;">/</span> h)</span>
+<span id="cb13-41">    new_w, new_h <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">int</span>(w<span class="op" style="color: #5E5E5E;">*</span>scale, h<span class="op" style="color: #5E5E5E;">*</span>scale)</span>
+<span id="cb13-42">    png<span class="op" style="color: #5E5E5E;">=</span>png.resize((new_w, new_h), Image.BILINEAR)</span>
+<span id="cb13-43">    new_png <span class="op" style="color: #5E5E5E;">=</span> Image.new(<span class="st" style="color: #20794D;">'RGB'</span>, (target_w, target_h), (<span class="dv" style="color: #AD0000;">255</span>,<span class="dv" style="color: #AD0000;">255</span>,<span class="dv" style="color: #AD0000;">255</span>)) <span class="co" style="color: #5E5E5E;"># create blank img</span></span>
+<span id="cb13-44">    new_png.paste(png, ((target_w<span class="op" style="color: #5E5E5E;">-</span>new_w)<span class="op" style="color: #5E5E5E;">//</span><span class="dv" style="color: #AD0000;">2</span>, (target_h<span class="op" style="color: #5E5E5E;">-</span>new_h)<span class="op" style="color: #5E5E5E;">//</span><span class="dv" style="color: #AD0000;">2</span>)) <span class="co" style="color: #5E5E5E;"># copy to center</span></span>
+<span id="cb13-45">    <span class="co" style="color: #5E5E5E;"># convert black to white, value to 0-16, size to 1*64</span></span>
+<span id="cb13-46">    array <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">255</span> <span class="op" style="color: #5E5E5E;">-</span> np.array(new_png.convert(<span class="st" style="color: #20794D;">'L'</span>))</span>
+<span id="cb13-47">    array <span class="op" style="color: #5E5E5E;">=</span> (array<span class="op" style="color: #5E5E5E;">/</span><span class="dv" style="color: #AD0000;">255</span>) <span class="op" style="color: #5E5E5E;">*</span> <span class="dv" style="color: #AD0000;">16</span></span>
+<span id="cb13-48">    array <span class="op" style="color: #5E5E5E;">=</span> array.reshape(<span class="dv" style="color: #AD0000;">1</span>, <span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb13-49">    <span class="cf" style="color: #003B4F;">return</span> array</span>
+<span id="cb13-50"></span>
+<span id="cb13-51"><span class="at" style="color: #657422;">@app.route</span>(<span class="st" style="color: #20794D;">'/'</span>)</span>
+<span id="cb13-52"><span class="kw" style="color: #003B4F;">def</span> home():</span>
+<span id="cb13-53">    <span class="cf" style="color: #003B4F;">return</span> render_template(<span class="st" style="color: #20794D;">'web.html'</span>)</span>
+<span id="cb13-54"><span class="at" style="color: #657422;">@app.route</span>(<span class="st" style="color: #20794D;">'/predict'</span>, methods<span class="op" style="color: #5E5E5E;">=</span>[<span class="st" style="color: #20794D;">'POST'</span>])</span>
+<span id="cb13-55"><span class="kw" style="color: #003B4F;">def</span> predict():</span>
+<span id="cb13-56">    <span class="kw" style="color: #003B4F;">global</span> clf</span>
+<span id="cb13-57">    img_string <span class="op" style="color: #5E5E5E;">=</span>request.form[<span class="st" style="color: #20794D;">'imgStr'</span>]</span>
+<span id="cb13-58">    data <span class="op" style="color: #5E5E5E;">=</span> format_svg_base64(img_string) <span class="co" style="color: #5E5E5E;"># feature engineering</span></span>
+<span id="cb13-59">    model <span class="op" style="color: #5E5E5E;">=</span> load_latest_clf_model() <span class="co" style="color: #5E5E5E;"># model loading</span></span>
+<span id="cb13-60">    clf <span class="op" style="color: #5E5E5E;">=</span> model <span class="kw" style="color: #003B4F;">or</span> clf</span>
+<span id="cb13-61">    predict_y <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">int</span>(clf.predict(data)[<span class="dv" style="color: #AD0000;">0</span>])</span>
+<span id="cb13-62">    <span class="cf" style="color: #003B4F;">return</span> jsonify({<span class="st" style="color: #20794D;">'success'</span>:<span class="va" style="color: #111111;">True</span>, <span class="st" style="color: #20794D;">'predict_result'</span>:predict_y}), <span class="dv" style="color: #AD0000;">201</span></span>
+<span id="cb13-63"></span>
+<span id="cb13-64"><span class="cf" style="color: #003B4F;">if</span> <span class="va" style="color: #111111;">__name__</span> <span class="op" style="color: #5E5E5E;">==</span> <span class="st" style="color: #20794D;">'__main__'</span>:</span>
+<span id="cb13-65">    app.run(host<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'127.0.0.1'</span>, port<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">8066</span>, debug<span class="op" style="color: #5E5E5E;">=</span><span class="va" style="color: #111111;">True</span>)</span></code></pre></div>
+</section>
+<section id="retrain-model" class="level3" data-number="5.4">
+<h3 data-number="5.4" class="anchored" data-anchor-id="retrain-model"><span class="header-section-number">5.4</span> Retrain Model</h3>
+<div class="sourceCode" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1">redis_params <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
+<span id="cb14-2">    host<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'localhost'</span>,</span>
+<span id="cb14-3">    password<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'redis_password'</span>,</span>
+<span id="cb14-4">    port<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">6379</span>,</span>
+<span id="cb14-5">    db<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">0</span></span>
+<span id="cb14-6">)</span>
+<span id="cb14-7">r <span class="op" style="color: #5E5E5E;">=</span> redis.StrictRedis(<span class="op" style="color: #5E5E5E;">**</span>redis_params)</span>
+<span id="cb14-8"><span class="cf" style="color: #003B4F;">try</span>:</span>
+<span id="cb14-9">    model<span class="op" style="color: #5E5E5E;">=</span>r.ping()</span>
+<span id="cb14-10"><span class="cf" style="color: #003B4F;">except</span> (redis.exceptions.RedisError, <span class="pp" style="color: #AD0000;">TypeError</span>, <span class="pp" style="color: #AD0000;">Exception</span>)<span class="im" style="color: #00769E;">as</span> err:</span>
+<span id="cb14-11">    <span class="cf" style="color: #003B4F;">raise</span> <span class="pp" style="color: #AD0000;">Exception</span>(<span class="ss" style="color: #20794D;">f'cannot connect to redis:</span><span class="sc" style="color: #5E5E5E;">{</span>err<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">'</span>)</span>
+<span id="cb14-12"><span class="cf" style="color: #003B4F;">if</span> <span class="bu" style="color: null;">len</span>(sys.argv) <span class="op" style="color: #5E5E5E;">==</span> <span class="dv" style="color: #AD0000;">1</span>: <span class="co" style="color: #5E5E5E;"># delete whole database when no arguments sent in</span></span>
+<span id="cb14-13">    r.flushdb()</span>
+<span id="cb14-14"><span class="cf" style="color: #003B4F;">else</span>:</span>
+<span id="cb14-15">    <span class="cf" style="color: #003B4F;">for</span> key <span class="kw" style="color: #003B4F;">in</span> sys.argv[<span class="dv" style="color: #AD0000;">1</span>:]: <span class="co" style="color: #5E5E5E;"># delete specific key</span></span>
+<span id="cb14-16">        <span class="cf" style="color: #003B4F;">if</span> r.exists(key):</span>
+<span id="cb14-17">            r.delete(key)</span></code></pre></div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>python</category>
+  <category>flink</category>
+  <category>kafka</category>
+  <category>tutorial</category>
+  <guid>https://waterking.cc/posts/tutorials/flink/flink.html</guid>
+  <pubDate>Sun, 11 Dec 2022 16:00:00 GMT</pubDate>
+  <media:content url="https://waterking.cc/posts/tutorials/flink/test.png" medium="image" type="image/png" height="42" width="144"/>
+</item>
+<item>
+  <title>PySpark Tutorial</title>
+  <link>https://waterking.cc/posts/tutorials/spark/spark.html</link>
+  <description><![CDATA[ 
+
+
+
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/tutorials/spark/test.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<section id="import-packages" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="import-packages"><span class="header-section-number">1</span> Import Packages</h2>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;">import</span> numpy <span class="im" style="color: #00769E;">as</span> np, pandas <span class="im" style="color: #00769E;">as</span> pd, sklearn, random, os</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;">from</span> pyspark.sql <span class="im" style="color: #00769E;">import</span> SparkSession, SQLContext</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;">from</span> pyspark.sql.functions <span class="im" style="color: #00769E;">import</span> mean, col, split, regexp_extract, when, lit, isnan, count</span>
+<span id="cb1-4"><span class="im" style="color: #00769E;">from</span> pyspark.ml <span class="im" style="color: #00769E;">import</span> Pipeline</span>
+<span id="cb1-5"><span class="im" style="color: #00769E;">from</span> pyspark.ml.feature <span class="im" style="color: #00769E;">import</span> StringIndexer, IndexToString, VectorAssembler, QuantileDiscretizer</span>
+<span id="cb1-6"><span class="im" style="color: #00769E;">from</span> pyspark.ml.evaluation <span class="im" style="color: #00769E;">import</span> RegressionEvaluator, MulticlassClassificationEvaluator</span>
+<span id="cb1-7"><span class="im" style="color: #00769E;">from</span> pyspark.ml.recommendation <span class="im" style="color: #00769E;">import</span> ALS</span>
+<span id="cb1-8"><span class="im" style="color: #00769E;">from</span> pyspark.ml.classification <span class="im" style="color: #00769E;">import</span> LogisticRegression, RandomForestClassfier, GBTClassifier</span>
+<span id="cb1-9"><span class="im" style="color: #00769E;">from</span> pyspark.ml.tuning <span class="im" style="color: #00769E;">import</span> ParamGridBuilder, TrainValidationSplit</span></code></pre></div>
+</section>
+<section id="data-loading" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="data-loading"><span class="header-section-number">2</span> Data Loading</h2>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;"># 1. Create SparkSession</span></span>
+<span id="cb2-2">spark <span class="op" style="color: #5E5E5E;">=</span> SparkSession.builder.appName(<span class="st" style="color: #20794D;">'name'</span>).getOrCreate()</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;"># 2. Load Dataset</span></span>
+<span id="cb2-5">df <span class="op" style="color: #5E5E5E;">=</span> spark.read.csv(<span class="st" style="color: #20794D;">'data.csv'</span>, inferSchema<span class="op" style="color: #5E5E5E;">=</span><span class="va" style="color: #111111;">True</span>, header<span class="op" style="color: #5E5E5E;">=</span><span class="va" style="color: #111111;">True</span>)</span></code></pre></div>
+</section>
+<section id="eda" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="eda"><span class="header-section-number">3</span> EDA</h2>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;"># 1. Display Dataset Schema</span></span>
+<span id="cb3-2">df.limit(<span class="dv" style="color: #AD0000;">3</span>).toPandas() <span class="co" style="color: #5E5E5E;"># show 3 rows</span></span>
+<span id="cb3-3">df.select(<span class="st" style="color: #20794D;">'col_1'</span>, <span class="st" style="color: #20794D;">'col_2'</span>, <span class="st" style="color: #20794D;">'col_3'</span>).toPandas() <span class="co" style="color: #5E5E5E;"># show 3 cols</span></span>
+<span id="cb3-4"></span>
+<span id="cb3-5"><span class="co" style="color: #5E5E5E;"># 2. Display feature types</span></span>
+<span id="cb3-6">df.printSchema()</span></code></pre></div>
+</section>
+<section id="data-preprocessing" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="data-preprocessing"><span class="header-section-number">4</span> Data Preprocessing</h2>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;"># 1. Convert string column to numeric values</span></span>
+<span id="cb4-2"><span class="co" style="color: #5E5E5E;"># 1.1 single column</span></span>
+<span id="cb4-3">stringIndexer <span class="op" style="color: #5E5E5E;">=</span> StringIndexer(inputCol<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'title'</span>, outputCol<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'title_new'</span>)</span>
+<span id="cb4-4">indexer <span class="op" style="color: #5E5E5E;">=</span> stringIndexer.fit(df) <span class="co" style="color: #5E5E5E;"># save for final int to string</span></span>
+<span id="cb4-5">new_df <span class="op" style="color: #5E5E5E;">=</span> indexer.transform(df)</span>
+<span id="cb4-6"><span class="co" style="color: #5E5E5E;"># 1.2 multiple columns</span></span>
+<span id="cb4-7">indexers <span class="op" style="color: #5E5E5E;">=</span> [StringIndexer(inputCol<span class="op" style="color: #5E5E5E;">=</span>column, outputCol<span class="op" style="color: #5E5E5E;">=</span>column<span class="op" style="color: #5E5E5E;">+</span><span class="st" style="color: #20794D;">"_index"</span>).fit(df) <span class="cf" style="color: #003B4F;">for</span> column <span class="kw" style="color: #003B4F;">in</span> [<span class="st" style="color: #20794D;">'sex'</span>, <span class="st" style="color: #20794D;">'Embarked'</span>, <span class="st" style="color: #20794D;">'Initial'</span>]]</span>
+<span id="cb4-8">pipeline <span class="op" style="color: #5E5E5E;">=</span> Pipeline(stages<span class="op" style="color: #5E5E5E;">=</span>indexers)</span>
+<span id="cb4-9">new_df <span class="op" style="color: #5E5E5E;">=</span> pipeline.fit(df).transform(df)</span>
+<span id="cb4-10"></span>
+<span id="cb4-11"><span class="co" style="color: #5E5E5E;"># 2. Check null values</span></span>
+<span id="cb4-12">new_df.select([count(when(isnan(c) <span class="op" style="color: #5E5E5E;">|</span> col(c).isNull(), c)).alias(c) <span class="cf" style="color: #003B4F;">for</span> c <span class="kw" style="color: #003B4F;">in</span> new_df.columns]).show()</span>
+<span id="cb4-13"></span>
+<span id="cb4-14"><span class="co" style="color: #5E5E5E;"># 3. Fill missing values</span></span>
+<span id="cb4-15"><span class="co" style="color: #5E5E5E;"># 3.1 Drop column with many many missing values</span></span>
+<span id="cb4-16">new_df.drop(<span class="st" style="color: #20794D;">'Cabin'</span>)</span>
+<span id="cb4-17"></span>
+<span id="cb4-18"><span class="co" style="color: #5E5E5E;"># 3.2. Complete missing values with average value grouped by a column: Woman age 22 , Man age 33</span></span>
+<span id="cb4-19">new_df.groupby(<span class="st" style="color: #20794D;">'Initial'</span>).avg(<span class="st" style="color: #20794D;">'Age'</span>).collect()</span>
+<span id="cb4-20">new_df <span class="op" style="color: #5E5E5E;">=</span> new_df.withColumn(<span class="st" style="color: #20794D;">'Age'</span>, when((df[<span class="st" style="color: #20794D;">'Initial'</span>]<span class="op" style="color: #5E5E5E;">==</span><span class="st" style="color: #20794D;">'Miss'</span>) <span class="op" style="color: #5E5E5E;">&amp;</span> (df[<span class="st" style="color: #20794D;">'Age'</span>].isNull()), <span class="dv" style="color: #AD0000;">22</span>).otherwise(df[<span class="st" style="color: #20794D;">'Age'</span>]))</span>
+<span id="cb4-21">new_df <span class="op" style="color: #5E5E5E;">=</span> new_df.withColumn(<span class="st" style="color: #20794D;">'Age'</span>, when((df[<span class="st" style="color: #20794D;">'Initial'</span>]<span class="op" style="color: #5E5E5E;">==</span><span class="st" style="color: #20794D;">'Mr'</span>) <span class="op" style="color: #5E5E5E;">&amp;</span> (df[<span class="st" style="color: #20794D;">'Age'</span>].isNull()), <span class="dv" style="color: #AD0000;">33</span>).otherwise(df[<span class="st" style="color: #20794D;">'Age'</span>]))</span>
+<span id="cb4-22"></span>
+<span id="cb4-23"><span class="co" style="color: #5E5E5E;"># 3.3 Assign a major value to a column </span></span>
+<span id="cb4-24">new_df <span class="op" style="color: #5E5E5E;">=</span> new_df.na.fill({<span class="st" style="color: #20794D;">'Embark'</span>: <span class="st" style="color: #20794D;">'S'</span>})</span>
+<span id="cb4-25"></span>
+<span id="cb4-26"><span class="co" style="color: #5E5E5E;"># 4. Drop columns that not needed</span></span>
+<span id="cb4-27"></span>
+<span id="cb4-28"><span class="co" style="color: #5E5E5E;"># 5. Vectorize features</span></span>
+<span id="cb4-29">feature <span class="op" style="color: #5E5E5E;">=</span> VectorAssembler(inputCols <span class="op" style="color: #5E5E5E;">=</span> new_df.columns[<span class="dv" style="color: #AD0000;">1</span>:], outputCol<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'features'</span>)</span>
+<span id="cb4-30">feature_vector <span class="op" style="color: #5E5E5E;">=</span> feature.transform(new_df)</span>
+<span id="cb4-31"></span>
+<span id="cb4-32"><span class="co" style="color: #5E5E5E;"># 6. Select Features and Labels</span></span>
+<span id="cb4-33">new_df <span class="op" style="color: #5E5E5E;">=</span> feature_vector.select([<span class="st" style="color: #20794D;">'features'</span>, <span class="st" style="color: #20794D;">'Survived'</span>])</span>
+<span id="cb4-34"></span>
+<span id="cb4-35"><span class="co" style="color: #5E5E5E;"># 7. Split dataset into train and test</span></span>
+<span id="cb4-36">train, test <span class="op" style="color: #5E5E5E;">=</span> new_df.randomSplit([<span class="fl" style="color: #AD0000;">0.75</span>, <span class="fl" style="color: #AD0000;">0.25</span>], seed<span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">11</span>)</span></code></pre></div>
+</section>
+<section id="train-ml-model" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="train-ml-model"><span class="header-section-number">5</span> Train ML Model</h2>
+<section id="regression" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="regression"><span class="header-section-number">5.1</span> Regression</h3>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;"># 1. train and test</span></span>
+<span id="cb5-2">prediction <span class="op" style="color: #5E5E5E;">=</span> model.fit(train).transform(test)</span>
+<span id="cb5-3"></span>
+<span id="cb5-4"><span class="co" style="color: #5E5E5E;"># 2. evaluate</span></span>
+<span id="cb5-5">evaluator <span class="op" style="color: #5E5E5E;">=</span> RegressionEvaluator(metricName<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'rmse'</span>, predictionCol<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'prediction'</span>,labelCol<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'rating'</span>)</span>
+<span id="cb5-6">rmse <span class="op" style="color: #5E5E5E;">=</span> evaluator.evaluate(prediction)</span></code></pre></div>
+</section>
+<section id="classification" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="classification"><span class="header-section-number">5.2</span> Classification</h3>
+<section id="logistic-regression" class="level4">
+<h4 class="anchored" data-anchor-id="logistic-regression">Logistic Regression</h4>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">lr <span class="op" style="color: #5E5E5E;">=</span> LogisticRegression(labelCol<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'Survived'</span>)</span>
+<span id="cb6-2">paramGrid <span class="op" style="color: #5E5E5E;">=</span> ParamGridBuilder().addGrid(lr.regParam, (<span class="fl" style="color: #AD0000;">0.01</span>, <span class="fl" style="color: #AD0000;">0.1</span>))</span>
+<span id="cb6-3">                                .addGrid(lr.maxIter, (<span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">10</span>))<span class="op" style="color: #5E5E5E;">\</span></span>
+<span id="cb6-4">                                .addGrid(lr.tol, (<span class="fl" style="color: #AD0000;">1e-4</span>, <span class="fl" style="color: #AD0000;">1e-5</span>))<span class="op" style="color: #5E5E5E;">\</span></span>
+<span id="cb6-5">                                .addGrid(lr.elasticNetParam, (<span class="fl" style="color: #AD0000;">0.25</span>,<span class="fl" style="color: #AD0000;">0.75</span>))<span class="op" style="color: #5E5E5E;">\</span></span>
+<span id="cb6-6">                                .build()</span>
+<span id="cb6-7">model <span class="op" style="color: #5E5E5E;">=</span> TrainValidationSplit(estimator<span class="op" style="color: #5E5E5E;">=</span>lr, estimatorParamMaps<span class="op" style="color: #5E5E5E;">=</span>paramGrid,</span>
+<span id="cb6-8">                            evaluator<span class="op" style="color: #5E5E5E;">=</span>MulticlassClassificationEvaluator(labelCol<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'Survived'</span>),</span>
+<span id="cb6-9">                            trainRatio<span class="op" style="color: #5E5E5E;">=</span><span class="fl" style="color: #AD0000;">0.8</span>)</span>
+<span id="cb6-10">predictions <span class="op" style="color: #5E5E5E;">=</span> model.fit(train).transform(test)</span>
+<span id="cb6-11">acc <span class="op" style="color: #5E5E5E;">=</span> MulticlassClassificationEvaluator(labelCol<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'Survived'</span>,metricName<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'accuracy'</span>).evaluate(predictions)</span>
+<span id="cb6-12">pre <span class="op" style="color: #5E5E5E;">=</span> MulticlassClassificationEvaluator(labelCol<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'Survived'</span>,metricName<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'weightedPrecision'</span>).evaluate(predictions)</span></code></pre></div>
+</section>
+<section id="random-forest" class="level4">
+<h4 class="anchored" data-anchor-id="random-forest">Random Forest</h4>
+</section>
+<section id="gradient-boosted-tree" class="level4">
+<h4 class="anchored" data-anchor-id="gradient-boosted-tree">Gradient Boosted Tree</h4>
+</section>
+</section>
+</section>
+<section id="final-prediction-sparksql-practice" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="final-prediction-sparksql-practice"><span class="header-section-number">6</span> Final Prediction: SparkSQL Practice</h2>
+<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="co" style="color: #5E5E5E;"># 1. create dataframe of distince movies</span></span>
+<span id="cb7-2">unique_movies <span class="op" style="color: #5E5E5E;">=</span> new_df.select(<span class="st" style="color: #20794D;">'title_new'</span>).distinct()</span>
+<span id="cb7-3"></span>
+<span id="cb7-4"><span class="co" style="color: #5E5E5E;"># 2. create function to recommend top n movies to given user</span></span>
+<span id="cb7-5"><span class="kw" style="color: #003B4F;">def</span> top_movies(user_id, n):</span>
+<span id="cb7-6">    <span class="co" style="color: #5E5E5E;"># 1. simplify table `unique_movies` as `a` for SQL</span></span>
+<span id="cb7-7">    a <span class="op" style="color: #5E5E5E;">=</span> unique_movies.alias(<span class="st" style="color: #20794D;">'a'</span>)</span>
+<span id="cb7-8"></span>
+<span id="cb7-9">    <span class="co" style="color: #5E5E5E;"># 2. SQL: select movies already watched by user</span></span>
+<span id="cb7-10">    watched_movies <span class="op" style="color: #5E5E5E;">=</span> new_df.<span class="bu" style="color: null;">filter</span>(new_df[<span class="st" style="color: #20794D;">'userId'</span>]<span class="op" style="color: #5E5E5E;">==</span><span class="st" style="color: #20794D;">'user_id'</span>).select(<span class="st" style="color: #20794D;">'title_new'</span>)</span>
+<span id="cb7-11">    b <span class="op" style="color: #5E5E5E;">-</span> watched_movies.alias(<span class="st" style="color: #20794D;">'b'</span>)</span>
+<span id="cb7-12"></span>
+<span id="cb7-13">    <span class="co" style="color: #5E5E5E;"># 3. SQL: join table</span></span>
+<span id="cb7-14">    total_movies <span class="op" style="color: #5E5E5E;">=</span> a.join(b, a.title_new<span class="op" style="color: #5E5E5E;">=</span>b.title_new, how<span class="op" style="color: #5E5E5E;">=</span>left)</span>
+<span id="cb7-15"></span>
+<span id="cb7-16">    <span class="co" style="color: #5E5E5E;"># 4. SQL: select movies not watched - (filter = where)</span></span>
+<span id="cb7-17">    remain_movies <span class="op" style="color: #5E5E5E;">=</span> total_movies.where(col(<span class="st" style="color: #20794D;">'b.title_new'</span>).isNull()).select(a.title_new).distinct()</span>
+<span id="cb7-18"></span>
+<span id="cb7-19">    <span class="co" style="color: #5E5E5E;"># 5. SQL: add column `userId` with default value user_id</span></span>
+<span id="cb7-20">    remain_movies <span class="op" style="color: #5E5E5E;">=</span> remain_movies.withColumn(<span class="st" style="color: #20794D;">'userId'</span>, lit(<span class="bu" style="color: null;">int</span>(user_id)))</span>
+<span id="cb7-21"></span>
+<span id="cb7-22">    <span class="co" style="color: #5E5E5E;"># 6. SQL: top n</span></span>
+<span id="cb7-23">    recommendations <span class="op" style="color: #5E5E5E;">=</span> model.transform(remain_movies).orderBy(<span class="st" style="color: #20794D;">'prediction'</span>, ascending<span class="op" style="color: #5E5E5E;">=</span><span class="va" style="color: #111111;">False</span>).limit(n)</span>
+<span id="cb7-24"></span>
+<span id="cb7-25">    <span class="co" style="color: #5E5E5E;"># 7. int back to string</span></span>
+<span id="cb7-26">    recommendations <span class="op" style="color: #5E5E5E;">=</span> IndexToString(inputCol<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'title_new'</span>, outputCol<span class="op" style="color: #5E5E5E;">=</span><span class="st" style="color: #20794D;">'title'</span>, labels<span class="op" style="color: #5E5E5E;">=</span>indexer.labels).transform(recommendations)</span>
+<span id="cb7-27"></span>
+<span id="cb7-28">    <span class="cf" style="color: #003B4F;">return</span> recommendations.show(n, <span class="va" style="color: #111111;">False</span>)</span></code></pre></div>
+
+
+</section>
+
+ ]]></description>
+  <category>python</category>
+  <category>spark</category>
+  <category>tutorial</category>
+  <guid>https://waterking.cc/posts/tutorials/spark/spark.html</guid>
+  <pubDate>Sun, 11 Dec 2022 16:00:00 GMT</pubDate>
+  <media:content url="https://waterking.cc/posts/tutorials/spark/test.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Visualize Model with GradCAM and Super-Resolution</title>
@@ -202,17 +1156,39 @@ Take a hard look（认真审视） at these office seekers（谋求官职的人�
 <p>Note that <code>predict</code> corresponds to <code>@app.route("/predict", methods=["GET", "POST"])</code>.</p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;">http://123.45.67.8:5005/predict?path=imagepath</span></span></code></pre></div>
 </section>
-<section id="linux-tricks" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="linux-tricks"><span class="header-section-number">5</span> Linux Tricks</h2>
+<section id="experiment-results" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="experiment-results"><span class="header-section-number">5</span> Experiment Results</h2>
+<p>We conduct three experiments under symmetric, pairflip and instance noise scenarios.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Symmetric</th>
+<th>Pairflip</th>
+<th>Instance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PES</td>
+<td>84.44</td>
+<td>85.71</td>
+<td>83.66</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="linux-tricks" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="linux-tricks"><span class="header-section-number">6</span> Linux Tricks</h2>
 <p>In this section, I will introduce some linux tricks in my project.</p>
-<section id="how-to-copy-a-file-to-a-remote-server-in-python" class="level3" data-number="5.1">
-<h3 data-number="5.1" class="anchored" data-anchor-id="how-to-copy-a-file-to-a-remote-server-in-python"><span class="header-section-number">5.1</span> How to copy a file to a remote server in Python?</h3>
+<section id="how-to-copy-a-file-to-a-remote-server-in-python" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="how-to-copy-a-file-to-a-remote-server-in-python"><span class="header-section-number">6.1</span> How to copy a file to a remote server in Python?</h3>
 <div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;">import</span> subprocess</span>
 <span id="cb5-2">p <span class="op" style="color: #5E5E5E;">=</span> subprocess.Popen([<span class="st" style="color: #20794D;">"scp"</span>, <span class="st" style="color: #20794D;">"my_file.txt"</span>, <span class="st" style="color: #20794D;">"username@server:path"</span>])</span>
 <span id="cb5-3">sts <span class="op" style="color: #5E5E5E;">=</span> os.waitpid(p.pid, <span class="dv" style="color: #AD0000;">0</span>)</span></code></pre></div>
 </section>
-<section id="how-to-run-scp-without-password-prompt-interruption-in-linux" class="level3" data-number="5.2">
-<h3 data-number="5.2" class="anchored" data-anchor-id="how-to-run-scp-without-password-prompt-interruption-in-linux"><span class="header-section-number">5.2</span> How to Run SCP Without Password Prompt Interruption in Linux?</h3>
+<section id="how-to-run-scp-without-password-prompt-interruption-in-linux" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="how-to-run-scp-without-password-prompt-interruption-in-linux"><span class="header-section-number">6.2</span> How to Run SCP Without Password Prompt Interruption in Linux?</h3>
 <p>Try this if you wanna improve the speed of transferring the files.</p>
 <div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><span class="fu" style="color: #4758AB;">ssh-keygen</span> <span class="at" style="color: #657422;">-t</span> rsa <span class="at" style="color: #657422;">-b</span> 4096 <span class="at" style="color: #657422;">-C</span> <span class="st" style="color: #20794D;">"root@localhost"</span></span></code></pre></div>
 <p>Then, it says <code>Enter file in which to save the key (/root/.ssh/id_rsa):</code>. Copy the saving path here(.ssh/) and check if the key <code>id_rsa.pub</code> is there.</p>
@@ -220,8 +1196,8 @@ Take a hard look（认真审视） at these office seekers（谋求官职的人�
 <p>Finally, do this, remember to replace .ssh with your saving path.</p>
 <div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><span class="fu" style="color: #4758AB;">cat</span> .ssh/id_rsa.pub <span class="kw" style="color: #003B4F;">|</span> <span class="fu" style="color: #4758AB;">ssh</span> root@server2 <span class="st" style="color: #20794D;">'cat &gt;&gt; .ssh/authorized_keys'</span></span></code></pre></div>
 </section>
-<section id="how-to-run-linux-command-in-python" class="level3" data-number="5.3">
-<h3 data-number="5.3" class="anchored" data-anchor-id="how-to-run-linux-command-in-python"><span class="header-section-number">5.3</span> How to run linux command in python?</h3>
+<section id="how-to-run-linux-command-in-python" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="how-to-run-linux-command-in-python"><span class="header-section-number">6.3</span> How to run linux command in python?</h3>
 <p>I need to move and save my file in python. Here’s how I do it:</p>
 <div class="sourceCode" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="im" style="color: #00769E;">import</span> os</span>
 <span id="cb9-2">os.system(<span class="st" style="color: #20794D;">"touch a.txt"</span>) <span class="co" style="color: #5E5E5E;"># single command</span></span>
@@ -230,24 +1206,24 @@ Take a hard look（认真审视） at these office seekers（谋求官职的人�
 <div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><span class="im" style="color: #00769E;">import</span> os</span>
 <span id="cb10-2">os.system(<span class="st" style="color: #20794D;">"save.sh"</span>)</span></code></pre></div>
 </section>
-<section id="how-to-copy-a-file-or-directory-in-linux" class="level3" data-number="5.4">
-<h3 data-number="5.4" class="anchored" data-anchor-id="how-to-copy-a-file-or-directory-in-linux"><span class="header-section-number">5.4</span> How to copy a file or directory in linux?</h3>
+<section id="how-to-copy-a-file-or-directory-in-linux" class="level3" data-number="6.4">
+<h3 data-number="6.4" class="anchored" data-anchor-id="how-to-copy-a-file-or-directory-in-linux"><span class="header-section-number">6.4</span> How to copy a file or directory in linux?</h3>
 <div class="sourceCode" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><span class="fu" style="color: #4758AB;">cp</span> <span class="op" style="color: #5E5E5E;">&lt;</span>existing file name<span class="op" style="color: #5E5E5E;">&gt;</span> <span class="op" style="color: #5E5E5E;">&lt;</span>new file name<span class="op" style="color: #5E5E5E;">&gt;</span>  </span>
 <span id="cb11-2"><span class="fu" style="color: #4758AB;">cp</span> <span class="op" style="color: #5E5E5E;">&lt;</span>file1<span class="op" style="color: #5E5E5E;">&gt;</span> <span class="op" style="color: #5E5E5E;">&lt;</span>file2<span class="op" style="color: #5E5E5E;">&gt;</span> <span class="op" style="color: #5E5E5E;">&lt;</span>target_directory_name<span class="op" style="color: #5E5E5E;">&gt;</span></span>
 <span id="cb11-3"><span class="fu" style="color: #4758AB;">cp</span> <span class="at" style="color: #657422;">-r</span> <span class="op" style="color: #5E5E5E;">&lt;</span>dir1<span class="op" style="color: #5E5E5E;">&gt;</span> <span class="op" style="color: #5E5E5E;">&lt;</span>dir2<span class="op" style="color: #5E5E5E;">&gt;</span></span></code></pre></div>
 </section>
 </section>
-<section id="github-tricks" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="github-tricks"><span class="header-section-number">6</span> Github Tricks</h2>
-<section id="how-to-search-efficiently" class="level3" data-number="6.1">
-<h3 data-number="6.1" class="anchored" data-anchor-id="how-to-search-efficiently"><span class="header-section-number">6.1</span> How to search efficiently?</h3>
+<section id="github-tricks" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="github-tricks"><span class="header-section-number">7</span> Github Tricks</h2>
+<section id="how-to-search-efficiently" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="how-to-search-efficiently"><span class="header-section-number">7.1</span> How to search efficiently?</h3>
 <p>I often find latest updates in my field like this:</p>
 <div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><span class="ex" style="color: null;">deep</span> learning stars:<span class="op" style="color: #5E5E5E;">&gt;</span>10 forks:<span class="op" style="color: #5E5E5E;">&gt;</span>10 language:python created:<span class="op" style="color: #5E5E5E;">&gt;</span>2022-01-01 pushed:<span class="op" style="color: #5E5E5E;">&gt;</span>2022-01-01</span></code></pre></div>
 <p>Here, deep learning is the search tag.</p>
 </section>
 </section>
-<section id="references" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="references"><span class="header-section-number">7</span> References</h2>
+<section id="references" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="references"><span class="header-section-number">8</span> References</h2>
 <div class="sourceCode" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><span class="co" style="color: #5E5E5E;"># https://www.tutorialspoint.com/How-to-copy-a-file-to-a-remote-server-in-Python-using-SCP-or-SSH</span></span>
 <span id="cb13-2"><span class="co" style="color: #5E5E5E;"># superweb999.com/article/356190.html #</span></span>
 <span id="cb13-3"><span class="co" style="color: #5E5E5E;"># https://cloud.tencent.com/developer/article/1669557 #</span></span>
@@ -272,72 +1248,13 @@ Take a hard look（认真审视） at these office seekers（谋求官职的人�
 </section>
 
  ]]></description>
-  <category>cv</category>
+  <category>python</category>
+  <category>pytorch</category>
+  <category>deep learning</category>
+  <category>tutorial</category>
   <guid>https://waterking.cc/posts/tutorials/2022-11-19-ai-project/ai-course-project.html</guid>
   <pubDate>Fri, 18 Nov 2022 16:00:00 GMT</pubDate>
   <media:content url="https://waterking.cc/posts/tutorials/2022-11-19-ai-project/test.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>English Reading</title>
-  <link>https://waterking.cc/posts/reading/2022-10.html</link>
-  <description><![CDATA[ 
-
-
-
-<p>This is a post recording my English reading on Scientific American and the Economist.</p>
-<hr style="height:1px; visibility:hidden;">
-<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section">2022.10.26</h4>
-<p>She had suffered a ruptured blood vessel in her brain(脑血管破裂), and the bleeding area was putting tremendous pressure on(造成巨大压力) critical brain regions.</p>
-<p>Uma Thurman as the Bride in Kill Bill awakens abruptly from a prolonged comatose state（从长时间昏迷状态中突然苏醒）, appears well nourished despite not having any feeding tubes and regains full physical strength within hours.</p>
-<p>The reality is far more challenging, with frequent medical complications（并发症）, physical deterioration（身体机能衰退） and a long road of small steps forward with many steps backward.</p>
-<p>The term “locked in” was coined（创造） in 1966 by neurologists.</p>
-<p>In clinical practice, locked-in patients do not move their extremities（四肢）.</p>
-<p>The experience of living in a locked-in state was poignantly illustrated by Jean-Dominique Bauby, who suffered a stroke that blocked signals traveling from the motor cortex&nbsp;in his brain（大脑里的运动皮层） to his spinal cord（脊髓） and limbs（四肢）.</p>
-<p>Both techniques may also be confounded by sedative medications（和镇定剂混合使用）, which are required for safety or comfort in most critically ill patients（大多数病重患者）.</p>
-<p>Neurologists are trying to develop a test that can identify which patients are likely to be in a state of covert consciousness（潜意识） and thus should undergo（=take，接受，经历） advanced EEG and functional MRI assessments.</p>
-<p>But tremendous challenges must be overcome, particularly for acutely（严重的，=critically） brain-injured patients</p>
-There is no mystery, however, about the ethical imperative（an essential or urgent thing.） that physicians（医生） now have to search for consciousness in patients who appear unresponsive, using all available technologies and resources
-<hr style="height:1px; visibility:hidden;">
-<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
-</section>
-<section id="section-1" class="level4">
-<h4 class="anchored" data-anchor-id="section-1">2022.10.22</h4>
-<p>This one was so close, cosmically speaking, that it was detected by a fleet of&nbsp;observatories（一系列的天文台） both on and above the Earth, and is already yielding a trove of（大量的） scientific treasure.</p>
-<p>But even from this immense（非常大的） distance in human terms, it was the brightest such event ever seen in x-rays and gamma rays, bright enough to spot its visible-light emission in smaller amateur telescopes（业余的望远镜）, and was even able&nbsp;to physically affect our upper atmosphere. Despite that, this gamma-ray burst poses no danger to us（对我们没有威胁）. Either way（不管怎样）, I’m glad they keep their distance.</p>
-<p>Gamma-ray bursts, or GRBs, are intense blasts（强烈的爆炸） of gamma rays—the highest-energy form of light—that typically last from a fraction of a second （顷刻间）to a few minutes in length.</p>
-<p>Each GRB has idiosyncrasies（特质=characteristics）, making them complicated to understand as a group.</p>
-<p>Still, we do have a decent grasp of（的确对…有比较好的了解）&nbsp;their basic nature.</p>
-<p>Short-duration bursts—generally a few seconds long at most—come from two superdense neutron stars colliding（碰撞） and blasting out fierce energy（爆发出剧烈的能量, fierce=intense）, whereas（表示对比，然而但是）&nbsp;long-duration ones—lasting several minutes—come from massive stars exploding at the ends of their lives.</p>
-<p>A swirling disk of material（一个旋转的圆盘状物质） that wasn’t immediately swallowed by the black hole rapidly forms around it, funneling twin beams of intense energy out into space（将两束强烈的能量注入太空）, one pointing up and the other down, away from the disk.</p>
-The energy in gamma-ray bursts is almost incomprehensible（令人费解的）: In a few seconds they can emit（排放，散发） as much energy as the sun will over its entire 12-billion-year lifespan.
-<hr style="height:1px; visibility:hidden;">
-<hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
-</section>
-<section id="section-2" class="level4">
-<h4 class="anchored" data-anchor-id="section-2">2022.10.21</h4>
-<p>We really need to revamp(修补，改进) our health care system and make it work for everyone in this country if we want to stop this backsliding（倒退） and live longer, healthier lives.</p>
-<p>Look, I don’t want to keep tossing out&nbsp;problems（抛出问题）.</p>
-<p>So there’s a chance（有可能） we’ll be seeing new and affordable therapies, able to handle the range of variants that COVID keeps tossing at us.</p>
-<p>Counterintuitively(反直觉的是), taking testosterone（睾酮，睾丸产生精子需要高浓度睾酮） may also help&nbsp;suppress sperm production, because increasing circulating testosterone levels above a certain level suppresses the same two pituitary hormones（垂体荷尔蒙，控制睾丸产生精子）.</p>
-<p>We may feel groggy(昏昏沉沉的) and grumpy（脾气暴躁的，这些都是睡眠不足导致的）</p>
-<p>But have you found that sleep deprivation changes actual helping behaviors in a noticeable（显著的）&nbsp;way?</p>
-<p>With anxiety, for instance, when something stresses you out（使你感到焦虑）, the first thing that gets impaired is your sleep. And paradoxically（矛盾的是）, more sleep is what you need to feel calmer.</p>
-<p>On the flip side（另一方面）, does this mean we should really put better sleep alongside（把…视作等同于） diet and exercise as a crucial way to improve mental health?</p>
-<p>Sleep is something that can help us intervene into（干预） social and emotional affective disorders</p>
-<p>Sleep is actually the bedrock（基石）, even before diet and exercise. The way we metabolize（代谢） food and the way our muscles react also depends on good sleep.</p>
-<p>The findings, published in the journal&nbsp;Nature Geoscience, shed new light on（进一步揭示了） the forces driving ice loss on the world’s second largest ice sheet.</p>
-<p>Losses from these seaside glaciers have, until now, been mainly attributed to（归因于） warm ocean waters licking（波浪轻卷） at the edge of the ice.</p>
-<p>Lead study author Donald Slater, a scientist at the University of Edinburgh, likened（把…比作） the process to ice cubes in a glass of water.</p>
-
-
-</section>
-
- ]]></description>
-  <category>reading</category>
-  <guid>https://waterking.cc/posts/reading/2022-10.html</guid>
-  <pubDate>Sun, 30 Oct 2022 16:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

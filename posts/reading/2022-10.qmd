@@ -2,6 +2,7 @@
 title: "English Reading"
 date: "2022-10-31"
 categories: [reading]
+draft: true
 ---
 
 This is a post recording my English reading on Scientific American and the Economist.

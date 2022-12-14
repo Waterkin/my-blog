@@ -3,12 +3,40 @@ title: "English Reading"
 #author: "Tristan O'Malley"
 date: "2022-11-31"
 categories: [reading]
+draft: true
 ---
 
 This is my first blog in Quarto. Welcome!
 
 <hr style="height:1px; visibility:hidden;" />
 <hr style="height:1px;border-width:0;color:rgb(50,50,50);background-color:rgb(50,50,50)">
+
+### 11.23
+When asked to solve new problems using these teachings, major discrepancies appeared（差距就凸显出来了）.
+
+### 11.20
+Mountain lions are now posing（摆pose） for their close ups（特写）.
+They're just so cryptic（神秘） and secretive（隐秘） and elusive（难以捉摸的）.
+When motion is detected, the trap gets triggered（触发陷阱（这里比喻相机））, resulting in a snapshot（快照） of the mountain lion as it strolls by（漫步）. 
+They comb through（梳理） the images, sometimes using machine learning algorithms, and analyze them to identify individuals.
+And so a cougar（=puma=mountain lion，山狮）, they do not have any of those really conspicuous stripes on their sides（侧边没有明显条纹）. And so yeah, just your typical flank view shot（侧视图） can be pretty nondescript（没有明显特征的）.
+They're kind of a show stopper（他们让人印象深刻）
+They added a few gadgets（小工具） to their camera traps so that when motion was detected, a cougar kitten（幼崽） call was played. This noise reliably peaked the interest of passerby pumas（使过路山狮非常感兴趣） so that they looked up long enough for the camera trap to grab a face shot（拍下正脸照）.
+
+### 11.19
+Introduced species have a bad rap（名声不好）.
+
+Ecologically, both occupy the same niche. （占据相同的生态位）
+
+Nor might people fret about（担心） knotweed growing at other plants’ expense（以...为代价） if it did not also undermine（破坏） human constructions such as buildings and roads.
+
+Until the middle of the 20th century, moving species around the world was reckoned（被认为是） a normal, often valuable, thing to do, while the consequences of their accidental movement were rarely considered.
+
+Specifically, he and his compadres（他和他的团队） have recruited the vocabulary of moral philosophy（吸收了道德哲学中的词汇）.
+
+They pertain to（指的是） things that provide direct human advantage.
+
+Sometimes, in a manner（某种程度上） reminiscent of（使人联想起） the nursery rhyme（童谣） in which an old lady swallows a fly, a spider to catch it, and a bird to catch the spider, an introduction may be made to undo a previous harm（抵消此前受到的伤害）.
 
 ### 11.16
 Meta laid off（裁员） 11,000 employees, or 13% of its workforce, amid（在...情况下） falling revenues from advertising and e-commerce.

@@ -2,7 +2,7 @@
 title: "Visualize Model with GradCAM and Super-Resolution"
 subtitle: "Check how to visualize an Image Classification model with GradCAM, and make it clearer by Super-Resolution."
 date: "2022-11-19"
-categories: [cv]
+categories: [python, pytorch, deep learning, tutorial]
 css: ../../styles.css
 ---
 
@@ -114,6 +114,13 @@ Note that `predict` corresponds to `@app.route("/predict", methods=["GET", "POST
 ```bash
 http://123.45.67.8:5005/predict?path=imagepath
 ```
+
+# Experiment Results
+We conduct three experiments under symmetric, pairflip and instance noise scenarios.
+
+| Method | Symmetric | Pairflip | Instance |
+|---------|---------|---------|---------|
+| PES     | 84.44   |    85.71 |   83.66   |
 
 # Linux Tricks
 In this section, I will introduce some linux tricks in my project.

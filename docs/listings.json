@@ -2,17 +2,23 @@
   {
     "listing": "/create_series.html",
     "items": [
-      "/posts/reading/2022-11.html",
-      "/posts/tutorials/2022-11-19-ai-project/ai-course-project.html",
-      "/posts/reading/2022-10.html"
+      "/posts/tools/database/database.html",
+      "/posts/tools/googledocs/googledocs.html",
+      "/posts/tutorials/regex/regex.html",
+      "/posts/tutorials/flink/flink.html",
+      "/posts/tutorials/spark/spark.html",
+      "/posts/tutorials/2022-11-19-ai-project/ai-course-project.html"
     ]
   },
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/reading/2022-11.html",
-      "/posts/tutorials/2022-11-19-ai-project/ai-course-project.html",
-      "/posts/reading/2022-10.html"
+      "/posts/tools/database/database.html",
+      "/posts/tools/googledocs/googledocs.html",
+      "/posts/tutorials/regex/regex.html",
+      "/posts/tutorials/flink/flink.html",
+      "/posts/tutorials/spark/spark.html",
+      "/posts/tutorials/2022-11-19-ai-project/ai-course-project.html"
     ]
   }
 ]

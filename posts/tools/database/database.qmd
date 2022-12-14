@@ -1,0 +1,70 @@
+---
+title: "How to Choose a Database to Start with?"
+subtitle: "Comparison among 7 databases"
+date: "2022-12-14"
+categories: [tools]
+css: ../../styles.css
+---
+
+Take away: Start with PostgreSQL and then MongoDB, which cover almost everything. Try snowflake too.
+
+# Redis: Key-Value
+::: {fig-vis}
+![](key-value.png){width=100%}
+
+:::
+- Fast: store in memory instead of disk
+- Usage: Cache
+
+# HBase: Wide Column
+::: {fig-vis}
+![](wide-column.png){width=100%}
+
+:::
+- High-write, Low-read
+- Usage: Time Series Data like Historical Records
+
+# MongoDB: Document
+::: {fig-vis}
+![](document.png){width=100%}
+
+:::
+- Usage: Most apps, Games, IoT
+- Not suitable for Graph where `join` is frequent
+
+# PostgreSQL: Relational
+::: {fig-vis}
+![](relational.png){width=100%}
+
+:::
+- Usage: Most apps
+- Not suitable for Unstructured data
+
+# Neo4j: Graph
+::: {fig-vis}
+![](graph.png){width=100%}
+
+:::
+
+- Usage: Connections
+    - Graphs
+    - Knowledge Graphs
+    - Recommendation Engines
+
+# ElasticSearch: Search
+::: {fig-vis}
+![](search.png){width=100%}
+
+:::
+
+- Usage: Search Engines
+
+# Fauna: Multi-Model
+::: {fig-vis}
+![](fauna.png){width=100%}
+
+:::
+
+- Usage: Everything!
+
+

@@ -6,6 +6,7 @@ about:
 format:
   html:
     css: about.css
+    number-sections: false
 ---
 
 ```{=html}
