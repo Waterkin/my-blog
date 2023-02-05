@@ -2,7 +2,7 @@
 title: "Google Docs - Efficient for Collaborations"
 subtitle: "Fast & Comprehensive Online document. Alternative to WPS & Microsoft Docs, Excel and PPT"
 date: "2022-12-13"
-categories: [tools, collaboration]
+categories: [tools, soft skills]
 css: ../../styles.css
 ---
 

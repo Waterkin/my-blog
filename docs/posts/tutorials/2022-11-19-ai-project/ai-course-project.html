@@ -231,13 +231,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div class="{fig-vis}">
 <p><img src="test.jpg" class="img-fluid"></p>
+<p>One day, I got an assignment from my professor. At that time, I was doing research on stock price prediction, but was asked to implement top conference papers with my classmates. Within two days, I have done GradCAM visualization on noisy-label models and make the images clearer by integrating two top conference github projects (NeurIPS 2021, ECCV 2022). This experience allows me to quickly solve new problems that I have no prior knowledge of.</p>
 <section id="visualization-results" class="level4 centered">
 <h4 class="centered anchored" data-anchor-id="visualization-results">Visualization Results</h4>
 </section>
 </div>
 <section id="model-creation" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="model-creation"><span class="header-section-number">1</span> Model creation</h2>
-<p>Firstly, I find model PES from github: <a href="https://github.com/tmllab/PES">Understanding and Improving Early Stopping for Learning with Noisy Labels (NeurIPS 2021)</a></p>
+<p>We decided to implement papers on noisy labels. After searching, I find model PES from github: <a href="https://github.com/tmllab/PES">Understanding and Improving Early Stopping for Learning with Noisy Labels (NeurIPS 2021)</a></p>
 <p>Then, to make sure its correctness, I check the model following the README in its repo and rerun the training procedure with much smaller epoches (check this hyperparameter in the code, like the argparse part in config.py or train.py etc.).</p>
 <p>Now I need to get my Grad-cam code and plug it into PES.</p>
 </section>

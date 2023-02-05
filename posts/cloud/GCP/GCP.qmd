@@ -1,0 +1,35 @@
+---
+title: "How to Prepare for Google Certificates"
+subtitle: ""
+date: "2022-12-14"
+categories: [GCP, tutorial]
+css: ../../styles.css
+draft: true
+---
+
+# Introduction
+
+After a comprehensive search in google and quora, I find it more necessary for me to learn Google Cloud than AWS for some reasons:
+- BigQuery
+- AutoML Tables
+- No knowledge about AWS infras
+- Fewer people are available for GCP
+
+::: {.callout-tip}
+# Study Path
+GCP cloud engineer -> GCP machine learning engineer
+:::
+
+# GCP Course
+[Coursera](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp?irclickid=xU%3Aykv3m2xyNTz-SQH2S-VEXUkA1LaSB8XnIw00&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=3294490&utm_content=b2c)
+[Google Cloud](https://developers.google.com/machine-learning/crash-course/ml-intro?hl=zh-cn)
+
+# GCP Cloud Engineer
+Im done bro, useless waste of time. 60% of the questions exist here. Do all examtopics questions first, and check user-voted results for the real answers. Just double check the answers in testprep by googling them cause some are wrong.
+
+https://www.examtopics.com/exams/google/associate-cloud-engineer/
+https://www.testpreptraining.com/certified-professional-data-engineer-practice-exam
+
+# GCP Machine Learning Engineer
+https://dzlab.github.io/certification/2022/01/08/gcp-ml-engineer-prep/
+https://www.examtopics.com/exams/google/professional-machine-learning-engineer/

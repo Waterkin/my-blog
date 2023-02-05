@@ -2,62 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://waterking.cc/research.html</loc>
-    <lastmod>2022-11-23T07:25:05.185Z</lastmod>
+    <lastmod>2023-01-28T09:18:18.619Z</lastmod>
   </url>
   <url>
     <loc>https://waterking.cc/kaggle.html</loc>
-    <lastmod>2022-11-23T07:25:05.521Z</lastmod>
+    <lastmod>2023-01-28T09:18:19.132Z</lastmod>
   </url>
   <url>
-    <loc>https://waterking.cc/posts/tutorials/2022-11-19-ai-project/ai-course-project.html</loc>
-    <lastmod>2022-12-05T13:21:38.026Z</lastmod>
+    <loc>https://waterking.cc/posts/arts/test/test.html</loc>
+    <lastmod>2023-01-28T09:18:21.223Z</lastmod>
   </url>
   <url>
-    <loc>https://waterking.cc/talks.html</loc>
-    <lastmod>2022-11-23T07:25:06.805Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/publications/NIPS2022.html</loc>
-    <lastmod>2022-11-23T07:25:07.383Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/create_series.html</loc>
-    <lastmod>2022-12-14T07:52:35.699Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/index.html</loc>
-    <lastmod>2022-11-23T07:25:07.939Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/about.html</loc>
-    <lastmod>2022-11-23T07:25:08.221Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/portfolio.html</loc>
-    <lastmod>2022-11-23T07:25:08.491Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/blog.html</loc>
-    <lastmod>2022-12-14T07:52:35.995Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/posts/tutorials/spark/spark.html</loc>
-    <lastmod>2022-12-12T07:08:43.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/posts/tutorials/flink/flink.html</loc>
-    <lastmod>2022-12-14T06:49:38.574Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waterking.cc/posts/tutorials/regex/regex.html</loc>
-    <lastmod>2022-12-13T02:56:27.025Z</lastmod>
+    <loc>https://waterking.cc/posts/tools/infer-engines/infer-engines.html</loc>
+    <lastmod>2023-01-28T09:18:23.601Z</lastmod>
   </url>
   <url>
     <loc>https://waterking.cc/posts/tools/googledocs/googledocs.html</loc>
-    <lastmod>2022-12-13T10:10:02.881Z</lastmod>
+    <lastmod>2023-01-28T09:18:24.058Z</lastmod>
   </url>
   <url>
-    <loc>https://waterking.cc/posts/tools/database/database.html</loc>
-    <lastmod>2022-12-14T07:52:37.005Z</lastmod>
+    <loc>https://waterking.cc/posts/tutorials/mle-interview/summary.html</loc>
+    <lastmod>2023-02-05T03:37:24.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/posts/tutorials/flink/flink.html</loc>
+    <lastmod>2023-01-28T09:18:37.056Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/posts/tutorials/2022-11-19-ai-project/ai-course-project.html</loc>
+    <lastmod>2023-01-28T09:18:38.045Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/posts/tutorials/spark/spark.html</loc>
+    <lastmod>2023-01-28T09:18:38.527Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/talks.html</loc>
+    <lastmod>2023-01-28T09:18:38.968Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/publications/NIPS2022.html</loc>
+    <lastmod>2023-01-28T09:18:39.842Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/create_series.html</loc>
+    <lastmod>2023-02-05T03:37:25.378Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/index.html</loc>
+    <lastmod>2023-01-28T09:18:40.846Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/about.html</loc>
+    <lastmod>2023-01-28T09:18:41.287Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/portfolio.html</loc>
+    <lastmod>2023-01-28T09:18:41.713Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waterking.cc/blog.html</loc>
+    <lastmod>2023-02-05T03:37:26.080Z</lastmod>
   </url>
 </urlset>

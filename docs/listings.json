@@ -2,9 +2,10 @@
   {
     "listing": "/create_series.html",
     "items": [
-      "/posts/tools/database/database.html",
+      "/posts/tutorials/mle-interview/summary.html",
+      "/posts/tools/infer-engines/infer-engines.html",
+      "/posts/arts/test/test.html",
       "/posts/tools/googledocs/googledocs.html",
-      "/posts/tutorials/regex/regex.html",
       "/posts/tutorials/flink/flink.html",
       "/posts/tutorials/spark/spark.html",
       "/posts/tutorials/2022-11-19-ai-project/ai-course-project.html"
@@ -13,9 +14,10 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/tools/database/database.html",
+      "/posts/tutorials/mle-interview/summary.html",
+      "/posts/tools/infer-engines/infer-engines.html",
+      "/posts/arts/test/test.html",
       "/posts/tools/googledocs/googledocs.html",
-      "/posts/tutorials/regex/regex.html",
       "/posts/tutorials/flink/flink.html",
       "/posts/tutorials/spark/spark.html",
       "/posts/tutorials/2022-11-19-ai-project/ai-course-project.html"

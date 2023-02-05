@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2023-01-27">
+
+<title>Linghao Wang - Machine Learning Engineer (Ads) Interview Questions</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../../../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Linghao Wang</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../talks.html">
+ <span class="menu-text">Talks</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#为什么要初始化权重" id="toc-为什么要初始化权重" class="nav-link active" data-scroll-target="#为什么要初始化权重"><span class="toc-section-number">1</span>  为什么要初始化权重？</a></li>
+  <li><a href="#如何找到最佳权重值" id="toc-如何找到最佳权重值" class="nav-link" data-scroll-target="#如何找到最佳权重值"><span class="toc-section-number">2</span>  如何找到最佳权重值？</a></li>
+  <li><a href="#怎样才算是好的初始化" id="toc-怎样才算是好的初始化" class="nav-link" data-scroll-target="#怎样才算是好的初始化"><span class="toc-section-number">3</span>  怎样才算是好的初始化？</a></li>
+  <li><a href="#权重初始化方法" id="toc-权重初始化方法" class="nav-link" data-scroll-target="#权重初始化方法"><span class="toc-section-number">4</span>  权重初始化方法</a>
+  <ul class="collapse">
+  <li><a href="#全0初始化神经元为什么不能初始权重为0" id="toc-全0初始化神经元为什么不能初始权重为0" class="nav-link" data-scroll-target="#全0初始化神经元为什么不能初始权重为0"><span class="toc-section-number">4.1</span>  全0初始化（神经元为什么不能初始权重为0？）</a></li>
+  <li><a href="#随机初始化" id="toc-随机初始化" class="nav-link" data-scroll-target="#随机初始化"><span class="toc-section-number">4.2</span>  随机初始化</a></li>
+  <li><a href="#xavier初始化" id="toc-xavier初始化" class="nav-link" data-scroll-target="#xavier初始化"><span class="toc-section-number">4.3</span>  Xavier初始化</a></li>
+  <li><a href="#he初始化kaiming初始化" id="toc-he初始化kaiming初始化" class="nav-link" data-scroll-target="#he初始化kaiming初始化"><span class="toc-section-number">4.4</span>  He初始化（Kaiming初始化）</a></li>
+  <li><a href="#batch-normalization-layer" id="toc-batch-normalization-layer" class="nav-link" data-scroll-target="#batch-normalization-layer"><span class="toc-section-number">4.5</span>  Batch Normalization Layer</a></li>
+  <li><a href="#pre-training" id="toc-pre-training" class="nav-link" data-scroll-target="#pre-training"><span class="toc-section-number">4.6</span>  pre-training</a></li>
+  <li><a href="#总结" id="toc-总结" class="nav-link" data-scroll-target="#总结"><span class="toc-section-number">4.7</span>  总结</a></li>
+  </ul></li>
+  <li><a href="#权值初始化方式对lr的收敛有影响吗为什么lr可以将权重初始化为0" id="toc-权值初始化方式对lr的收敛有影响吗为什么lr可以将权重初始化为0" class="nav-link" data-scroll-target="#权值初始化方式对lr的收敛有影响吗为什么lr可以将权重初始化为0"><span class="toc-section-number">5</span>  权值初始化方式对LR的收敛有影响吗？为什么LR可以将权重初始化为0？</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Machine Learning Engineer (Ads) Interview Questions</h1>
+<p class="subtitle lead">A Guide to Pass the MLE interview.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">tutorial</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 27, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="为什么要初始化权重" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="为什么要初始化权重"><span class="header-section-number">1</span> 为什么要初始化权重？</h2>
+<p>权重初始化的目的是防止在深度神经网络的正向（前向）传播过程中层激活函数的输出损失梯度出现爆炸或消失。如果发生任何一种情况，损失梯度太大或太小，就无法有效地向后传播，并且即便可以向后传播，网络也需要花更长时间来达到收敛。</p>
+<p>矩阵乘法是神经网络的基本数学运算。在多层深度神经网络中，一个正向传播仅需要在每层对该层的输入和权重矩阵执行连续的矩阵乘法。这样每层的乘积成为后续层的输入，依此类推。</p>
+<p>举个简单的例子，假设我们有一个包含网络输入的向量x。训练神经网络的标准做法，是让输入值落入类似一个均值为0，标准差为1的正态分布中，以确保其被归一化。</p>
+<p>让我们假设有一个没有激活函数的简单的100层网络，并且每层都有一个包含这层权重的矩阵a。为了完成单个正向传播，我们必须对每层输入和权重进行矩阵乘法，总共100次连续的矩阵乘法。</p>
+<p>事实证明，把层权重值用标准正态分布进行初始化并不是一个好主意。为了弄明白个中原因，我们可以模拟网络的正向传播。</p>
+<p>呃！在这100次矩阵乘法某次运算中，层输出变得非常大，甚至计算机都无法识别其标准差和均值。我们实际上可以看到产生这种结果需要多长时间。</p>
+<p><img src="w1.jfif" class="img-fluid" style="width:100.0%"></p>
+<p>在网络的第29个激活层输出发生梯度爆炸，很明显网络的权重初始化值过大。</p>
+<p>不仅如此，我们同时还要防止层输出发生梯度消失。为了看看当网络权重初始值太小时会发生什么 - 我们将缩小例子的权重值，使它们仍然落入平均值为0的正态分布内，而标准差为0.01。</p>
+<p><img src="w2.jfif" class="img-fluid" style="width:100.0%"></p>
+<p>在上述假设的正向传播过程中，激活层输出出现了完全消失的现象。</p>
+<p>总结一下，权重初始值太大或者太小，网络都将无法很好地进行学习。</p>
+</section>
+<section id="如何找到最佳权重值" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="如何找到最佳权重值"><span class="header-section-number">2</span> 如何找到最佳权重值？</h2>
+<p>神经网络正向传播在数学上只需做连续的矩阵乘法。输出y是输入向量x和权重矩阵a之间的矩阵乘法之积。</p>
+<p>为了计算y，我们将输入向量x的某个元素乘以权重矩阵a的一列所得的512个乘积相加。在我们的例子中使用了标准正态分布来初始化x和a，所以这512个乘积的均值都为0，标准差都为1。所以，这512个乘积的总和的均值为0，方差为512，因此标准差为√512。</p>
+<p>可以证明，在某给定层，根据标准正态分布初始化的输入x和权重矩阵a的乘积，通常具有非常接近输入连接数平方根的标准差，在我们的例子中是√512。</p>
+<p><img src="w3.webp" class="img-fluid" style="width:100.0%"></p>
+<p>这就是为什么在上面的例子中层输出在29次连续的矩阵乘法后会发生梯度爆炸。这个简单的100层网络架构中，我们想要的是每层输出具有大约1的标准差，这样就可以使我们在尽可能多的网络层上重复矩阵乘法，而不会发生梯度爆炸或消失。</p>
+<p>如果我们首先通过将权重矩阵a的各随机选择值除以√512来对其进行缩小，那么生成输出y的某个元素的输入元素与权重乘积的方差通常只有1/√512。 这意味着矩阵y的标准差（由输入x和权重a通过矩阵乘法生成的512个值组成）将是1。我们可以通过实验来验证。</p>
+<p><img src="w4.webp" class="img-fluid" style="width:100.0%"></p>
+<p>现在让我们重新运行之前的100层神经网络。与之前一样，我们首先从[-1,1]内的标准正态分布中随机选择层权重值，但这次我们用1/√n来缩小权重，其中n是每层的网络输入连接数，在我们的例子是512。</p>
+<p><img src="w5.jfif" class="img-fluid" style="width:100.0%"></p>
+<p>搞定！即使连续传播了100层之后，层输出也没有发生梯度爆炸或者消失。</p>
+<p>虽然乍一看似乎真的搞定了，但现实世界的神经网络并不像我们这个例子那么简单。因为为简单起见，我们省略了激活函数。但是，在实际中我们永远不会省略激活函数。正是因为有了这些置于网络层末端的非线性激活函数，深度神经网络才具有了非线性，从而能非常近似地模拟真实世界那些错综复杂的现象，并且生成那些令人惊讶的预测，例如手写样本的分类。</p>
+</section>
+<section id="怎样才算是好的初始化" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="怎样才算是好的初始化"><span class="header-section-number">3</span> 怎样才算是好的初始化？</h2>
+<p>需要牢记参数初始化的目的是为了让神经网络在训练过程中学习到有用的信息，这意味着参数梯度不应该为0。 而我们知道在全连接的神经网络中，参数梯度和反向传播得到的状态梯度以及入激活值有关——激活值饱和会导致该层状态梯度信息为0，然后导致下面所有层的参数梯度为0；并且激活值为0会导致对应参数梯度为0。 所以如果要保证参数梯度不等于0，那么参数初始化应该使得各层激活值不会出现饱和现象且激活值不为0。我们把这两个条件总结为参数初始化条件：</p>
+<ul>
+<li><p>初始化必要条件一：各层激活值不会出现饱和现象。</p></li>
+<li><p>初始化必要条件二：各层激活值不为0。</p></li>
+</ul>
+</section>
+<section id="权重初始化方法" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="权重初始化方法"><span class="header-section-number">4</span> 权重初始化方法</h2>
+<p><img src="w6.jpg" class="img-fluid" style="width:100.0%"></p>
+<section id="全0初始化神经元为什么不能初始权重为0" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="全0初始化神经元为什么不能初始权重为0"><span class="header-section-number">4.1</span> 全0初始化（神经元为什么不能初始权重为0？）</h3>
+<p>我们在线性回归，logistics回归的时候，基本上都是把参数初始化为0，我们的模型也能够很好的工作。</p>
+<p>然而在神经网络中，权重初始化为0，那么每一层的神经元学到的东西都是一样的（输出是一样的），而且在BP的时候，每一层内的神经元也是相同的，因为他们的gradient相同，weight update也相同。这显然是一个不可接受的结果。</p>
+</section>
+<section id="随机初始化" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="随机初始化"><span class="header-section-number">4.2</span> 随机初始化</h3>
+<p>随机初始化是很多人经常使用的方法，一般初始化的权重为高斯或均匀分布中随机抽取的值。然而这是有弊端的，一旦随机分布选择不当，就会导致网络优化陷入困境。</p>
+<p><strong>把权重初始化为较小的值</strong>，如均值为0，方差为0.01的高斯分布：</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> np.random.randn(node_in, node_out) <span class="op">*</span> <span class="fl">0.01</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="w7.webp" class="img-fluid" style="width:100.0%"></p>
+<p>随着层数的增加，我们看到输出值迅速向0靠拢，在后几层中，几乎所有的输出值 x 都很接近0。高斯初始化，给权重较小的值，这种更新方式在小型网络中很常见，然而当网络deep的时候，会出现梯度消失的情况。</p>
+<p>但是如果<strong>把权重初始成一个比较大的值</strong>，如均值为0，方差为1的高斯分布：</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> np.random.randn(node_in, node_out) <span class="op">*</span> <span class="fl">1.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="w8.webp" class="img-fluid" style="width:100.0%"></p>
+<p>几乎所有的值集中在-1或1附近，则会造成前向传播时，神经元要么被抑制，要么被饱和。当神经网络的层数增多时，会发现越往后面的层的激活函数（tanh在-1和1附近的gradient都接近0）的输出值几乎都接近于0。梯度更新时，梯度非常接近于0，就会导致梯度消失。</p>
+</section>
+<section id="xavier初始化" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="xavier初始化"><span class="header-section-number">4.3</span> Xavier初始化</h3>
+<p>Xavier初始化可以帮助减少梯度消失的问题，使得信号在神经网络中可以传递得更深，在经过多层神经元后保持在合理的范围（不至于太小或太大）。</p>
+<p><strong>Xavier初始化的基本思想</strong>：保持输入和输出的方差一致（服从相同的分布），这样就避免了所有输出值都趋向于0。</p>
+<p>根据输入和输出神经元的数量自动决定初始化的范围：定义参数所在的层的输入维度为 <span class="math inline">\(m\)</span>，输出维度为 <span class="math inline">\(n\)</span>，那么参数将从 <span class="math inline">\((-\sqrt{\frac{6}{m+n} } , \sqrt{\frac{6}{m+n} })\)</span> 均匀分布中采样。</p>
+<p>注意，为了问题的简便，Xavier初始化假设激活函数是线性的。</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> np.random.randn(node_in, node_out) <span class="op">/</span> np.sqrt(node_in)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="w9.webp" class="img-fluid" style="width:100.0%"></p>
+<p>能够看出，深层的激活函数输出值还是非常漂亮的服从标准高斯分布。虽然Xavier initialization能够很好的 tanh 激活函数，但是对于目前神经网络中最常用的 ReLU 激活函数，还是无能能力，请看下图：</p>
+<p><img src="w10.webp" class="img-fluid" style="width:100.0%"></p>
+<p>前面看起来还不错，后面的趋势却是越来越接近0，更深层的话就会很明显。<strong>Xavier初始化主要用于tanh，不适用于ReLU</strong>。</p>
+</section>
+<section id="he初始化kaiming初始化" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="he初始化kaiming初始化"><span class="header-section-number">4.4</span> He初始化（Kaiming初始化）</h3>
+<p>主要想要解决的问题是由于经过relu后，方差会发生变化，因此我们初始化权值的方法也应该变化。只考虑输入个数时，He初始化是一个均值为0，方差为2/n的高斯分布：</p>
+<p><img src="w11.webp" class="img-fluid" style="width:100.0%"></p>
+<p><strong>He initialization</strong>的思想是：在ReLU网络中，假定每一层有一半的神经元被激活，另一半为0（x负半轴中是不激活的），所以要保持variance不变，只需要在Xavier的基础上再除以2：</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> np.random.randn(node_in, node_out) <span class="op">/</span> np.sqrt(node_in<span class="op">/</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="batch-normalization-layer" class="level3" data-number="4.5">
+<h3 data-number="4.5" class="anchored" data-anchor-id="batch-normalization-layer"><span class="header-section-number">4.5</span> Batch Normalization Layer</h3>
+<p>在网络中间层中使用 Batch Normalization 层一定程度上能够减缓对较好的网络参数初始化的依赖，使用方差较小的参数分布即可。</p>
+<section id="随机初始化无batch-normalization" class="level4">
+<h4 class="anchored" data-anchor-id="随机初始化无batch-normalization">随机初始化，无Batch Normalization</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> tf.Variable(np.random.randn(node_in, node_out)) <span class="op">*</span> <span class="fl">0.01</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>fc <span class="op">=</span> tf.nn.relu(fc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="w12.webp" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="随机初始化有batch-normalization" class="level4">
+<h4 class="anchored" data-anchor-id="随机初始化有batch-normalization">随机初始化，有Batch Normalization</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> tf.Variable(np.random.randn(node_in, node_out)) <span class="op">*</span> <span class="fl">0.01</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>fc <span class="op">=</span> tf.contrib.layers.batch_norm(fc,center <span class="op">=</span> <span class="va">True</span>, scale <span class="op">=</span> <span class="va">True</span>, is_training <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>fc <span class="op">=</span> tf.nn.relu(fc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="w13.webp" class="img-fluid" style="width:100.0%"></p>
+<p>很容易看到，Batch Normalization的效果非常好，推荐使用。</p>
+</section>
+</section>
+<section id="pre-training" class="level3" data-number="4.6">
+<h3 data-number="4.6" class="anchored" data-anchor-id="pre-training"><span class="header-section-number">4.6</span> pre-training</h3>
+<p>初始化这个问题明显比较麻烦，不然大家也不会这么喜欢用pre-training模型了。</p>
+<p>pre-training是早期训练神经网络的有效初始化方法，一个便于理解的例子是先使用greedy layerwise auto-encoder做unsupervised pre-training，然后再做fine-tuning。</p>
+<p>pre-training阶段：将神经网络中的每一层取出，构造一个auto-encoder做训练，使得输入层和输出层保持一致。在这一过程中，参数得以更新，形成初始值。</p>
+<p>fine-tuning阶段：将pre-train过的每一层放回神经网络，利用pre-train阶段得到的参数初始值和训练数据对模型进行整体调整。在这一过程中，参数进一步被更新，形成最终模型。</p>
+<p>随着数据量的增加以及activation function 的发展，pre-training的概念已经渐渐发生变化。目前，从零开始训练神经网络时我们也很少采用auto-encoder进行pre-training，而是直奔主题做模型训练。如果不想从零开始训练神经网络时，我们往往选择一个已经在任务A上训练好的模型（称为pre-trained model），将其放在任务B上做模型调整（称为fine-tuning）。</p>
+</section>
+<section id="总结" class="level3" data-number="4.7">
+<h3 data-number="4.7" class="anchored" data-anchor-id="总结"><span class="header-section-number">4.7</span> 总结</h3>
+<ol type="1">
+<li><p>当前的主流初始化方式 Xavier，He 主要是为了保持每层的输入与输出方差相等, 而参数的分布采用均匀分布或高斯分布都行。</p></li>
+<li><p>在广泛采用 Batch Normalization 的情况下，使用普通的小方差的高斯分布即可。</p></li>
+<li><p>在迁移学习的情况下，优先采用预训练的模型进行参数初始化。</p></li>
+</ol>
+</section>
+</section>
+<section id="权值初始化方式对lr的收敛有影响吗为什么lr可以将权重初始化为0" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="权值初始化方式对lr的收敛有影响吗为什么lr可以将权重初始化为0"><span class="header-section-number">5</span> 权值初始化方式对LR的收敛有影响吗？为什么LR可以将权重初始化为0？</h2>
+<p><img src="w14.webp" class="img-fluid" style="width:100.0%"></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/waterking\.cc/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2022 © Linghao Wang</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/linghao-wang/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Waterkin">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

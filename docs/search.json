@@ -14,11 +14,172 @@
     "text": "Kaggle\n    I enjoy taking part at ML competitions on Kaggle. This page summarizes my achievements and provides links to blog posts, writeups and GitHub repos with my solutions. Check out my Kaggle profile to see more.\n  \n\n\nOverall rank\nI am in the top-100% Kaggle users in Competitions, Notebooks, Datasets and Discussion. My current ranks and medals are displayed in the badges below. Scroll down for more details on the competitions and notebooks.\n\n\n\n\n\n\n\n\n\n\n\n\nCompetitions(below are from Kozodoi, not mine)\nMy medals are grouped by application areas. Follow the links for summaries, code and documentation.\n\nComputer vision\n\n🥇 Cassava Leaf Disease Classification, top-1%. Identified sick plants with deep learning 📖 Summary 💻 GitHub\n🥇 SIIM-ISIC Melanoma Classification, top-1%. Trained CNNs for skin lesion classification 📖 Summary 📋 Blog post\n🥈 PetFinder Pawpularity Contest, top-4%. Predicted pet adoption from image and tabular data 💻 GitHub 📊 App\n🥈 RANZCR Catheter and Line Position Challenge, top-5%. Detected catheters on x-rays  📖 Summary 💻 GitHub\n🥉 Prostate Cancer Grade Assessment Challenge, top-6%. Diagnosed cancer on prostate tissue biopsies\n🥉 SETI Breakthrough Listen - E.T. Signal Search, top-8%. Detected anomalies in radio signals 💻 GitHub\n🥉 APTOS 2019 Blindness Detection, top-9%. Identified retinopathy on retina photos 💻 GitHub 📋 Blog post\n🥉 RSNA STR Pulmonary Embolism Detection, top-13%, Classified embolism in chest CT scans 📋 Blog post\n\n\n\nNatural language processing\n\n🥈 BMS Molecular Translation, top-5%. Built CNN-LSTM for image-to-text translation 📖 Summary 💻 GitHub\n🥉 CommonLit Readability Prize, top-9%. Predicted readability with transformers 💻 GitHub 📊 App 📋 Blog post\n\n\n\nTabular data\n\n🥈 Google Analytics Customer Revenue Prediction, top-2%. Predicted customer spendings 💻 GitHub\n🥈 IEEE-CIS Fraud Detection, top-3%. Detected fraudulent consumer transactions 💻 GitHub\n🥈 Home Credit Default Risk, top-4%. Classified risky applicants with gradient boosting 💻 GitHub\n🥉 COVID-19 Vaccine Degradation Prediction, top-6%. Built RNNs for predicting mRNA degradation\n🥉 Instant Gratification, top-6%. Trained classical ML models for synthetic data classification\n🥉 Mechanisms of Action Prediction, top-10%. Classified drugs with deep learning algorithms\n\n\n\nTime series\n\n🥈 PLAsTiCC Astronomical Classification, top-5%. Identified astronomical objects by their signals 💻 GitHub\n🥉 Riiid! Answer Correctness Prediction, top-7%. Predicted test answer correctness with gradient boosting\n\n\n\n\n\n\n\nTop-rated notebooks\nMy Kaggle notebooks that received the most upvotes from the community.\n\n🔥 LightGBM on Meta-Features: classified pulmonary embolism with features extracted from X-rays\n🔥 EfficientNet + Multi-Layer LSTM: translated molecule images to chemical formulas with deep learning\n🔥 Stack Them All!: stacking ensemble pipeline for leaf disease classification with CNN models"
   },
   {
+    "objectID": "posts/arts/test/test.html#unit-test",
+    "href": "posts/arts/test/test.html#unit-test",
+    "title": "Pythonic Test",
+    "section": "1 Unit Test",
+    "text": "1 Unit Test\n\n1.1 Example\nThe purpose of unit test is to ensure the correctness of a code unit in a project. For example, when we write a function:\ndef add(x, y):\n    return x + y\nWe find the easiest way to avoid bugs is to write a unit test like:\nif __name__ == \"__main__\":\n    assert add(1, 2) == 3\n    assert add(1, -1) == 0"
+  },
+  {
+    "objectID": "posts/arts/test/test.html#integration-test",
+    "href": "posts/arts/test/test.html#integration-test",
+    "title": "Pythonic Test",
+    "section": "2 Integration Test",
+    "text": "2 Integration Test\n\n2.1 Example\n\n\n\n\nThe connection between unit testing and intergration testing.\n\n\n\nThe purpose of integration test of testing is to expose defects in the interaction between these software modules when they are integrated. Here priority is to be given for the integrating links rather than the unit functions which are already tested.\nFor example, application has 2 modules say ‘Login Page’, ‘Mailbox’ and each of them is integrated logically. Here do not concentrate much on the Login Page testing as it’s already been done in Unit Testing. But check how it’s linked to the Mail Box Page.\n\nDemonstration of an integration testing example\n\n\n\n\n\n\n\n\nTest Case ID\nTest Case Objective\nTest Case Description\nExpected Result\n\n\n\n\n1\nCheck the interface link between the Login and Mailbox module\nEnter login credentials and click on the Login button\nTo be directed to the Mail Box\n\n\n\n\n\n2.2 Methods\n\nBig Bang Testing\nBig Bang Testing is an integration testing approach in which all the components or modules are integrated together at once and then tested as a unit. (pros: convenient for small systems)\n\n\nIncremental Testing\nIn the Incremental Testing approach, testing is done by integrating two or more modules that are logically related to each other and then tested for proper functioning of the application. Then the other related modules are integrated incrementally and the process continues until all the logically related modules are integrated and tested successfully.\n\n\n\n2.3 Guidelines for Integration Testing\n\nFirst, determine the Integration Test Strategy that could be adopted and later prepare the test cases and test data accordingly.\nStudy the Architecture design of the Application and identify the Critical Modules. These need to be tested on priority.\nStudy the Architecture design of the Application and identify the Critical Modules. These need to be tested on priority.\nAfter the test cases, it’s the test data which plays the critical role.\nAlways have the mock data prepared, prior to executing. Do not select test data while executing the test cases."
+  },
+  {
+    "objectID": "posts/arts/test/test.html#tool-pytest",
+    "href": "posts/arts/test/test.html#tool-pytest",
+    "title": "Pythonic Test",
+    "section": "3 Tool: Pytest",
+    "text": "3 Tool: Pytest\nDocs Nice Practice: Integration Testing With Pytest"
+  },
+  {
+    "objectID": "posts/arts/test/test.html#test-driven-development",
+    "href": "posts/arts/test/test.html#test-driven-development",
+    "title": "Pythonic Test",
+    "section": "4 Test-Driven Development",
+    "text": "4 Test-Driven Development\nAlways write the test examples before coding.\n\n\n\n\nThe process of test-driven development"
+  },
+  {
+    "objectID": "posts/tools/infer-engines/infer-engines.html#model-deployment-tensorrt-triton-ncnn",
+    "href": "posts/tools/infer-engines/infer-engines.html#model-deployment-tensorrt-triton-ncnn",
+    "title": "Model Deployment and Compression",
+    "section": "1 Model Deployment: TensorRT, Triton, NCNN",
+    "text": "1 Model Deployment: TensorRT, Triton, NCNN\n\n\n\n\n\n\nTake away\n\n\n\nStart with Nvidia TensorRT and Triton for deployment on server, then learn NCNN for mobile deployment.\n\n\n\n1.1 Why TensorRT?\nNVIDIA TensorRT is a deep learning platform that optimizes neural network models and speeds up inference across GPU-accelerated platforms running in the data center and embedded devices.\n\n\n\n\nSame model, 4x Faster & 6x Smaller with TensorRT-FP16\n\n\n\n\n\n1.2 Why Triton Server?\nTriton enables teams to deploy any AI model from multiple deep learning and machine learning frameworks, including TensorRT, TensorFlow, PyTorch, ONNX.\n\n\n\n\n4x QPS with TensorRT+Triton\n\n\n\n\n\n1.3 TensorRT+Triton Workflow\n\n\n\n\nOverall workflow for optimizing a model with TensorRT and serving with NVIDIA Triton\n\n\n\n\n\n1.4 NCNN Workflow"
+  },
+  {
+    "objectID": "posts/tools/infer-engines/infer-engines.html#model-compression-pruning-distillation-quantization-sparsity-nas",
+    "href": "posts/tools/infer-engines/infer-engines.html#model-compression-pruning-distillation-quantization-sparsity-nas",
+    "title": "Model Deployment and Compression",
+    "section": "2 Model Compression: Pruning, Distillation, Quantization, Sparsity, NAS",
+    "text": "2 Model Compression: Pruning, Distillation, Quantization, Sparsity, NAS\n\n\n\n\n\n\nTake away\n\n\n\nStart with pruning. Choose any other method depending on (1) task requirements and (2) hardware.\n\n\n\n2.1 Pruning\nGood generalization.\nCheck out an Microsoft Pytorch-based tool: Neural Network Intelligence (NNI).\n\n\n2.2 Distillation\nA large model T teaches a small model S and transfer S’s knowledge. Distillation is suitable for complicated tasks and small models.\nIt can be classified by different methods:\n\nResponse-based\nFeature-based\nRelation-based\n\nor different strategies:\n\nonline distillation\noffline distillation\nself distillation\n\nor different distillation algorithms:\n\nadversarial distillation\nmulti-teacher distillation\ncross-modal distillation\ngraph-based distillation\nattention-based distillation\ndata-free distillation\nquatized Distillation\nlifelong distillation\nnas distillation\n\n\n\n\n\nThe procedure.\n\n\n\n\n\n2.3 Quantization\nHigh requirements for specific hardware, e.g., Intel cpu.\nCheck out an Microsoft Pytorch-based tool: Neural Network Intelligence (NNI).\n\n\n2.4 Sparsity\nYou can make some tensors to be 0, but depends on specific hardwares, e.g., 30xx GPU. Check out an Nvidia Pytorch-based tool: Automated SParsity (ASP).\n\n\n2.5 Neural Architecture Search (NAS)\nYou can modify the DARTS model space and tasks to deploy NAS, mostly for models like MobileNet series. For example, you can use NAS to search the backbone, channel, depth, kernel size, resolution and other hyperparams of the model, but NAS requires super computing power because of the large searching space. This requirement welcomes big companies like Google and Facebook, but stops small labs and companies from NAS’s research. Check out an Microsoft Pytorch-based tool: Neural Network Intelligence (NNI)."
+  },
+  {
+    "objectID": "posts/tools/infer-engines/infer-engines.html#reference",
+    "href": "posts/tools/infer-engines/infer-engines.html#reference",
+    "title": "Model Deployment and Compression",
+    "section": "3 Reference",
+    "text": "3 Reference\n\nAccelerating AI/Deep learning models using tensorRT & triton inference\nOptimizing and Serving Models with NVIDIA TensorRT and NVIDIA Triton\nA Comprehensive Benchmark of Deep Learning Libraries on Mobile Devices (WWW 2022)\n训练好的深度学习模型是怎么部署的？ 边缘计算 | 在移动设备上部署深度学习模型的思路与注意点 老潘的AI部署以及工业落地学习之路\n在实际工程应用中,剪枝, 蒸馏等模型压缩方法中的具体哪个算法部署简单且有效?\nmobilev2-yolov5s剪枝、蒸馏，支持ncnn，tensorRT部署。ultra-light but better performence！\n[ICLR 2020] Contrastive Representation Distillation (CRD), and benchmark of recent knowledge distillation methods\n2022 年神经架构搜索的发展状况如何?\nBenchmarking Triton (TensorRT) Inference Server for Transformer Models\nhttps://www.reddit.com/r/MachineLearning/comments/i3knzb/d_what_pytorchs_model_serving_framework_are_you/\nHow to Accelerate HuggingFace Throughput by 193%\nHugging Face Transformer Inference Under 1 Millisecond Latency"
+  },
+  {
+    "objectID": "posts/tools/googledocs/googledocs.html#google-docs",
+    "href": "posts/tools/googledocs/googledocs.html#google-docs",
+    "title": "Google Docs - Efficient for Collaborations",
+    "section": "1 Google Docs",
+    "text": "1 Google Docs\n\n\n\n\nMy First Use of Google Docs and Surprise at these Purple functions\n\n\n\nRemember to supercharge your Google Docs with add-ons!"
+  },
+  {
+    "objectID": "posts/tools/googledocs/googledocs.html#google-sheets",
+    "href": "posts/tools/googledocs/googledocs.html#google-sheets",
+    "title": "Google Docs - Efficient for Collaborations",
+    "section": "2 Google Sheets",
+    "text": "2 Google Sheets\n\n\n\n\nMy First Use of Google Sheets and Surprise at these Purple functions"
+  },
+  {
+    "objectID": "posts/tools/googledocs/googledocs.html#google-slides",
+    "href": "posts/tools/googledocs/googledocs.html#google-slides",
+    "title": "Google Docs - Efficient for Collaborations",
+    "section": "3 Google Slides",
+    "text": "3 Google Slides\n\n\n\n\nEasy to share and collaborate with other person"
+  },
+  {
+    "objectID": "posts/tools/googledocs/googledocs.html#google-forms",
+    "href": "posts/tools/googledocs/googledocs.html#google-forms",
+    "title": "Google Docs - Efficient for Collaborations",
+    "section": "4 Google Forms",
+    "text": "4 Google Forms\n\n\n\n\nMy First Use of Google Forms and Surprise at these Purple functions\n\n\n\n\n\nLots of Functions designed for quiz"
+  },
+  {
+    "objectID": "posts/tutorials/mle-interview/summary.html",
+    "href": "posts/tutorials/mle-interview/summary.html",
+    "title": "Machine Learning Engineer (Ads) Interview Questions",
+    "section": "",
+    "text": "Take-away\n\n\n\n本项目试图将所有广告算法岗可能会出现的问题囊括其中\n面试题类型：\n\nLeetcode300\nML/DL八股\n数学题、智力题\n场景题"
+  },
+  {
+    "objectID": "posts/tutorials/mle-interview/summary.html#机器学习",
+    "href": "posts/tutorials/mle-interview/summary.html#机器学习",
+    "title": "Machine Learning Engineer (Ads) Interview Questions",
+    "section": "1 机器学习",
+    "text": "1 机器学习\n\n\n\n线性回归\nLR\nSVM\n5个树模型\n无监督学习-聚类和PCA\n\n\n特征工程\n评价指标\n过拟合、欠拟合-"
+  },
+  {
+    "objectID": "posts/tutorials/mle-interview/summary.html#深度学习",
+    "href": "posts/tutorials/mle-interview/summary.html#深度学习",
+    "title": "Machine Learning Engineer (Ads) Interview Questions",
+    "section": "2 深度学习",
+    "text": "2 深度学习\n\n\n\nNLP模型\n广告模型\n优化器\n损失函数-\n激活函数-\n\n\n权重初始化-\n学习率调整策略-\n超参数调优\nBatchNorm-\n梯度消失、梯度爆炸-\n\n\n项目\nPytorch-\nTensorflow\n相似度度量-"
+  },
+  {
+    "objectID": "posts/tutorials/mle-interview/summary.html#基础知识",
+    "href": "posts/tutorials/mle-interview/summary.html#基础知识",
+    "title": "Machine Learning Engineer (Ads) Interview Questions",
+    "section": "3 基础知识",
+    "text": "3 基础知识\n\n\n\n性格测试\nLeetcode\n计算机基础\n数学题、智力题-\n场景题"
+  },
+  {
+    "objectID": "posts/tutorials/flink/flink.html",
+    "href": "posts/tutorials/flink/flink.html",
+    "title": "PyFlink Tutorial",
+    "section": "",
+    "text": "This tutorial is a copy form pyflink_learn"
+  },
+  {
+    "objectID": "posts/tutorials/flink/flink.html#import-packages",
+    "href": "posts/tutorials/flink/flink.html#import-packages",
+    "title": "PyFlink Tutorial",
+    "section": "Import Packages",
+    "text": "Import Packages\nimport os, shutil\nfrom pyflink.table import BatchTableEnvironment, StreamTableEnvironment, EnvironmentSettings\nfrom pyflink.table.udf import udf, ScalarFunction\nfrom pyflink.table.descriptors import OldCsv, Schema, FileSystem\nfrom pyflink.table.window import Slide\nimport random, numpy as np\nfrom json import dumps\nfrom time import sleep\nfrom faker import Faker\nfrom datatime import datatime\nfrom reprint import out\nimport json\nfrom kafka import KafkaProducer, KafkaConsumer\nfrom sklearn import datasets\nimport redis, pickle, logging\nfrom sklearn.linear_model import SGDClassifier\nimport base64\nfrom flask_cors import CORS\nfrom flask import request, Flask, jsonify, render_template\nfrom PIL import Image\nfrom svglib.svglib import svg2rlg\nfrom reportlib.graphics import renderPM"
+  },
+  {
+    "objectID": "posts/tutorials/flink/flink.html#blink-batch-processing-in-flink",
+    "href": "posts/tutorials/flink/flink.html#blink-batch-processing-in-flink",
+    "title": "PyFlink Tutorial",
+    "section": "1 Blink: Batch Processing in Flink",
+    "text": "1 Blink: Batch Processing in Flink\n\n\n\n# 1. create a batch processing environment\nenv_settings = EnvironmentSettings.new_instance().in_batch_mode().use_old_planner().build()\nt_env = BatchTableEnvironment.create(environment_settings=env_settings)\n\n# 2. create source table from csv (or MySQL, Kafka, Hive, etc)\ndir_word = os.path.join(os.path.abspath(__file__), 'word_csv')\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE source (\n        id BIGINT, -- ID\n        word STRING, -- 单词\n    ) WITH (\n        'connector' = 'filesystem',\n        'path' = 'file://{dir_word}',\n        'format' = 'csv',\n    )\n\"\"\"\n)\n\n# 3. create sink table as result\ndir_result = os.path.join(os.path.abspath(__file__), 'result')\n\nif os.path.exists(dir_result): # remove file\n    if os.path.isfile(dir_result):\n        os.remove(dir_result)\n    else:\n        shutil.rmtree(dir_result, True)\n\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE sink (\n        word STRING, -- 单词\n        cnt BIGINT, -- 出现次数\n    ) WITH (\n        'connector' = 'filesystem',\n        'path' = 'file://{dir_result}',\n        'format' = 'csv',\n    )\n\"\"\"\n)\n\n# 4. Batch Process\nt_env.sql_query(\"\"\"\n    SELECT word, count(1) AS cnt\n    FROM source\n    GROUP BY word\n\"\"\").insert_into('sink')\nt_env.execute('t')\nflink run -m localhost:8081 -py batch.py"
+  },
+  {
+    "objectID": "posts/tutorials/flink/flink.html#customize-udf-functions-for-real-time-logging-system",
+    "href": "posts/tutorials/flink/flink.html#customize-udf-functions-for-real-time-logging-system",
+    "title": "PyFlink Tutorial",
+    "section": "2 Customize UDF Functions for Real-time Logging System",
+    "text": "2 Customize UDF Functions for Real-time Logging System\n\n\n\n# download dependencies\npip download -d cached_dir -r requirements.txt --no-binary :all:\n# 1. create batch process environment\nenv_settings = EnvironmentSettings.new_instance().in_batch_mode().use_blink_planner().build()\nt_env = BatchTableEnvironment.create(environment_settings)\nt_env.get_config().get_configuration().set_boolean(\"python.fn-execution.memory.managed\", True)\n\n# 2. install third-party libraries from downloaded files\nt_env.set_python_requirements(\"requirements.txt\", \"cached_dir\")\n\n# 3. create source table from data sources\ndir_log = os.path.join(os.path.abspath(__file__), 'syslog.txt')\nt_env.connect(FileSystem().path.(dir_log)) \\\n    .with_format(OldCsv()\n                .line_delimiter('\\n')\n                .field('line', DataTypes.STRING()))\\\n    .with_schema(Schema()\n                .field('line', DataTypes.STRING()))\\\n    .create_temporary_table('source')\n\n# 4. create sink table\ndir_result = os.path.join(os.path.abspath(__file__), 'result')\nif os.path.exists(dir_result):\n    if os.path.isfile(dir_result):\n        os.remove(dir_result)\n    else:\n        shutil.rmtree(dir_result)\nt_env.connect(FileSystem().path(dir_result))\\ \n    .with_format(OldCsv() # define data format\n                .field('topic', DataTypes.STRING()))\n    .with_schema(Schema() # define table structures\n                .field('topic', DataTypes.STRING()))\n    .create_temporary_table('sink')\n\n# 5. register UDF\n@udf(input_types=[DataTypes.STRING()], result_type=DataTypes.STRING())\ndef get_topic(line):\n    import re\n    if 'IN=' in line and 'OUT=' in line and 'MAC=' in line:\n        return 'syslog-iptables'\n    elif '=======================================' in line or re.search(r'localhost (.+?): \\[', line, re.M | re.I):\n        return 'syslog-user'\n    else return 'syslog-system'\n\n# so many regex ... \n\nt_env.register_function('get_topic', get_topic)\n\n# 6. Batch Processing\nt_env.from_path('source')\\\n    .select('line, get_topic(line) AS topic') \\\n    .select('topic, ')\n    .execute_insert('sink')"
+  },
+  {
+    "objectID": "posts/tutorials/flink/flink.html#real-time-sync-with-mysql",
+    "href": "posts/tutorials/flink/flink.html#real-time-sync-with-mysql",
+    "title": "PyFlink Tutorial",
+    "section": "3 Real-time Sync with MySQL",
+    "text": "3 Real-time Sync with MySQL\n\n\n\n# 1. create Blink stream environment\nenv_settings = EnvironmentSettings.new_instance().in_streaming_mode().use_blink_planner().build()\nt_env = StreamTableEnvironment.create(environment_settings=env_settings)\n\n# 2. create jar dependencies\njars=[]\nfor file in os.listdir(os.path.abspath(os.path.dirname(__file__))):\n    if file.endswith('.jar'):\n        jars.append(os.path.abspath(file))\nstr_jars=';'.join(['file://'+jar for jar in jars])\nt_env.config().get_configuration().set_string(\"pipeline_jars\", str_jars)\n\n# 3. create source table from MySQL\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE source (\n        id INT, -- ID\n        name STRING, -- Name\n    ) WITH (\n        'connector' = 'mysql-cdc',\n        'hostname' = '127.0.0.1',\n        'port' = '3306',\n        'database-name' = 'flink',\n        'table-name' = 'case3',\n        'username' = 'root',\n        'password' = 'root',\n    )\n\"\"\"\n)\n# check table\nt_env.from_path('source').print_schema()\nt_env.from_path('source').to_pandas()\n\n# 4. create sink table\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE sink (\n        id INT, -- ID\n        name STRING, -- Name\n        PRIMARY KEY (id) NOT ENFORCED -- define primary key\n    ) WITH (\n        'connector' = 'jdbc',\n        'url' = 'jdbc:mysql://127.0.0.1:3307/flink',\n        'driver' = 'com.mysql.cj.jdbc.Driver',\n        'table-name' = 'case3',\n        'username' = 'root',\n        'password' = 'root',\n    )\n\"\"\")\n\n# 5. batch processing\nt_env.from_path('source').insert_into('sink')"
+  },
+  {
+    "objectID": "posts/tutorials/flink/flink.html#real-time-ranking",
+    "href": "posts/tutorials/flink/flink.html#real-time-ranking",
+    "title": "PyFlink Tutorial",
+    "section": "4 Real-time Ranking",
+    "text": "4 Real-time Ranking\n\n\n\n\n4.1 Kafka Data Producer\n# setting\nseed=2020\nnum_users=50\nmax_msg_per_second=20\nrun_seconds=3600\ntopic='user_action'\nbootstrap_servers = ['localhost:9092']\nfake = Faker(locale='zh_CN')\nFaker.seed(seed)\nrandom.seed(seed)\n#\nclass UserGroup:\n    def __init__(self):\n        # different user, different probability\n        self.users = [self.gen_male() if random.random() < 0.6 else self.gen_female() for _ in range(num_users)]\n        prob = np.cumsum(np.random.uniform(1, 100, num_users)) # sum of probabilities\n        self.prob = prob/prob.max() # to 0 - 1\n    \n    @staticmethod\n    def gen_male():\n        return {'name': fake.name_male(), 'sex':'男'}\n\n    @staticmethod\n    def gen_female():\n        return {'name': fake.name_female(), 'sex':'女'}\n\n    def get_user(self):\n        r = random.random()\n        index = np.searchsorted(self.prob, r) # insert into sorted array, return index where self.prob[index-1]<r<self.prob[index]\n        return self.users[index]\n\ndef write_data():\n    group = UserGroup()\n    start_time = datatime.now()\n    # init producer\n    producer = KafkaProducer(\n        bootstrap_servers = bootstrap_servers,\n        value_serializer=lambda x: dumps(x).encode('utf-8'),\n    )\n\n    while True:\n        now = datatime.now()\n        # produce data to kafka\n        user = group.get_user()\n        cur_data = {\n            'ts': now.strftime('%Y-%m-%d %H:%M:%S'),\n            'name': user['name'],\n            'sex': user['sex'],\n            'action': 'click' if random.random() < 0.9 else 'scroll',\n            'is_delete': 0 if random.random() < 0.9 else 1,\n        }\n        producer.send(topic, value=cur_data)\n\n        # terminate when running time > run_seconds\n        if (now - start_time).seconds > run_seconds:\n            break\n\n        sleep(1 / max_msg_per_second)\n\n\n4.2 Kafka Monitor\n\nSource Table Monitor\ntopic = 'user_action'\nbootstrap_servers = ['localhost:9092']\ngroup_id = 'group7'\n\nconsumer = KafkaConsumer(\n    topic,\n    group_id=group_id,\n    bootstrap_servers=bootstrap_servers,\n    auto_offset_reset='latest'\n)\n\nfor msg in consumer:\n    print(msg.value.decode('utf-8').encode('utf-8').decode('unicode_escape'))\n\n\nSink Table Monitor\ntopic = 'click_rank'\nbootstrap_servers=['localhost:9092']\ngroup_id = 'group7'\n\nconsumer = KafkaConsumer(\n    topic,\n    group_id = group_id,\n    bootstrap_servers = bootstrap_servers,\n    auto_offset_reset='latest',\n)\n\nwith output(output_type='list', initial_len=22, interval=0) as output_lines:\n    # 5 men 5 women\n    output_lines[0] = '=== 男 ==='\n    output_lines[6] = '=== 女 ==='\n    for msg in consumer:\n        data = json.loads(msg.value)\n        start_index = 1 if data['sex'] == '男' else 7\n        rank = json.loads('[' + data['top10'] + ']')\n\n        for i in range(5):\n            index = start_index + i\n            if i < len(rank):\n                name = list(rank[i].keys())[0]\n                value = list(rank[i].values())[0]\n                output_lines[index] = f'{name:6s} {value}'\n            else:\n                output_lines[index] = ''\n\n\n\n4.3 Stream Processing\n# settings\nkafka_servers = 'localhost:9092'\nkafka_consumer_group_id = 'group8'\nsource_topic = 'user_action'\nsink_topic = 'click_rank'\n\n# 1. create Blink stream process environment\nenv=StreamExecutionEnvironment.get_execution_environment()\nenv_settings = EnvironmentSettings.new_instance().in_streaming_mode().use_blink_planner().build()\nt_env = StreamTableEnvironment.create(env, environment_settings=env_settings)\nt_env.get_config().get_configuration().set_boolean('python.fn-execution.memory.managed', True)\n\n# 2. add dependencies and register UDF\ndir_kafka_sql_connect = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'flink-sql-connector-kafka_2.11-1.11.2.jar')\nt_env.get_config().get_configuration().set_string('pipeline.jars', 'file://' + dir_kafka_sql_connect)\n\ndir_java_udf = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'flink-udf-1.0-SNAPSHOT.jar')\nt_env.get_config().get_configuration().set_string('pipeline.classpaths', 'file://' + dir_java_udf)\n\nt_env.register_java_function('getTopN', 'com.flink.udf.TopN')\n\n# 3. create source table\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE source (\n        name VARCHAR,\n        sex VARCHAR,\n        action VARCHAR,\n        is_delete BIGINT,\n        ts TIMESTAMP(3),\n        WATERMARK FOR ts AS ts - INTERVAL '5' SECOND\n    ) with(\n        'connector' = 'kafka',\n        'topic' = '{source_topic}',\n        'properties.bootstrap.servers' = '{kafka_servers}',\n        'properties.group.id' = '{kafka_consumer_group_id}',\n        'scan.startup.mode' = 'latest-offset',\n        'json.fail-on-missing-field' = 'false',\n        'json.ignore-parse-errors' = 'true',\n        'format' = 'json',\n    )\n\n\"\"\")\n\n# 4. create sink table\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE sink (\n        sex STRING,\n        top10 STRING,\n        start_time TIMESTAMP(3),\n        end_time TIMESTAMP(3),\n    ) with(\n        'connector' = 'kafka',\n        'topic' = '{sink_topic}',\n        'properties.bootstrap.servers' = '{kafka_servers}',\n        'properties.group.id' = '{kafka_consumer_group_id}',\n        'scan.startup.mode' = 'latest-offset',\n        'json.fail-on-missing-field' = 'false',\n        'json.ignore-parse-errors' = 'true',\n        'format' = 'json',\n    )\n\"\"\")\n\n# 5. stream processing\n# HOP is like rolling window(timestamp, step, window_length)\nt_env.sql_query(\"\"\"\n    SELECT \n        sex,\n        getTopN(name, 10, 1) AS top10,\n        HOP_START(ts, INTERVAL '1' SECOND, INTERVAL '60' SECOND) AS start_time,\n        HOP_END(ts, INTERVAL '1' SECOND, INTERVAL '60' SECOND) AS end_time\n    FROM\n        source\n    WHERE\n        action='click'\n        AND is_delete=0\n    GROUP BY \n        sex,\n        HOP(ts, INTERVAL '1' SECOND, INTERVAL '60' SECOND)\n\"\"\").insert_into(\"sink\")\nt_env.execute('Top10 User Click')\n\n#"
+  },
+  {
+    "objectID": "posts/tutorials/flink/flink.html#online-machine-learning",
+    "href": "posts/tutorials/flink/flink.html#online-machine-learning",
+    "title": "PyFlink Tutorial",
+    "section": "5 Online Machine Learning",
+    "text": "5 Online Machine Learning\n\n\n\n\n5.1 Kafka Data Producer\n# settings\nmax_msg_per_second = 10\ntopic = 'handwritten_digit'\nbootstrap_servers = ['localhost:9092']\n\ndef write_data():\n    digits = datasets.load_digits()\n    all_x = digits.data.astype(int)\n    all_y = digits.target.astype(int)\n\n    producer = KafkaProducer(\n        bootstrap_servers = bootstrap_servers,\n        value_serializer = lambda x: dumps(x).encode('utf-8')\n    )\n\n    while True:\n        idx = np.arange(digits.data.shape[0])\n        np.random.shuffle(idx)\n        all_x = all_x[idx]\n        all_y = all_y[idx]\n\n        for x, y in zip(all_x, all_y):\n            cur_data = {\n                'ts': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),\n                'x': x.tolist(),\n                'actual_y': int(y)\n            }\n            producer.send(topic, value=cur_data)\n\n            sleep(1/ max_msg_per_second)\n\nwrite_data()\n\n\n5.2 Kafka Data Consumer\n# 1. create Blink Stream Processing Environment\nenv = StreamExecutionEnvironment.get_execution_environment()\nenv_settings = EnvironmentSettings.new_instance().in_streaming_mode().use_blink_planner().build()\nt_env = StreamTableEnvironment.create(env, environment_settings=env_settings)\nt_env.get_config().get_configuration().set_boolean('python.fn-execution.memory.managed', True)\n\n# 2. Load Dependencies\ndir_kafka_sql_connect = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'flink-sql-connector-kafka_2.11-1.11.2.jar')\nt_env.get_config().get_configuration().set_string('pipeline.jars', 'file://'+ dir_kafka_sql_connect)\n\ndir_requirements = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'requirements.txt')\ndir_cache = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'cached_dir')\nif os.path.exists(dir_requirements):\n    if os.path.exists(dir_cache):\n        t_env.set_python_requirements(dir_requirements, cached_dir)\n\n# 3. register UDF\nclass Model(ScalarFunction):\n    def __init__(self):\n        # load model\n        self.model_name = 'online_ml_model'\n        self.redis_params = dict(host='localhost', password='redis_password', port='6379', db=0)\n        self.clf = self.load_model()\n\n        self.interval_dump_seconds = 30\n        self.last_dump_time = datetime.now()\n\n        self.classes = list(range(10))\n\n        self.metric_counter=None\n        self.metric_predict_acc = 0\n        self.metric_distribution_y = None\n        self.metric_total_10_sec = None\n        self.metric_right_10_sec = None\n    \n    def open(self, function_context):\n        # register metrics\n        metric_group = function_context.get_metric_group().add_group('online_ml')\n        self.metric_counter = metric_group.counter('sample_count')\n        metric_group.gauge('prediction_acc', lambda: int(self.metric_predict_acc*100))\n        self.metric_distribution_y = metric_group.distribution('metric_distribution_y')\n        self.metric_total_10_sec = metric_group.meter('total_10_sec', time_span_in_seconds=10)\n        self.metric_right_10_sec = metric_group.meter('right_10_sec', time_span_in_seconds=10)\n\n    def eval(self, x, y):\n        # x: 1-dim gray value\n        # y: 0-9\n        self.clf.partial_fit([x], [y], classes=self.classes) # 1dim to 2dim\n        self.dump_model() # save to redis\n        y_pred = self.clf.predict([x])[0]\n        self.metric_counter.inc(1)\n        self.metric_total_10_sec.mark_event(1)\n        if y_pred == y:\n            self.metric_right_10_sec.mark_event(1)\n        self.metric_predict_acc = self.metric_right_10_sec.get_count() / self.metric_total_10_sec.get_count()\n        self.metric_distribution_y.update(y)\n\n        return y_pred\n    \n    def load_model(self)\n        r = redis.StrictRedis(**self.redis_params)\n        clf = None\n\n        try:\n            clf=pickle.loads(r.get(self.model_name))\n        except TypeError:\n            logging.info('no model in redis, init new model...')\n        except (redis.exceptions.RedisError, TypeError, Exception):\n            logging.warning('redis error, init new model...')\n        finally:\n            clf = clf or SGDClassifier(alpha=0.01, loss='log', penalty='l1')\n        return clf\n    \n    def dump_model(self):\n        if (datetime.now() - self.last_dump_time).seconds >= self.interval_dump_seconds:\n            r = redis.StrictRedis(**self.redis_params)\n            try:\n                r.set(self.model_name, pickle.dumps(self.clf, protocol = pickle.HIGHEST_PROTOCOL))\n            except (redis.exceptions.RedisError, TypeError, Exception):\n                logging.warning('redis error, failed to store model...')\n            self.last_dump_time = datetime.now()\n\nmodel = udf(Model(), input_types=[DataTypes.ARRAY(DataTypes.INT()), DataTypes.TINYINT()], result_type=DataTypes.TINYINT())\nt_env.register_function('train_and_predict', model)\n\n# 4. create source table\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE source (\n        x ARRAY<INT>,\n        actual_y TINYINT,\n        ts TIMESTAMP(3),\n    ) with (\n        'connector' = 'kafka',\n        'topic' = '{source_topic}',\n        'properties.bootstrap.servers' = '{kafka_servers}',\n        'properties.group.id' = '{kafka_consumer_group_id}',\n        'scan.startup.mode' = 'latest-offset',\n        'json.fail-on-missing-field' = 'false',\n        'json.ignore-parse-errors' = 'true',\n        'format' = 'json'\n    )\n\"\"\"\n)\n\n# 5. create sink table\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE sink (\n        x ARRAY<INT>\n        actual_y TINYINT,\n        predict_y TINYINT,\n) with (\n    'connector' = 'kafka',\n        'topic' = '{sink_topic}',\n        'properties.bootstrap.servers' = '{kafka_servers}',\n        'properties.group.id' = '{kafka_consumer_group_id}',\n        'scan.startup.mode' = 'latest-offset',\n        'json.fail-on-missing-field' = 'false',\n        'json.ignore-parse-errors' = 'true',\n        'format' = 'json'\n    )\n\"\"\"\n)\n\n# 6. stream processing\nt_env.sql_query(\"\"\"\n    SELECT\n        x,\n        actual_y,\n        train_and_predict(x, actual_y) AS predict_y\n    FROM\n        source\n\"\"\").insert_into(\"sink\")\nt_env.execute('Classifier Model Train')\n\n\n5.3 Model Serving via Flask\n# settings\nredis_params = dict(\n    host='localhost',\n    password='redis_password',\n    port=6379,\n    db=0\n)\nmodel_key = 'online_ml_model'\n# create app\napp = Flask(__name__)\nCORS(app)\n\n# model\nclf = None\ndef load_latest_clf_model():\n    r = redis.StrictRedis(**redis_params)\n    model=None\n    try:\n        model=pickle.loads(r.get(model_key))\n    except TypeError:\n        logging.exception('No model in redis, maybe key error')\n    except (redis.exceptions.RedisError, TypeError, Exception) as err:\n        logging.exception(f'RedisError: {err}')\n    return model\n\n# raw data to input\ndef format_svg_base64(s: str) -> np.array:\n    # base64 string to svg to 8*8 array to 1-dim array\n\n    # base64 to svg\n    with open('digit.svg', 'wb') as f:\n        f.write(base64.b64decode(s))\n    # svg to png\n    drawing = svg2rlg('digit.svg')\n    renderPM.drawToFile(drawing, 'digit.svg', fmt='png')\n    # png to 8 * 8\n    target_w, target_h = 8, 8\n    png = Image.open('digit.png')\n    w, h = png.size\n    scale = min(target_w/ w, target_h/ h)\n    new_w, new_h = int(w*scale, h*scale)\n    png=png.resize((new_w, new_h), Image.BILINEAR)\n    new_png = Image.new('RGB', (target_w, target_h), (255,255,255)) # create blank img\n    new_png.paste(png, ((target_w-new_w)//2, (target_h-new_h)//2)) # copy to center\n    # convert black to white, value to 0-16, size to 1*64\n    array = 255 - np.array(new_png.convert('L'))\n    array = (array/255) * 16\n    array = array.reshape(1, -1)\n    return array\n\n@app.route('/')\ndef home():\n    return render_template('web.html')\n@app.route('/predict', methods=['POST'])\ndef predict():\n    global clf\n    img_string =request.form['imgStr']\n    data = format_svg_base64(img_string) # feature engineering\n    model = load_latest_clf_model() # model loading\n    clf = model or clf\n    predict_y = int(clf.predict(data)[0])\n    return jsonify({'success':True, 'predict_result':predict_y}), 201\n\nif __name__ == '__main__':\n    app.run(host='127.0.0.1', port=8066, debug=True)\n\n\n5.4 Retrain Model\nredis_params = dict(\n    host='localhost',\n    password='redis_password',\n    port=6379,\n    db=0\n)\nr = redis.StrictRedis(**redis_params)\ntry:\n    model=r.ping()\nexcept (redis.exceptions.RedisError, TypeError, Exception)as err:\n    raise Exception(f'cannot connect to redis:{err}')\nif len(sys.argv) == 1: # delete whole database when no arguments sent in\n    r.flushdb()\nelse:\n    for key in sys.argv[1:]: # delete specific key\n        if r.exists(key):\n            r.delete(key)"
+  },
+  {
+    "objectID": "posts/tutorials/2022-11-19-ai-project/ai-course-project.html",
+    "href": "posts/tutorials/2022-11-19-ai-project/ai-course-project.html",
+    "title": "Visualize Model with GradCAM and Super-Resolution",
+    "section": "",
+    "text": "One day, I got an assignment from my professor. At that time, I was doing research on stock price prediction, but was asked to implement top conference papers with my classmates. Within two days, I have done GradCAM visualization on noisy-label models and make the images clearer by integrating two top conference github projects (NeurIPS 2021, ECCV 2022). This experience allows me to quickly solve new problems that I have no prior knowledge of."
+  },
+  {
     "objectID": "posts/tutorials/2022-11-19-ai-project/ai-course-project.html#model-creation",
     "href": "posts/tutorials/2022-11-19-ai-project/ai-course-project.html#model-creation",
     "title": "Visualize Model with GradCAM and Super-Resolution",
     "section": "1 Model creation",
-    "text": "1 Model creation\nFirstly, I find model PES from github: Understanding and Improving Early Stopping for Learning with Noisy Labels (NeurIPS 2021)\nThen, to make sure its correctness, I check the model following the README in its repo and rerun the training procedure with much smaller epoches (check this hyperparameter in the code, like the argparse part in config.py or train.py etc.).\nNow I need to get my Grad-cam code and plug it into PES."
+    "text": "1 Model creation\nWe decided to implement papers on noisy labels. After searching, I find model PES from github: Understanding and Improving Early Stopping for Learning with Noisy Labels (NeurIPS 2021)\nThen, to make sure its correctness, I check the model following the README in its repo and rerun the training procedure with much smaller epoches (check this hyperparameter in the code, like the argparse part in config.py or train.py etc.).\nNow I need to get my Grad-cam code and plug it into PES."
   },
   {
     "objectID": "posts/tutorials/2022-11-19-ai-project/ai-course-project.html#learning-gradcam",
@@ -70,67 +231,11 @@
     "text": "8 References\n# https://www.tutorialspoint.com/How-to-copy-a-file-to-a-remote-server-in-Python-using-SCP-or-SSH\n# superweb999.com/article/356190.html #\n# https://cloud.tencent.com/developer/article/1669557 #\n# https://blog.theodo.com/2022/05/upgrade-pytorch-for-aws-sagemaker/ # \n# https://www.thegeekdiary.com/how-to-run-scp-without-password-prompt-interruption-in-linux/ #\n# https://flask.palletsprojects.com/en/2.2.x/patterns/fileuploads/  \n# https://blog.csdn.net/qq_27825451/article/details/102909772 #\n# https://blog.csdn.net/xiojing825/article/details/78207862 #\n# https://github.com/csxmli2016/ReDegNet\n# https://learnku.com/server/wikis/36530 #\n# https://www.csdn.net/tags/OtDaUg1sODA3MDMtYmxvZwO0O0OO0O0O.html #\n# https://blog.duhbb.com/2022/03/29/local-web-access-by-frp-intranet-penetration/\n# https://github.com/evmaki/ee461-react-flask-heroku\n# https://www.freecodecamp.org/news/how-to-update-node-and-npm-to-the-latest-version/\n# https://github.com/Nneji123/Serving-Machine-Learning-Models#serving-models-with-streamlit\n# https://github.com/neelsomani/react-flask-heroku\n# https://towardsdatascience.com/reactjs-python-flask-on-heroku-2a308272886a\n# https://www.google.com/search?q=gunicorn+app:app&sxsrf=ALiCzsbTbNZ0bN6WspDglqqEscn7xPL9Mw:1668792432324&ei=cMB3Y8uwE9Pw4-EP8q6syAI&start=10&sa=N&ved=2ahUKEwjLqIehoLj7AhVT-DgGHXIXCykQ8NMDegQIAxAO\n# https://www.geeksforgeeks.org/how-to-display-multiple-images-in-one-figure-correctly-in-matplotlib/"
   },
   {
-    "objectID": "talks.html",
-    "href": "talks.html",
-    "title": "Linghao Wang",
-    "section": "",
-    "text": "I regularly give talks on CS and ML topics at academic conferences, Data Science meetups and Bilibili. Below, you can find links to videos and slides of selected talks."
-  },
-  {
-    "objectID": "talks.html#teaching",
-    "href": "talks.html#teaching",
-    "title": "Linghao Wang",
-    "section": "Teaching",
-    "text": "Teaching\n\nHow to prepare for CS courses exam  Bilibili, 2020\nAbstract: The talk provides a brief practical-driven introduction into CS courses. The talks covers the basics of CS courses and provides a tutorial on how to pass CS courses exams.  📹 Video"
-  },
-  {
-    "objectID": "publications/NIPS2022.html",
-    "href": "publications/NIPS2022.html",
-    "title": "Title here",
-    "section": "",
-    "text": "0.1 Citation (APA 7)\n\nLinghao, W. (2022). Stock prediction master. Proceedings of the 10th IEEE International Conference on Automated Face & Gesture Recognition (FG), 1–7.\n\n\n\n0.2 Abstract\nThe main content of this paper.\n\n\n0.3 Author Note\n\nWhen I wrote this paper back in 2011, I was just learning about performance evaluation. This was a first, and rather naive attempt at understanding the connection between agreement, prevalence, and threshold selection. Readers interested in more sophisticated approaches to these issues are encouraged to look up Guangchao Charles Feng, who has done nice work in this area.\n\n— Jeffrey Girard, 2018-06-14"
-  },
-  {
-    "objectID": "create_series.html",
-    "href": "create_series.html",
-    "title": "Linghao Wang",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nHow to Choose a Database to Start with?\n\n\nComparison among 7 databases\n\n\n\n\ntools\n\n\n\n\n\n\n\n\n\n\n\nDec 14, 2022\n\n\n0 min\n\n\n\n\n\n\n\n\nGoogle Docs - Efficient for Collaborations\n\n\nFast & Comprehensive Online document. Alternative to WPS & Microsoft Docs, Excel and PPT\n\n\n\n\ntools\n\n\ncollaboration\n\n\n\n\n\n\n\n\n\n\n\nDec 13, 2022\n\n\n0 min\n\n\n\n\n\n\n\n\nRegex Tutorial\n\n\n\n\n\n\n\npython\n\n\nregex\n\n\ntutorial\n\n\n\n\n\n\n\n\n\n\n\nDec 13, 2022\n\n\n0 min\n\n\n\n\n\n\n\n\nPyFlink Tutorial\n\n\nPyFlink: A Big Data Processing Tool.\n\n\n\n\npython\n\n\nflink\n\n\nkafka\n\n\ntutorial\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n18 min\n\n\n\n\n\n\n\n\nPySpark Tutorial\n\n\nPySpark: Big Data Processing and ML algorithms.\n\n\n\n\npython\n\n\nspark\n\n\ntutorial\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n3 min\n\n\n\n\n\n\n\n\nVisualize Model with GradCAM and Super-Resolution\n\n\nCheck how to visualize an Image Classification model with GradCAM, and make it clearer by Super-Resolution.\n\n\n\n\npython\n\n\npytorch\n\n\ndeep learning\n\n\ntutorial\n\n\n\n\n\n\n\n\n\n\n\nNov 19, 2022\n\n\n3 min\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Linghao Wang",
-    "section": "",
-    "text": "Hi, I am Linghao!\n      \n    \n\n    \n    I am a master in CS working on the frontier of research and business. This website hosts my blog with ML tutorials, competition solutions and project findings. All opinions published here are my own.\n    \n\n    Check out my CV and other pages to see more of my work:\n    \n       📁 my portfolio with ML projects on different topics\n       📚 my publications with abstracts and full-text PDFs\n       🥇 my Kaggle solutions with links to code and writeups"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Linghao Wang",
-    "section": "",
-    "text": "Hi! I am an applied ML graduate working on the frontier of research and business. With M.S. in ML and certified AWS knowledge, practical experience in diverse ML/DL areas and strong communication skills, I am passionate about using AI to solve challenging business problems and create value. Currently, I study at SCUT, where I develop cutting-edge ML solutions to stock price prediction.\n\n\n\n\n\n\nThis website hosts my blog, where I share ML tutorials, competition solutions and interesting project findings. All opinions published here are my own. It also includes other sections featuring my work:\n\n📁 my blogs with links to different topics\n🗣 my public talks with links to presentation slides and talk videos \n\nIf you like my blog, you can buy me a cup of tea to support my work. Thanks!\n\n\n\n\n\n\n\n\n\nContact\nWould like to have a chat? Click here to send me an e-mail.\nI am also happy to connect on different social and professional platforms. Click the badges right below to see my profile."
-  },
-  {
-    "objectID": "portfolio.html",
-    "href": "portfolio.html",
-    "title": "Linghao Wang",
-    "section": "",
-    "text": "Portfolio\n    My portfolio includes three ML projects on different topics focusing on computer vision, NLP and tabular data. To see more of my work, visit my GitHub profile, download my CV or check out the about page.\n  \n\n \n\n\n\n  My portfolio features the following projects:\n  \n   📖 Text reading complexity prediction with transformer  \n   🧬 Image-to-text translation of chemical structures with deep learning \n   📈 Fair machine learning in credit scoring applications \n  \n  Click \"read more\" to see project summaries. Follow GitHub links for code and documentation. Scroll down to see more Machine Learning and Deep Learning projects grouped by application areas.\n\n\n\n\n\n   Text Readability Prediction with Transformers \n  \n   Highlights \n  \n   This Project is not mine. Just list it as my recommended portfolio design style.  \n   developed a comprehensive PyTorch / HuggingFace text classification pipeline \n   build multiple transformers including BERT and RoBERTa with custom pooling layers \n   implemented an interactive web app for custom text reading complexity estimation \n  \n   Tags: natural language processing, deep learning, web app \n  \n  \n   Summary \n   Estimating text reading complexity is a crucial task for school teachers. Offering students text passages at the right level of challenge is important for facilitating a fast development of reading skills. The existing tools to estimate text complexity rely on weak proxies and heuristics, which results in a suboptimal accuracy. In this project, I use deep learning to predict the readability scores of text passages. \n   My solution implements eight transformer models, including BERT, RoBERTa and others in PyTorch. The models feature a custom regression head that uses a concatenated output of multiple hidden layers. The modeling pipeline includes text augmentations such as sentence order shuffle, backtranslation and injecting target noise. The solution places in the top-9% of the Kaggle competition leaderboard. \n   The project also includes an interactive web app built in Python. The app allows to estimate reading complexity of a custom text using two of the trained transformer models. The code and documentation are available on GitHub. \n  \n  \n  \n  📜 Read more\n  💻 GitHub repo\n  📊 Web app\n  📋 Blog post"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Linghao Wang",
-    "section": "",
-    "text": "Blog\n    In my blog, I write about machine learning and deep learning. My posts include ML tutorials, package overviews, competition solutions and interesting project findings. All opinions are my own.\n  \n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\n \n\n\n\n\n\n\nDec 14, 2022\n\n\nHow to Choose a Database to Start with?\n\n\n\n\n\n\nDec 13, 2022\n\n\nGoogle Docs - Efficient for Collaborations\n\n\n\n\n\n\nDec 13, 2022\n\n\nRegex Tutorial\n\n\n\n\n\n\nDec 12, 2022\n\n\nPyFlink Tutorial\n\n\n\n\n\n\nDec 12, 2022\n\n\nPySpark Tutorial\n\n\n\n\n\n\nNov 19, 2022\n\n\nVisualize Model with GradCAM and Super-Resolution\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/tutorials/spark/spark.html",
-    "href": "posts/tutorials/spark/spark.html",
+    "objectID": "posts/tutorials/spark/spark.html#import-packages",
+    "href": "posts/tutorials/spark/spark.html#import-packages",
     "title": "PySpark Tutorial",
-    "section": "",
-    "text": "Spark"
+    "section": "1 Import Packages",
+    "text": "1 Import Packages\nimport numpy as np, pandas as pd, sklearn, random, os\nfrom pyspark.sql import SparkSession, SQLContext\nfrom pyspark.sql.functions import mean, col, split, regexp_extract, when, lit, isnan, count\nfrom pyspark.ml import Pipeline\nfrom pyspark.ml.feature import StringIndexer, IndexToString, VectorAssembler, QuantileDiscretizer\nfrom pyspark.ml.evaluation import RegressionEvaluator, MulticlassClassificationEvaluator\nfrom pyspark.ml.recommendation import ALS\nfrom pyspark.ml.classification import LogisticRegression, RandomForestClassfier, GBTClassifier\nfrom pyspark.ml.tuning import ParamGridBuilder, TrainValidationSplit"
   },
   {
     "objectID": "posts/tutorials/spark/spark.html#data-loading",
@@ -168,171 +273,59 @@
     "text": "6 Final Prediction: SparkSQL Practice\n# 1. create dataframe of distince movies\nunique_movies = new_df.select('title_new').distinct()\n\n# 2. create function to recommend top n movies to given user\ndef top_movies(user_id, n):\n    # 1. simplify table `unique_movies` as `a` for SQL\n    a = unique_movies.alias('a')\n\n    # 2. SQL: select movies already watched by user\n    watched_movies = new_df.filter(new_df['userId']=='user_id').select('title_new')\n    b - watched_movies.alias('b')\n\n    # 3. SQL: join table\n    total_movies = a.join(b, a.title_new=b.title_new, how=left)\n\n    # 4. SQL: select movies not watched - (filter = where)\n    remain_movies = total_movies.where(col('b.title_new').isNull()).select(a.title_new).distinct()\n\n    # 5. SQL: add column `userId` with default value user_id\n    remain_movies = remain_movies.withColumn('userId', lit(int(user_id)))\n\n    # 6. SQL: top n\n    recommendations = model.transform(remain_movies).orderBy('prediction', ascending=False).limit(n)\n\n    # 7. int back to string\n    recommendations = IndexToString(inputCol='title_new', outputCol='title', labels=indexer.labels).transform(recommendations)\n\n    return recommendations.show(n, False)"
   },
   {
-    "objectID": "posts/tutorials/spark/spark.html#import-packages",
-    "href": "posts/tutorials/spark/spark.html#import-packages",
-    "title": "PySpark Tutorial",
-    "section": "1 Import Packages",
-    "text": "1 Import Packages\nimport numpy as np, pandas as pd, sklearn, random, os\nfrom pyspark.sql import SparkSession, SQLContext\nfrom pyspark.sql.functions import mean, col, split, regexp_extract, when, lit, isnan, count\nfrom pyspark.ml import Pipeline\nfrom pyspark.ml.feature import StringIndexer, IndexToString, VectorAssembler, QuantileDiscretizer\nfrom pyspark.ml.evaluation import RegressionEvaluator, MulticlassClassificationEvaluator\nfrom pyspark.ml.recommendation import ALS\nfrom pyspark.ml.classification import LogisticRegression, RandomForestClassfier, GBTClassifier\nfrom pyspark.ml.tuning import ParamGridBuilder, TrainValidationSplit"
-  },
-  {
-    "objectID": "posts/tutorials/flink/flink.html#section",
-    "href": "posts/tutorials/flink/flink.html#section",
-    "title": "PyFlink Tutorial",
-    "section": "1 ",
-    "text": "1"
-  },
-  {
-    "objectID": "posts/tutorials/flink/flink.html#import-packages",
-    "href": "posts/tutorials/flink/flink.html#import-packages",
-    "title": "PyFlink Tutorial",
-    "section": "Import Packages",
-    "text": "Import Packages\nimport os, shutil\nfrom pyflink.table import BatchTableEnvironment, StreamTableEnvironment, EnvironmentSettings\nfrom pyflink.table.udf import udf, ScalarFunction\nfrom pyflink.table.descriptors import OldCsv, Schema, FileSystem\nfrom pyflink.table.window import Slide\nimport random, numpy as np\nfrom json import dumps\nfrom time import sleep\nfrom faker import Faker\nfrom datatime import datatime\nfrom reprint import out\nimport json\nfrom kafka import KafkaProducer, KafkaConsumer\nfrom sklearn import datasets\nimport redis, pickle, logging\nfrom sklearn.linear_model import SGDClassifier\nimport base64\nfrom flask_cors import CORS\nfrom flask import request, Flask, jsonify, render_template\nfrom PIL import Image\nfrom svglib.svglib import svg2rlg\nfrom reportlib.graphics import renderPM"
-  },
-  {
-    "objectID": "posts/tutorials/flink/flink.html#blink-batch-processing-in-flink",
-    "href": "posts/tutorials/flink/flink.html#blink-batch-processing-in-flink",
-    "title": "PyFlink Tutorial",
-    "section": "1 Blink: Batch Processing in Flink",
-    "text": "1 Blink: Batch Processing in Flink\n\n\n\n# 1. create a batch processing environment\nenv_settings = EnvironmentSettings.new_instance().in_batch_mode().use_old_planner().build()\nt_env = BatchTableEnvironment.create(environment_settings=env_settings)\n\n# 2. create source table from csv (or MySQL, Kafka, Hive, etc)\ndir_word = os.path.join(os.path.abspath(__file__), 'word_csv')\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE source (\n        id BIGINT, -- ID\n        word STRING, -- 单词\n    ) WITH (\n        'connector' = 'filesystem',\n        'path' = 'file://{dir_word}',\n        'format' = 'csv',\n    )\n\"\"\"\n)\n\n# 3. create sink table as result\ndir_result = os.path.join(os.path.abspath(__file__), 'result')\n\nif os.path.exists(dir_result): # remove file\n    if os.path.isfile(dir_result):\n        os.remove(dir_result)\n    else:\n        shutil.rmtree(dir_result, True)\n\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE sink (\n        word STRING, -- 单词\n        cnt BIGINT, -- 出现次数\n    ) WITH (\n        'connector' = 'filesystem',\n        'path' = 'file://{dir_result}',\n        'format' = 'csv',\n    )\n\"\"\"\n)\n\n# 4. Batch Process\nt_env.sql_query(\"\"\"\n    SELECT word, count(1) AS cnt\n    FROM source\n    GROUP BY word\n\"\"\").insert_into('sink')\nt_env.execute('t')\nflink run -m localhost:8081 -py batch.py"
-  },
-  {
-    "objectID": "posts/tutorials/flink/flink.html#customize-udf-functions-for-real-time-logging-system",
-    "href": "posts/tutorials/flink/flink.html#customize-udf-functions-for-real-time-logging-system",
-    "title": "PyFlink Tutorial",
-    "section": "2 Customize UDF Functions for Real-time Logging System",
-    "text": "2 Customize UDF Functions for Real-time Logging System\n\n\n\n# download dependencies\npip download -d cached_dir -r requirements.txt --no-binary :all:\n# 1. create batch process environment\nenv_settings = EnvironmentSettings.new_instance().in_batch_mode().use_blink_planner().build()\nt_env = BatchTableEnvironment.create(environment_settings)\nt_env.get_config().get_configuration().set_boolean(\"python.fn-execution.memory.managed\", True)\n\n# 2. install third-party libraries from downloaded files\nt_env.set_python_requirements(\"requirements.txt\", \"cached_dir\")\n\n# 3. create source table from data sources\ndir_log = os.path.join(os.path.abspath(__file__), 'syslog.txt')\nt_env.connect(FileSystem().path.(dir_log)) \\\n    .with_format(OldCsv()\n                .line_delimiter('\\n')\n                .field('line', DataTypes.STRING()))\\\n    .with_schema(Schema()\n                .field('line', DataTypes.STRING()))\\\n    .create_temporary_table('source')\n\n# 4. create sink table\ndir_result = os.path.join(os.path.abspath(__file__), 'result')\nif os.path.exists(dir_result):\n    if os.path.isfile(dir_result):\n        os.remove(dir_result)\n    else:\n        shutil.rmtree(dir_result)\nt_env.connect(FileSystem().path(dir_result))\\ \n    .with_format(OldCsv() # define data format\n                .field('topic', DataTypes.STRING()))\n    .with_schema(Schema() # define table structures\n                .field('topic', DataTypes.STRING()))\n    .create_temporary_table('sink')\n\n# 5. register UDF\n@udf(input_types=[DataTypes.STRING()], result_type=DataTypes.STRING())\ndef get_topic(line):\n    import re\n    if 'IN=' in line and 'OUT=' in line and 'MAC=' in line:\n        return 'syslog-iptables'\n    elif '=======================================' in line or re.search(r'localhost (.+?): \\[', line, re.M | re.I):\n        return 'syslog-user'\n    else return 'syslog-system'\n\n# so many regex ... \n\nt_env.register_function('get_topic', get_topic)\n\n# 6. Batch Processing\nt_env.from_path('source')\\\n    .select('line, get_topic(line) AS topic') \\\n    .select('topic, ')\n    .execute_insert('sink')"
-  },
-  {
-    "objectID": "posts/tutorials/regex/regex.html#learn-from-some-exercise",
-    "href": "posts/tutorials/regex/regex.html#learn-from-some-exercise",
-    "title": "Regex Tutorial",
-    "section": "1 Learn from some exercise",
-    "text": "1 Learn from some exercise\n\n(|[1-9]{1}|12[0-4]|25[0-5]).(|[1-9]{1}|12[0-4]|25[0-5]).(|[1-9]{1}|12[0-4]|25[0-5]).(|[1-9]{1}|12[0-4]|25[0-5])\n\n222.201.144.244\n\n[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}\n\nYYYY-mm-dd HH:MM:SS\n\n[A-Za-z]{2}[0-9]{3}\n\nCS229\n\n([a-zA-Z0-9_.-+]+)@[a-zA-Z0-9_.-+]+.[a-zA-Z0-9_.-+]\n\nexample@gmail.com"
-  },
-  {
-    "objectID": "posts/tutorials/regex/regex.html#explanation",
-    "href": "posts/tutorials/regex/regex.html#explanation",
-    "title": "Regex Tutorial",
-    "section": "2 Explanation",
-    "text": "2 Explanation\n\n digits 0-9\n{1}: match 1 time\n.: match .\n[0-4]: match 0-4\n+: match 1 or more times"
-  },
-  {
-    "objectID": "posts/tutorials/flink/flink.html#real-time-sync-with-mysql",
-    "href": "posts/tutorials/flink/flink.html#real-time-sync-with-mysql",
-    "title": "PyFlink Tutorial",
-    "section": "3 Real-time Sync with MySQL",
-    "text": "3 Real-time Sync with MySQL\n\n\n\n# 1. create Blink stream environment\nenv_settings = EnvironmentSettings.new_instance().in_streaming_mode().use_blink_planner().build()\nt_env = StreamTableEnvironment.create(environment_settings=env_settings)\n\n# 2. create jar dependencies\njars=[]\nfor file in os.listdir(os.path.abspath(os.path.dirname(__file__))):\n    if file.endswith('.jar'):\n        jars.append(os.path.abspath(file))\nstr_jars=';'.join(['file://'+jar for jar in jars])\nt_env.config().get_configuration().set_string(\"pipeline_jars\", str_jars)\n\n# 3. create source table from MySQL\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE source (\n        id INT, -- ID\n        name STRING, -- Name\n    ) WITH (\n        'connector' = 'mysql-cdc',\n        'hostname' = '127.0.0.1',\n        'port' = '3306',\n        'database-name' = 'flink',\n        'table-name' = 'case3',\n        'username' = 'root',\n        'password' = 'root',\n    )\n\"\"\"\n)\n# check table\nt_env.from_path('source').print_schema()\nt_env.from_path('source').to_pandas()\n\n# 4. create sink table\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE sink (\n        id INT, -- ID\n        name STRING, -- Name\n        PRIMARY KEY (id) NOT ENFORCED -- define primary key\n    ) WITH (\n        'connector' = 'jdbc',\n        'url' = 'jdbc:mysql://127.0.0.1:3307/flink',\n        'driver' = 'com.mysql.cj.jdbc.Driver',\n        'table-name' = 'case3',\n        'username' = 'root',\n        'password' = 'root',\n    )\n\"\"\")\n\n# 5. batch processing\nt_env.from_path('source').insert_into('sink')"
-  },
-  {
-    "objectID": "posts/tutorials/flink/flink.html#real-time-ranking",
-    "href": "posts/tutorials/flink/flink.html#real-time-ranking",
-    "title": "PyFlink Tutorial",
-    "section": "4 Real-time Ranking",
-    "text": "4 Real-time Ranking\n\n\n\n\n4.1 Kafka Data Producer\n# setting\nseed=2020\nnum_users=50\nmax_msg_per_second=20\nrun_seconds=3600\ntopic='user_action'\nbootstrap_servers = ['localhost:9092']\nfake = Faker(locale='zh_CN')\nFaker.seed(seed)\nrandom.seed(seed)\n#\nclass UserGroup:\n    def __init__(self):\n        # different user, different probability\n        self.users = [self.gen_male() if random.random() < 0.6 else self.gen_female() for _ in range(num_users)]\n        prob = np.cumsum(np.random.uniform(1, 100, num_users)) # sum of probabilities\n        self.prob = prob/prob.max() # to 0 - 1\n    \n    @staticmethod\n    def gen_male():\n        return {'name': fake.name_male(), 'sex':'男'}\n\n    @staticmethod\n    def gen_female():\n        return {'name': fake.name_female(), 'sex':'女'}\n\n    def get_user(self):\n        r = random.random()\n        index = np.searchsorted(self.prob, r) # insert into sorted array, return index where self.prob[index-1]<r<self.prob[index]\n        return self.users[index]\n\ndef write_data():\n    group = UserGroup()\n    start_time = datatime.now()\n    # init producer\n    producer = KafkaProducer(\n        bootstrap_servers = bootstrap_servers,\n        value_serializer=lambda x: dumps(x).encode('utf-8'),\n    )\n\n    while True:\n        now = datatime.now()\n        # produce data to kafka\n        user = group.get_user()\n        cur_data = {\n            'ts': now.strftime('%Y-%m-%d %H:%M:%S'),\n            'name': user['name'],\n            'sex': user['sex'],\n            'action': 'click' if random.random() < 0.9 else 'scroll',\n            'is_delete': 0 if random.random() < 0.9 else 1,\n        }\n        producer.send(topic, value=cur_data)\n\n        # terminate when running time > run_seconds\n        if (now - start_time).seconds > run_seconds:\n            break\n\n        sleep(1 / max_msg_per_second)\n\n\n4.2 Kafka Monitor\n\nSource Table Monitor\ntopic = 'user_action'\nbootstrap_servers = ['localhost:9092']\ngroup_id = 'group7'\n\nconsumer = KafkaConsumer(\n    topic,\n    group_id=group_id,\n    bootstrap_servers=bootstrap_servers,\n    auto_offset_reset='latest'\n)\n\nfor msg in consumer:\n    print(msg.value.decode('utf-8').encode('utf-8').decode('unicode_escape'))\n\n\nSink Table Monitor\ntopic = 'click_rank'\nbootstrap_servers=['localhost:9092']\ngroup_id = 'group7'\n\nconsumer = KafkaConsumer(\n    topic,\n    group_id = group_id,\n    bootstrap_servers = bootstrap_servers,\n    auto_offset_reset='latest',\n)\n\nwith output(output_type='list', initial_len=22, interval=0) as output_lines:\n    # 5 men 5 women\n    output_lines[0] = '=== 男 ==='\n    output_lines[6] = '=== 女 ==='\n    for msg in consumer:\n        data = json.loads(msg.value)\n        start_index = 1 if data['sex'] == '男' else 7\n        rank = json.loads('[' + data['top10'] + ']')\n\n        for i in range(5):\n            index = start_index + i\n            if i < len(rank):\n                name = list(rank[i].keys())[0]\n                value = list(rank[i].values())[0]\n                output_lines[index] = f'{name:6s} {value}'\n            else:\n                output_lines[index] = ''\n\n\n\n4.3 Stream Processing\n# settings\nkafka_servers = 'localhost:9092'\nkafka_consumer_group_id = 'group8'\nsource_topic = 'user_action'\nsink_topic = 'click_rank'\n\n# 1. create Blink stream process environment\nenv=StreamExecutionEnvironment.get_execution_environment()\nenv_settings = EnvironmentSettings.new_instance().in_streaming_mode().use_blink_planner().build()\nt_env = StreamTableEnvironment.create(env, environment_settings=env_settings)\nt_env.get_config().get_configuration().set_boolean('python.fn-execution.memory.managed', True)\n\n# 2. add dependencies and register UDF\ndir_kafka_sql_connect = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'flink-sql-connector-kafka_2.11-1.11.2.jar')\nt_env.get_config().get_configuration().set_string('pipeline.jars', 'file://' + dir_kafka_sql_connect)\n\ndir_java_udf = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'flink-udf-1.0-SNAPSHOT.jar')\nt_env.get_config().get_configuration().set_string('pipeline.classpaths', 'file://' + dir_java_udf)\n\nt_env.register_java_function('getTopN', 'com.flink.udf.TopN')\n\n# 3. create source table\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE source (\n        name VARCHAR,\n        sex VARCHAR,\n        action VARCHAR,\n        is_delete BIGINT,\n        ts TIMESTAMP(3),\n        WATERMARK FOR ts AS ts - INTERVAL '5' SECOND\n    ) with(\n        'connector' = 'kafka',\n        'topic' = '{source_topic}',\n        'properties.bootstrap.servers' = '{kafka_servers}',\n        'properties.group.id' = '{kafka_consumer_group_id}',\n        'scan.startup.mode' = 'latest-offset',\n        'json.fail-on-missing-field' = 'false',\n        'json.ignore-parse-errors' = 'true',\n        'format' = 'json',\n    )\n\n\"\"\")\n\n# 4. create sink table\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE sink (\n        sex STRING,\n        top10 STRING,\n        start_time TIMESTAMP(3),\n        end_time TIMESTAMP(3),\n    ) with(\n        'connector' = 'kafka',\n        'topic' = '{sink_topic}',\n        'properties.bootstrap.servers' = '{kafka_servers}',\n        'properties.group.id' = '{kafka_consumer_group_id}',\n        'scan.startup.mode' = 'latest-offset',\n        'json.fail-on-missing-field' = 'false',\n        'json.ignore-parse-errors' = 'true',\n        'format' = 'json',\n    )\n\"\"\")\n\n# 5. stream processing\n# HOP is like rolling window(timestamp, step, window_length)\nt_env.sql_query(\"\"\"\n    SELECT \n        sex,\n        getTopN(name, 10, 1) AS top10,\n        HOP_START(ts, INTERVAL '1' SECOND, INTERVAL '60' SECOND) AS start_time,\n        HOP_END(ts, INTERVAL '1' SECOND, INTERVAL '60' SECOND) AS end_time\n    FROM\n        source\n    WHERE\n        action='click'\n        AND is_delete=0\n    GROUP BY \n        sex,\n        HOP(ts, INTERVAL '1' SECOND, INTERVAL '60' SECOND)\n\"\"\").insert_into(\"sink\")\nt_env.execute('Top10 User Click')\n\n#"
-  },
-  {
-    "objectID": "posts/tutorials/flink/flink.html#real-time-machine-learning",
-    "href": "posts/tutorials/flink/flink.html#real-time-machine-learning",
-    "title": "PyFlink Tutorial",
-    "section": "5 Real-time machine learning",
-    "text": "5 Real-time machine learning"
-  },
-  {
-    "objectID": "posts/tools/googledocs/googledocs.html#google-docs",
-    "href": "posts/tools/googledocs/googledocs.html#google-docs",
-    "title": "Google Docs - Efficient for Collaborations",
-    "section": "1 Google Docs",
-    "text": "1 Google Docs\n\n\n\n\nMy First Use of Google Docs and Surprise at these Purple functions\n\n\n\nRemember to supercharge your Google Docs with add-ons!"
-  },
-  {
-    "objectID": "posts/tools/googledocs/googledocs.html#google-sheets",
-    "href": "posts/tools/googledocs/googledocs.html#google-sheets",
-    "title": "Google Docs - Efficient for Collaborations",
-    "section": "2 Google Sheets",
-    "text": "2 Google Sheets\n\n\n\n\nMy First Use of Google Sheets and Surprise at these Purple functions"
-  },
-  {
-    "objectID": "posts/tools/googledocs/googledocs.html#google-slides",
-    "href": "posts/tools/googledocs/googledocs.html#google-slides",
-    "title": "Google Docs - Efficient for Collaborations",
-    "section": "3 Google Slides",
-    "text": "3 Google Slides\n\n\n\n\nEasy to share and collaborate with other person"
-  },
-  {
-    "objectID": "posts/tools/googledocs/googledocs.html#google-forms",
-    "href": "posts/tools/googledocs/googledocs.html#google-forms",
-    "title": "Google Docs - Efficient for Collaborations",
-    "section": "4 Google Forms",
-    "text": "4 Google Forms\n\n\n\n\nMy First Use of Google Forms and Surprise at these Purple functions\n\n\n\n\n\nLots of Functions designed for quiz"
-  },
-  {
-    "objectID": "posts/tutorials/flink/flink.html#online-machine-learning",
-    "href": "posts/tutorials/flink/flink.html#online-machine-learning",
-    "title": "PyFlink Tutorial",
-    "section": "5 Online Machine Learning",
-    "text": "5 Online Machine Learning\n\n\n\n\n5.1 Kafka Data Producer\n# settings\nmax_msg_per_second = 10\ntopic = 'handwritten_digit'\nbootstrap_servers = ['localhost:9092']\n\ndef write_data():\n    digits = datasets.load_digits()\n    all_x = digits.data.astype(int)\n    all_y = digits.target.astype(int)\n\n    producer = KafkaProducer(\n        bootstrap_servers = bootstrap_servers,\n        value_serializer = lambda x: dumps(x).encode('utf-8')\n    )\n\n    while True:\n        idx = np.arange(digits.data.shape[0])\n        np.random.shuffle(idx)\n        all_x = all_x[idx]\n        all_y = all_y[idx]\n\n        for x, y in zip(all_x, all_y):\n            cur_data = {\n                'ts': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),\n                'x': x.tolist(),\n                'actual_y': int(y)\n            }\n            producer.send(topic, value=cur_data)\n\n            sleep(1/ max_msg_per_second)\n\nwrite_data()\n\n\n5.2 Kafka Data Consumer\n# 1. create Blink Stream Processing Environment\nenv = StreamExecutionEnvironment.get_execution_environment()\nenv_settings = EnvironmentSettings.new_instance().in_streaming_mode().use_blink_planner().build()\nt_env = StreamTableEnvironment.create(env, environment_settings=env_settings)\nt_env.get_config().get_configuration().set_boolean('python.fn-execution.memory.managed', True)\n\n# 2. Load Dependencies\ndir_kafka_sql_connect = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'flink-sql-connector-kafka_2.11-1.11.2.jar')\nt_env.get_config().get_configuration().set_string('pipeline.jars', 'file://'+ dir_kafka_sql_connect)\n\ndir_requirements = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'requirements.txt')\ndir_cache = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'cached_dir')\nif os.path.exists(dir_requirements):\n    if os.path.exists(dir_cache):\n        t_env.set_python_requirements(dir_requirements, cached_dir)\n\n# 3. register UDF\nclass Model(ScalarFunction):\n    def __init__(self):\n        # load model\n        self.model_name = 'online_ml_model'\n        self.redis_params = dict(host='localhost', password='redis_password', port='6379', db=0)\n        self.clf = self.load_model()\n\n        self.interval_dump_seconds = 30\n        self.last_dump_time = datetime.now()\n\n        self.classes = list(range(10))\n\n        self.metric_counter=None\n        self.metric_predict_acc = 0\n        self.metric_distribution_y = None\n        self.metric_total_10_sec = None\n        self.metric_right_10_sec = None\n    \n    def open(self, function_context):\n        # register metrics\n        metric_group = function_context.get_metric_group().add_group('online_ml')\n        self.metric_counter = metric_group.counter('sample_count')\n        metric_group.gauge('prediction_acc', lambda: int(self.metric_predict_acc*100))\n        self.metric_distribution_y = metric_group.distribution('metric_distribution_y')\n        self.metric_total_10_sec = metric_group.meter('total_10_sec', time_span_in_seconds=10)\n        self.metric_right_10_sec = metric_group.meter('right_10_sec', time_span_in_seconds=10)\n\n    def eval(self, x, y):\n        # x: 1-dim gray value\n        # y: 0-9\n        self.clf.partial_fit([x], [y], classes=self.classes) # 1dim to 2dim\n        self.dump_model() # save to redis\n        y_pred = self.clf.predict([x])[0]\n        self.metric_counter.inc(1)\n        self.metric_total_10_sec.mark_event(1)\n        if y_pred == y:\n            self.metric_right_10_sec.mark_event(1)\n        self.metric_predict_acc = self.metric_right_10_sec.get_count() / self.metric_total_10_sec.get_count()\n        self.metric_distribution_y.update(y)\n\n        return y_pred\n    \n    def load_model(self)\n        r = redis.StrictRedis(**self.redis_params)\n        clf = None\n\n        try:\n            clf=pickle.loads(r.get(self.model_name))\n        except TypeError:\n            logging.info('no model in redis, init new model...')\n        except (redis.exceptions.RedisError, TypeError, Exception):\n            logging.warning('redis error, init new model...')\n        finally:\n            clf = clf or SGDClassifier(alpha=0.01, loss='log', penalty='l1')\n        return clf\n    \n    def dump_model(self):\n        if (datetime.now() - self.last_dump_time).seconds >= self.interval_dump_seconds:\n            r = redis.StrictRedis(**self.redis_params)\n            try:\n                r.set(self.model_name, pickle.dumps(self.clf, protocol = pickle.HIGHEST_PROTOCOL))\n            except (redis.exceptions.RedisError, TypeError, Exception):\n                logging.warning('redis error, failed to store model...')\n            self.last_dump_time = datetime.now()\n\nmodel = udf(Model(), input_types=[DataTypes.ARRAY(DataTypes.INT()), DataTypes.TINYINT()], result_type=DataTypes.TINYINT())\nt_env.register_function('train_and_predict', model)\n\n# 4. create source table\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE source (\n        x ARRAY<INT>,\n        actual_y TINYINT,\n        ts TIMESTAMP(3),\n    ) with (\n        'connector' = 'kafka',\n        'topic' = '{source_topic}',\n        'properties.bootstrap.servers' = '{kafka_servers}',\n        'properties.group.id' = '{kafka_consumer_group_id}',\n        'scan.startup.mode' = 'latest-offset',\n        'json.fail-on-missing-field' = 'false',\n        'json.ignore-parse-errors' = 'true',\n        'format' = 'json'\n    )\n\"\"\"\n)\n\n# 5. create sink table\nt_env.execute_sql(f\"\"\"\n    CREATE TABLE sink (\n        x ARRAY<INT>\n        actual_y TINYINT,\n        predict_y TINYINT,\n) with (\n    'connector' = 'kafka',\n        'topic' = '{sink_topic}',\n        'properties.bootstrap.servers' = '{kafka_servers}',\n        'properties.group.id' = '{kafka_consumer_group_id}',\n        'scan.startup.mode' = 'latest-offset',\n        'json.fail-on-missing-field' = 'false',\n        'json.ignore-parse-errors' = 'true',\n        'format' = 'json'\n    )\n\"\"\"\n)\n\n# 6. stream processing\nt_env.sql_query(\"\"\"\n    SELECT\n        x,\n        actual_y,\n        train_and_predict(x, actual_y) AS predict_y\n    FROM\n        source\n\"\"\").insert_into(\"sink\")\nt_env.execute('Classifier Model Train')\n\n\n5.3 Model Serving via Flask\n# settings\nredis_params = dict(\n    host='localhost',\n    password='redis_password',\n    port=6379,\n    db=0\n)\nmodel_key = 'online_ml_model'\n# create app\napp = Flask(__name__)\nCORS(app)\n\n# model\nclf = None\ndef load_latest_clf_model():\n    r = redis.StrictRedis(**redis_params)\n    model=None\n    try:\n        model=pickle.loads(r.get(model_key))\n    except TypeError:\n        logging.exception('No model in redis, maybe key error')\n    except (redis.exceptions.RedisError, TypeError, Exception) as err:\n        logging.exception(f'RedisError: {err}')\n    return model\n\n# raw data to input\ndef format_svg_base64(s: str) -> np.array:\n    # base64 string to svg to 8*8 array to 1-dim array\n\n    # base64 to svg\n    with open('digit.svg', 'wb') as f:\n        f.write(base64.b64decode(s))\n    # svg to png\n    drawing = svg2rlg('digit.svg')\n    renderPM.drawToFile(drawing, 'digit.svg', fmt='png')\n    # png to 8 * 8\n    target_w, target_h = 8, 8\n    png = Image.open('digit.png')\n    w, h = png.size\n    scale = min(target_w/ w, target_h/ h)\n    new_w, new_h = int(w*scale, h*scale)\n    png=png.resize((new_w, new_h), Image.BILINEAR)\n    new_png = Image.new('RGB', (target_w, target_h), (255,255,255)) # create blank img\n    new_png.paste(png, ((target_w-new_w)//2, (target_h-new_h)//2)) # copy to center\n    # convert black to white, value to 0-16, size to 1*64\n    array = 255 - np.array(new_png.convert('L'))\n    array = (array/255) * 16\n    array = array.reshape(1, -1)\n    return array\n\n@app.route('/')\ndef home():\n    return render_template('web.html')\n@app.route('/predict', methods=['POST'])\ndef predict():\n    global clf\n    img_string =request.form['imgStr']\n    data = format_svg_base64(img_string) # feature engineering\n    model = load_latest_clf_model() # model loading\n    clf = model or clf\n    predict_y = int(clf.predict(data)[0])\n    return jsonify({'success':True, 'predict_result':predict_y}), 201\n\nif __name__ == '__main__':\n    app.run(host='127.0.0.1', port=8066, debug=True)\n\n\n5.4 Retrain Model\nredis_params = dict(\n    host='localhost',\n    password='redis_password',\n    port=6379,\n    db=0\n)\nr = redis.StrictRedis(**redis_params)\ntry:\n    model=r.ping()\nexcept (redis.exceptions.RedisError, TypeError, Exception)as err:\n    raise Exception(f'cannot connect to redis:{err}')\nif len(sys.argv) == 1: # delete whole database when no arguments sent in\n    r.flushdb()\nelse:\n    for key in sys.argv[1:]: # delete specific key\n        if r.exists(key):\n            r.delete(key)"
-  },
-  {
-    "objectID": "posts/tutorials/flink/flink.html",
-    "href": "posts/tutorials/flink/flink.html",
-    "title": "PyFlink Tutorial",
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Linghao Wang",
     "section": "",
-    "text": "This tutorial is a copy form pyflink_learn"
+    "text": "I regularly give talks on CS and ML topics at academic conferences, Data Science meetups and Bilibili. Below, you can find links to videos and slides of selected talks."
   },
   {
-    "objectID": "posts/tools/database/database.html#redis-key-value",
-    "href": "posts/tools/database/database.html#redis-key-value",
-    "title": "How to Choose a Database to Start with?",
-    "section": "1 Redis: Key-Value",
-    "text": "1 Redis: Key-Value\n\n\n\n\nFast: store in memory instead of disk\nUsage: Cache"
+    "objectID": "talks.html#teaching",
+    "href": "talks.html#teaching",
+    "title": "Linghao Wang",
+    "section": "Teaching",
+    "text": "Teaching\n\nHow to prepare for CS courses exam  Bilibili, 2020\nAbstract: The talk provides a brief practical-driven introduction into CS courses. The talks covers the basics of CS courses and provides a tutorial on how to pass CS courses exams.  📹 Video"
   },
   {
-    "objectID": "posts/tools/database/database.html#hbase-wide-column",
-    "href": "posts/tools/database/database.html#hbase-wide-column",
-    "title": "How to Choose a Database to Start with?",
-    "section": "2 HBase: Wide Column",
-    "text": "2 HBase: Wide Column\n\n\n\n\nHigh-write, Low-read\nUsage: Time Series Data like Historical Records"
-  },
-  {
-    "objectID": "posts/tools/database/database.html#mongodb-document",
-    "href": "posts/tools/database/database.html#mongodb-document",
-    "title": "How to Choose a Database to Start with?",
-    "section": "3 MongoDB: Document",
-    "text": "3 MongoDB: Document\n\n\n\n\nUsage: Most apps, Games, IoT\nNot suitable for Graph where join is frequent"
-  },
-  {
-    "objectID": "posts/tools/database/database.html#postgresql-relational",
-    "href": "posts/tools/database/database.html#postgresql-relational",
-    "title": "How to Choose a Database to Start with?",
-    "section": "4 PostgreSQL: Relational",
-    "text": "4 PostgreSQL: Relational\n\n\n\n\nUsage: Most apps\nNot suitable for Unstructured data"
-  },
-  {
-    "objectID": "posts/tools/database/database.html#neo4j-graph",
-    "href": "posts/tools/database/database.html#neo4j-graph",
-    "title": "How to Choose a Database to Start with?",
-    "section": "5 Neo4j: Graph",
-    "text": "5 Neo4j: Graph\n\n\n\n\nUsage: Connections\n\nGraphs\nKnowledge Graphs\nRecommendation Engines"
-  },
-  {
-    "objectID": "posts/tools/database/database.html#elasticsearch-search",
-    "href": "posts/tools/database/database.html#elasticsearch-search",
-    "title": "How to Choose a Database to Start with?",
-    "section": "6 ElasticSearch: Search",
-    "text": "6 ElasticSearch: Search\n\n\n\n\nUsage: Search Engines"
-  },
-  {
-    "objectID": "posts/tools/database/database.html#fauna-multi-model",
-    "href": "posts/tools/database/database.html#fauna-multi-model",
-    "title": "How to Choose a Database to Start with?",
-    "section": "7 Fauna: Multi-Model",
-    "text": "7 Fauna: Multi-Model\n\n\n\n\nUsage: Everything!"
-  },
-  {
-    "objectID": "posts/tools/database/database.html",
-    "href": "posts/tools/database/database.html",
-    "title": "How to Choose a Database to Start with?",
+    "objectID": "publications/NIPS2022.html",
+    "href": "publications/NIPS2022.html",
+    "title": "Title here",
     "section": "",
-    "text": "Take away: Start with PostgreSQL and then MongoDB, which cover almost everything. Try snowflake too."
+    "text": "0.1 Citation (APA 7)\n\nLinghao, W. (2022). Stock prediction master. Proceedings of the 10th IEEE International Conference on Automated Face & Gesture Recognition (FG), 1–7.\n\n\n\n0.2 Abstract\nThe main content of this paper.\n\n\n0.3 Author Note\n\nWhen I wrote this paper back in 2011, I was just learning about performance evaluation. This was a first, and rather naive attempt at understanding the connection between agreement, prevalence, and threshold selection. Readers interested in more sophisticated approaches to these issues are encouraged to look up Guangchao Charles Feng, who has done nice work in this area.\n\n— Jeffrey Girard, 2018-06-14"
+  },
+  {
+    "objectID": "create_series.html",
+    "href": "create_series.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nMachine Learning Engineer (Ads) Interview Questions\n\n\nA Guide to Pass the MLE interview.\n\n\n\n\ntutorial\n\n\n\n\n\n\n\n\n\n\n\nJan 27, 2023\n\n\n0 min\n\n\n\n\n\n\n\n\nModel Deployment and Compression\n\n\n\n\n\n\n\ntools\n\n\n\n\n\n\n\n\n\n\n\nJan 24, 2023\n\n\n2 min\n\n\n\n\n\n\n\n\nPythonic Test\n\n\nIntroduction to Unit/Integration Test\n\n\n\n\npython\n\n\ntest\n\n\n\n\n\n\n\n\n\n\n\nJan 14, 2023\n\n\n2 min\n\n\n\n\n\n\n\n\nGoogle Docs - Efficient for Collaborations\n\n\nFast & Comprehensive Online document. Alternative to WPS & Microsoft Docs, Excel and PPT\n\n\n\n\ntools\n\n\nsoft skills\n\n\n\n\n\n\n\n\n\n\n\nDec 13, 2022\n\n\n0 min\n\n\n\n\n\n\n\n\nPyFlink Tutorial\n\n\nPyFlink: A Big Data Processing Tool.\n\n\n\n\npython\n\n\nflink\n\n\nkafka\n\n\ntutorial\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n18 min\n\n\n\n\n\n\n\n\nPySpark Tutorial\n\n\nPySpark: Big Data Processing and ML algorithms.\n\n\n\n\npython\n\n\nspark\n\n\ntutorial\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n3 min\n\n\n\n\n\n\n\n\nVisualize Model with GradCAM and Super-Resolution\n\n\nCheck how to visualize an Image Classification model with GradCAM, and make it clearer by Super-Resolution.\n\n\n\n\npython\n\n\npytorch\n\n\ndeep learning\n\n\ntutorial\n\n\n\n\n\n\n\n\n\n\n\nNov 19, 2022\n\n\n4 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Hi, I am Linghao!\n      \n    \n\n    \n    I am a master in CS working on the frontier of research and business. This website hosts my blog with ML tutorials, competition solutions and project findings. All opinions published here are my own.\n    \n\n    Check out my CV and other pages to see more of my work:\n    \n       📁 my portfolio with ML projects on different topics\n       📚 my publications with abstracts and full-text PDFs\n       🥇 my Kaggle solutions with links to code and writeups"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Hi! I am an applied ML graduate working on the frontier of research and business. With M.S. in ML and certified AWS knowledge, practical experience in diverse ML/DL areas and strong communication skills, I am passionate about using AI to solve challenging business problems and create value. Currently, I study at SCUT, where I develop cutting-edge ML solutions to stock price prediction.\n\n\n\n\n\n\nThis website hosts my blog, where I share ML tutorials, competition solutions and interesting project findings. All opinions published here are my own. It also includes other sections featuring my work:\n\n📁 my blogs with links to different topics\n🗣 my public talks with links to presentation slides and talk videos \n\nIf you like my blog, you can buy me a cup of tea to support my work. Thanks!\n\n\n\n\n\n\n\n\n\nContact\nWould like to have a chat? Click here to send me an e-mail.\nI am also happy to connect on different social and professional platforms. Click the badges right below to see my profile."
+  },
+  {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Portfolio\n    My portfolio includes three ML projects on different topics focusing on computer vision, NLP and tabular data. To see more of my work, visit my GitHub profile, download my CV or check out the about page.\n  \n\n \n\n\n\n  My portfolio features the following projects:\n  \n   📖 Text reading complexity prediction with transformer  \n   🧬 Image-to-text translation of chemical structures with deep learning \n   📈 Fair machine learning in credit scoring applications \n  \n  Click \"read more\" to see project summaries. Follow GitHub links for code and documentation. Scroll down to see more Machine Learning and Deep Learning projects grouped by application areas.\n\n\n\n\n\n   Text Readability Prediction with Transformers \n  \n   Highlights \n  \n   This Project is not mine. Just list it as my recommended portfolio design style.  \n   developed a comprehensive PyTorch / HuggingFace text classification pipeline \n   build multiple transformers including BERT and RoBERTa with custom pooling layers \n   implemented an interactive web app for custom text reading complexity estimation \n  \n   Tags: natural language processing, deep learning, web app \n  \n  \n   Summary \n   Estimating text reading complexity is a crucial task for school teachers. Offering students text passages at the right level of challenge is important for facilitating a fast development of reading skills. The existing tools to estimate text complexity rely on weak proxies and heuristics, which results in a suboptimal accuracy. In this project, I use deep learning to predict the readability scores of text passages. \n   My solution implements eight transformer models, including BERT, RoBERTa and others in PyTorch. The models feature a custom regression head that uses a concatenated output of multiple hidden layers. The modeling pipeline includes text augmentations such as sentence order shuffle, backtranslation and injecting target noise. The solution places in the top-9% of the Kaggle competition leaderboard. \n   The project also includes an interactive web app built in Python. The app allows to estimate reading complexity of a custom text using two of the trained transformer models. The code and documentation are available on GitHub. \n  \n  \n  \n  📜 Read more\n  💻 GitHub repo\n  📊 Web app\n  📋 Blog post"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Linghao Wang",
+    "section": "",
+    "text": "Blog\n    In my blog, I write about machine learning and deep learning. My posts include ML tutorials, package overviews, competition solutions and interesting project findings. All opinions are my own.\n  \n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\n \n\n\n\n\n\n\nJan 27, 2023\n\n\nMachine Learning Engineer (Ads) Interview Questions\n\n\n\n\n\n\nJan 24, 2023\n\n\nModel Deployment and Compression\n\n\n\n\n\n\nJan 14, 2023\n\n\nPythonic Test\n\n\n\n\n\n\nDec 13, 2022\n\n\nGoogle Docs - Efficient for Collaborations\n\n\n\n\n\n\nDec 12, 2022\n\n\nPyFlink Tutorial\n\n\n\n\n\n\nDec 12, 2022\n\n\nPySpark Tutorial\n\n\n\n\n\n\nNov 19, 2022\n\n\nVisualize Model with GradCAM and Super-Resolution\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

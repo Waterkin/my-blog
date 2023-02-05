@@ -1,0 +1,53 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+::: {.callout-tip}
+# 大数据基础
+如大数据处理或分布式系统原理等。对于大数据题，如：海量数据求中位数等，主要涉及到哈希，堆，bit等数据结构，外加map-reduce编程范式的灵活应用。这类题型的总结百度一下非常多。
+:::
+
+# 大数据
+
+用过spark吗？使用场景是什么？
+
+用过hive吗？使用过join操作吗？知道join的实现技术吗？（最后一个问题不会）
+
+如果给你几张表，想得到一些数据，用spark怎么处理？
+
+使用过hadoop吗？（答：没怎么用过）
+
+怎么解决内存不足的情况下使用python处理大规模数据？
+
+如何做分布式计算？
+
+# C++
+
+说一下c++里面的const和define区别？
+
+说一下java、c++和python之间的不同？
+
+面向对象概念
+
+设计模式
+- 单例是什么？
+
+# Linux
+
+linux命令
+
+# Python
+
+python的GIL
+
+# 分布式训练
+
+多卡训练
+
+# 操作系统
+线程进程

@@ -1,0 +1,16 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+# 无监督学习
+
+## K-means聚类
+
+1. 手写K-means算法
+
+## PCA降维

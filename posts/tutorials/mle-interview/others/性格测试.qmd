@@ -1,0 +1,32 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+# 自我介绍
+
+# 为什么这个时间点实习
+
+# 最愤怒的一件事
+
+# 三个词形容自己（自己的优势，自己的缺点）
+
+# 薪资预期
+
+# 字节的面试怎么样
+
+# 你觉得最不喜欢和什么人一起共事
+
+# 从哪些维度去选择工作，考虑工作的重点是什么，为啥这样考虑
+
+# 研究生时间管理
+
+# 自己的职业规划
+
+# 详细讲述自己通过努力完成的事情
+
+# 印象最深的paper和最近看过的paper

@@ -1,0 +1,129 @@
+---
+title: "Pythonic Art"
+subtitle: "Write cleaner code"
+date: "2022-12-14"
+categories: [python]
+css: ../../styles.css
+draft: true
+---
+
+::: {fig-vis}
+![](){width=100%}
+
+:::
+
+# Pythonic Style
+
+1. 
+
+# Pythonic Tricks
+
+## Product() v.s. Multiple for()
+```python
+# Multiple for()
+for a in list_a:
+    for b in list_b:
+        for c in list_c:
+            if a + b + c == 2077:
+                print(a, b, c)
+
+# Product()
+from itertools import product
+for a, b, c in product(list_a, list_b, list_c):
+    if a + b + c == 2077:
+        print(a, b, c)
+```
+
+## Assignment Expressions :=
+```python
+# x
+author = "linghao"
+print(author)
+# √
+print(author:="linghao")
+```
+
+## 1-line if-else
+```python
+# x
+if a<b:
+  min = a
+else:
+  min = b
+# √
+min = a if a < b else b
+```
+
+## get a sifted list in 1 line
+```python
+# x
+if a<b:
+  min = a
+else:
+  min = b
+# √
+min = a if a < b else b
+```
+
+## map() and reduce()
+```python
+names = ['yAnG', 'MASk', 'thoMas', 'LISA']
+names = map(str.capitalize, names)
+print(list(names))
+# ['Yang', 'Mask', 'Thomas', 'Lisa']
+
+from functools import reduce
+city = ['L', 'o', 'n', 'd', 'o', 'n', 2, 0, 2, 0]
+city_to_str = reduce(lambda x, y: str(x) + str(y), city)
+print(city_to_str)
+# London2020
+```
+
+## Combine two dicts
+```python
+article_author = {'A': '1', 
+                  'B': '2'}
+author_cities = {'C': '3', 
+                 'D': '4'}
+
+info = article_author|author_cities
+print(info)
+#   {'A': '1', 
+#  'B': '2', 
+#  'C': '3', 
+#  'D': '4'}
+```
+
+## F-string formatting
+```python
+pi = 3.1415926
+print(f'Pi is approximately equal to {pi:.2f}')
+# Pi is approximately equal to 3.14
+
+id = 1  # need to print a 3-digit number
+print(f"The id is {id:03d}")
+# The id is 001
+
+N = 1000000000  # need to add separator
+print(f'His networth is ${N:,d}')
+# His networth is $1,000,000,000
+```
+
+## Function of *
+```python
+A = [1, 2, 3]
+B = (4, 5, 6)
+C = {7, 8, 9}
+L = [*A, *B, *C]
+print(L)
+# [1, 2, 3, 4, 5, 6, 8, 9, 7]
+
+a, *mid, b = [1, 2, 3, 4, 5, 6]
+print(a, mid, b)
+# 1 [2, 3, 4, 5] 6
+```
+
+# Summary
+For more tricks, take a look at resources below:
+[Python 3 Cheatsheet](cheatsheet.pdf)
+编写高质量代码：改善Python程序的91个建议

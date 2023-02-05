@@ -9,11 +9,18 @@ css: ../../styles.css
 ::: {fig-vis}
 ![](test.jpg)
 
+One day, I got an assignment from my professor. 
+At that time, I was doing research on stock price prediction, but was asked to implement top conference papers with my classmates. 
+Within two days, I have done GradCAM visualization on noisy-label models and make the images clearer by integrating two top conference github projects (NeurIPS 2021, ECCV 2022).
+This experience allows me to quickly solve new problems that I have no prior knowledge of.
+
+
 ### Visualization Results {.centered}
 :::
 
 # Model creation
-Firstly, I find model PES from github:
+We decided to implement papers on noisy labels.
+After searching, I find model PES from github:
 [Understanding and Improving Early Stopping for Learning with Noisy Labels (NeurIPS 2021)](https://github.com/tmllab/PES)
 
 Then, to make sure its correctness, I check the model following the README in its repo and rerun the training procedure with much smaller epoches (check this hyperparameter in the code, like the argparse part in config.py or train.py etc.).

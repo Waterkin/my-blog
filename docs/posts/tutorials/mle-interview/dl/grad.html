@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2023-01-27">
+
+<title>Linghao Wang - Machine Learning Engineer (Ads) Interview Questions</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../../../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Linghao Wang</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../talks.html">
+ <span class="menu-text">Talks</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#梯度不稳定" id="toc-梯度不稳定" class="nav-link active" data-scroll-target="#梯度不稳定"><span class="toc-section-number">1</span>  梯度不稳定</a>
+  <ul class="collapse">
+  <li><a href="#概念" id="toc-概念" class="nav-link" data-scroll-target="#概念"><span class="toc-section-number">1.1</span>  概念</a></li>
+  <li><a href="#根本原因" id="toc-根本原因" class="nav-link" data-scroll-target="#根本原因"><span class="toc-section-number">1.2</span>  根本原因</a></li>
+  </ul></li>
+  <li><a href="#梯度消失与梯度爆炸" id="toc-梯度消失与梯度爆炸" class="nav-link" data-scroll-target="#梯度消失与梯度爆炸"><span class="toc-section-number">2</span>  梯度消失与梯度爆炸</a>
+  <ul class="collapse">
+  <li><a href="#概念-1" id="toc-概念-1" class="nav-link" data-scroll-target="#概念-1"><span class="toc-section-number">2.1</span>  概念</a></li>
+  <li><a href="#产生原因" id="toc-产生原因" class="nav-link" data-scroll-target="#产生原因"><span class="toc-section-number">2.2</span>  产生原因</a></li>
+  <li><a href="#初始化权重的值过大" id="toc-初始化权重的值过大" class="nav-link" data-scroll-target="#初始化权重的值过大"><span class="toc-section-number">2.3</span>  初始化权重的值过大</a></li>
+  </ul></li>
+  <li><a href="#解决梯度消失和爆炸的方法" id="toc-解决梯度消失和爆炸的方法" class="nav-link" data-scroll-target="#解决梯度消失和爆炸的方法"><span class="toc-section-number">3</span>  解决梯度消失和爆炸的方法</a>
+  <ul class="collapse">
+  <li><a href="#预训练加微调" id="toc-预训练加微调" class="nav-link" data-scroll-target="#预训练加微调"><span class="toc-section-number">3.1</span>  预训练加微调</a></li>
+  <li><a href="#梯度裁剪" id="toc-梯度裁剪" class="nav-link" data-scroll-target="#梯度裁剪"><span class="toc-section-number">3.2</span>  梯度裁剪</a></li>
+  <li><a href="#使用合理的参数初始化方案如he初始化" id="toc-使用合理的参数初始化方案如he初始化" class="nav-link" data-scroll-target="#使用合理的参数初始化方案如he初始化"><span class="toc-section-number">3.3</span>  使用合理的参数初始化方案，如He初始化</a></li>
+  <li><a href="#用reluleaky-relup-relur-relumaxout等替代sigmoid函数" id="toc-用reluleaky-relup-relur-relumaxout等替代sigmoid函数" class="nav-link" data-scroll-target="#用reluleaky-relup-relur-relumaxout等替代sigmoid函数"><span class="toc-section-number">3.4</span>  用ReLU、Leaky-ReLU、P-ReLU、R-ReLU、Maxout等替代sigmoid函数。</a></li>
+  <li><a href="#batch-normalization" id="toc-batch-normalization" class="nav-link" data-scroll-target="#batch-normalization"><span class="toc-section-number">3.5</span>  Batch Normalization</a></li>
+  <li><a href="#引入门控机制" id="toc-引入门控机制" class="nav-link" data-scroll-target="#引入门控机制"><span class="toc-section-number">3.6</span>  引入门控机制</a></li>
+  <li><a href="#残差连接residual-connections" id="toc-残差连接residual-connections" class="nav-link" data-scroll-target="#残差连接residual-connections"><span class="toc-section-number">3.7</span>  残差连接(Residual Connections)</a></li>
+  <li><a href="#dense-connections" id="toc-dense-connections" class="nav-link" data-scroll-target="#dense-connections"><span class="toc-section-number">3.8</span>  Dense Connections</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Machine Learning Engineer (Ads) Interview Questions</h1>
+<p class="subtitle lead">A Guide to Pass the MLE interview.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">tutorial</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 27, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="梯度不稳定" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="梯度不稳定"><span class="header-section-number">1</span> 梯度不稳定</h2>
+<section id="概念" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="概念"><span class="header-section-number">1.1</span> 概念</h3>
+<p>在深度神经网络中的梯度是不稳定的，在靠近输入层的隐藏层中或会消失，或会爆炸。这种不稳定性才是深度神经网络中基于梯度学习的根本问题。</p>
+</section>
+<section id="根本原因" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="根本原因"><span class="header-section-number">1.2</span> 根本原因</h3>
+<p>前面层上的梯度是来自后面层上梯度的乘积。当存在过多的层时，就会出现梯度不稳定场景，比如梯度消失和梯度爆炸。</p>
+<p>划重点：梯度消失和梯度爆炸属于梯度不稳定的范畴</p>
+</section>
+</section>
+<section id="梯度消失与梯度爆炸" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="梯度消失与梯度爆炸"><span class="header-section-number">2</span> 梯度消失与梯度爆炸</h2>
+<section id="概念-1" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="概念-1"><span class="header-section-number">2.1</span> 概念</h3>
+<p>梯度消失：在神经网络中，当前面隐藏层的学习速率低于后面隐藏层的学习速率，即随着隐藏层数目的增加，分类准确率反而下降了。这种现象叫梯度消失。</p>
+<p>梯度爆炸：在神经网络中，当前面隐藏层的学习速率低于后面隐藏层的学习速率，即随着隐藏层数目的增加，分类准确率反而下降了。这种现象叫梯度爆炸。</p>
+<p>其实梯度消失和梯度爆炸是一回事，只是表现的形式，以及产生的原因不一样。</p>
+</section>
+<section id="产生原因" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="产生原因"><span class="header-section-number">2.2</span> 产生原因</h3>
+<p>梯度消失：（1）隐藏层的层数过多；（2）采用了不合适的激活函数(更容易产生梯度消失，但是也有可能产生梯度爆炸)</p>
+<p>梯度爆炸：（1）隐藏层的层数过多；（2）权重的初始化值过大</p>
+<section id="隐藏层的层数过多" class="level4">
+<h4 class="anchored" data-anchor-id="隐藏层的层数过多">隐藏层的层数过多</h4>
+<p>从深层网络角度来讲，不同的层学习的速度差异很大，表现为网络中靠近输出的层学习的情况很好，靠近输入的层学习的很慢，有时甚至训练了很久，前几层的权值和刚开始随机初始化的值差不多。因此，梯度消失、爆炸，其根本原因在于反向传播训练法则，属于先天不足。具体见下图：</p>
+<p><img src="grad.png" class="img-fluid" style="width:100.0%"></p>
+<p><img src="grad1.png" class="img-fluid" style="width:100.0%"></p>
+<p>从上图可以非常容易的看出来：对于四个隐层的网络来说，第四隐藏层比第一隐藏层的更新速度慢了两个数量级！！！</p>
+</section>
+<section id="激活函数" class="level4">
+<h4 class="anchored" data-anchor-id="激活函数">激活函数</h4>
+<p>我们以下图的反向传播为例，假设每一层只有一个神经元且对于每一层都可以用公式1表示，其中σ为sigmoid函数，C表示的是代价函数，前一层的输出和后一层的输入关系如公式1所示。我们可以推导出公式2。</p>
+<p><img src="grad2.png" class="img-fluid" style="width:100.0%"></p>
+<p>σ为sigmoid函数，其导数的图像如下图所示：</p>
+<p><img src="grad3.png" class="img-fluid" style="width:100.0%"></p>
+<p>可见，<span class="math inline">\(\sigma^{'}(x)\)</span> 的最大值为 <span class="math inline">\(1/4\)</span> ，而我们一般会使用标准方法来初始化网络权重，即使用一个均值为0标准差为1的高斯分布。因此，初始化的网络权值通常都小于1，从而有 <span class="math inline">\(|\sigma^{'}(z)w|&lt;1/4\)</span> 。对于2式的链式求导，层数越多，求导结果越小，最终导致梯度消失的情况出现。所以说，sigmoid函数一般不适合用于神经网络中，那神经网络中应该用哪些激活函数呢？等等就为你揭晓！</p>
+</section>
+</section>
+<section id="初始化权重的值过大" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="初始化权重的值过大"><span class="header-section-number">2.3</span> 初始化权重的值过大</h3>
+<p>当 <span class="math inline">\(|\sigma^{'}w|&gt;1\)</span> , 也就是w比较大的情况下，根据2式的链式相乘可得(反向传播)，则前面的网络层比后面的网络层梯度变化更快，引起了梯度爆炸的问题。所以，在一般的神经网络中，权重的初始化一般都利用高斯分布(正态分布)随机产生权重值。</p>
+</section>
+</section>
+<section id="解决梯度消失和爆炸的方法" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="解决梯度消失和爆炸的方法"><span class="header-section-number">3</span> 解决梯度消失和爆炸的方法</h2>
+<p>梯度消失和梯度爆炸问题都是因为网络太深，网络权值更新不稳定造成的，本质上是因为梯度反向传播中的连乘效应。对于更普遍的梯度消失问题，可以考虑一下几种方案解决：</p>
+<section id="预训练加微调" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="预训练加微调"><span class="header-section-number">3.1</span> 预训练加微调</h3>
+</section>
+<section id="梯度裁剪" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="梯度裁剪"><span class="header-section-number">3.2</span> 梯度裁剪</h3>
+</section>
+<section id="使用合理的参数初始化方案如he初始化" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="使用合理的参数初始化方案如he初始化"><span class="header-section-number">3.3</span> 使用合理的参数初始化方案，如He初始化</h3>
+</section>
+<section id="用reluleaky-relup-relur-relumaxout等替代sigmoid函数" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="用reluleaky-relup-relur-relumaxout等替代sigmoid函数"><span class="header-section-number">3.4</span> 用ReLU、Leaky-ReLU、P-ReLU、R-ReLU、Maxout等替代sigmoid函数。</h3>
+<p>具体见<a href="../../../../posts/tutorials/mle-interview/dl/activation.html">这里</a></p>
+</section>
+<section id="batch-normalization" class="level3" data-number="3.5">
+<h3 data-number="3.5" class="anchored" data-anchor-id="batch-normalization"><span class="header-section-number">3.5</span> Batch Normalization</h3>
+<p>具体见<a href="../../../../posts/tutorials/mle-interview/dl/Batchnorm.html">这里</a></p>
+<section id="基本思想" class="level4">
+<h4 class="anchored" data-anchor-id="基本思想">基本思想</h4>
+<section id="问题" class="level5">
+<h5 class="anchored" data-anchor-id="问题">问题</h5>
+<p>网络输入x随着网络深度加深，分布逐渐发生偏移，往非线性函数的取值区间的上下限两端靠近（对于Sigmoid函数来说，意味着激活输入值WU+B是大的负值或正值），所以这导致后向传播时低层神经网络的梯度消失，这是神经网络收敛慢的本质原因。</p>
+</section>
+<section id="方法" class="level5">
+<h5 class="anchored" data-anchor-id="方法">方法</h5>
+<p>BN就是通过一定的规范化手段，把每层神经网络任意神经元这个输入值的分布强行拉回到均值为0方差为1的正态分布，使得激活输入值落在非线性函数对输入比较敏感的区域，这样输入的小变化就会导致损失函数的大变化，从而梯度变大，避免梯度消失问题产生，而且梯度变大意味着学习收敛速度快，能大大加快训练速度。</p>
+</section>
+</section>
+<section id="例子" class="level4">
+<h4 class="anchored" data-anchor-id="例子">例子</h4>
+<p>假设没有经过BN调整前x的原先正态分布均值是-6，方差是1，那么意味着95%的值落在了[-8,-4]之间，那么对应的Sigmoid（x）函数的值明显接近于0，这是典型的梯度饱和区，在这个区域里梯度变化很慢，为什么是梯度饱和区？请看下sigmoid(x)如果取值接近0或者接近于1的时候对应导数函数取值，接近于0，意味着梯度变化很小甚至消失。而假设经过BN后，均值是0，方差是1，那么意味着95%的x值落在了[-2,2]区间内，很明显这一段是sigmoid(x)函数接近于线性变换的区域，意味着x的小变化会导致非线性函数值较大的变化，也即是梯度变化较大，对应导数函数图中明显大于0的区域，就是梯度非饱和区。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="sig.jfif" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">sigmoid</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="sig'.jfif" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">sigmoid导数</figcaption><p></p>
+</figure>
+</div>
+<p>经过BN后，目前大部分Activation的值落入非线性函数的线性区内，其对应的导数远离导数饱和区，这样来加速训练收敛过程。</p>
+<p>如果都通过BN，那么不就跟把非线性函数替换成线性函数效果相同了？但多层线性网络跟一层线性网络是等价的。这意味着网络的表达能力下降了，深度的意义就没有了。</p>
+<p>所以BN为了保证非线性的获得，对变换后的满足均值为0方差为1的x又进行了scale加上shift操作(y=scale*x+shift)，每个神经元增加了两个参数scale和shift参数，这两个参数是通过训练学习到的，意思是通过scale和shift把这个值从标准正态分布左移或者由移一点并长胖一点或者变瘦一点，每个实例挪动的程度不一样，这样等价于非线性函数的值从正中心周围的线性区往非线性区动了动。核心思想应该是想找到一个线性和非线性的较好平衡点，既能享受非线性的较强表达能力的好处，又避免太靠非线性区两头使得网络收敛速度太慢。</p>
+</section>
+</section>
+<section id="引入门控机制" class="level3" data-number="3.6">
+<h3 data-number="3.6" class="anchored" data-anchor-id="引入门控机制"><span class="header-section-number">3.6</span> 引入门控机制</h3>
+<p><a href="../../../../posts/tutorials/mle-interview/dl/NLP.html">LSTM和GRU都是通过门控机制缓解RNN梯度消失与爆炸的问题</a></p>
+</section>
+<section id="残差连接residual-connections" class="level3" data-number="3.7">
+<h3 data-number="3.7" class="anchored" data-anchor-id="残差连接residual-connections"><span class="header-section-number">3.7</span> 残差连接(Residual Connections)</h3>
+<p>skip connection 跨越隐藏层链接。</p>
+<p><img src="residual.jfif" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="dense-connections" class="level3" data-number="3.8">
+<h3 data-number="3.8" class="anchored" data-anchor-id="dense-connections"><span class="header-section-number">3.8</span> Dense Connections</h3>
+<p>中间层相互连接。连得越多，梯度问题就越复杂，越稳定。</p>
+<p><img src="dense.jfif" class="img-fluid" style="width:100.0%"></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/waterking\.cc/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2022 © Linghao Wang</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/linghao-wang/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Waterkin">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

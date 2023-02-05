@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2023-01-27">
+
+<title>Linghao Wang - Machine Learning Engineer (Ads) Interview Questions</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Linghao Wang</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../talks.html">
+ <span class="menu-text">Talks</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#数学" id="toc-数学" class="nav-link active" data-scroll-target="#数学"><span class="toc-section-number">1</span>  数学</a></li>
+  <li><a href="#sql" id="toc-sql" class="nav-link" data-scroll-target="#sql"><span class="toc-section-number">2</span>  SQL</a></li>
+  <li><a href="#计算机基础" id="toc-计算机基础" class="nav-link" data-scroll-target="#计算机基础"><span class="toc-section-number">3</span>  计算机基础</a>
+  <ul class="collapse">
+  <li><a href="#操作系统" id="toc-操作系统" class="nav-link" data-scroll-target="#操作系统"><span class="toc-section-number">3.1</span>  操作系统</a></li>
+  <li><a href="#计算机网络" id="toc-计算机网络" class="nav-link" data-scroll-target="#计算机网络"><span class="toc-section-number">3.2</span>  计算机网络</a></li>
+  </ul></li>
+  <li><a href="#机器学习" id="toc-机器学习" class="nav-link" data-scroll-target="#机器学习"><span class="toc-section-number">4</span>  机器学习</a>
+  <ul class="collapse">
+  <li><a href="#模型" id="toc-模型" class="nav-link" data-scroll-target="#模型"><span class="toc-section-number">4.1</span>  模型</a></li>
+  <li><a href="#评估指标" id="toc-评估指标" class="nav-link" data-scroll-target="#评估指标"><span class="toc-section-number">4.2</span>  评估指标</a></li>
+  </ul></li>
+  <li><a href="#深度学习" id="toc-深度学习" class="nav-link" data-scroll-target="#深度学习"><span class="toc-section-number">5</span>  深度学习</a>
+  <ul class="collapse">
+  <li><a href="#模型-1" id="toc-模型-1" class="nav-link" data-scroll-target="#模型-1"><span class="toc-section-number">5.1</span>  模型</a></li>
+  <li><a href="#手撕xx" id="toc-手撕xx" class="nav-link" data-scroll-target="#手撕xx"><span class="toc-section-number">5.2</span>  手撕xx</a></li>
+  <li><a href="#优化器" id="toc-优化器" class="nav-link" data-scroll-target="#优化器"><span class="toc-section-number">5.3</span>  优化器</a></li>
+  <li><a href="#常见问题" id="toc-常见问题" class="nav-link" data-scroll-target="#常见问题"><span class="toc-section-number">5.4</span>  常见问题</a></li>
+  </ul></li>
+  <li><a href="#手撕代码" id="toc-手撕代码" class="nav-link" data-scroll-target="#手撕代码"><span class="toc-section-number">6</span>  手撕代码</a></li>
+  <li><a href="#业务题" id="toc-业务题" class="nav-link" data-scroll-target="#业务题"><span class="toc-section-number">7</span>  业务题</a></li>
+  <li><a href="#项目细节" id="toc-项目细节" class="nav-link" data-scroll-target="#项目细节"><span class="toc-section-number">8</span>  项目细节</a></li>
+  <li><a href="#个人品质" id="toc-个人品质" class="nav-link" data-scroll-target="#个人品质"><span class="toc-section-number">9</span>  个人品质</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Machine Learning Engineer (Ads) Interview Questions</h1>
+<p class="subtitle lead">A Guide to Pass the MLE interview.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">tutorial</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 27, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="{fig-vis}">
+<p><img src="nlp.webp" class="img-fluid" style="width:100.0%" alt="NLP"> <img src="cv.webp" class="img-fluid" style="width:100.0%" alt="CV"></p>
+</div>
+<section id="数学" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="数学"><span class="header-section-number">1</span> 数学</h2>
+<ol type="1">
+<li><p>阿米巴虫波波生0个、1个或2个小阿米巴虫的概率分别是25%、25%以及50%。这些小阿米巴虫们的繁殖能力也都一样。请问波波的后代灭绝的概率是多少？</p></li>
+<li><p>任何15分钟时间段内，你看到至少一颗流星的概率是20%。请问在一小时内你看到至少一颗流星的概率是多少？</p></li>
+<li><p>仅使用一枚色子，你如何生成一个1-7内随机数？</p></li>
+<li><p>有一个数据集包含来自两个正态分布的数值。两个分布的标准差相同。来自两个分布的数据点个数相同。请问如果想要该数据集呈双峰分布，两个分布的均值应当至少差多少？</p></li>
+<li><p>一对夫妻告诉你他们有两个小孩，其中至少有一个是女孩。请问他们拥有两个女儿的概率是多少？</p></li>
+<li><p>提供已知正态分布的样本值，请问你能如何模拟一个均匀分布的样本值？</p></li>
+</ol>
+</section>
+<section id="sql" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="sql"><span class="header-section-number">2</span> SQL</h2>
+</section>
+<section id="计算机基础" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="计算机基础"><span class="header-section-number">3</span> 计算机基础</h2>
+<section id="操作系统" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="操作系统"><span class="header-section-number">3.1</span> 操作系统</h3>
+<ol type="1">
+<li>用户态，内核态</li>
+</ol>
+</section>
+<section id="计算机网络" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="计算机网络"><span class="header-section-number">3.2</span> 计算机网络</h3>
+<ol type="1">
+<li>tcp解包的过程</li>
+<li>3次握手，4次挥手</li>
+</ol>
+</section>
+</section>
+<section id="机器学习" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="机器学习"><span class="header-section-number">4</span> 机器学习</h2>
+<section id="模型" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="模型"><span class="header-section-number">4.1</span> 模型</h3>
+<ol type="1">
+<li>手推LR（求导、梯度更新），FM，SVM（原形式、对偶形式），Adaboost，GBDT，XGBoost</li>
+</ol>
+</section>
+<section id="评估指标" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="评估指标"><span class="header-section-number">4.2</span> 评估指标</h3>
+<ol type="1">
+<li>F1-score，AUC，交叉熵；AUC和交叉熵在分类上的区别与联系；手推AUC</li>
+</ol>
+</section>
+</section>
+<section id="深度学习" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="深度学习"><span class="header-section-number">5</span> 深度学习</h2>
+<section id="模型-1" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="模型-1"><span class="header-section-number">5.1</span> 模型</h3>
+<ol type="1">
+<li>ResNet</li>
+<li>fm，ffm，deepfm，dcn，xdeepfm</li>
+</ol>
+</section>
+<section id="手撕xx" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="手撕xx"><span class="header-section-number">5.2</span> 手撕xx</h3>
+<ol type="1">
+<li><p>反向传播</p></li>
+<li><p>Pytorch实现简单DNN训练过程（net、loss、optim、zero_grad、backward、step）</p></li>
+</ol>
+</section>
+<section id="优化器" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="优化器"><span class="header-section-number">5.3</span> 优化器</h3>
+<ol type="1">
+<li>你一般用什么优化器？SGD, Momentum, Adagrad, Rmsprop, Adam原理，分别解决了什么问题？Adagrad和Rmsprop是如何对学习率做约束的？</li>
+</ol>
+</section>
+<section id="常见问题" class="level3" data-number="5.4">
+<h3 data-number="5.4" class="anchored" data-anchor-id="常见问题"><span class="header-section-number">5.4</span> 常见问题</h3>
+<section id="过拟合" class="level4">
+<h4 class="anchored" data-anchor-id="过拟合">过拟合</h4>
+</section>
+<section id="激活函数" class="level4">
+<h4 class="anchored" data-anchor-id="激活函数">激活函数</h4>
+<section id="sigmoidsoftmaxtanhreluleaky-relu" class="level5">
+<h5 class="anchored" data-anchor-id="sigmoidsoftmaxtanhreluleaky-relu">sigmoid、softmax、tanh、relu、leaky relu</h5>
+<p>sigmoid只做值非线性变化映射到(0,1)，用于二分类。 softMax变化过程计算所有结果的权重，使得多值输出的概率和为1。用于多分类。 指数运算速度慢。梯度饱和消失。 tanh函数 双曲正切函数。以0为中心，有归一化的作用。 ReLu和Leaky ReLu 大于0为1，小于0为0，计算速度快。 leaky输入为负时，梯度仍有值，避免死掉。</p>
+</section>
+</section>
+<section id="样本不平衡" class="level4">
+<h4 class="anchored" data-anchor-id="样本不平衡">样本不平衡</h4>
+<p>欠采样：随机欠采样、easysampling、KNN 过采样：随机过采样、SMOTE（人工合成） 数据增强 代价敏感学习：误分类代价不同 适合的评价指标：准确率、F1值、AUC、G-Mean</p>
+</section>
+<section id="距离衡量与相似度" class="level4">
+<h4 class="anchored" data-anchor-id="距离衡量与相似度">距离衡量与相似度</h4>
+<p>欧几里得距离、马哈拉诺比斯距离、曼哈顿距离、切比雪夫距离、明可夫斯基距离、海明距离、编辑距离 余弦相似度、皮尔森相关系数、Jaccard相似系数、Tanimoto系数、对数似然相似度/对数似然相似率、互信息/信息增益，相对熵/KL散度、信息检索–词频-逆文档频率（TF-IDF）、词对相似度–点间互信息</p>
+</section>
+<section id="特征选择的方法" class="level4">
+<h4 class="anchored" data-anchor-id="特征选择的方法">特征选择的方法</h4>
+<p>目的：简化模型，降低过拟合，减少内存和计算开销，增强泛化 过滤方法： 覆盖率、皮尔逊相关系数、Fisher、最大方差阈值、卡方检验 封装方法： 完全搜索、启发式搜索（随机森林，KNN，SVM） 嵌入方法： 正则化项（L1）、输出模型特征重要性</p>
+</section>
+<section id="决策树剪枝" class="level4">
+<h4 class="anchored" data-anchor-id="决策树剪枝">决策树剪枝</h4>
+<p>预剪枝：提前结束决策树的增长：类目数量、方差 性能提升 后剪枝：决策树生长完成之后再进行剪枝</p>
+</section>
+<section id="常见的数据分箱方法" class="level4">
+<h4 class="anchored" data-anchor-id="常见的数据分箱方法">常见的数据分箱方法</h4>
+<p>等距离（宽） 等频率（深） 卡方分箱（有监督）</p>
+</section>
+<section id="处理海量数据方法" class="level4">
+<h4 class="anchored" data-anchor-id="处理海量数据方法">处理海量数据方法</h4>
+<p>HAsh法：hash映射，hash统计+堆/归并/快速排序 双层桶法：重找中位数（划分数据、统计个数） Bit-map：为每个数分配bit,遍历改变状态 Trie树、数据库 外排序 map-reduce</p>
+</section>
+<section id="kmean缺陷与改进" class="level4">
+<h4 class="anchored" data-anchor-id="kmean缺陷与改进">Kmean缺陷与改进</h4>
+<p>确定K值：可视化观测，试算K：BIC、AIC，平均质心距离 启发迭代：选取质心，计算距离，标注样本，计算质心，迭代计算距离…… 缺点：K值选取，非凸不收敛、异常点敏感 改进：离群点检测、自动选取K值</p>
+</section>
+<section id="随机森林" class="level4">
+<h4 class="anchored" data-anchor-id="随机森林">随机森林</h4>
+<p>常见调参： n_estimators:森林中决策树的个数，默认是10 criterion：度量分裂质量，信息熵或者基尼指数 max_features：特征数达到多大时进行分割 max_depth:树的最大深度 min_samples_split:分割内部节点所需的最少样本数量 bootstrap:是否采用有放回式的抽样方式 min_impurity_split：树增长停止的阀值</p>
+</section>
+<section id="xgboost" class="level4">
+<h4 class="anchored" data-anchor-id="xgboost">XGBoost</h4>
+<ul>
+<li>特征重要性的评估：损失函数在特征分裂前后的平均增益</li>
+<li>XGB的分裂准则：损失函数增益最大化</li>
+<li>XGB常用调参： n_estimators:迭代次数，子树的数量 max_depth、min_child_weigh：树深，孩子节点最小样本权重和 gamma、alpha、lambda：后剪枝比例，L1，L2正则化系数 subsample、colsample_bytree：样本采样、列采样 eta:削减已学树的影响，为后面学习腾空间 tree_method：gpu_histGPU 加速</li>
+</ul>
+</section>
+<section id="lightgbm" class="level4">
+<h4 class="anchored" data-anchor-id="lightgbm">LightGBM</h4>
+<ul>
+<li>常用调参： num_iterations、learning_rate：迭代次数，学习率 max_depth、min_data_in_leaf、num_leaves：控制树的大小 lambda_l1、lambda_l2、min_split_gain：L1、L2、最小切分 feature_fraction、bagging_fraction：随机采样特征和数据 device：GPU</li>
+</ul>
+</section>
+<section id="gbdtxgblgb比较" class="level4">
+<h4 class="anchored" data-anchor-id="gbdtxgblgb比较">GBDT、XGB、LGB比较</h4>
+<p>XGB比GBDT新增内容： 1.损失函数：加入正则化项：L1叶子节点数，L2叶子节点输出Score 2.导数：使用代价函数的二阶展开式来近似表达残差 3.基分类器：XGB支持线性分类器做基分类器 4.处理缺失值：寻找分割点时不考虑缺失值。分别计算缺失值在左右的增益。测试首出现缺失，默认在右。 5.近似直方图算法：采用加权分位数法来搜索近似最优分裂点 6.Shrinkage(缩减）：将学习到的模型*系数，削减已学模型的权重 7.列采样：特征采样。 8.并行计算：特征预排序，特征分裂增益计算（均在特征粒度上） LGB比XGB新增内容（GBDT+GOSS+EFB）： 1.节点分裂准则：XGB一次分裂一层节点（浪费），LGB深度优先分裂（过拟合） 2.决策树算法：基于histogram直方图分箱操作。减存加速 3.直接支持类别特征，无需独热操作 4.特征并行，数据并行 5.GOSS：单边采样：保留大梯度样本，随机采样小梯度样本 6EFB：归并很少出现的特征为同一类</p>
+</section>
+<section id="stacking和blending" class="level4">
+<h4 class="anchored" data-anchor-id="stacking和blending">Stacking和Blending</h4>
+</section>
+<section id="ldapca与svd" class="level4">
+<h4 class="anchored" data-anchor-id="ldapca与svd">LDA、PCA与SVD</h4>
+<p>线性判别分析 Linear Discriminate Analysis（监督） PCA用于方阵矩阵分解 SVD用于一般矩阵分解 - LDA（类别区分最大化方向投影） 在标签监督下，进行类似PCA的主成分分析 构造类间的散布矩阵 SB 以及 类内散布矩阵 SW - PCA（方差最大化方向投影） 构建协方差矩阵 最大化投影方差：信号具有较大方差，让数据在主轴方向投影方差最大 最小平方误差：方差最大，即样本点到直线距离最小（最小平方误差） - SVD 左右为正交矩阵：用于压缩行、列 中间为对角阵：奇异值</p>
+</section>
+<section id="svm" class="level4">
+<h4 class="anchored" data-anchor-id="svm">SVM</h4>
+<p>为什么要转化成对偶形式 方便核函数的引入（转化后为支持向量内积计算，核函数可以在低纬中计算高维的内积），改变复杂度（求W变成求a（支持向量数量）） SVM的超参：C和gamma，C正则系数，gamma决定支持向量的数量 SVM的核函数 有效性：核函数矩阵KK是对称半正定矩阵 常见核函数：线性核函数，多项式核函数，高斯核函数，指数核函数 区别：线性简单，可解释性强，只用于线性可分问题。多项式可解决非线性，参数太多。高斯只需要一个参数，计算慢，容易过拟合。 选择方式 特征维数高选择线性核 样本数量可观、特征少选择高斯核（非线性核） 样本数量非常多选择线性核（避免造成庞大的计算量）</p>
+</section>
+<section id="em" class="level4">
+<h4 class="anchored" data-anchor-id="em">EM</h4>
+<p>用于含有隐变量的概率模型参数的极大似然估计</p>
+</section>
+</section>
+</section>
+<section id="手撕代码" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="手撕代码"><span class="header-section-number">6</span> 手撕代码</h2>
+<ol type="1">
+<li>判断一个字符串是否是另一个字符串的子字符串(KMP算法)</li>
+<li>冒泡排序(必须用C++)</li>
+<li>leetcode221，最大正方形</li>
+<li>两个字符串，找到第二个字符串在第一个字符串中的下标，没有反回-1</li>
+</ol>
+</section>
+<section id="业务题" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="业务题"><span class="header-section-number">7</span> 业务题</h2>
+<p>1.对于一个广告驱动的消费者产品（比如Buzzfeed，YouTube，Google搜索等），什么可以称为好的成功衡量指标？服务驱动的消费者产品（比如优步，Flickr，Venmo等）呢？</p>
+<p>广告驱动：页面浏览量与每日活跃量，点击率，每次点击成本 服务驱动：购买量，转化率</p>
+<p>2.对于一个效率工具（比如印象笔记，Asana，Google文档等），什么可以称为好的成功衡量指标？线上课程平台（比如edX，Coursera，Udacity等）呢？</p>
+<p>效率工具：付费订阅用户数 线上课程平台：付费订阅用户数，课程完成率</p>
+<p>3.对于一个电商产品（比如Etsy，Groupon，Birchbox等），什么可以称为好的成功衡量指标？订阅产品（比如Netflix，Birchbox，Hulu等）呢？高级付费订阅（比如OKCupid，领英，Spotify等）呢？</p>
+<p>电商产品：购买量，转化率，时/日/周/月/季/年销售额，售出产品成本，存货量，网站流量，净回头客量，客服电话量，平均解决问题时长 订阅产品：流失量，（不知道接下来这几个都是啥） 高级付费订阅：（无解答）</p>
+<p>4.对于高度依赖于用户投入与交互的消费者产品（比如Snapchat，Pinterest，Facebook等），什么可以称为好的成功衡量指标？通讯产品（比如GroupMe，Hangouts，Snapchat等）呢？</p>
+<p>高度依赖于用户投入与交互的消费者产品：user AU ratios，分类型邮件汇总，分类型推送通知汇总，复活率。 通讯产品：（无解答）</p>
+<p>5.对于拥有app内购服务的产品（比如Zynga，愤怒的小鸟以及许多其他游戏），什么可以称为好的成功衡量指标？</p>
+<p>用户/付费用户平均营收</p>
+<ol start="6" type="1">
+<li><p>你自己对哪方面的业务感兴趣？有没有自学相关知识？</p></li>
+<li><p>如何判断或者预测，食堂的就餐人数。</p></li>
+</ol>
+</section>
+<section id="项目细节" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="项目细节"><span class="header-section-number">8</span> 项目细节</h2>
+</section>
+<section id="个人品质" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="个人品质"><span class="header-section-number">9</span> 个人品质</h2>
+<ol type="1">
+<li>自我介绍</li>
+<li>每天的时间分配，最近读的论文</li>
+<li>自己遇到的最大困难，最自豪的事</li>
+<li>讲一个最出色的项目</li>
+<li>数学建模中的分工，遇到的矛盾，怎么协调</li>
+<li>用三个词描述自己，优缺点</li>
+<li>为什么选择OPPO，自己心目中各大公司的地位</li>
+<li>选择工作的三个因素</li>
+<li>介绍一下你所热爱的事情</li>
+<li>介绍一下与你面试岗位相关的概念</li>
+<li>你会如何向没有统计背景的工程师解释A/B测试，线性回归呢？</li>
+<li>你会如何向没有统计背景的工程师解释置信区间以及95％的置信度的意思？</li>
+<li>你会如何向一组高级管理人员解释为什么数据很重要？</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/waterking\.cc/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2022 © Linghao Wang</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/linghao-wang/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Waterkin">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

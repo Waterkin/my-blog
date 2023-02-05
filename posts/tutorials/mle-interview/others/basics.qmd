@@ -1,0 +1,57 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+[【完整版】个人面试总结 数据结构 & 算法题 & 概率题 & 机器学习](https://juejin.cn/post/7084407434730536990#heading-10)
+[武功秘籍 | 百度科技算法岗求职必看秘籍 ](https://www.sohu.com/a/550108947_121124366)
+
+# 操作系统
+
+多进程和多线程
+
+堆和栈区别
+
+# 计算机网络
+
+TCP和UDP的区别
+
+# Python
+
+1. 迭代器和生成器
+
+2. Python list dict查找时间复杂度
+
+3. Python pandas聚合查找用什么
+
+# Linux
+
+1. Linux查找进程的命令
+
+# 大数据
+
+1. 是否接触过hadoop等大数据平台
+
+2. 对Hadoop/Spark有什么了解
+
+# A/B测试
+
+1. AB测试如何进行显著性检验
+
+2. 是否了解假设检验
+
+# Docker
+
+1. docker镜像和容器的区别
+
+2. 问了些docker命令；
+
+# SQL
+
+选择是在a中不在b中的id，left join where
+
+# 

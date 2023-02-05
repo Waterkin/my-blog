@@ -1,0 +1,18 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+# SVM
+
+1. 怎么理解SVM
+
+2. SVM推导
+
+3. SVM原理？为什么能转化为对偶问题？能不能推导对偶问题怎么来的
+
+4. 核函数是怎么回事

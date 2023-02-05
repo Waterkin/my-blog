@@ -1,0 +1,111 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+# 用pytorch实现一下mlp网络结构，包括损失函数
+
+```python
+# 建立一个四层感知机网络
+class MLP(torch.nn.Module):   # 继承 torch 的 Module
+    def __init__(self):
+        super(MLP,self).__init__()    # 
+        # 初始化三层神经网络 两个全连接的隐藏层，一个输出层
+        self.fc1 = torch.nn.Linear(784,512)  # 第一个隐含层  
+        self.fc2 = torch.nn.Linear(512,128)  # 第二个隐含层
+        self.fc3 = torch.nn.Linear(128,10)   # 输出层
+        
+    def forward(self,din):
+        # 前向传播， 输入值：din, 返回值 dout
+        din = din.view(-1,28*28)       # 将一个多行的Tensor,拼接成一行
+        dout = F.relu(self.fc1(din))   # 使用 relu 激活函数
+        dout = F.relu(self.fc2(dout))
+        dout = F.softmax(self.fc3(dout), dim=1)  # 输出层使用 softmax 激活函数
+        # 10个数字实际上是10个类别，输出是概率分布，最后选取概率最大的作为预测值输出
+        return dout
+
+# 训练神经网络
+def train():
+    # 定义损失函数和优化器
+    lossfunc = torch.nn.CrossEntropyLoss()
+    optimizer = torch.optim.SGD(params = model.parameters(), lr = 0.01)
+    # 开始训练
+    for epoch in range(n_epochs):
+        train_loss = 0.0
+        for data,target in train_loader:
+            optimizer.zero_grad()   # 清空上一步的残余更新参数值
+            output = model(data)    # 得到预测值
+            loss = lossfunc(output,target)  # 计算两者的误差
+            loss.backward()         # 误差反向传播, 计算参数更新值
+            optimizer.step()        # 将参数更新值施加到 net 的 parameters 上
+            train_loss += loss.item()*data.size(0)
+        train_loss = train_loss / len(train_loader.dataset)
+        print('Epoch:  {}  \tTraining Loss: {:.6f}'.format(epoch + 1, train_loss))
+
+
+```
+
+# 用pytorch实现多头注意力机制
+
+```python
+import torch
+import torch.nn as nn
+import numpy as np
+import torch.nn.functional as F
+ 
+class MultiHeadAttention(nn.Module):
+    '''
+    input:
+        query --- [N, T_q, query_dim] 
+        key --- [N, T_k, key_dim]
+        mask --- [N, T_k]
+    output:
+        out --- [N, T_q, num_units]
+        scores -- [h, N, T_q, T_k]
+    '''
+ 
+    def __init__(self, query_dim, key_dim, num_units, num_heads):
+ 
+        super().__init__()
+        self.num_units = num_units
+        self.num_heads = num_heads
+        self.key_dim = key_dim
+ 
+        self.W_query = nn.Linear(in_features=query_dim, out_features=num_units, bias=False)
+        self.W_key = nn.Linear(in_features=key_dim, out_features=num_units, bias=False)
+        self.W_value = nn.Linear(in_features=key_dim, out_features=num_units, bias=False)
+ 
+    def forward(self, query, key, mask=None):
+        querys = self.W_query(query)  # [N, T_q, num_units]
+        keys = self.W_key(key)  # [N, T_k, num_units]
+        values = self.W_value(key)
+ 
+        split_size = self.num_units // self.num_heads
+        querys = torch.stack(torch.split(querys, split_size, dim=2), dim=0)  # [h, N, T_q, num_units/h]
+        keys = torch.stack(torch.split(keys, split_size, dim=2), dim=0)  # [h, N, T_k, num_units/h]
+        values = torch.stack(torch.split(values, split_size, dim=2), dim=0)  # [h, N, T_k, num_units/h]
+ 
+        ## score = softmax(QK^T / (d_k ** 0.5))
+        scores = torch.matmul(querys, keys.transpose(2, 3))  # [h, N, T_q, T_k]
+        scores = scores / (self.key_dim ** 0.5)
+ 
+        ## mask
+        if mask is not None:
+            ## mask:  [N, T_k] --> [h, N, T_q, T_k]
+            mask = mask.unsqueeze(1).unsqueeze(0).repeat(self.num_heads,1,querys.shape[2],1)
+            scores = scores.masked_fill(mask, -np.inf)
+        scores = F.softmax(scores, dim=3)
+ 
+        ## out = score * V
+        out = torch.matmul(scores, values)  # [h, N, T_q, num_units/h]
+        out = torch.cat(torch.split(out, 1, dim=0), dim=3).squeeze(0)  # [N, T_q, num_units]
+ 
+        return out,scores
+
+```
+
+# 有没有实现过模型加速？比如分布式训练等

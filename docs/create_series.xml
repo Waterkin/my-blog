@@ -9,86 +9,276 @@
 <link>https://waterking.cc/create_series.html</link>
 <atom:link href="https://waterking.cc/create_series.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.2.269</generator>
-<lastBuildDate>Tue, 13 Dec 2022 16:00:00 GMT</lastBuildDate>
+<generator>quarto-1.2.280</generator>
+<lastBuildDate>Thu, 26 Jan 2023 16:00:00 GMT</lastBuildDate>
 <item>
-  <title>How to Choose a Database to Start with?</title>
-  <link>https://waterking.cc/posts/tools/database/database.html</link>
+  <title>Machine Learning Engineer (Ads) Interview Questions</title>
+  <link>https://waterking.cc/posts/tutorials/mle-interview/summary.html</link>
   <description><![CDATA[ 
 
 
 
-<p>Take away: Start with PostgreSQL and then MongoDB, which cover almost everything. Try snowflake too.</p>
-<section id="redis-key-value" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="redis-key-value"><span class="header-section-number">1</span> Redis: Key-Value</h2>
-<div class="{fig-vis}">
-<p><img src="https://waterking.cc/posts/tools/database/key-value.png" class="img-fluid" style="width:100.0%"></p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<ul>
-<li>Fast: store in memory instead of disk</li>
-<li>Usage: Cache</li>
-</ul>
+<div class="callout-caption-container flex-fill">
+Take-away
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>本项目试图将所有广告算法岗可能会出现的问题囊括其中</p>
+<p>面试题类型：</p>
+<ol type="1">
+<li><p>Leetcode300</p></li>
+<li><p>ML/DL八股</p></li>
+<li><p>数学题、智力题</p></li>
+<li><p>场景题</p></li>
+</ol>
+</div>
+</div>
+<section id="机器学习" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="机器学习"><span class="header-section-number">1</span> 机器学习</h2>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td><a href="../../../posts/tutorials/mle-interview/ml/lr.html">线性回归</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/ml/lr.html">LR</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/ml/svm.html">SVM</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/ml/tree.html">5个树模型</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/ml/无监督学习.html">无监督学习-聚类和PCA</a></td>
+</tr>
+<tr class="even">
+<td><a href="../../../posts/tutorials/mle-interview/ml/特征工程.html">特征工程</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/ml/评价指标.html">评价指标</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/ml/拟合.html">过拟合、欠拟合-</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="hbase-wide-column" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="hbase-wide-column"><span class="header-section-number">2</span> HBase: Wide Column</h2>
-<div class="{fig-vis}">
-<p><img src="https://waterking.cc/posts/tools/database/wide-column.png" class="img-fluid" style="width:100.0%"></p>
-</div>
-<ul>
-<li>High-write, Low-read</li>
-<li>Usage: Time Series Data like Historical Records</li>
-</ul>
+<section id="深度学习" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="深度学习"><span class="header-section-number">2</span> 深度学习</h2>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td><a href="../../../posts/tutorials/mle-interview/dl/NLP.html">NLP模型</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/dl/Ads.html"><strong>广告模型</strong></a></td>
+<td><a href="../../../posts/tutorials/mle-interview/dl/优化器.html"><strong>优化器</strong></a></td>
+<td><a href="../../../posts/tutorials/mle-interview/dl/loss.html"><strong>损失函数</strong>-</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/dl/activation.html">激活函数-</a></td>
+</tr>
+<tr class="even">
+<td><a href="../../../posts/tutorials/mle-interview/dl/权重初始化.html">权重初始化-</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/dl/lr.html">学习率调整策略-</a></td>
+<td><a href="">超参数调优</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/dl/Batchnorm.html">BatchNorm-</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/dl/grad.html">梯度消失、梯度爆炸-</a></td>
+</tr>
+<tr class="odd">
+<td><a href="../../../posts/tutorials/mle-interview/dl/项目.html"><strong>项目</strong></a></td>
+<td><a href="../../../posts/tutorials/mle-interview/dl/pytorch.html">Pytorch-</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/dl/tensorflow.html">Tensorflow</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/dl/度量学习.html">相似度度量-</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="mongodb-document" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="mongodb-document"><span class="header-section-number">3</span> MongoDB: Document</h2>
-<div class="{fig-vis}">
-<p><img src="https://waterking.cc/posts/tools/database/document.png" class="img-fluid" style="width:100.0%"></p>
-</div>
-<ul>
-<li>Usage: Most apps, Games, IoT</li>
-<li>Not suitable for Graph where <code>join</code> is frequent</li>
-</ul>
+<section id="基础知识" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="基础知识"><span class="header-section-number">3</span> 基础知识</h2>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td><a href="../../../posts/tutorials/mle-interview/others/性格测试.html">性格测试</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/others/Leetcode.html"><strong>Leetcode</strong></a></td>
+<td><a href="../../../posts/tutorials/mle-interview/others/basics.html">计算机基础</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/others/概率论.html">数学题、智力题-</a></td>
+<td><a href="../../../posts/tutorials/mle-interview/others/业务知识.html">场景题</a></td>
+</tr>
+</tbody>
+</table>
+
+
 </section>
-<section id="postgresql-relational" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="postgresql-relational"><span class="header-section-number">4</span> PostgreSQL: Relational</h2>
+
+ ]]></description>
+  <category>tutorial</category>
+  <guid>https://waterking.cc/posts/tutorials/mle-interview/summary.html</guid>
+  <pubDate>Thu, 26 Jan 2023 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Model Deployment and Compression</title>
+  <link>https://waterking.cc/posts/tools/infer-engines/infer-engines.html</link>
+  <description><![CDATA[ 
+
+
+
 <div class="{fig-vis}">
-<p><img src="https://waterking.cc/posts/tools/database/relational.png" class="img-fluid" style="width:100.0%"></p>
+<p><img src="https://waterking.cc/posts/tools/infer-engines/MDLBench.png" class="img-fluid" style="width:100.0%"></p>
 </div>
-<ul>
-<li>Usage: Most apps</li>
-<li>Not suitable for Unstructured data</li>
-</ul>
+<!--
+# Tool List for Model Deployment
+
+## DL Framework List for Server
+- TensorRT: Nvidia, for GPU
+- OpenVino: Intel, for CPU
+- ONNX: Microsoft, Amazon, and others
+
+## DL Framework List for Mobile 
+- ncnn/TNN: Tencent
+- MNN: Alibaba
+- MACE: Xiaomi
+- Tengine: Open AI Lab
+- Paddle-Lite: Baidu
+
+## DL Inference Server
+- Triton: Nvidia
+
+## DL Deployment Tool
+- FastDeploy: Nvidia
+-->
+<section id="model-deployment-tensorrt-triton-ncnn" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="model-deployment-tensorrt-triton-ncnn"><span class="header-section-number">1</span> Model Deployment: TensorRT, Triton, NCNN</h2>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Take away
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Start with Nvidia TensorRT and Triton for deployment on server, then learn NCNN for mobile deployment.</p>
+</div>
+</div>
+<section id="why-tensorrt" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="why-tensorrt"><span class="header-section-number">1.1</span> Why TensorRT?</h3>
+<p>NVIDIA TensorRT is a deep learning platform that optimizes neural network models and speeds up inference across GPU-accelerated platforms running in the data center and embedded devices.</p>
+<div class="{fig-vis}">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://waterking.cc/posts/tools/infer-engines/TensorRT.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Same model, 4x Faster &amp; 6x Smaller with TensorRT-FP16</figcaption><p></p>
+</figure>
+</div>
+</div>
 </section>
-<section id="neo4j-graph" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="neo4j-graph"><span class="header-section-number">5</span> Neo4j: Graph</h2>
+<section id="why-triton-server" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="why-triton-server"><span class="header-section-number">1.2</span> Why Triton Server?</h3>
+<p>Triton enables teams to deploy any AI model from multiple deep learning and machine learning frameworks, including TensorRT, TensorFlow, PyTorch, ONNX.</p>
 <div class="{fig-vis}">
-<p><img src="https://waterking.cc/posts/tools/database/graph.png" class="img-fluid" style="width:100.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://waterking.cc/posts/tools/infer-engines/Triton.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">4x QPS with TensorRT+Triton</figcaption><p></p>
+</figure>
 </div>
-<ul>
-<li>Usage: Connections
-<ul>
-<li>Graphs</li>
-<li>Knowledge Graphs</li>
-<li>Recommendation Engines</li>
-</ul></li>
-</ul>
+</div>
 </section>
-<section id="elasticsearch-search" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="elasticsearch-search"><span class="header-section-number">6</span> ElasticSearch: Search</h2>
+<section id="tensorrttriton-workflow" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="tensorrttriton-workflow"><span class="header-section-number">1.3</span> TensorRT+Triton Workflow</h3>
 <div class="{fig-vis}">
-<p><img src="https://waterking.cc/posts/tools/database/search.png" class="img-fluid" style="width:100.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://waterking.cc/posts/tools/infer-engines/workflow.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Overall workflow for optimizing a model with TensorRT and serving with NVIDIA Triton</figcaption><p></p>
+</figure>
 </div>
-<ul>
-<li>Usage: Search Engines</li>
-</ul>
+</div>
 </section>
-<section id="fauna-multi-model" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="fauna-multi-model"><span class="header-section-number">7</span> Fauna: Multi-Model</h2>
-<div class="{fig-vis}">
-<p><img src="https://waterking.cc/posts/tools/database/fauna.png" class="img-fluid" style="width:100.0%"></p>
+<section id="ncnn-workflow" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="ncnn-workflow"><span class="header-section-number">1.4</span> <a href="https://github.com/Tencent/ncnn">NCNN</a> Workflow</h3>
+</section>
+</section>
+<section id="model-compression-pruning-distillation-quantization-sparsity-nas" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="model-compression-pruning-distillation-quantization-sparsity-nas"><span class="header-section-number">2</span> Model Compression: Pruning, Distillation, Quantization, Sparsity, NAS</h2>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-caption-container flex-fill">
+Take away
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Start with pruning. Choose any other method depending on (1) task requirements and (2) hardware.</p>
+</div>
+</div>
+<section id="pruning" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="pruning"><span class="header-section-number">2.1</span> Pruning</h3>
+<p>Good generalization.</p>
+<p><a href="https://nni.readthedocs.io/zh/stable/compression/overview.html">Check out an Microsoft Pytorch-based tool: Neural Network Intelligence (NNI).</a></p>
+</section>
+<section id="distillation" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="distillation"><span class="header-section-number">2.2</span> Distillation</h3>
+<p>A large model T teaches a small model S and transfer S’s knowledge. Distillation is suitable for complicated tasks and small models.</p>
+<p>It can be classified by different methods:</p>
 <ul>
-<li>Usage: Everything!</li>
+<li>Response-based</li>
+<li>Feature-based</li>
+<li>Relation-based</li>
+</ul>
+<p>or different strategies:</p>
+<ul>
+<li>online distillation</li>
+<li>offline distillation</li>
+<li>self distillation</li>
+</ul>
+<p>or different distillation algorithms:</p>
+<ul>
+<li>adversarial distillation</li>
+<li>multi-teacher distillation</li>
+<li>cross-modal distillation</li>
+<li>graph-based distillation</li>
+<li>attention-based distillation</li>
+<li>data-free distillation</li>
+<li>quatized Distillation</li>
+<li>lifelong distillation</li>
+<li>nas distillation</li>
+</ul>
+<div class="{fig-vis}">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://waterking.cc/posts/tools/infer-engines/distillation.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">The procedure.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="quantization" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="quantization"><span class="header-section-number">2.3</span> Quantization</h3>
+<p>High requirements for specific hardware, e.g., Intel cpu.</p>
+<p><a href="https://nni.readthedocs.io/zh/stable/compression/overview.html">Check out an Microsoft Pytorch-based tool: Neural Network Intelligence (NNI).</a></p>
+</section>
+<section id="sparsity" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="sparsity"><span class="header-section-number">2.4</span> Sparsity</h3>
+<p>You can make some tensors to be 0, but depends on specific hardwares, e.g., 30xx GPU. <a href="https://github.com/NVIDIA/apex/tree/082f999a6e18a3d02306e27482cc7486dab71a50/apex/contrib/sparsity">Check out an Nvidia Pytorch-based tool: Automated SParsity (ASP).</a></p>
+</section>
+<section id="neural-architecture-search-nas" class="level3" data-number="2.5">
+<h3 data-number="2.5" class="anchored" data-anchor-id="neural-architecture-search-nas"><span class="header-section-number">2.5</span> Neural Architecture Search (NAS)</h3>
+<p>You can modify the DARTS model space and tasks to deploy NAS, mostly for models like MobileNet series. For example, you can use NAS to search the backbone, channel, depth, kernel size, resolution and other hyperparams of the model, but NAS requires super computing power because of the large searching space. This requirement welcomes big companies like Google and Facebook, but stops small labs and companies from NAS’s research. <a href="https://nni.readthedocs.io/zh/stable/tutorials/hello_nas.html">Check out an Microsoft Pytorch-based tool: Neural Network Intelligence (NNI).</a></p>
+</section>
+</section>
+<section id="reference" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="reference"><span class="header-section-number">3</span> Reference</h2>
+<ul>
+<li><a href="https://blog.advance.ai/blog/accelerating-ai-deep-learning-models">Accelerating AI/Deep learning models using tensorRT &amp; triton inference</a></li>
+<li><a href="https://developer.nvidia.com/blog/optimizing-and-serving-models-with-nvidia-tensorrt-and-nvidia-triton/">Optimizing and Serving Models with NVIDIA TensorRT and NVIDIA Triton</a></li>
+<li><a href="https://arxiv.org/pdf/2202.06512.pdf">A Comprehensive Benchmark of Deep Learning Libraries on Mobile Devices (WWW 2022)</a></li>
+<li><a href="https://www.mdnice.com/writing/3efb55c789e94c5599eb1a0d1bf05b82">训练好的深度学习模型是怎么部署的？</a> <a href="https://juejin.cn/post/7133391555854860318">边缘计算 | 在移动设备上部署深度学习模型的思路与注意点</a> <a href="https://oldpan.me/archives/ai-deploy-study-road-1">老潘的AI部署以及工业落地学习之路</a></li>
+<li><a href="https://www.zhihu.com/question/357967490/answer/911735881">在实际工程应用中,剪枝, 蒸馏等模型压缩方法中的具体哪个算法部署简单且有效?</a></li>
+<li><a href="https://github.com/Syencil/mobile-yolov5-pruning-distillation">mobilev2-yolov5s剪枝、蒸馏，支持ncnn，tensorRT部署。ultra-light but better performence！</a></li>
+<li><a href="https://github.com/HobbitLong/RepDistiller">[ICLR 2020] Contrastive Representation Distillation (CRD), and benchmark of recent knowledge distillation methods</a></li>
+<li><a href="https://www.zhihu.com/question/518810217/answer/2367413413">2022 年神经架构搜索的发展状况如何?</a></li>
+<li><a href="https://blog.salesforceairesearch.com/benchmarking-tensorrt-inference-server/">Benchmarking Triton (TensorRT) Inference Server for Transformer Models</a></li>
+<li><a href="https://www.reddit.com/r/MachineLearning/comments/i3knzb/d_what_pytorchs_model_serving_framework_are_you/">https://www.reddit.com/r/MachineLearning/comments/i3knzb/d_what_pytorchs_model_serving_framework_are_you/</a></li>
+<li><a href="https://clear.ml/blog/increase-huggingface-triton-throughput-by-193/">How to Accelerate HuggingFace Throughput by 193%</a></li>
+<li><a href="https://towardsdatascience.com/hugging-face-transformer-inference-under-1-millisecond-latency-e1be0057a51c">Hugging Face Transformer Inference Under 1 Millisecond Latency</a></li>
 </ul>
 
 
@@ -96,9 +286,120 @@
 
  ]]></description>
   <category>tools</category>
-  <guid>https://waterking.cc/posts/tools/database/database.html</guid>
-  <pubDate>Tue, 13 Dec 2022 16:00:00 GMT</pubDate>
-  <media:content url="https://waterking.cc/posts/tools/database/key-value.png" medium="image" type="image/png" height="78" width="144"/>
+  <guid>https://waterking.cc/posts/tools/infer-engines/infer-engines.html</guid>
+  <pubDate>Mon, 23 Jan 2023 16:00:00 GMT</pubDate>
+  <media:content url="https://waterking.cc/posts/tools/infer-engines/MDLBench.png" medium="image" type="image/png" height="114" width="144"/>
+</item>
+<item>
+  <title>Pythonic Test</title>
+  <link>https://waterking.cc/posts/arts/test/test.html</link>
+  <description><![CDATA[ 
+
+
+
+<div class="{fig-vis}">
+<p><img src="https://waterking.cc/posts/arts/test/.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<section id="unit-test" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="unit-test"><span class="header-section-number">1</span> Unit Test</h2>
+<section id="example" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="example"><span class="header-section-number">1.1</span> Example</h3>
+<p>The purpose of unit test is to ensure the correctness of a code unit in a project. For example, when we write a function:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;">def</span> add(x, y):</span>
+<span id="cb1-2">    <span class="cf" style="color: #003B4F;">return</span> x <span class="op" style="color: #5E5E5E;">+</span> y</span></code></pre></div>
+<p>We find the easiest way to avoid bugs is to write a unit test like:</p>
+<pre><code>if __name__ == "__main__":
+    assert add(1, 2) == 3
+    assert add(1, -1) == 0</code></pre>
+</section>
+</section>
+<section id="integration-test" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="integration-test"><span class="header-section-number">2</span> Integration Test</h2>
+<section id="example-1" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="example-1"><span class="header-section-number">2.1</span> Example</h3>
+<div class="{fig-vis}">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://waterking.cc/posts/arts/test/Integration-Testing.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">The connection between unit testing and intergration testing.</figcaption><p></p>
+</figure>
+</div>
+</div>
+<p>The purpose of integration test of testing is to expose defects in the interaction between these software modules when they are integrated. Here priority is to be given for the integrating links rather than the unit functions which are already tested.</p>
+<p>For example, application has 2 modules say ‘Login Page’, ‘Mailbox’ and each of them is integrated logically. Here do not concentrate much on the Login Page testing as it’s already been done in Unit Testing. But check how it’s linked to the Mail Box Page.</p>
+<table class="table">
+<caption>Demonstration of an integration testing example</caption>
+<colgroup>
+<col style="width: 30%">
+<col style="width: 20%">
+<col style="width: 23%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Test Case ID</th>
+<th style="text-align: left;">Test Case Objective</th>
+<th style="text-align: right;">Test Case Description</th>
+<th style="text-align: center;">Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td style="text-align: left;">Check the interface link between the Login and Mailbox module</td>
+<td style="text-align: right;">Enter login credentials and click on the Login button</td>
+<td style="text-align: center;">To be directed to the Mail Box</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methods" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="methods"><span class="header-section-number">2.2</span> Methods</h3>
+<section id="big-bang-testing" class="level4">
+<h4 class="anchored" data-anchor-id="big-bang-testing">Big Bang Testing</h4>
+<p><strong>Big Bang Testing</strong> is an integration testing approach in which all the components or modules are integrated together at once and then tested as a unit. (pros: convenient for small systems)</p>
+</section>
+<section id="incremental-testing" class="level4">
+<h4 class="anchored" data-anchor-id="incremental-testing">Incremental Testing</h4>
+<p>In the <strong>Incremental Testing</strong> approach, testing is done by integrating two or more modules that are logically related to each other and then tested for proper functioning of the application. Then the other related modules are integrated incrementally and the process continues until all the logically related modules are integrated and tested successfully.</p>
+</section>
+</section>
+<section id="guidelines-for-integration-testing" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="guidelines-for-integration-testing"><span class="header-section-number">2.3</span> Guidelines for Integration Testing</h3>
+<ul>
+<li>First, determine the Integration Test Strategy that could be adopted and later prepare the test cases and test data accordingly.</li>
+<li>Study the Architecture design of the Application and identify the Critical Modules. These need to be tested on priority.</li>
+<li>Study the Architecture design of the Application and identify the Critical Modules. These need to be tested on priority.</li>
+<li>After the test cases, it’s the test data which plays the critical role.</li>
+<li>Always have the mock data prepared, prior to executing. Do not select test data while executing the test cases.</li>
+</ul>
+</section>
+</section>
+<section id="tool-pytest" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="tool-pytest"><span class="header-section-number">3</span> Tool: Pytest</h2>
+<p><a href="https://docs.pytest.org/en/7.2.x/">Docs</a> <a href="https://www.ondiek-elijah.me/blog/integration-testing-with-pytest">Nice Practice: Integration Testing With Pytest</a></p>
+</section>
+<section id="test-driven-development" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="test-driven-development"><span class="header-section-number">4</span> Test-Driven Development</h2>
+<p>Always write the test examples before coding.</p>
+<div class="{fig-vis}">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://waterking.cc/posts/arts/test/1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">The process of test-driven development</figcaption><p></p>
+</figure>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>python</category>
+  <category>test</category>
+  <guid>https://waterking.cc/posts/arts/test/test.html</guid>
+  <pubDate>Fri, 13 Jan 2023 16:00:00 GMT</pubDate>
+  <media:content url="https://waterking.cc/posts/arts/test" medium="image"/>
 </item>
 <item>
   <title>Google Docs - Efficient for Collaborations</title>
@@ -166,62 +467,10 @@
 
  ]]></description>
   <category>tools</category>
-  <category>collaboration</category>
+  <category>soft skills</category>
   <guid>https://waterking.cc/posts/tools/googledocs/googledocs.html</guid>
   <pubDate>Mon, 12 Dec 2022 16:00:00 GMT</pubDate>
   <media:content url="https://waterking.cc/posts/tools/googledocs/test.jpeg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Regex Tutorial</title>
-  <link>https://waterking.cc/posts/tutorials/regex/regex.html</link>
-  <description><![CDATA[ 
-
-
-
-<div class="{fig-vis}">
-<p><img src="https://waterking.cc/posts/tutorials/regex/test.jpeg" class="img-fluid" style="width:100.0%"></p>
-</div>
-<section id="learn-from-some-exercise" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="learn-from-some-exercise"><span class="header-section-number">1</span> Learn from some exercise</h2>
-<ul>
-<li>(|[1-9]{1}|12[0-4]|25[0-5]).(|[1-9]{1}|12[0-4]|25[0-5]).(|[1-9]{1}|12[0-4]|25[0-5]).(|[1-9]{1}|12[0-4]|25[0-5])
-<ul>
-<li>222.201.144.244</li>
-</ul></li>
-<li>[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
-<ul>
-<li>YYYY-mm-dd HH:MM:SS</li>
-</ul></li>
-<li>[A-Za-z]{2}[0-9]{3}
-<ul>
-<li>CS229</li>
-</ul></li>
-<li>([a-zA-Z0-9_.-+]+)@[a-zA-Z0-9_.-+]+.[a-zA-Z0-9_.-+]
-<ul>
-<li>example@gmail.com</li>
-</ul></li>
-</ul>
-</section>
-<section id="explanation" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="explanation"><span class="header-section-number">2</span> Explanation</h2>
-<ul>
-<li> digits 0-9</li>
-<li>{1}: match 1 time</li>
-<li>.: match .</li>
-<li>[0-4]: match 0-4</li>
-<li>+: match 1 or more times</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>python</category>
-  <category>regex</category>
-  <category>tutorial</category>
-  <guid>https://waterking.cc/posts/tutorials/regex/regex.html</guid>
-  <pubDate>Mon, 12 Dec 2022 16:00:00 GMT</pubDate>
-  <media:content url="https://waterking.cc/posts/tutorials/regex/test.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>PyFlink Tutorial</title>
@@ -1071,13 +1320,14 @@
 
 <div class="{fig-vis}">
 <p><img src="https://waterking.cc/posts/tutorials/2022-11-19-ai-project/test.jpg" class="img-fluid"></p>
+<p>One day, I got an assignment from my professor. At that time, I was doing research on stock price prediction, but was asked to implement top conference papers with my classmates. Within two days, I have done GradCAM visualization on noisy-label models and make the images clearer by integrating two top conference github projects (NeurIPS 2021, ECCV 2022). This experience allows me to quickly solve new problems that I have no prior knowledge of.</p>
 <section id="visualization-results" class="level4 centered">
 <h4 class="centered anchored" data-anchor-id="visualization-results">Visualization Results</h4>
 </section>
 </div>
 <section id="model-creation" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="model-creation"><span class="header-section-number">1</span> Model creation</h2>
-<p>Firstly, I find model PES from github: <a href="https://github.com/tmllab/PES">Understanding and Improving Early Stopping for Learning with Noisy Labels (NeurIPS 2021)</a></p>
+<p>We decided to implement papers on noisy labels. After searching, I find model PES from github: <a href="https://github.com/tmllab/PES">Understanding and Improving Early Stopping for Learning with Noisy Labels (NeurIPS 2021)</a></p>
 <p>Then, to make sure its correctness, I check the model following the README in its repo and rerun the training procedure with much smaller epoches (check this hyperparameter in the code, like the argparse part in config.py or train.py etc.).</p>
 <p>Now I need to get my Grad-cam code and plug it into PES.</p>
 </section>

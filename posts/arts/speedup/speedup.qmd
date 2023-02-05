@@ -1,0 +1,21 @@
+---
+title: "Speed up Your Python Code Like C"
+subtitle: ""
+date: "2023-01-14"
+categories: [python]
+css: ../../styles.css
+draft: true
+---
+
+# Pypy: An Efficient Interpreter
+
+## Pypy Example and Why it is faster
+
+::: {fig-vis}
+![Pypy 666!](d.png){width=100%}
+
+:::
+
+![check it out](https://blog.csdn.net/sgzqc/article/details/122512172)
+
+# Cython: Speeding Critical Parts of Programs

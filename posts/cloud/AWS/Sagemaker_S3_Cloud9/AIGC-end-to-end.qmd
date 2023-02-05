@@ -1,0 +1,208 @@
+---
+title: "End-to-End AIGC - from Amazon Sagemaker to Web Application"
+subtitle: "Use Amazon Sagemaker, Cloud 9, S3, Huggingface to Deploy Diffusion Model as a Flask Web APP"
+date: "2022-12-14"
+categories: [AWS, tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+[Original Cookbook](https://catalog.us-east-1.prod.workshops.aws/workshops/3b86fa89-da3a-4e5f-8e77-b45fb11adf4a/zh-CN/0-intro)
+
+# Introduction
+
+In this camp, you will learn from Amazon SageMaker and AWS Cloud 9 to:
+- evaluate AIGC models with Amazon SageMaker Notebook
+- deploy AIGC model to Amazon SageMaker Inference Endpoint
+- develop web app by AWS Cloud 9 and call SageMaker Inference Endpoint
+
+::: {fig-vis}
+![](AIGC.png){width=100%}
+:::
+
+Follow this tutorial, you will get a web app with AIGC capability.
+
+::: {fig-vis}
+![](APP.png){width=100%}
+![](Result.png){width=100%}
+:::
+
+# Prerequisites
+If you hope to deploy your AIGC model to Amazon SageMaker Inference Endpoint, and call the endpoint with a web app, please make sure you have enough quotas.
+
+## Check the Quota
+[Click the link](https://ap-northeast-1.console.aws.amazon.com/servicequotas/home/services/sagemaker/quotas)
+
+Search `ml.g4dn.xlarge for endpoint usage`
+
+::: {fig-vis}
+![](quota.png){width=100%}
+:::
+
+## Increase the Quota
+
+If the quota value is 0, select `ml.g4dn.xlarge for endpoint usage` and click the `Request quota increase` orange button at the upper right corner.
+
+::: {fig-vis}
+![](2-request-quota.png){width=100%}
+:::
+
+## Set the Quota
+
+Enter the quotas you want, for example, `1`.
+Then click `request` orange button.
+
+::: {fig-vis}
+![](3-input-quota.png){width=100%}
+:::
+
+# Create Amazon Sagemaker Notebook Instance
+
+## Login Amazon Console
+
+[Click the link](https://ap-northeast-1.console.aws.amazon.com/console/home?region=ap-northeast-1#), make sure the region is **Tokyo, ap-northeast-1**
+
+::: {fig-vis}
+![](1-region.png){width=100%}
+:::
+
+## Enter Amazon Sagemaker
+Search Amazon Sagemaker.
+
+::: {fig-vis}
+![](2-sagemaker.png){width=100%}
+:::
+
+## Enter Amazon Sagemaker Notebook Instance
+On the left side, click `notebook instance` to enter the console.
+
+::: {fig-vis}
+![](3-notebook.png){width=100%}
+:::
+
+## Create a Notebook Instance
+Click the orange button `Create a Notebook Instance` at the upper right corner.
+
+::: {fig-vis}
+![](4-create-notebook.png){width=100%}
+:::
+
+## Config the Notebook Instance
+
+::: {fig-vis}
+![](5-notebook-info.png){width=100%}
+:::
+
+## Create IAM Role
+You have to create an IAM role to call the SageMaker and S3 service, for example, upload and deploy a model.
+
+::: {fig-vis}
+![](6-notebool-create-role.png){width=100%}
+![](6-notebool-create-role-2.png){width=100%}
+:::
+
+## Create a Notebook Instance and Open Jupyter Notebook
+
+::: {fig-vis}
+![](7-instance-created.png){width=100%}
+![](8-open-notebook.png){width=100%}
+:::
+
+## Download and Upload Notebook File
+
+[Open this link](https://static.us-east-1.prod.workshops.aws/public/7310ecbe-558d-4f72-81de-4da07aa4180e/static/code/notebook-stable-diffusion-ssh-inference.ipynb), and download the notebook file.
+
+This notebook file contains:
+- download and test AIGC model
+- wrap the model and upload it to S3 bucket
+- deploy the model from S3 to SageMaker Inference Endpoint
+
+::: {fig-vis}
+![](9-upload.png){width=100%}
+![](9-upload-3.png){width=100%}
+![](11-click-notebook.png){width=100%}
+![](12-notebook.png){width=100%}
+:::
+
+# Create Full-Stack APP in AWS Cloud 9 
+AWS Cloud9 is an IDE on cloud that enables us to write, run and debug code.
+
+## Enter Cloud9 Service
+Search Cloud9
+
+::: {fig-vis}
+![](1-cloud9.png){width=100%}
+:::
+
+## Create Cloud9 Environment
+Set a app name and keep the other setting default.
+Click the orange button at the lower right corner to create the environment.
+
+::: {fig-vis}
+![](2-create-env.png){width=100%}
+:::
+
+## Open Cloud9 Environment
+
+::: {fig-vis}
+![](5-open-cloud9-env.png){width=100%}
+![](6-cloud9.png){width=100%}
+:::
+
+## Download and Upload Web App
+Enter the command in the below Cloud9 console to download and save web app zip file and unzip the file.
+
+```bash
+cd ~/environment
+wget https://static.us-east-1.prod.workshops.aws/public/7310ecbe-558d-4f72-81de-4da07aa4180e/static/code/SampleWebApp.zip
+unzip SampleWebApp.zip
+```
+
+After unzip, you will get a SampleWebApp folder which contains:
+- Backend code app.py: receive frontend request and call SageMaker Endpoint to generate images with texts.
+- Frontend code image.html and index.html.
+
+## Install Flask and boto3 on AWS Cloud9
+Enter the command in the below Cloud9 console.
+
+```bash
+pip3 install Flask
+pip3 install boto3
+```
+
+## Run app.py
+
+::: {fig-vis}
+![](11-run.png){width=100%}
+![](12-run-8080.png){width=100%}
+:::
+
+## Preview frontend web page
+
+::: {fig-vis}
+![](16-clik-preview.png){width=100%}
+![](17-preview-app.png){width=100%}
+![](13-web.png){width=100%}
+:::
+
+## Enter a Prompt to Generate Images
+Examples: set length and width to 512 and enter a discriptive sentence to generate a cartoon-style monkey astronaut and a superhero.
+
+```
+a cartoon style cute monkey wearing a space suit, star background; clear portrait of a superhero concept between spiderman and batman, cottagecore
+```
+
+::: {fig-vis}
+![](14-preview.png){width=100%}
+![](15-image.png){width=100%}
+:::
+
+# Summary
+We have open a Amazon SageMaker Notebook and upload a notebook file to run and test an AIGC model. We then deploy the model to Amazon Sagemaker Inference Endpoint and create a web app on Cloud9 to call the endpoint.
+
+To avoid charges, please clean up the resources in the experiment. Delete the Cloud9 environment, S3 bucket, SageMaker Notebook, Endpoint and Model by following these links.
+
+- [Delete Cloud9](https://docs.aws.amazon.com/zh_cn/cloud9/latest/user-guide/tutorial-clean-up.html)
+- [Delete SageMaker Resources](https://docs.aws.amazon.com/zh_cn/sagemaker/latest/dg/ex1-cleanup.html)
+- [Clean up S3 bucket](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/userguide/empty-bucket.html)
+- [Delete S3 bucket](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/userguide/delete-bucket.html)

@@ -1,9 +1,10 @@
 ---
-title: "Regex Tutorial"
+title: "Regex Tutorial - Find Pattern in Strings"
 subtitle: ""
 date: "2022-12-13"
 categories: [python, regex, tutorial]
 css: ../../styles.css
+draft: true
 ---
 
 ::: {fig-vis}

@@ -1,0 +1,51 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+::: {.callout-tip}
+# Take-away
+这里主要总结一些前沿模型的面试题
+:::
+
+
+
+# CV模型
+- 卷积网络了解吗？
+- 池化操作是什么？
+- max-pooling 的反向传播怎么做？
+- ResNet
+
+# NLP模型
+- RNN、LSTM、GRU区别
+- Seq2Seq
+- Attention
+- Transformer
+- BERT
+- word2vec 是什么？层次化 softmax 怎么做的？
+
+# 图模型
+- GNN
+- GCN
+
+# 搜推广模型
+- [现阶段各家公司的广告算法使用的主流模型有哪些？ - 付鹏的回答 - 知乎](https://www.zhihu.com/question/352306163/answer/902698330)
+- [广告和推荐算法论文梳理 [持续更新] - 如雪的文章 - 知乎](https://zhuanlan.zhihu.com/p/395062194)
+
+# 搜推广业务知识
+- [计算广告学课程 - 刘鹏](https://study.163.com/course/courseMain.htm?courseId=321007&_trace_c_p_k2_=ab32ce22dad44de9a0a3dd679a18c530)
+- [计算广告学 - 刘鹏](www.taobao.com)
+- [知乎专栏：计算广告两三事](https://www.zhihu.com/column/c_1132369020673953792)
+- [知乎回答：广告算法工程师的核心竞争力](https://www.zhihu.com/search?type=content&q=%E7%8E%8B%E5%96%86%20%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A#:~:text=%E7%BB%8F%E9%AA%8C%E4%B9%8B%E8%B0%88%EF%BC%9A-,%E5%B9%BF%E5%91%8A%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E6%A0%B8%E5%BF%83%E7%AB%9E%E4%BA%89%E5%8A%9B,-%E5%AD%97%E8%8A%82%E5%B9%BF%E5%91%8A)
+- [三大视角，聊聊我眼中的广告系统](https://mp.weixin.qq.com/s/28sAaUqDykG8mTdsOvGWzQ)
+- [推荐系统和计算广告的区别](https://zhuanlan.zhihu.com/p/447198466)
+- [广告算法工程师知识框架与关键技术](https://mp.weixin.qq.com/s/cQDsYBfzSk17Y2WibK61CQ)
+- [王喆："深度"学习计算广告](https://mp.weixin.qq.com/s/jbgDCSnPRQhOx7XS7M2hGg)
+
+
+
+

@@ -1,0 +1,20 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+::: {.callout-tip}
+# Take-away
+这里主要总结一些传统面试题，包括：模型、评估指标、优化方式、损失函数、特征工程、常见问题（过拟合、正则化、BatchNorm、权重初始化）
+:::
+
+[machine-learning-interview-chinese](https://github.com/chehongshu/machine-learning-interview-chinese)
+[推广搜 军火库](https://github.com/km1994/recommendation_advertisement_search)
+[从春招到秋招，算法工程师养成记（阿里+腾讯+其他） ，附必会考点，学习建议，书籍推荐](https://zhuanlan.zhihu.com/p/29360447)
+[推荐算法面试以及八股文](https://zhuanlan.zhihu.com/p/576123119)
+[推荐算法面试总结 (1) 样本 / 特征 / 模型 / 评价指标](https://zhuanlan.zhihu.com/p/500164503)
+[推荐算法面试总结 (2) 线上serving / 推荐系统的优化](https://zhuanlan.zhihu.com/p/500893360)

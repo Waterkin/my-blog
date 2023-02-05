@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2023-01-27">
+
+<title>Linghao Wang - Machine Learning Engineer (Ads) Interview Questions</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Linghao Wang</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../talks.html">
+ <span class="menu-text">Talks</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Machine Learning Engineer (Ads) Interview Questions</h1>
+<p class="subtitle lead">A Guide to Pass the MLE interview.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">tutorial</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 27, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>先学习<a href="https://oi-wiki.org/basic/simulate/">基本知识</a>，锻炼抽象思维，把题目抽象成最基本的数据结构和算法并解决。</p>
+<ol type="1">
+<li><p>最接近的三数之和（lc.16）：做过类似的题，但第一时间没反应过来是排序+双指针，往递归和回溯的错误思路想了很久，想了一个O(N^2)的暴力解法还卡了很久没写出来，在面试官老师提示先排序后才想到用双指针写了出来；</p></li>
+<li><p>最长回文子串</p></li>
+<li><p>浮点数平方根</p></li>
+<li><p>删除排序链表中出现大于一次的节点</p></li>
+<li><p>给一颗二叉树，求二叉树的子树中符合二叉搜索树结构的子树的权值和。</p></li>
+<li><p>二叉树最大路径和</p></li>
+<li><p>飞机选座位</p></li>
+<li><p>找到第K大的数(快排+优化+堆排序)</p></li>
+<li><p>归并排序</p></li>
+<li><p><a href="https://www.nowcoder.com/discuss/353159455569289216?sourceSSR=search1.:~:text=5.%E7%AE%97%E6%B3%95%E9%A2%98%EF%BC%9A-,%E8%A7%A3%E7%A0%81%E6%96%B9%E6%B3%95,-6.%E6%99%BA%E5%8A%9B%E9%A2%98">解码方法</a></p></li>
+<li><p>加油站</p></li>
+<li><p>有效三角形的个数</p></li>
+<li><p>数值的整数次方</p></li>
+<li><p>x的平方根，保留指定精度</p></li>
+<li><p>x轴上有几条线段，可能互相有交叉重叠，我们可以创建与y轴平行的线条，如果与创建的y轴平行的线条有交叉，那么x轴上的线段就被消除，问最少需要几条线条才能将x轴上的线条全部消除</p></li>
+<li><p>给定一个由0和1组成的矩阵，找出每个元素到最近1的距离</p></li>
+<li><p>给你一个数组和一个整数k，从数组中选择两个长度为k的子数组（这两个子数组不允许有交叉），使得这两个子数组的数组和，相加之后最大。要求时间复杂度O(n)</p></li>
+<li><p>n堆石子围成一排，每堆石子的量a[i]已知每次可以将相邻两堆合并为一堆，将合并后石子的总量记为这次合并的得分。n－1次合并后石子成为一堆，求这n－1次合并的得分之和的最大值</p></li>
+<li><p>买卖股票的最佳时机（lc.122）</p></li>
+<li><p>手写一个str2num，将一个字符串转化成整数，比如”-2131” -&gt; -2131，撕出来之后加大难度，包含小数点情况转化成浮点数，比如”+002131.00143” -&gt; 2131.00143，“-.9” -&gt; -0.9，后来由于时间缘故和其他原因，没有继续加大难度考虑科学计数和溢出的情况。</p></li>
+<li><p>给一个字典，按照val值降序排序怎么操作</p></li>
+<li><p>给一个数字n，表示有1…n个数字。问这n个数字能组成多少个二叉搜索树？</p></li>
+<li><p>最大子矩阵和</p></li>
+<li><p>乘积最大子数组</p></li>
+<li><p>用数组实现最大优先队列类</p></li>
+<li><p>[1,2,3,4,54,56,5] 不能相隔偷，最多能投多少</p></li>
+<li><p>括号匹配</p></li>
+<li><p>三数之和组合数</p></li>
+<li><p>柱状图中最大的矩形</p></li>
+<li><p>矩阵，从左上走到右下的不同路径的个数。0可走，1障碍</p></li>
+<li><p>n次方后的最后三位数</p></li>
+<li><p>最大矩形的变体</p></li>
+<li><p>单词拼接</p></li>
+<li><p>最长上升子序列，要求O(nlogn)复杂度</p></li>
+<li><p>二叉树的最大路径</p></li>
+<li><p>分糖果</p></li>
+<li><p>全组合II</p></li>
+<li><p>数字转中文</p></li>
+<li><p>按分隔符翻转字符串</p></li>
+<li><p>接雨水II</p></li>
+<li><p>AUC计算</p></li>
+<li><p>合并K个石头的最小成本</p></li>
+<li><p>一道没见过的背包问题</p></li>
+<li><p>拆分整数</p></li>
+<li><p>最短路径</p></li>
+<li><p>优化矩阵乘法</p></li>
+<li><p>N皇后</p></li>
+<li><p>查找二叉树根节点到叶子的路径和，写了递归之后让剪枝</p></li>
+<li><p>剑指 Offer 34： 二叉树中和为某一值的路径</p></li>
+<li><p>NC35 最小编辑代价</p></li>
+<li><p>剑指 Offer 59 - I. 滑动窗口的最大值</p></li>
+<li><p>LIS最长上升子序列的长度</p></li>
+<li><p>lc257 二叉树的所有路径</p></li>
+<li><p>lc64 矩阵最小路径和</p></li>
+<li><p>逆时针旋转90度矩阵，O(1)的空间复杂度</p></li>
+<li><p>自己实现sqrt函数，结果保留5位小数</p></li>
+<li><p>10亿个数，内存只有1M，如何让这10亿个数有序</p></li>
+<li><p>二叉树子路径和为k的路径个数</p></li>
+<li><p>求和为k的子数组个数</p></li>
+<li><p>判断是否存在个数超过数组长度一半的数</p></li>
+<li><p>leecode 102</p></li>
+<li><p>in-order traversal</p></li>
+<li><p>leetcode 42</p></li>
+<li><p>给定MxN的矩阵，询问子矩阵的和的最大值</p></li>
+<li><p>手写kmeans算法</p></li>
+<li><p>二叉树找距离target为k的所有节点，用父节点加bfs解决</p></li>
+<li><p>链表的quicksort以及在两个链表中查找和为k的两个节点</p></li>
+<li><p>手写lru算法，doublelinked list解决</p></li>
+<li><p>两颗bst树各出一个node是否能找到和等于k，可以遍历成数组+双指针解决</p></li>
+<li><p>一个list包含多个string，找出这个list里是长串S1的子串，基础版本可以用双指针匹配加遍历解决，时间复杂度更少的可以用桶方法</p></li>
+<li><p>迷宫问题，二维矩阵包含多个人，有一个出口e，墙用x表示，可以走的地方用.表示， 多个人同时出发，最少多少步以后所有人可以找到出口。是传统的bfs算法。</p></li>
+<li><p>bfs的经典问题：8皇后问题</p></li>
+<li><p>找到连续递增的最长子串，dp问题。</p></li>
+<li><p>岛屿的数量，传统bfs算法</p></li>
+<li><p>跳远，每次可以跳一格或者两格。就是简单的dp问题（斐波那契）</p></li>
+<li><p>写出sqrt函数，就是二分法。（有意思，兴许还有更好的方法哦）</p></li>
+</ol>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/waterking\.cc/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2022 © Linghao Wang</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/linghao-wang/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Waterkin">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -1,0 +1,28 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+![](grad3.png){width=100%}
+
+[Adam那么棒，为什么还对SGD念念不忘 (1) —— 一个框架看懂优化算法](https://zhuanlan.zhihu.com/p/32230623)
+
+[Adam那么棒，为什么还对SGD念念不忘 (2) —— 一个框架看懂优化算法](https://zhuanlan.zhihu.com/p/32262540)
+
+[Adam那么棒，为什么还对SGD念念不忘 (3) —— 一个框架看懂优化算法](https://zhuanlan.zhihu.com/p/32338983)
+
+# 优化器
+
+## 发展历程
+
+SGD -> SGDM -> NAG ->AdaGrad -> AdaDelta -> Adam -> Nadam
+
+1. 优化器介绍、区别、优缺点
+
+2. 知道什么前沿的优化器么
+
+3. adam有什么问题该怎么改进

@@ -1,0 +1,44 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../styles.css
+---
+
+::: {.callout-tip}
+# Take-away
+本项目试图将所有广告算法岗可能会出现的问题囊括其中
+
+面试题类型：
+
+1. Leetcode300
+
+2. ML/DL八股
+
+3. 数学题、智力题
+
+4. 场景题
+
+:::
+
+# 机器学习
+
+|  	|  	|  	|  	|  	|
+|---	|---	|---	|---	|---	|
+| [线性回归](ml/lr.qmd) | [LR](ml/lr.qmd) 	| [SVM](ml/svm.qmd) | [5个树模型](ml/tree.qmd)	| [无监督学习-聚类和PCA](ml/无监督学习.qmd) 	|
+| [特征工程](ml/特征工程.qmd) | [评价指标](ml/评价指标.qmd) | [过拟合、欠拟合-](ml/拟合.qmd) |
+
+# 深度学习
+
+|  |  |  |  |  |
+|---|---|---|---|---|
+| [NLP模型](dl/NLP.qmd) | [**广告模型**](dl/Ads.qmd) | [**优化器**](dl/优化器.qmd) | [**损失函数**-](dl/loss.qmd) | [激活函数-](dl/activation.qmd) |
+| [权重初始化-](dl/权重初始化.qmd) | [学习率调整策略-](dl/lr.qmd) | [超参数调优]() | [BatchNorm-](dl/Batchnorm.qmd) | [梯度消失、梯度爆炸-](dl/grad.qmd) |
+|[**项目**](dl/项目.qmd) | [Pytorch-](dl/pytorch.qmd) | [Tensorflow](dl/tensorflow.qmd) | [相似度度量-](dl/度量学习.qmd) |  |  | |
+
+# 基础知识
+
+|  |  |  |  |  |
+|---|---|---|---|---|
+| [性格测试](others/性格测试.qmd) | [**Leetcode**](others/Leetcode.qmd) | [计算机基础](others/basics.qmd) | [数学题、智力题-](others/概率论.qmd) | [场景题](others/业务知识.qmd) |

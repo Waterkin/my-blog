@@ -1,0 +1,32 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+1. 怎么处理离散特征、连续特征（onehot、归一化、why、方法等）
+
+2. 行为序列建模方式、怎么用
+
+3. 如果在模型中加入了一个特征，怎么判断这个特征是有效的，可以从哪些指标来衡量
+
+4. 有一个图像特征700维，维度太大，如何处理这个特征使其能够作为模型特征
+
+# 特征处理
+
+[特征选择技术总结](https://zhuanlan.zhihu.com/p/585314035)
+
+# 特征变化与构造
+
+# 特征筛选
+
+# 缺失值处理
+
+# 归一化
+
+# 类别不平衡
+
+1. 关于样本不平衡都有什么方法处理，如果样本极其不平衡，几乎都是正样本，该怎么办（无监督和弱监督方法）

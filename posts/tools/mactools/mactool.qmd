@@ -1,0 +1,15 @@
+---
+title: "Useful Mac Tools"
+subtitle: "Make Your Mac More Efficient"
+date: "2022-12-17"
+categories: [tools]
+css: ../../styles.css
+draft: true
+---
+
+# [Syncthing](https://syncthing.net/)
+I firstly wrote my blogs on Mac, but now I turn to windows desktop.
+Therefore, I need a tool to sync my mac blog files with windows desktop.
+Then, I can write blogs on windows and sync it to mac, update and deploy the blog.
+
+

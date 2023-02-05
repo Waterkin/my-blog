@@ -1,0 +1,37 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+讲项目要先讲解决的问题和亮点，然后综合讲清楚所用的模块输入输出，目标函数，并且以更通用的语言来讲
+
+[从北航计算机到字节算法岗](https://www.cnblogs.com/coder-duibai/p/15868107.html)
+
+# 背景
+
+# 问题
+
+# 解决方法
+
+- 用到mlp网络
+- 网络前向的计算过程
+- 输入特征数据形式
+- 神经元节点计算原理
+- 激活函数
+- 输入特征怎么处理的:归一化
+    - 归一化[-1,1]和归一化到[0,1]对后面的网络计算有什么影响吗
+    - 将输入特征做求平均、求平方、开方以及池化处理后再输入网络有什么不同的影响
+- loss:交叉熵
+    - 手写公式
+    - 为什么用交叉熵不用均方误差
+- 数据集规模
+- 效果提升如何
+- 模型是end2end的吗
+
+
+# 可能的优化
+

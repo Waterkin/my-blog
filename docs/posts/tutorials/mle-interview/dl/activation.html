@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2023-01-27">
+
+<title>Linghao Wang - Machine Learning Engineer (Ads) Interview Questions</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Linghao Wang</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../talks.html">
+ <span class="menu-text">Talks</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#什么是激活函数" id="toc-什么是激活函数" class="nav-link active" data-scroll-target="#什么是激活函数"><span class="toc-section-number">1</span>  什么是激活函数？</a></li>
+  <li><a href="#可以不用激活函数吗" id="toc-可以不用激活函数吗" class="nav-link" data-scroll-target="#可以不用激活函数吗"><span class="toc-section-number">2</span>  可以不用激活函数吗？</a></li>
+  <li><a href="#激活函数的类型" id="toc-激活函数的类型" class="nav-link" data-scroll-target="#激活函数的类型"><span class="toc-section-number">3</span>  激活函数的类型</a>
+  <ul class="collapse">
+  <li><a href="#sigmoid" id="toc-sigmoid" class="nav-link" data-scroll-target="#sigmoid"><span class="toc-section-number">3.1</span>  Sigmoid</a></li>
+  <li><a href="#tanh" id="toc-tanh" class="nav-link" data-scroll-target="#tanh"><span class="toc-section-number">3.2</span>  tanh</a></li>
+  <li><a href="#relu" id="toc-relu" class="nav-link" data-scroll-target="#relu"><span class="toc-section-number">3.3</span>  ReLU</a></li>
+  <li><a href="#leaky-relu" id="toc-leaky-relu" class="nav-link" data-scroll-target="#leaky-relu"><span class="toc-section-number">3.4</span>  Leaky ReLU</a></li>
+  <li><a href="#prelu" id="toc-prelu" class="nav-link" data-scroll-target="#prelu"><span class="toc-section-number">3.5</span>  PReLU</a></li>
+  <li><a href="#relu6" id="toc-relu6" class="nav-link" data-scroll-target="#relu6"><span class="toc-section-number">3.6</span>  ReLU6</a></li>
+  <li><a href="#softmax" id="toc-softmax" class="nav-link" data-scroll-target="#softmax"><span class="toc-section-number">3.7</span>  Softmax</a></li>
+  <li><a href="#恒等激活函数" id="toc-恒等激活函数" class="nav-link" data-scroll-target="#恒等激活函数"><span class="toc-section-number">3.8</span>  恒等激活函数</a></li>
+  <li><a href="#swish" id="toc-swish" class="nav-link" data-scroll-target="#swish"><span class="toc-section-number">3.9</span>  Swish</a></li>
+  <li><a href="#hard-swish" id="toc-hard-swish" class="nav-link" data-scroll-target="#hard-swish"><span class="toc-section-number">3.10</span>  Hard Swish</a></li>
+  </ul></li>
+  <li><a href="#总结" id="toc-总结" class="nav-link" data-scroll-target="#总结"><span class="toc-section-number">4</span>  总结</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Machine Learning Engineer (Ads) Interview Questions</h1>
+<p class="subtitle lead">A Guide to Pass the MLE interview.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">tutorial</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 27, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="act1.png" class="img-fluid" style="width:100.0%"></p>
+<section id="什么是激活函数" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="什么是激活函数"><span class="header-section-number">1</span> 什么是激活函数？</h2>
+<p>激活函数是人工神经网络的一个极其重要的特征。它决定一个神经元是否应该被激活，激活代表神经元接收的信息与给定的信息有关。</p>
+<p><img src="act.png" class="img-fluid" style="width:100.0%"></p>
+<p>激活函数对输入信息进行非线性变换。 然后将变换后的输出信息作为输入信息传给下一层神经元。</p>
+</section>
+<section id="可以不用激活函数吗" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="可以不用激活函数吗"><span class="header-section-number">2</span> 可以不用激活函数吗？</h2>
+<p>当我们不用激活函数时，权重和偏差只会进行线性变换。线性方程很简单，但解决复杂问题的能力有限。没有激活函数的神经网络实质上只是一个线性回归模型。</p>
+<p>激活函数对输入进行非线性变换，使其能够学习和执行更复杂的任务。我们希望我们的神经网络能够处理复杂任务，如语言翻译和图像分类等。线性变换永远无法执行这样的任务。</p>
+<p>激活函数使反向传播成为可能，因为激活函数的误差梯度可以用来调整权重和偏差。如果没有可微的非线性函数，这就不可能实现。</p>
+</section>
+<section id="激活函数的类型" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="激活函数的类型"><span class="header-section-number">3</span> 激活函数的类型</h2>
+<p><img src="act2.webp" class="img-fluid" style="width:100.0%"></p>
+<section id="sigmoid" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="sigmoid"><span class="header-section-number">3.1</span> Sigmoid</h3>
+<p><img src="sigmoid1.webp" class="img-fluid" style="width:100.0%"></p>
+<section id="特点" class="level4">
+<h4 class="anchored" data-anchor-id="特点">特点</h4>
+<ul>
+<li>逻辑回归模型中使用的逻辑函数。</li>
+<li>sigmoid 函数是一个 s 形图。</li>
+<li>这是一个非线性函数。</li>
+<li>sigmoid 函数将其输入转换为 0 到 1 之间的概率值。</li>
+<li>它将大的负值转换为 0，将大的正值转换为 1。</li>
+<li>对于输入 0，它返回 0.5。所以 0.5 被称为阈值，它可以决定给定的输入属于哪个类。</li>
+</ul>
+</section>
+<section id="用法" class="level4">
+<h4 class="anchored" data-anchor-id="用法">用法</h4>
+<ul>
+<li>Sigmoid 函数仍在 RNN 中使用。</li>
+<li>通常不将 sigmoid 函数用于隐藏层，因为太慢了，一般使用 ReLU 或 Leaky ReLU。</li>
+<li>当我们构建二分类器时，输出层使用 sigmoid 函数，输出依据sigmoid出来的概率值解释为某一类。</li>
+</ul>
+<p><img src="sigmoid2.png" class="img-fluid" style="width:100.0%"></p>
+<p>当我们使用 sigmoid 函数建立一个多标签分类模型时，其中每个相互包含的类都有两个结果。不要将此与多类分类模型混淆。</p>
+<p><img src="sigmoid3.webp" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="缺点" class="level4">
+<h4 class="anchored" data-anchor-id="缺点">缺点</h4>
+<p>由于以下缺点，我们通常不在隐藏层中使用 sigmoid 函数。</p>
+<ul>
+<li>sigmoid 函数存在梯度消失问题。这也称为梯度饱和。</li>
+<li>sigmoid 函数收敛慢。</li>
+<li>它的输出不是以零为中心的。因此，它使优化过程更加困难。</li>
+<li>由于包含了 e^z 项，因此该函数的计算成本很高。</li>
+</ul>
+</section>
+</section>
+<section id="tanh" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="tanh"><span class="header-section-number">3.2</span> tanh</h3>
+<p><img src="tanh1.webp" class="img-fluid" style="width:100.0%"></p>
+<section id="特点-1" class="level4">
+<h4 class="anchored" data-anchor-id="特点-1">特点</h4>
+<ul>
+<li>tanh（正切双曲线）函数的输出始终介于 -1 和 +1 之间。</li>
+<li>像 sigmoid 函数一样，它有一个 s 形图。这也是一个非线性函数。</li>
+<li>与 sigmoid 函数相比，使用 tanh 函数的一个优点是 tanh 函数以零为中心。这使得优化过程更加容易。</li>
+<li>tanh 函数的梯度比 sigmoid 函数的梯度更陡。</li>
+</ul>
+</section>
+<section id="用法-1" class="level4">
+<h4 class="anchored" data-anchor-id="用法-1">用法</h4>
+<ul>
+<li>不在隐藏层使用 tanh 函数</li>
+<li>不在输出层使用 tanh 函数</li>
+</ul>
+</section>
+<section id="缺点-1" class="level4">
+<h4 class="anchored" data-anchor-id="缺点-1">缺点</h4>
+<p>由于以下缺点，我们通常不在隐藏层中使用 tanh 函数。</p>
+<ul>
+<li>tanh 函数存在梯度消失问题。</li>
+<li>由于包含了 e^z 项，因此该函数的计算成本很高。</li>
+</ul>
+</section>
+</section>
+<section id="relu" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="relu"><span class="header-section-number">3.3</span> ReLU</h3>
+<p><img src="relu.webp" class="img-fluid" style="width:100.0%"></p>
+<section id="特点-2" class="level4">
+<h4 class="anchored" data-anchor-id="特点-2">特点</h4>
+<ul>
+<li>ReLU（整流线性单元）激活函数是 sigmoid 和 tanh 激活函数的绝佳替代品。</li>
+<li>ReLU 发明是深度学习领域最重要的突破之一。</li>
+<li>不存在梯度消失问题。</li>
+<li>计算成本很低。认为 ReLU 的收敛速度比 sigmoid 和 tanh 函数快 6 倍。</li>
+<li>如果输入值为 0 或大于 0，则 ReLU 函数按原样输出输入。如果输入小于 0，则 ReLU 函数输出值 0。</li>
+<li>ReLU 函数由两个线性分量组成。因此，ReLU 函数是一个分段线性函数。所以ReLU 函数是一个非线性函数。</li>
+<li>ReLU 函数的输出范围可以从 0 到正无穷大。</li>
+<li>收敛速度比 sigmoid 和 tanh 函数快。这是因为 ReLU 函数对一个线性分量具有固定导数（斜率），而对另一个线性分量具有零导数。因此，使用 ReLU 函数的学习过程要快得多。</li>
+<li>使用 ReLU 可以更快地执行计算，因为函数中不包含指数项。</li>
+</ul>
+</section>
+<section id="用法-2" class="level4">
+<h4 class="anchored" data-anchor-id="用法-2">用法</h4>
+<ul>
+<li>ReLU 函数是MLP 和 CNN 神经网络模型中隐藏层的默认激活函数。</li>
+<li>我们通常不会在 RNN 模型的隐藏层中使用 ReLU 函数。相反，我们在那里使用 sigmoid 或 tanh 函数。</li>
+<li>我们从不在输出层使用 ReLU 函数。</li>
+</ul>
+</section>
+<section id="缺点-2" class="level4">
+<h4 class="anchored" data-anchor-id="缺点-2">缺点</h4>
+<ul>
+<li>使用 ReLU 函数的主要缺点是它有一个dying ReLU问题。（当梯度值过大时，权重更新后为负数，经relu后变为0，导致后面也不再更新）</li>
+</ul>
+</section>
+</section>
+<section id="leaky-relu" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="leaky-relu"><span class="header-section-number">3.4</span> Leaky ReLU</h3>
+<p><img src="leaky_relu.webp" class="img-fluid" style="width:100.0%"></p>
+<section id="特点-3" class="level4">
+<h4 class="anchored" data-anchor-id="特点-3">特点</h4>
+<ul>
+<li>leaky ReLU 激活函数是默认 ReLU 函数的修改版本。</li>
+<li>与 ReLU 激活函数一样，该函数不存在梯度消失问题。</li>
+<li>如果输入值是 0 大于 0，leaky ReLU 函数会像默认的 ReLU 函数一样输出输入。 但是如果输入小于 0，leaky ReLU 函数会输出一个由 αz 定义的小负值（其中 α 是一个小的常数值，通常为 0.01，z 是输入值）。</li>
+<li>它没有任何具有零导数（斜率）的线性分量。 因此它可以避免dying ReLU 问题。</li>
+<li>使用leaky ReLU 的学习过程比默认的 ReLU 更快。</li>
+</ul>
+</section>
+<section id="用法-3" class="level4">
+<h4 class="anchored" data-anchor-id="用法-3">用法</h4>
+<p>同ReLU</p>
+</section>
+</section>
+<section id="prelu" class="level3" data-number="3.5">
+<h3 data-number="3.5" class="anchored" data-anchor-id="prelu"><span class="header-section-number">3.5</span> PReLU</h3>
+<section id="特点-4" class="level4">
+<h4 class="anchored" data-anchor-id="特点-4">特点</h4>
+<ul>
+<li>这是 ReLU 函数的另一个变体。</li>
+<li>类似于leaky ReLU 函数，区别是值 α 成为可学习的参数（因此得名）。 我们将 α 设置为网络中每个神经元的参数。 因此，α的最优值从网络中学习。</li>
+</ul>
+</section>
+</section>
+<section id="relu6" class="level3" data-number="3.6">
+<h3 data-number="3.6" class="anchored" data-anchor-id="relu6"><span class="header-section-number">3.6</span> ReLU6</h3>
+<p><img src="relu6.webp" class="img-fluid" style="width:100.0%"></p>
+<section id="特点-5" class="level4">
+<h4 class="anchored" data-anchor-id="特点-5">特点</h4>
+<ul>
+<li>ReLU 和 ReLU6 之间的主要区别在于，ReLU 允许正侧的值非常高，而 ReLU6 限制为正侧的值 6。 任何 6 或大于 6 的输入值都将被限制为值 6（因此得名）。</li>
+<li>ReLU6 函数由三个线性分量组成。 它是一个非线性函数。</li>
+</ul>
+</section>
+</section>
+<section id="softmax" class="level3" data-number="3.7">
+<h3 data-number="3.7" class="anchored" data-anchor-id="softmax"><span class="header-section-number">3.7</span> Softmax</h3>
+<p><img src="softmax.webp" class="img-fluid" style="width:100.0%"></p>
+<section id="特点-6" class="level4">
+<h4 class="anchored" data-anchor-id="特点-6">特点</h4>
+<ul>
+<li>这也是一个非线性激活函数。</li>
+<li>softmax 函数计算一个事件（类）在 K 个不同事件（类）上的概率值。 它计算每个类别的概率值。 所有概率的总和为 1，这意味着所有事件（类）都是互斥的。</li>
+</ul>
+</section>
+<section id="用法-4" class="level4">
+<h4 class="anchored" data-anchor-id="用法-4">用法</h4>
+<ul>
+<li>必须在多类分类问题的输出层使用 softmax 函数。</li>
+<li>不在隐藏层中使用 softmax 函数。</li>
+</ul>
+<p><img src="softmax1.webp" class="img-fluid" style="width:100.0%"></p>
+<p>注意与多类sigmoid区分开</p>
+</section>
+</section>
+<section id="恒等激活函数" class="level3" data-number="3.8">
+<h3 data-number="3.8" class="anchored" data-anchor-id="恒等激活函数"><span class="header-section-number">3.8</span> 恒等激活函数</h3>
+<p><img src="identity.webp" class="img-fluid" style="width:100.0%"></p>
+<section id="特点-7" class="level4">
+<h4 class="anchored" data-anchor-id="特点-7">特点</h4>
+<ul>
+<li>唯一一个线性激活函数。</li>
+<li>这个函数按原样输出输入值。对输入不做任何更改。</li>
+</ul>
+</section>
+<section id="用法-5" class="level4">
+<h4 class="anchored" data-anchor-id="用法-5">用法</h4>
+<ul>
+<li>该函数仅用于解决回归问题的神经网络模型的输出层。</li>
+<li>不要在隐藏层中使用这个函数。</li>
+</ul>
+<p><img src="identity2.webp" class="img-fluid" style="width:100.0%"></p>
+</section>
+</section>
+<section id="swish" class="level3" data-number="3.9">
+<h3 data-number="3.9" class="anchored" data-anchor-id="swish"><span class="header-section-number">3.9</span> Swish</h3>
+<p><img src="swish.webp" class="img-fluid" style="width:100.0%"></p>
+<section id="特点-8" class="level4">
+<h4 class="anchored" data-anchor-id="特点-8">特点</h4>
+<ul>
+<li>该函数是通过将 sigmoid 函数乘以输入 z 构成的。 这是一个非线性函数。</li>
+<li>该图与 ReLU 激活函数的图非常相似。</li>
+<li>曲线比 ReLU 激活函数更平滑。 在训练模型时，这种平滑度很重要。 该函数在训练时很容易收敛。</li>
+</ul>
+</section>
+<section id="用法-6" class="level4">
+<h4 class="anchored" data-anchor-id="用法-6">用法</h4>
+<ul>
+<li>仅在隐藏层中使用。</li>
+<li>不在神经网络模型的输出层使用这个函数。</li>
+</ul>
+</section>
+<section id="缺点-3" class="level4">
+<h4 class="anchored" data-anchor-id="缺点-3">缺点</h4>
+<ul>
+<li>Swish 函数的主要缺点是计算量很大，因为函数中包含了 e^z 项。 这可以通过使用下面定义的称为“Hard Swish”的特殊函数来避免。</li>
+</ul>
+</section>
+</section>
+<section id="hard-swish" class="level3" data-number="3.10">
+<h3 data-number="3.10" class="anchored" data-anchor-id="hard-swish"><span class="header-section-number">3.10</span> Hard Swish</h3>
+<p><img src="hswish.webp" class="img-fluid" style="width:100.0%"></p>
+<section id="特点-9" class="level4">
+<h4 class="anchored" data-anchor-id="特点-9">特点</h4>
+<ul>
+<li>与 Swish 函数的曲线基本相同。这在计算上很便宜，因为 sigmoid 函数被线性模拟取代。</li>
+</ul>
+</section>
+<section id="用法-7" class="level4">
+<h4 class="anchored" data-anchor-id="用法-7">用法</h4>
+<p>同Swish</p>
+</section>
+</section>
+</section>
+<section id="总结" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="总结"><span class="header-section-number">4</span> 总结</h2>
+<p>激活函数只是数学函数。激活函数应该具有的主要特征是该函数是可微的，因为这是模型中反向传播的要求。</p>
+<p>选择正确的激活函数可以被认为是一种超参数调整，通过理解问题定义并考虑模型的性能和损失函数的收敛性来手动选择激活函数。 这里总结了上面讨论的不同激活函数的使用场景。当训练神经网络模型时，可以作为参考：</p>
+<ul>
+<li><p>神经网络的输入层节点不需要激活函数，在定义输入层时无需担心激活函数。</p></li>
+<li><p>输出层激活函数取决于我们要解决的问题类型。在回归问题中，我们使用线性（恒等）激活函数。在二元分类器中，我们使用 sigmoid 激活函数。在多类分类问题中，我们使用 softmax 激活函数。在多标签分类问题中，我们使用 sigmoid 激活函数，为每个类输出一个概率值。</p></li>
+<li><p>隐藏层中使用非线性激活函数，通过考虑模型的性能或损失函数的收敛性来做出选择。可以从 ReLU 激活函数开始，如果你有一个Dying ReLU 问题，试试leaky ReLU。</p></li>
+<li><p>在 MLP 和 CNN 神经网络模型中，ReLU 是隐藏层的默认激活函数。</p></li>
+<li><p>在 RNN 神经网络模型中，我们对隐藏层使用 sigmoid 或 tanh 函数。 tanh 函数具有更好的性能。</p></li>
+<li><p>只有恒等激活函数被认为是线性的。所有其他激活函数都是非线性的。</p></li>
+<li><p>不要在隐藏层中使用 softmax 和恒等函数，在隐藏层中使用 tanh、ReLU、ReLU 的变体、swish 和 hard swish 函数。</p></li>
+<li><p>hard swish是最新的研究结果，可以试试</p></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/waterking\.cc/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2022 © Linghao Wang</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/linghao-wang/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Waterkin">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

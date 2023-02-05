@@ -1,0 +1,24 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+# Linear Regression
+
+1. 写一下线性回归的梯度下降解法，怎么迭代的
+
+2. 分类和回归的优缺点
+
+# Logistic Regression
+
+1. LR可以做非线性吗
+
+2. 逻辑回归的loss是什么
+
+3. 手写LR前向传播和反向传播
+
+4. 写出SGD求解LR的伪代码

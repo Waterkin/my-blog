@@ -1,0 +1,29 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+# 模型评价指标都有什么?怎么计算？
+
+Precision, Recall, AUC, ROC, P-R曲线, FPR, TPR
+
+# AUC
+
+- AUC是什么，代表什么东西
+
+- 预测值同时增大，auc会不会有影响
+
+- 实现求auc的过程（输入就是instance的score和对应label）
+
+
+# ROC
+
+- ROC横纵坐标的含义
+
+# P-R曲线
+
+- P-R曲线下的面积代表什么意思

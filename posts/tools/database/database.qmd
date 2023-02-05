@@ -1,14 +1,22 @@
 ---
-title: "How to Choose a Database to Start with?"
-subtitle: "Comparison among 7 databases"
+title: "Database Practice - Start as a Newbie"
+subtitle: ""
 date: "2022-12-14"
-categories: [tools]
+categories: [tools, sql]
 css: ../../styles.css
+draft: true
 ---
 
-Take away: Start with PostgreSQL and then MongoDB, which cover almost everything. Try snowflake too.
+# Choose a Database 
+::: {.callout-tip}
+## Take away
+Start with PostgreSQL and then MongoDB.
+:::
 
-# Redis: Key-Value
+I will compare the most popular 7 databases.
+
+## Redis: Key-Value
+
 ::: {fig-vis}
 ![](key-value.png){width=100%}
 
@@ -16,7 +24,7 @@ Take away: Start with PostgreSQL and then MongoDB, which cover almost everything
 - Fast: store in memory instead of disk
 - Usage: Cache
 
-# HBase: Wide Column
+## HBase: Wide Column
 ::: {fig-vis}
 ![](wide-column.png){width=100%}
 
@@ -24,7 +32,7 @@ Take away: Start with PostgreSQL and then MongoDB, which cover almost everything
 - High-write, Low-read
 - Usage: Time Series Data like Historical Records
 
-# MongoDB: Document
+## MongoDB: Document
 ::: {fig-vis}
 ![](document.png){width=100%}
 
@@ -32,7 +40,7 @@ Take away: Start with PostgreSQL and then MongoDB, which cover almost everything
 - Usage: Most apps, Games, IoT
 - Not suitable for Graph where `join` is frequent
 
-# PostgreSQL: Relational
+## PostgreSQL: Relational
 ::: {fig-vis}
 ![](relational.png){width=100%}
 
@@ -40,7 +48,7 @@ Take away: Start with PostgreSQL and then MongoDB, which cover almost everything
 - Usage: Most apps
 - Not suitable for Unstructured data
 
-# Neo4j: Graph
+## Neo4j: Graph
 ::: {fig-vis}
 ![](graph.png){width=100%}
 
@@ -51,7 +59,7 @@ Take away: Start with PostgreSQL and then MongoDB, which cover almost everything
     - Knowledge Graphs
     - Recommendation Engines
 
-# ElasticSearch: Search
+## ElasticSearch: Search
 ::: {fig-vis}
 ![](search.png){width=100%}
 
@@ -59,7 +67,7 @@ Take away: Start with PostgreSQL and then MongoDB, which cover almost everything
 
 - Usage: Search Engines
 
-# Fauna: Multi-Model
+## Fauna: Multi-Model
 ::: {fig-vis}
 ![](fauna.png){width=100%}
 
@@ -68,3 +76,15 @@ Take away: Start with PostgreSQL and then MongoDB, which cover almost everything
 - Usage: Everything!
 
 
+# PostgreSQL Practice
+
+![Why PostgreSQL?! - 1](https://www.freecodecamp.org/chinese/news/2021-postgres-1/)
+![Why PostgreSQL?! - 2](https://www.freecodecamp.org/chinese/news/2021-postgres-2/)
+![Why PostgreSQL?! - 3](https://www.freecodecamp.org/chinese/news/2021-postgres-3/)
+![Why PostgreSQL?! - 4](https://www.freecodecamp.org/chinese/news/2021-postgres-4/)
+
+I hope to import my stock dataset from lots of csv files to PostgreSQL using python. First of all, I have to devise a table structure that fits my data, including a main key, columns, etc. Then, I need to create a table in the database:
+
+# MongoDB Practice
+
+![Follow this tutorial](https://www.freecodecamp.org/chinese/news/learn-mongodb/)

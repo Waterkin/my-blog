@@ -1,0 +1,50 @@
+---
+title: "Machine Learning Engineer (Ads) Interview Questions"
+subtitle: "A Guide to Pass the MLE interview."
+date: "2023-01-27"
+categories: [tutorial]
+css: ../../../styles.css
+draft: true
+---
+
+[超牛大佬的算法岗科普&面经](https://blog.csdn.net/qq_35812205/article/details/117941550)
+
+# 决策树
+
+1. 决策树是什么东西
+
+2. 选择叶子节点的评价指标都有什么
+
+3. 对于连续值，怎么选择分割点
+
+# 集成学习
+
+1. 有哪些方法
+
+- bagging
+
+- boosting
+
+# 随机森林
+
+问random forest, gbdt的区别，训练样本的不同
+
+# GBDT
+
+1. GBDT为什么拟合负梯度而不是残差？
+
+2. GBDT节点分裂的具体原理
+
+# XGBoost
+
+问xgboost的调包问题
+
+# LightGBM
+
+1. LightGBM和xgboost的区别
+
+2. LightGBM怎么调参；
+
+3. GOSS 算法伪代码
+
+4. XGB、LightGBM、GBDT区别

@@ -1,0 +1,146 @@
+---
+title: "Model Deployment and Compression"
+subtitle: ""
+date: "2023-01-24"
+categories: [tools]
+css: ../../styles.css
+draft: false
+---
+
+::: {fig-vis}
+![](MDLBench.png){width=100%}
+
+:::
+
+<!--
+# Tool List for Model Deployment
+
+## DL Framework List for Server
+- TensorRT: Nvidia, for GPU
+- OpenVino: Intel, for CPU
+- ONNX: Microsoft, Amazon, and others
+
+## DL Framework List for Mobile 
+- ncnn/TNN: Tencent
+- MNN: Alibaba
+- MACE: Xiaomi
+- Tengine: Open AI Lab
+- Paddle-Lite: Baidu
+
+## DL Inference Server
+- Triton: Nvidia
+
+## DL Deployment Tool
+- FastDeploy: Nvidia
+-->
+
+# Model Deployment: TensorRT, Triton, NCNN
+
+::: {.callout-tip}
+## Take away
+Start with Nvidia TensorRT and Triton for deployment on server, then learn NCNN for mobile deployment.
+:::
+
+## Why TensorRT?
+NVIDIA TensorRT is a deep learning platform that optimizes neural network models and speeds up inference across GPU-accelerated platforms running in the data center and embedded devices. 
+
+::: {fig-vis}
+![Same model, 4x Faster & 6x Smaller with TensorRT-FP16](TensorRT.jpg){width=100%}
+
+:::
+
+## Why Triton Server?
+Triton enables teams to deploy any AI model from multiple deep learning and machine learning frameworks, including TensorRT, TensorFlow, PyTorch, ONNX.
+
+::: {fig-vis}
+![4x QPS with TensorRT+Triton](Triton.jpg){width=100%}
+
+:::
+
+## TensorRT+Triton Workflow
+
+::: {fig-vis}
+![Overall workflow for optimizing a model with TensorRT and serving with NVIDIA Triton](workflow.png){width=100%}
+
+:::
+
+## [NCNN](https://github.com/Tencent/ncnn) Workflow
+
+# Model Compression: Pruning, Distillation, Quantization, Sparsity, NAS
+
+::: {.callout-tip}
+## Take away
+Start with pruning. Choose any other method depending on (1) task requirements and (2) hardware.
+:::
+
+## Pruning
+Good generalization.
+
+[Check out an Microsoft Pytorch-based tool: Neural Network Intelligence (NNI).](https://nni.readthedocs.io/zh/stable/compression/overview.html)
+
+## Distillation
+A large model T teaches a small model S and transfer S's knowledge.
+Distillation is suitable for complicated tasks and small models.
+
+It can be classified by different methods: 
+
+- Response-based
+- Feature-based
+- Relation-based
+
+or different strategies:
+
+- online distillation
+- offline distillation
+- self distillation
+
+or different distillation algorithms: 
+
+- adversarial distillation
+- multi-teacher distillation
+- cross-modal distillation
+- graph-based distillation
+- attention-based distillation
+- data-free distillation 
+- quatized Distillation
+- lifelong distillation
+- nas distillation
+
+::: {fig-vis}
+![The procedure.](distillation.png){width=100%}
+
+:::
+
+
+## Quantization
+High requirements for specific hardware, e.g., Intel cpu.
+
+[Check out an Microsoft Pytorch-based tool: Neural Network Intelligence (NNI).](https://nni.readthedocs.io/zh/stable/compression/overview.html)
+
+## Sparsity
+You can make some tensors to be 0, but depends on specific hardwares, e.g., 30xx GPU.
+[Check out an Nvidia Pytorch-based tool: Automated SParsity (ASP).](https://github.com/NVIDIA/apex/tree/082f999a6e18a3d02306e27482cc7486dab71a50/apex/contrib/sparsity)
+
+## Neural Architecture Search (NAS)
+You can modify the DARTS model space and tasks to deploy NAS, mostly for models like MobileNet series.
+For example, you can use NAS to search the backbone, channel, depth, kernel size, resolution and other hyperparams of the model, but NAS requires super computing power because of the large searching space.
+This requirement welcomes big companies like Google and Facebook, but stops small labs and companies from NAS's research.
+[Check out an Microsoft Pytorch-based tool: Neural Network Intelligence (NNI).](https://nni.readthedocs.io/zh/stable/tutorials/hello_nas.html)
+
+
+
+# Reference
+- [Accelerating AI/Deep learning models using tensorRT & triton inference](https://blog.advance.ai/blog/accelerating-ai-deep-learning-models)
+- [Optimizing and Serving Models with NVIDIA TensorRT and NVIDIA Triton](https://developer.nvidia.com/blog/optimizing-and-serving-models-with-nvidia-tensorrt-and-nvidia-triton/)
+- [A Comprehensive Benchmark of Deep Learning Libraries on Mobile Devices (WWW 2022)](https://arxiv.org/pdf/2202.06512.pdf)
+- [训练好的深度学习模型是怎么部署的？](https://www.mdnice.com/writing/3efb55c789e94c5599eb1a0d1bf05b82)
+[边缘计算 | 在移动设备上部署深度学习模型的思路与注意点](https://juejin.cn/post/7133391555854860318)
+[老潘的AI部署以及工业落地学习之路](https://oldpan.me/archives/ai-deploy-study-road-1)
+- [在实际工程应用中,剪枝, 蒸馏等模型压缩方法中的具体哪个算法部署简单且有效?](https://www.zhihu.com/question/357967490/answer/911735881)
+- [mobilev2-yolov5s剪枝、蒸馏，支持ncnn，tensorRT部署。ultra-light but better performence！](https://github.com/Syencil/mobile-yolov5-pruning-distillation)
+- [[ICLR 2020] Contrastive Representation Distillation (CRD), and benchmark of recent knowledge distillation methods](https://github.com/HobbitLong/RepDistiller)
+- [2022 年神经架构搜索的发展状况如何?](https://www.zhihu.com/question/518810217/answer/2367413413)
+- [Benchmarking Triton (TensorRT) Inference Server for Transformer Models](https://blog.salesforceairesearch.com/benchmarking-tensorrt-inference-server/)
+- [https://www.reddit.com/r/MachineLearning/comments/i3knzb/d_what_pytorchs_model_serving_framework_are_you/](https://www.reddit.com/r/MachineLearning/comments/i3knzb/d_what_pytorchs_model_serving_framework_are_you/)
+- [How to Accelerate HuggingFace Throughput by 193%](https://clear.ml/blog/increase-huggingface-triton-throughput-by-193/)
+- [Hugging Face Transformer Inference Under 1 Millisecond Latency](https://towardsdatascience.com/hugging-face-transformer-inference-under-1-millisecond-latency-e1be0057a51c)
